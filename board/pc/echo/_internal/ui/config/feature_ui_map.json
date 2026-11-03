@@ -1,0 +1,274 @@
+{
+ "version": 1,
+ "generatedFor": "sixmic3d-frontend",
+ "notes": [
+  "页面→featureId 映射；featureId 与 interfaces/pc_backend_v1/features/FEATURE_CATALOG.json 一致。",
+  "导航 pageId 与功能目录行号无关；能力状态来自后端/冻结目录，不由前端提升。",
+  "删除项 (自动DOA) 仅作为 unsupported 说明，不提供导航或复算入口。"
+ ],
+ "pages": {
+  "overview": {
+   "labelKey": "nav.overview",
+   "features": []
+  },
+  "time": {
+   "labelKey": "nav.time"
+  },
+  "spectrum": {
+   "labelKey": "nav.spectrum"
+  },
+  "bands": {
+   "labelKey": "nav.bands"
+  },
+  "multichannel": {
+   "labelKey": "nav.multichannel"
+  },
+  "periodic": {
+   "labelKey": "nav.periodic"
+  },
+  "events": {
+   "labelKey": "nav.events"
+  },
+  "recording": {
+   "labelKey": "nav.recording"
+  },
+  "room": {
+   "labelKey": "nav.room"
+  },
+  "report": {
+   "labelKey": "nav.report"
+  }
+ },
+ "features": {
+  "io_pcm": {
+   "page": "time",
+   "section": "time",
+   "role": "primary"
+  },
+  "levels_core": {
+   "page": "time",
+   "section": "time",
+   "role": "primary"
+  },
+  "data_continuity": {
+   "page": "time",
+   "section": "time",
+   "role": "primary"
+  },
+  "levels_extended": {
+   "page": "time",
+   "section": "time",
+   "role": "primary"
+  },
+  "signal_quality": {
+   "page": "time",
+   "section": "time",
+   "role": "primary"
+  },
+  "fft": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "psd": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "stft": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "spectrum_average": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "peak_hold": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "smoothing": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "zoom_fft": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "frequency_tracking": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "frequency_drift": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "centroid": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "flatness": {
+   "page": "spectrum",
+   "section": "spectrum",
+   "role": "primary"
+  },
+  "octave": {
+   "page": "bands",
+   "section": "bands",
+   "role": "primary"
+  },
+  "third_octave": {
+   "page": "bands",
+   "section": "bands",
+   "role": "primary"
+  },
+  "frequency_time_weighting": {
+   "page": "bands",
+   "section": "bands",
+   "role": "primary"
+  },
+  "level_statistics": {
+   "page": "bands",
+   "section": "bands",
+   "role": "primary"
+  },
+  "noise_rating": {
+   "page": "bands",
+   "section": "bands",
+   "role": "primary"
+  },
+  "csd": {
+   "page": "multichannel",
+   "section": "pair",
+   "role": "primary"
+  },
+  "coherence_phase": {
+   "page": "multichannel",
+   "section": "pair",
+   "role": "primary"
+  },
+  "cross_correlation": {
+   "page": "multichannel",
+   "section": "pair",
+   "role": "primary"
+  },
+  "gcc_phat": {
+   "page": "multichannel",
+   "section": "pair",
+   "role": "primary"
+  },
+  "autocorrelation": {
+   "page": "multichannel",
+   "section": "pair",
+   "role": "primary"
+  },
+  "fundamental": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "harmonic_ratio": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "sidebands": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "envelope_hilbert": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "envelope_spectrum": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "modulation_spectrum": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "cepstrum": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "spectral_kurtosis": {
+   "page": "periodic",
+   "section": "periodic",
+   "role": "primary"
+  },
+  "event_trigger": {
+   "page": "events",
+   "section": "events",
+   "role": "primary"
+  },
+  "energy_change": {
+   "page": "events",
+   "section": "events",
+   "role": "primary"
+  },
+  "band_tracking": {
+   "page": "events",
+   "section": "events",
+   "role": "primary"
+  },
+  "spectral_flux": {
+   "page": "events",
+   "section": "events",
+   "role": "primary"
+  },
+  "room_decay": {
+   "page": "room",
+   "section": "room",
+   "role": "primary"
+  },
+  "room_clarity": {
+   "page": "room",
+   "section": "room",
+   "role": "primary"
+  },
+  "spectral_decay": {
+   "page": "room",
+   "section": "room",
+   "role": "primary"
+  },
+  "relative_insulation": {
+   "page": "room",
+   "section": "room",
+   "role": "primary"
+  },
+  "stipa_experimental": {
+   "page": "room",
+   "section": "room",
+   "role": "primary"
+  },
+  "spectrum_freeze": {
+   "page": "report",
+   "section": "report",
+   "role": "primary"
+  },
+  "relative_limit": {
+   "page": "report",
+   "section": "report",
+   "role": "primary"
+  },
+  "srpdnn_main": {
+   "page": "overview",
+   "section": "removed",
+   "role": "removed"
+  }
+ }
+}
