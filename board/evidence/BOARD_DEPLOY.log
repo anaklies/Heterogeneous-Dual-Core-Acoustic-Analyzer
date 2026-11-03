@@ -1,0 +1,64 @@
+# BOARD_DEPLOY.log - echo_spatial_off_20261031 first deployment attempt
+# Date: 2026-10-31 21:06:54 .. 21:08:05 +08:00
+# Host: PC 192.168.77.1 (HTTP 48190) -> board 192.168.77.2 via COM6 115200 root console
+# Package: deployment/echo_spatial_off_20261031
+# Command: wget -q -O /tmp/spatial-off.sh http://192.168.77.1:48190/deploy_board.sh && sh /tmp/spatial-off.sh
+#
+# RESULT: FILES DEPLOYED CORRECTLY, FINAL GATEWAY-RESTART CHECK FAILED
+#   - registry_update.tar.gz / image.ub / ECHO_RELEASE.json downloaded and sha256-verified OK
+#   - live /opt/echo/registry/INTERFACE_REGISTRY.json replaced with 45-feature registry (dcbc3937)
+#   - /mnt/echo-sd/image.ub replaced with registry-only 45-feature image (00b93b14), sha OK
+#   - /mnt/echo-sd/ECHO_RELEASE.json + SHA256SUMS replaced, sync OK
+#   - backups *.before-spatial-off-20261031 created (all 5)
+#   - step 8 (kill echo-gateway, then "ps | grep echo-gateway") failed:
+#       __SPATIALOFF_FAILED__
+#   - old gateway binary b982cece cannot run with the 45-feature registry:
+#       feature_runtime.c: gw_json_arr_count(features) != 51 -> init error
+#       "exactly51 nonDOA feature definitions required"; feature.list total hardcoded 51.
+#       gateway exits at start, supervisor retries 3x in <10s then stops itself
+#       ("Gateway safe mode: restart limit reached").
+#   - this is NOT a file-deploy bug: the 2026-10-30 gateway requires 51 features.
+#
+# RAW SERIAL LOG (BOARD_DEPLOY_SERIAL.txt)
+# --------------------------------------------------------------------------
+# echo __Cd0f637_BEGIN; wget -q -O /tmp/spatial-off.sh http://192.168.77.1:48190/deploy_board.sh && sh /tmp/spatial-off.sh; echo __Cd0f637_END
+# __Cd0f637_BEGIN
+# __SPATIALOFF_START__
+# /opt/echo/registry/INTERFACE_REGISTRY.json: OK          (old registry 30163635)
+# /opt/echo/bin/echo-gateway: OK                          (old gateway b982cece)
+# /mnt/echo-sd/image.ub: OK                               (old image cba07779)
+# __SPATIALOFF_PRESTATE_OK__
+# __SPATIALOFF_SPACE_OK__ __FREE_KB__=27650784
+# __SPATIALOFF_BACKUPS_OK__
+# /tmp/spatial-off/registry_update.tar.gz: OK             (c5ff1619)
+# /mnt/echo-sd/image.ub.spatial-off.new: OK               (00b93b14)
+# /mnt/echo-sd/ECHO_RELEASE.json.spatial-off.new: OK      (5f8f3fb0)
+# __SPATIALOFF_DOWNLOAD_OK__
+# /opt/echo/registry/INTERFACE_REGISTRY.json: OK          (new dcbc3937)
+# __SPATIALOFF_REGISTRY_OK__
+# /mnt/echo-sd/image.ub: OK                               (new 00b93b14)
+# /mnt/echo-sd/ECHO_RELEASE.json: OK                      (new 5f8f3fb0)
+# __SPATIALOFF_SD_OK__
+# __SPATIALOFF_SYNC_OK__
+# __SPATIALOFF_FAILED__
+# __Cd0f637_END
+# --------------------------------------------------------------------------
+#
+# BOARD STATE AFTER THE FAILED STEP (verified read-only over COM6 at ~21:08:30):
+#   /opt/echo/registry/INTERFACE_REGISTRY.json  dcbc3937...  (45 features)   [updated]
+#   /opt/echo/bin/echo-gateway                  b982cece...                 [unchanged, not running]
+#   /mnt/echo-sd/image.ub                       00b93b14...                 [updated, registry-only]
+#   /mnt/echo-sd/ECHO_RELEASE.json              5f8f3fb0...                 [updated]
+#   /mnt/echo-sd/SHA256SUMS                      updated (image.ub 00b93b14, ECHO_RELEASE 5f8f3fb0)
+#   backups present: registry/gateway/image.ub/ECHO_RELEASE.json/SHA256SUMS .before-spatial-off-20261031
+#   echo-runtime supervisor: gone; echo-gateway: gone; 48120/48121: not listening
+#
+# Recovery (gateway-45 rebuild + repack + live install) is logged in BOARD_RECOVERY.log.
+
+# FINAL OUTCOME (after gateway-45 recovery)
+#   This first attempt was superseded by the gateway-45 recovery (see BOARD_RECOVERY.log).
+#   The deployed files from this attempt were correct; only the old gateway binary was
+#   incompatible with the 45-feature registry. Final verified board state:
+#     registry dcbc3937... (45 features), gateway 5d4b0291... (45-feature build, running),
+#     image.ub 646631ab... (ramdisk registry + gateway), ECHO_RELEASE f51249c8...,
+#     SHA256SUMS updated, 48120/48121 listening.

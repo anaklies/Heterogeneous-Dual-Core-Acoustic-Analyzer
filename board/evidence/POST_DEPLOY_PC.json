@@ -1,0 +1,46 @@
+{
+  "board": "192.168.77.2:48120",
+  "checkedAt": "2026-10-31T21:15:09+0800",
+  "hello": {
+    "protocol": "sixmic-analysis",
+    "protocolVersion": 1,
+    "sessionId": "sess-109-39",
+    "deviceId": "sixmic-dev-0001",
+    "connectionEpoch": "109"
+  },
+  "featureList": {
+    "version": "echo-features-1",
+    "total": 45,
+    "count": 45,
+    "hasSpatial": [],
+    "first": [
+      "io_pcm",
+      "levels_core",
+      "data_continuity",
+      "fft",
+      "psd"
+    ],
+    "last": [
+      "noise_rating",
+      "room_clarity",
+      "spectral_decay"
+    ]
+  },
+  "controlClaim": {
+    "ok": true,
+    "tokenPresent": true
+  },
+  "spatialStartRejections": {
+    "spatial_interface": {
+      "rejected": true,
+      "code": "unsupported_feature",
+      "message": "unsupported_feature: errors.unsupported_feature {'reason': 'feature_input_state_or_parameter_requirements_not_met'}"
+    },
+    "full_das": {
+      "rejected": true,
+      "code": "unsupported_feature",
+      "message": "unsupported_feature: errors.unsupported_feature {'reason': 'feature_input_state_or_parameter_requirements_not_met'}"
+    }
+  },
+  "pass": true
+}

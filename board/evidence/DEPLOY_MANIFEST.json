@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-31",
+  "package": "deployment/echo_spatial_off_20261031",
+  "purpose": "device-side shutdown of the six spatial interfaces (51 -> 45 features)",
+  "status": "DEPLOYED_AND_VERIFIED",
+  "deployedAt": "2026-10-31T21:13:00+08:00",
+  "deployedBy": "lead (recovery) with board-deploy verification",
+  "target": {
+    "board": "192.168.77.2",
+    "pcHttpRoot": "http://192.168.77.1:48190"
+  },
+  "files": {
+    "registry_update.tar.gz": {
+      "sha256": "c5ff16196ddca0d435954ab890a0a09582cb336c4be0b3741d64a32b825fb603",
+      "bytes": 54189
+    },
+    "image.ub": {
+      "sha256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+      "bytes": 166612952
+    },
+    "echo-gateway": {
+      "sha256": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+      "bytes": 205044
+    },
+    "ECHO_RELEASE.json": {
+      "sha256": "f51249c8b9118139b54210d11f4c0bc1dd691f9280e9bd8f012125492d697066",
+      "bytes": 4686
+    },
+    "deploy_board.sh": {
+      "sha256": "7d6986c697f861535de0bfa890a4785cc272061ba418c10dbebce199c4d9d164"
+    },
+    "rollback_spatial_off.sh": {
+      "sha256": "2b0c337e4e9c69fe9ec162ed63a56ed0c9f17032a2fc4b27537e48c4a782a3e5"
+    }
+  },
+  "boardBefore": {
+    "registrySHA256": "301636354dc1902426fe57e4dbd1a0a95809323d0ad2eff46cd71cad51a5bead",
+    "registryFeatures": 51,
+    "gatewaySHA256": "b982cecea0e9da4bf3a73dc7855d2ba41be7d22322f7a0221d8e0b07ef928920",
+    "imageSHA256": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902"
+  },
+  "boardAfter": {
+    "registrySHA256": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+    "registryFeatures": 45,
+    "gatewaySHA256": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+    "imageSHA256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+    "releaseSHA256": "f51249c8b9118139b54210d11f4c0bc1dd691f9280e9bd8f012125492d697066",
+    "releaseVersion": "20261031-spatial-off-45-features-gatewayfix"
+  },
+  "gatewayFix": {
+    "required": true,
+    "reason": "legacy gateway b982 hard-requires exactly 51 registry features (feature_runtime.c init) and hardcodes feature.list total=51; a 45-feature registry needs the rebuilt GW_FEATURE_COUNT=45 gateway",
+    "newGatewaySHA256": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+    "source": "deployment/echo_interface_guard_20261026/gateway (GW_FEATURE_COUNT=45)",
+    "buildLog": "deployment/echo_interface_guard_20261026/build/arm/echo-gateway",
+    "imageContainsNewGateway": true,
+    "nextBootSafe": true
+  },
+  "boardBackups": [
+    "/opt/echo/registry/INTERFACE_REGISTRY.json.before-spatial-off-20261031",
+    "/opt/echo/bin/echo-gateway.before-spatial-off-20261031",
+    "/mnt/echo-sd/image.ub.before-spatial-off-20261031",
+    "/mnt/echo-sd/ECHO_RELEASE.json.before-spatial-off-20261031",
+    "/mnt/echo-sd/SHA256SUMS.before-spatial-off-20261031",
+    "/opt/echo/bin/echo-gateway.before-gateway-fix-20261031",
+    "/mnt/echo-sd/image.ub.before-gateway-fix-20261031"
+  ],
+  "deployCommand": "wget -q -O /tmp/spatial-off45.sh http://192.168.77.1:48190/deploy_board.sh && sh /tmp/spatial-off45.sh",
+  "rollbackCommand": "wget -q -O /tmp/rollback.sh http://192.168.77.1:48190/rollback_spatial_off.sh && sh /tmp/rollback.sh",
+  "verification": {
+    "finalImage": "FINAL_IMAGE_VERIFY.json",
+    "package": "VERIFY.json",
+    "sdPatch": "SD_PATCH.json",
+    "registryTar": "REGISTRY_TAR.json",
+    "boardReadonlyBefore": "BOARD_READONLY.json",
+    "afterSerial": "board_after_serial.txt",
+    "postDeploy": "POST_DEPLOY.json",
+    "postDeploySerial": "POST_DEPLOY_SERIAL.json",
+    "postDeployPc": "POST_DEPLOY_PC.json",
+    "deployLog": "BOARD_DEPLOY.log",
+    "recoveryLog": "BOARD_RECOVERY.log",
+    "gatewayFixNote": "GATEWAY_FIX_20261031.md",
+    "artifactCheck": "ARTIFACT_CHECK.json",
+    "deploySteps": "DEPLOY_STEPS.md"
+  },
+  "ready": {
+    "prepared": true,
+    "deployed": true
+  }
+}

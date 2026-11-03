@@ -1,0 +1,7 @@
+the_ROM_image:
+{
+ [bootloader] echo_fsbl.elf
+ echo_separate_io.bit
+ [load=0x04000000,startup=0x04000000] vendor_u-boot.bin
+ [load=0x00100000] system.dtb
+}

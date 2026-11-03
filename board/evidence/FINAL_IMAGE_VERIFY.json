@@ -1,0 +1,226 @@
+{
+  "report": "FINAL_IMAGE_VERIFY.json",
+  "status": "PASS",
+  "summary": {
+    "verificationStatus": "PASS",
+    "source": {
+      "sha256": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902",
+      "bytes": 166621340
+    },
+    "final": {
+      "sha256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+      "bytes": 166612952
+    },
+    "changedRamdiskEntries": [
+      "opt/echo/registry/INTERFACE_REGISTRY.json",
+      "opt/echo/bin/echo-gateway"
+    ],
+    "ramdiskEntries": 2840,
+    "unchangedRamdiskEntries": 2838,
+    "registry": {
+      "sha256": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+      "bytes": 450146,
+      "features": 45
+    },
+    "gateway": {
+      "sha256": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+      "bytes": 205044,
+      "previousSHA256": "b982cecea0e9da4bf3a73dc7855d2ba41be7d22322f7a0221d8e0b07ef928920",
+      "changed": true
+    },
+    "kernelAndDTBUnchanged": true,
+    "byteIdenticalOutsidePatch": true,
+    "proof": "Only the ramdisk data (containing the 45-feature registry and the rebuilt 45-feature gateway), its FDT length/padding, the ramdisk sha256 and the three FDT length fields differ; kernel, dtb and all 2838 other ramdisk cpio entries are byte-identical to the original board image.",
+    "verifiedAt": "2026-10-31T21:15:41+0800"
+  },
+  "checks": [
+    {
+      "check": "source.sha256",
+      "pass": true,
+      "detail": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902"
+    },
+    {
+      "check": "final.sha256",
+      "pass": true,
+      "detail": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565"
+    },
+    {
+      "check": "final.bytes",
+      "pass": true,
+      "detail": 166612952
+    },
+    {
+      "check": "registry.sha256",
+      "pass": true
+    },
+    {
+      "check": "gateway.sha256",
+      "pass": true
+    },
+    {
+      "check": "fdt.roundtrip.final",
+      "pass": true
+    },
+    {
+      "check": "fit.images.same",
+      "pass": true
+    },
+    {
+      "check": "kernel.data.unchanged",
+      "pass": true
+    },
+    {
+      "check": "kernel.props.unchanged",
+      "pass": true
+    },
+    {
+      "check": "kernel.hash.unchanged",
+      "pass": true
+    },
+    {
+      "check": "dtb.data.unchanged",
+      "pass": true
+    },
+    {
+      "check": "dtb.props.unchanged",
+      "pass": true
+    },
+    {
+      "check": "dtb.hash.unchanged",
+      "pass": true
+    },
+    {
+      "check": "fit.root.unchanged",
+      "pass": true
+    },
+    {
+      "check": "fit.configs.unchanged",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.entries.count",
+      "pass": true,
+      "detail": {
+        "source": 2840,
+        "final": 2840
+      }
+    },
+    {
+      "check": "ramdisk.entries.order",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.entries.other.bytes.identical",
+      "pass": true,
+      "detail": {
+        "changedEntries": [
+          "opt/echo/registry/INTERFACE_REGISTRY.json",
+          "opt/echo/bin/echo-gateway"
+        ],
+        "unchangedEntries": 2838
+      }
+    },
+    {
+      "check": "ramdisk.registry.data",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.registry.mode",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.registry.only.size.changed",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.gateway.data",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.gateway.mode",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.gateway.fields.identical",
+      "pass": true,
+      "detail": {
+        "oldBytes": 205044,
+        "newBytes": 205044
+      }
+    },
+    {
+      "check": "ramdisk.gateway.old.sha",
+      "pass": true
+    },
+    {
+      "check": "ramdisk.hash.correct",
+      "pass": true
+    },
+    {
+      "check": "registry.feature.count",
+      "pass": true,
+      "detail": 45
+    },
+    {
+      "check": "registry.feature.ids",
+      "pass": true
+    },
+    {
+      "check": "registry.spatial.ids.absent",
+      "pass": true,
+      "detail": [
+        "spatial_interface",
+        "directed_das",
+        "full_das",
+        "band_das",
+        "spatial_grid",
+        "spatial_peaks"
+      ]
+    },
+    {
+      "check": "registry.featureId.lines",
+      "pass": true
+    },
+    {
+      "check": "fdt.header.changed.fields",
+      "pass": true,
+      "detail": [
+        "totalsize",
+        "off_dt_strings",
+        "size_dt_struct"
+      ]
+    },
+    {
+      "check": "fdt.ramdisk.data.offset.identical",
+      "pass": true,
+      "detail": {
+        "source": 4731396,
+        "final": 4731396
+      }
+    },
+    {
+      "check": "fdt.prefix.bytes.identical",
+      "pass": true
+    },
+    {
+      "check": "fdt.tail.length.identical",
+      "pass": true,
+      "detail": {
+        "source": 552,
+        "final": 552
+      }
+    },
+    {
+      "check": "fdt.tail.only.ramdisk.hash.differs",
+      "pass": true,
+      "detail": {
+        "differingBytes": 31,
+        "hashOffset": 116,
+        "hashBytes": 32,
+        "allInsideHash": true,
+        "sourceTailBytes": 552,
+        "finalTailBytes": 552
+      }
+    }
+  ]
+}

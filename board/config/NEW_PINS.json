@@ -1,0 +1,62 @@
+[
+  {
+    "port": "mic_sck_copy[0]",
+    "ball": "U11",
+    "headerPin": 13
+  },
+  {
+    "port": "mic_ws_copy[0]",
+    "ball": "U12",
+    "headerPin": 14
+  },
+  {
+    "port": "mic_sck_copy[1]",
+    "ball": "AB9",
+    "headerPin": 15
+  },
+  {
+    "port": "mic_ws_copy[1]",
+    "ball": "AB10",
+    "headerPin": 16
+  },
+  {
+    "port": "mic_sck_copy[2]",
+    "ball": "AB11",
+    "headerPin": 17
+  },
+  {
+    "port": "mic_ws_copy[2]",
+    "ball": "AA11",
+    "headerPin": 18
+  },
+  {
+    "port": "mic_sck_copy[3]",
+    "ball": "W8",
+    "headerPin": 19
+  },
+  {
+    "port": "mic_ws_copy[3]",
+    "ball": "V8",
+    "headerPin": 20
+  },
+  {
+    "port": "mic_sck_copy[4]",
+    "ball": "W10",
+    "headerPin": 21
+  },
+  {
+    "port": "mic_ws_copy[4]",
+    "ball": "W11",
+    "headerPin": 22
+  },
+  {
+    "port": "imu_scl",
+    "ball": "AB6",
+    "headerPin": 23
+  },
+  {
+    "port": "imu_sda",
+    "ball": "AB7",
+    "headerPin": 24
+  }
+]

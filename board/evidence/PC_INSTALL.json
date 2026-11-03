@@ -1,0 +1,12 @@
+﻿{
+    "targetFileCount":  554,
+    "exeSHA256":  "3c69f106b5ba9db72002070829681c6b6ae79a10b4517658eedd8ad725635cd9",
+    "sourceFileCount":  554,
+    "expectedExeSHA256":  "3c69f106b5ba9db72002070829681c6b6ae79a10b4517658eedd8ad725635cd9",
+    "robocopyExit":  1,
+    "target":  "D:\\echo",
+    "startedProcessId":  20416,
+    "stoppedProcesses":  [
+                             12808
+                         ]
+}

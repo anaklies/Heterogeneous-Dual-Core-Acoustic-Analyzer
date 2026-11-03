@@ -1,0 +1,34 @@
+{
+  "source": "deployment/echo_stipa_8s_progress_20261030/image.ub",
+  "sourceSHA256": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902",
+  "sourceBytes": 166621340,
+  "imageSHA256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+  "bytes": 166612952,
+  "changedRamdiskEntries": [
+    "opt/echo/registry/INTERFACE_REGISTRY.json",
+    "opt/echo/bin/echo-gateway"
+  ],
+  "changedEntryCount": 2,
+  "ramdiskEntries": 2840,
+  "unchangedRamdiskEntries": 2838,
+  "oldRegistrySHA256": "301636354dc1902426fe57e4dbd1a0a95809323d0ad2eff46cd71cad51a5bead",
+  "newRegistrySHA256": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+  "oldGatewaySHA256": "b982cecea0e9da4bf3a73dc7855d2ba41be7d22322f7a0221d8e0b07ef928920",
+  "newGatewaySHA256": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+  "gatewayChanged": true,
+  "kernelSHA256": "91f6859abac029d1a6922996ef6b166cfdc9806a7dac4548d2857d1017701c86",
+  "dtbSHA256": "8395c6e2167ce5c5fef110362c9be4bce24bf931da44b838ebaf2fbb984410f7",
+  "kernelAndDTBUnchanged": true,
+  "otherRamdiskEntriesByteIdentical": true,
+  "byteIdenticalOutsidePatch": true,
+  "bitstreamChanged": false,
+  "bootChanged": false,
+  "intermediateImageSHA256": "00b93b142f81d6db5da50eeb8b35a6e2405cbc82fa1d542ae147d7d64dcfe238",
+  "intermediateImageNote": "first attempt changed only the registry (00b93b14); the old gateway b982 rejected the 45-feature registry, so the final image additionally carries the rebuilt 45-feature gateway",
+  "verification": {
+    "status": "PASS",
+    "report": "FINAL_IMAGE_VERIFY.json",
+    "checks": 35
+  },
+  "proof": "Only the ramdisk data (containing the 45-feature registry and the rebuilt 45-feature gateway), its FDT length/padding, the ramdisk sha256 and the three FDT length fields differ; kernel, dtb and all 2838 other ramdisk cpio entries are byte-identical to the original board image."
+}

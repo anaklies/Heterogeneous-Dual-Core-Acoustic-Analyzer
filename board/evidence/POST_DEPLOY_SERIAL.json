@@ -1,0 +1,535 @@
+{
+  "report": "POST_DEPLOY.json",
+  "host": "192.168.77.2",
+  "port": 48120,
+  "startedAt": "2026-10-31T21:18:14+0800",
+  "probe": "feature.list + feature.start(removed ids) via sixmic-analysis v1",
+  "deployed": true,
+  "hello": {
+    "protocol": "sixmic-analysis",
+    "protocolVersion": 1,
+    "serverVersion": "echo-ps-1.0.0",
+    "deviceId": "sixmic-dev-0001",
+    "connectionEpoch": "109",
+    "sessionId": "sess-109-133",
+    "limits": {
+      "maxLineBytes": 65536,
+      "maxBinaryPayloadBytes": 1048576,
+      "maxPendingJobs": 64,
+      "duplicateCacheSeconds": 120,
+      "maxControlLeaseSeconds": 300
+    },
+    "capabilities": {
+      "device": {
+        "livePcm": false,
+        "liveResults": true,
+        "resultSnapshot": "available",
+        "serviceSnapshots": [
+          "serviceSnapshot"
+        ],
+        "eventCapture": true,
+        "eventDownload": true,
+        "rawRecording": false,
+        "profileUpload": false,
+        "profileActivate": false,
+        "taskControl": false,
+        "sensorSnapshot": true,
+        "deviceLog": true,
+        "configCommit": true,
+        "configVersion": 1177,
+        "protocol3": true,
+        "missing": [
+          "PS gateway not integrated on a real board",
+          "PL raw ring PS consumer/lease and full bandwidth NOT accepted"
+        ]
+      },
+      "gateway": {
+        "featureApi": {
+          "version": 1,
+          "enabled": true,
+          "featureCount": 45,
+          "maxResultWordsPerPage": 4096,
+          "p0TransientFrames": true,
+          "liveFftProtocol": "echo-live-fft-1",
+          "catalogPageSize": 8
+        },
+        "version": "echo-ps-1.0.0",
+        "protocol": "sixmic-analysis",
+        "protocolVersion": 1,
+        "connectionEpoch": "109",
+        "mockFixture": false,
+        "simulated": false,
+        "eventSpoolLimitBytes": "536870912",
+        "eventLoopRecording": true,
+        "eventLoopEvictions": "0",
+        "serviceSnapshotEnabled": true,
+        "fixtureStreams": [],
+        "limits": {
+          "maxLineBytes": 65536,
+          "maxBinaryPayloadBytes": 1048576,
+          "maxPendingJobs": 64,
+          "duplicateCacheSeconds": 120,
+          "maxControlLeaseSeconds": 300
+        }
+      }
+    },
+    "config": {
+      "activeVersion": 1177,
+      "pending": false,
+      "shadowDirty": true
+    },
+    "control": {
+      "held": false
+    }
+  },
+  "featureCount": 45,
+  "featureIds": [
+    "io_pcm",
+    "levels_core",
+    "data_continuity",
+    "fft",
+    "psd",
+    "stft",
+    "spectrum_average",
+    "signal_quality",
+    "levels_extended",
+    "octave",
+    "third_octave",
+    "peak_hold",
+    "smoothing",
+    "frequency_tracking",
+    "frequency_drift",
+    "csd",
+    "coherence_phase",
+    "energy_change",
+    "band_tracking",
+    "centroid",
+    "flatness",
+    "event_trigger",
+    "frequency_time_weighting",
+    "level_statistics",
+    "zoom_fft",
+    "fundamental",
+    "harmonic_ratio",
+    "sidebands",
+    "envelope_hilbert",
+    "envelope_spectrum",
+    "modulation_spectrum",
+    "autocorrelation",
+    "cross_correlation",
+    "gcc_phat",
+    "spectral_flux",
+    "spectrum_freeze",
+    "relative_limit",
+    "cepstrum",
+    "spectral_kurtosis",
+    "room_decay",
+    "relative_insulation",
+    "stipa_experimental",
+    "noise_rating",
+    "room_clarity",
+    "spectral_decay"
+  ],
+  "featureListSha256": "8b853525f68640c6008de61d0453f30ceb3d76f308a0c12dd6d45c382a6dafcc",
+  "removedFeatureProbes": [
+    {
+      "check": "api.feature.start.removed.spatial_interface",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.directed_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.full_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.band_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.spatial_grid",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.spatial_peaks",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    }
+  ],
+  "serial": {
+    "rawText": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\echo_spatial_off_20261031\\board_after_serial.txt",
+    "sha256": {
+      "/opt/echo/registry/INTERFACE_REGISTRY.json": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+      "/opt/echo/bin/echo-gateway": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+      "/mnt/echo-sd/image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565"
+    },
+    "featureKeyLines": 45,
+    "spatialHits": {
+      "spatial_interface": 0,
+      "directed_das": 0,
+      "full_das": 0,
+      "band_das": 0,
+      "spatial_grid": 0,
+      "spatial_peaks": 0
+    },
+    "gatewayPid": 19939,
+    "gatewayLine": "19939 root     82068 S    /opt/echo/bin/echo-gateway --memdev /dev/mem --mmio-",
+    "sums": {
+      "BOOT.BIN": "4b0a6f9597b0fe2df15c5a348ba762c7abe35ebd2ac6b05b5849145764fe41c5",
+      "boot.scr": "4f634b68a02bc1ef8558051ea66cdcf36b77998f63ee3d03e5ead550c97e0d69",
+      "system.dtb": "8395c6e2167ce5c5fef110362c9be4bce24bf931da44b838ebaf2fbb984410f7",
+      "image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+      "ECHO_RELEASE.json": "f51249c8b9118139b54210d11f4c0bc1dd691f9280e9bd8f012125492d697066"
+    },
+    "releaseVersion": "20261031-spatial-off-45-features-gatewayfix"
+  },
+  "checks": [
+    {
+      "check": "api.hello.ok",
+      "pass": true,
+      "detail": {
+        "protocol": "sixmic-analysis",
+        "protocolVersion": 1,
+        "serverVersion": "echo-ps-1.0.0",
+        "deviceId": "sixmic-dev-0001",
+        "connectionEpoch": "109",
+        "sessionId": "sess-109-133",
+        "limits": {
+          "maxLineBytes": 65536,
+          "maxBinaryPayloadBytes": 1048576,
+          "maxPendingJobs": 64,
+          "duplicateCacheSeconds": 120,
+          "maxControlLeaseSeconds": 300
+        },
+        "capabilities": {
+          "device": {
+            "livePcm": false,
+            "liveResults": true,
+            "resultSnapshot": "available",
+            "serviceSnapshots": [
+              "serviceSnapshot"
+            ],
+            "eventCapture": true,
+            "eventDownload": true,
+            "rawRecording": false,
+            "profileUpload": false,
+            "profileActivate": false,
+            "taskControl": false,
+            "sensorSnapshot": true,
+            "deviceLog": true,
+            "configCommit": true,
+            "configVersion": 1177,
+            "protocol3": true,
+            "missing": [
+              "PS gateway not integrated on a real board",
+              "PL raw ring PS consumer/lease and full bandwidth NOT accepted"
+            ]
+          },
+          "gateway": {
+            "featureApi": {
+              "version": 1,
+              "enabled": true,
+              "featureCount": 45,
+              "maxResultWordsPerPage": 4096,
+              "p0TransientFrames": true,
+              "liveFftProtocol": "echo-live-fft-1",
+              "catalogPageSize": 8
+            },
+            "version": "echo-ps-1.0.0",
+            "protocol": "sixmic-analysis",
+            "protocolVersion": 1,
+            "connectionEpoch": "109",
+            "mockFixture": false,
+            "simulated": false,
+            "eventSpoolLimitBytes": "536870912",
+            "eventLoopRecording": true,
+            "eventLoopEvictions": "0",
+            "serviceSnapshotEnabled": true,
+            "fixtureStreams": [],
+            "limits": {
+              "maxLineBytes": 65536,
+              "maxBinaryPayloadBytes": 1048576,
+              "maxPendingJobs": 64,
+              "duplicateCacheSeconds": 120,
+              "maxControlLeaseSeconds": 300
+            }
+          }
+        },
+        "config": {
+          "activeVersion": 1177,
+          "pending": false,
+          "shadowDirty": true
+        },
+        "control": {
+          "held": false
+        }
+      }
+    },
+    {
+      "check": "api.feature.list.page.0",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.list.page.1",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.list.page.2",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.list.page.3",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.list.page.4",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.list.page.5",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "check": "api.feature.count.45",
+      "pass": true,
+      "detail": 45
+    },
+    {
+      "check": "api.feature.ids.canonical45",
+      "pass": true,
+      "detail": [
+        "io_pcm",
+        "levels_core",
+        "data_continuity",
+        "fft",
+        "psd",
+        "stft",
+        "spectrum_average",
+        "signal_quality",
+        "levels_extended",
+        "octave",
+        "third_octave",
+        "peak_hold",
+        "smoothing",
+        "frequency_tracking",
+        "frequency_drift",
+        "csd",
+        "coherence_phase",
+        "energy_change",
+        "band_tracking",
+        "centroid",
+        "flatness",
+        "event_trigger",
+        "frequency_time_weighting",
+        "level_statistics",
+        "zoom_fft",
+        "fundamental",
+        "harmonic_ratio",
+        "sidebands",
+        "envelope_hilbert",
+        "envelope_spectrum",
+        "modulation_spectrum",
+        "autocorrelation",
+        "cross_correlation",
+        "gcc_phat",
+        "spectral_flux",
+        "spectrum_freeze",
+        "relative_limit",
+        "cepstrum",
+        "spectral_kurtosis",
+        "room_decay",
+        "relative_insulation",
+        "stipa_experimental",
+        "noise_rating",
+        "room_clarity",
+        "spectral_decay"
+      ]
+    },
+    {
+      "check": "api.removed.spatial.ids.absent",
+      "pass": true,
+      "detail": [
+        "spatial_interface",
+        "directed_das",
+        "full_das",
+        "band_das",
+        "spatial_grid",
+        "spatial_peaks"
+      ]
+    },
+    {
+      "check": "api.control.claim",
+      "pass": true,
+      "detail": {
+        "status": "ok",
+        "error": null
+      }
+    },
+    {
+      "check": "api.feature.start.removed.spatial_interface",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.directed_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.full_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.band_das",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.spatial_grid",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.feature.start.removed.spatial_peaks",
+      "pass": true,
+      "detail": {
+        "status": "error",
+        "error": "unsupported_feature"
+      }
+    },
+    {
+      "check": "api.removed.six.probes.unsupported_feature",
+      "pass": true
+    },
+    {
+      "check": "board.after.registry.sha256",
+      "pass": true,
+      "detail": {
+        "/opt/echo/registry/INTERFACE_REGISTRY.json": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+        "/opt/echo/bin/echo-gateway": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+        "/mnt/echo-sd/image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565"
+      }
+    },
+    {
+      "check": "board.after.gateway.sha256",
+      "pass": true,
+      "detail": {
+        "/opt/echo/registry/INTERFACE_REGISTRY.json": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+        "/opt/echo/bin/echo-gateway": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+        "/mnt/echo-sd/image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565"
+      }
+    },
+    {
+      "check": "board.after.image.sha256",
+      "pass": true,
+      "detail": {
+        "/opt/echo/registry/INTERFACE_REGISTRY.json": "dcbc393723513773867f6a9d96f396eb22b13386060881fdae06dda4ecb77628",
+        "/opt/echo/bin/echo-gateway": "5d4b0291146f71fd0f5e39ef11d326cb49e723fe6e43763a0fffaa4e370ecc44",
+        "/mnt/echo-sd/image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565"
+      }
+    },
+    {
+      "check": "board.after.feature.key.lines.45",
+      "pass": true,
+      "detail": 45
+    },
+    {
+      "check": "board.after.gateway.restarted",
+      "pass": true,
+      "detail": {
+        "beforePID": 576,
+        "afterPID": 19939
+      }
+    },
+    {
+      "check": "board.after.release.version",
+      "pass": true,
+      "detail": "20261031-spatial-off-45-features-gatewayfix"
+    },
+    {
+      "check": "board.after.spatial.ids.absent",
+      "pass": true,
+      "detail": {
+        "spatial_interface": 0,
+        "directed_das": 0,
+        "full_das": 0,
+        "band_das": 0,
+        "spatial_grid": 0,
+        "spatial_peaks": 0
+      }
+    },
+    {
+      "check": "board.after.sums.image",
+      "pass": true,
+      "detail": {
+        "BOOT.BIN": "4b0a6f9597b0fe2df15c5a348ba762c7abe35ebd2ac6b05b5849145764fe41c5",
+        "boot.scr": "4f634b68a02bc1ef8558051ea66cdcf36b77998f63ee3d03e5ead550c97e0d69",
+        "system.dtb": "8395c6e2167ce5c5fef110362c9be4bce24bf931da44b838ebaf2fbb984410f7",
+        "image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+        "ECHO_RELEASE.json": "f51249c8b9118139b54210d11f4c0bc1dd691f9280e9bd8f012125492d697066"
+      }
+    },
+    {
+      "check": "board.after.sums.release",
+      "pass": true,
+      "detail": {
+        "BOOT.BIN": "4b0a6f9597b0fe2df15c5a348ba762c7abe35ebd2ac6b05b5849145764fe41c5",
+        "boot.scr": "4f634b68a02bc1ef8558051ea66cdcf36b77998f63ee3d03e5ead550c97e0d69",
+        "system.dtb": "8395c6e2167ce5c5fef110362c9be4bce24bf931da44b838ebaf2fbb984410f7",
+        "image.ub": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+        "ECHO_RELEASE.json": "f51249c8b9118139b54210d11f4c0bc1dd691f9280e9bd8f012125492d697066"
+      }
+    }
+  ],
+  "status": "PASS",
+  "passed": 27,
+  "checksTotal": 27,
+  "finishedAt": "2026-10-31T21:18:15+0800"
+}
