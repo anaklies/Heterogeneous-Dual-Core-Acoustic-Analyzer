@@ -10,13 +10,11 @@
 | 看懂作品与设计取舍 | [设计报告](report/ECHO_设计报告.md)，同目录提供DOCX |
 | 按顺序复现 | [完整复现说明](build/REPRODUCE.md) |
 | 核对45项功能 | [功能与证据清单](report/45项功能与证据.csv) |
-| 检查文件未损坏 | `python -X utf8 build/check_package.py` |
 | 不接板查看输入与参考 | [软件数据说明](data/software_measurements/数据说明.md) |
 | 查看目标板优化前后对比 | `build/vivado_evidence/performance/` 与 `sim/inherited_results/performance_resource_comprehensive_20261025/` |
-| 恢复上板运行 | [板卡运行与回退](board/README.md) |
 | 复用研发方法 | [技能包](skill/README.md) |
 | 查看设计协作与纠错 | [协作记录](report/大模型协作记录.md) |
-| 按赛事条款检查 | [提交要求对照](report/提交要求对照.md) |
+
 
 ## 目录
 
