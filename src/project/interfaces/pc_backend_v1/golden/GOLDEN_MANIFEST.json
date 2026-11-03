@@ -1,0 +1,113 @@
+{
+  "_meta": {
+    "bigSampleIndex": "9007199254740993",
+    "frozenAt": "2026-10-24",
+    "generator": "generate_golden.py",
+    "note": "All binary frames are little-endian. CRC32 is IEEE reflected.",
+    "protocol": "sixmic-analysis",
+    "protocolVersion": 1,
+    "sampleRateExactHz": 48009.775390625,
+    "sampleRateFloat32Bits": "0x473b89c6",
+    "sampleRateHz": 48009.7734375
+  },
+  "binary/bye_backpressure.bin": {
+    "bytes": 89,
+    "path": "binary/bye_backpressure.bin",
+    "sha256": "7e486fdca2c7391326be6425963a0ddcaad1a2ffdb36e6903da379493776a195"
+  },
+  "binary/error_fatal.bin": {
+    "bytes": 149,
+    "path": "binary/error_fatal.bin",
+    "sha256": "eb21267c804ea7e8449447fc9ba2af51326c4917cd5c88c228ef12a4cee02a94"
+  },
+  "binary/event_chunk_first.bin": {
+    "bytes": 128,
+    "path": "binary/event_chunk_first.bin",
+    "sha256": "8f72ea13b660e7a5dc5c053f4194e2e62e1a426b8d228c45379a6c1e7c2b7dfd"
+  },
+  "binary/event_chunk_last.bin": {
+    "bytes": 128,
+    "path": "binary/event_chunk_last.bin",
+    "sha256": "c2570b4d46e5b899ce1241b379d7d0c347eb3aa1bb8b2862006322667b633846"
+  },
+  "binary/heartbeat.bin": {
+    "bytes": 64,
+    "path": "binary/heartbeat.bin",
+    "sha256": "4feaf6c418d202c7b6117fca340732d5c52aabe5aa73f5a5d77bc3a743aeb26d"
+  },
+  "binary/hello_ack_frame.bin": {
+    "bytes": 227,
+    "path": "binary/hello_ack_frame.bin",
+    "sha256": "5926e73bf543136ecaea61d2e9e93e05d5af43ea4ee5f2a4ef403587bc92f5f4"
+  },
+  "binary/hello_frame.bin": {
+    "bytes": 197,
+    "path": "binary/hello_frame.bin",
+    "sha256": "f2624dcf323b51b4b57ba3cf2339eb9db3355ff1174abd18574e71b22a92338d"
+  },
+  "binary/pcm_record32_corner.bin": {
+    "bytes": 160,
+    "path": "binary/pcm_record32_corner.bin",
+    "sha256": "d403ea482ca2f81995fcaca74923f780aeef91f564d4044c2e28268b7c4b9998"
+  },
+  "binary/result_words32.bin": {
+    "bytes": 192,
+    "path": "binary/result_words32.bin",
+    "sha256": "ecb478c6c5de7758473c8e9c4314783e7efe88746632b2c965f79585ec9b00d4"
+  },
+  "binary/service_snapshot.bin": {
+    "bytes": 140,
+    "path": "binary/service_snapshot.bin",
+    "sha256": "00d1e604c311e833ccfe10e5a6e6263cf3c905666ee077f2c3498f1b37b9ad45"
+  },
+  "binary/stream_gap.bin": {
+    "bytes": 259,
+    "path": "binary/stream_gap.bin",
+    "sha256": "b8d0c3f125ce76c3a8bb12944696dcc07e2b73e397727364cbf389c65540b1bb"
+  },
+  "binary/stream_schema_pcm.bin": {
+    "bytes": 883,
+    "path": "binary/stream_schema_pcm.bin",
+    "sha256": "db42a67c5f7b1d6d8cc7976d8e9013542c1c30701839562ef93f22968ddad28d"
+  },
+  "control/config_read_response.jsonl": {
+    "bytes": 459,
+    "path": "control/config_read_response.jsonl",
+    "sha256": "0c12ac11a0f0e30d73a3aeef236030428024d9471194384aefa5b6d29f6bec42"
+  },
+  "control/error_not_ready.jsonl": {
+    "bytes": 269,
+    "path": "control/error_not_ready.jsonl",
+    "sha256": "77c22b4bd88600b945d27ca0dae13480a3f309ac9f293abba84c45eaa96fd7de"
+  },
+  "control/hello_request.jsonl": {
+    "bytes": 192,
+    "path": "control/hello_request.jsonl",
+    "sha256": "2fef20e3fff0d7b1cc13ac60de6800ce79c0b5d9dd736fdbab70c292c588b1d2"
+  },
+  "control/hello_response.jsonl": {
+    "bytes": 1002,
+    "path": "control/hello_response.jsonl",
+    "sha256": "b467ab1d2a387f09edb8f84b828a87b4a912745288a4476d7a960db1c11bbd15"
+  },
+  "control/job_accepted_response.jsonl": {
+    "bytes": 143,
+    "path": "control/job_accepted_response.jsonl",
+    "sha256": "d478aab06358f7eb726cf9888f5548734184910cf84f84fd6fcc7ca06f7a3ddc"
+  },
+  "control/job_updated_event.jsonl": {
+    "bytes": 421,
+    "path": "control/job_updated_event.jsonl",
+    "sha256": "be6cf5c74bce085c330bccd66320571c7b0d0ac8de15e14f43cf193f70a2ce96"
+  },
+  "control/status_get_request.jsonl": {
+    "bytes": 124,
+    "path": "control/status_get_request.jsonl",
+    "sha256": "2416f55df4eaa1d93873f46fc993790313c24bc267cb5141494a20cc29d3cb16"
+  },
+  "event/event_file_sample.smc": {
+    "bytes": 128,
+    "path": "event/event_file_sample.smc",
+    "sha256": "2a8baafc37d0bae0f93ae82957dfa6a405d70f25bea408bfa0360d86cacad11d"
+  }
+}

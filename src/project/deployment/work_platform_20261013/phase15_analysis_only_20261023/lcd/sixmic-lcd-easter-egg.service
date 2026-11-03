@@ -1,0 +1,28 @@
+[Unit]
+Description=Optional SixMic LCD animation
+After=local-fs.target
+ConditionPathExists=/usr/share/sixmic/easter-egg.lcd
+StartLimitIntervalSec=60
+StartLimitBurst=2
+
+[Service]
+Type=simple
+Environment=LD_LIBRARY_PATH=/opt/sixmic/lib
+Environment=LANG=C.UTF-8
+ExecStart=/usr/bin/sixmic-lcd-player --asset /usr/share/sixmic/easter-egg.lcd
+Restart=on-failure
+RestartSec=10
+Nice=10
+RuntimeDirectory=sixmic
+RuntimeDirectoryMode=0755
+RuntimeDirectoryPreserve=yes
+SuccessExitStatus=78
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/run/sixmic
+TimeoutStopSec=3
+
+[Install]
+WantedBy=multi-user.target

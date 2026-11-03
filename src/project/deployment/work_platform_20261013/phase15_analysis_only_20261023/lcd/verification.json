@@ -1,0 +1,13 @@
+{
+  "conversion_checks": "PASS",
+  "arm_cross_compile": "PASS",
+  "qemu_arm_loader": "PASS",
+  "negative_loader_cases": 4,
+  "frames": 42,
+  "cycle_ms": 4200,
+  "frame_bytes": 110080,
+  "pixel_stream_sha256": "f3ac316ec22a7d3d76eba2153eaea5d7fa0cb268bb1886c8a2621377e5dbf9f9",
+  "physical_board_test": false,
+  "lcd_transport_test": false,
+  "vivado_run": false
+}

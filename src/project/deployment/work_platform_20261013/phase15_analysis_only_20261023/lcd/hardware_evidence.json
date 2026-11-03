@@ -1,0 +1,39 @@
+{
+  "schematic": "C:\\Users\\sunxi\\Desktop\\2_硬件资料\\1_hardware\\ZYNQ7020-F V1.0原理图.pdf",
+  "sha256": "4eb0238f494ea571c1c59d04298af44b16cbb34ac7e99d6ff5548df48e741fc5",
+  "pin_evidence": {
+    "LCD_CS": {
+      "ball": "AA13",
+      "page": 5,
+      "pdf_text": "PIU20AA13 \nNLLCD0CS"
+    },
+    "LCD_DC": {
+      "ball": "W13",
+      "page": 5,
+      "pdf_text": "PIU20W13 \nNLLCD0DC"
+    },
+    "LCD_LED": {
+      "ball": "Y13",
+      "page": 5,
+      "pdf_text": "PIU20Y13 \nNLLCD0LED"
+    },
+    "LCD_RST": {
+      "ball": "AA18",
+      "page": 5,
+      "pdf_text": "PIU20AA18 \nNLLCD0RST"
+    },
+    "LCD_SCL": {
+      "ball": "V18",
+      "page": 5,
+      "pdf_text": "PIU20V18 \nNLLCD0SCL"
+    },
+    "LCD_SDA": {
+      "ball": "U19",
+      "page": 5,
+      "pdf_text": "PIU20U19 \nNLLCD0SDA"
+    }
+  },
+  "panel_page": 12,
+  "panel_excerpt": "1.47寸 IPS 172*320\nLCD1\nLCD\nC248\n100nF/25V\nC247\n100nF/25V\nVCC_3V3\n2\n1\n3\nQ3\nAO3400A\nR150\n33R",
+  "controller_part_number_confirmed": false
+}

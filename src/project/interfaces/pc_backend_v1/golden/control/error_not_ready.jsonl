@@ -1,0 +1,1 @@
+{"type":"response","protocol":"sixmic-analysis","version":1,"requestId":"golden-0002","status":"error","error":{"code":"not_ready","messageKey":"errors.not_ready","retryable":false,"detail":{"feature":"livePcm","missing":"PL raw ring PS consumer/lease not accepted"}}}
