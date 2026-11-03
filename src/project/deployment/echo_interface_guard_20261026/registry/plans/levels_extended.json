@@ -1,0 +1,1 @@
+{"kind":"p0_builtin","producer":"integration/shared_backend/stream_fft.cpp","channelStrideWords":8192,"fields":{"peak_to_peak_FS":7173,"mean_FS":7174},"privatePatchRequired":false,"validity":"rms_dBFS is encoded0 for silence in current producer; nonzero_energy_valid=0 suppresses interpretation","acquisitionRequired":true}

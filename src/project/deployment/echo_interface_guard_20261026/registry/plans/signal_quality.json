@@ -1,0 +1,1 @@
+{"kind":"p0_builtin","producer":"integration/instrument_top.sv","channelStrideWords":8192,"fields":{},"privatePatchRequired":false,"validity":"P0 status/frame/source validity required; fresh sequence and matching capture identity","acquisitionRequired":true}
