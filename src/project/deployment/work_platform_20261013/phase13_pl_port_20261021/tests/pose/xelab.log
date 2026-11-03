@@ -1,0 +1,15 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_pose -s pose_check 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.s7_imu_rotation_q16
+Compiling module work.direction_pose_transform_default
+Compiling module work.tb_pose
+Built simulation snapshot pose_check

@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 07:40:02 2026
+# Process ID         : 15856
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board
+# Command line       : vivado.exe -mode batch -source refine_existing_clone.tcl -log validate_explicit_cdc.log -journal validate_explicit_cdc.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/validate_explicit_cdc.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board\validate_explicit_cdc.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 20449 MB
+#-----------------------------------------------------------
+source refine_existing_clone.tcl
+# set here [file dirname [file normalize [info script]]]
+# set f [open $here/build_location.txt r]
+# set out [string trim [read $f]]
+# close $f
+# open_project $out/project/acoustic_board.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/project'
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/project/acoustic_board.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 589.938 ; gain = 258.594
+# set bd [get_files $out/assets/vendor_bd/design_1.bd]
+# open_bd_design C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd
+Reading block design file <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_btn
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100m
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_150m
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_zero
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_gpio_zero
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_acoustic
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - acoustic_reset
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - acoustic_smartconnect
+Successfully read diagram <design_1> from block design file <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd>
+# foreach pin {acoustic_smartconnect/aclk acoustic_smartconnect/aclk1 acoustic_smartconnect/aresetn} {
+#     set p [get_bd_pins -quiet $pin]
+#     if {[llength $p]} {disconnect_bd_net [get_bd_nets -of_objects $p] $p}
+# }
+# set n [get_bd_intf_nets -of_objects [get_bd_intf_ports S_AXI_ACOUSTIC]]
+# delete_bd_objs $n
+# set_property CONFIG.NUM_CLKS 1 [get_bd_cells acoustic_smartconnect]
+# set_property CONFIG.ID_WIDTH 1 [get_bd_intf_ports S_AXI_ACOUSTIC]
+# set_property CONFIG.CLK_DOMAIN design_1_clk_wiz_acoustic_0_clk_out1 [get_bd_ports acoustic_clk_75]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter CLK_DOMAIN on /acoustic_clk_75. It is read-only.
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 acoustic_clock_crossing
+# set_property -dict [list CONFIG.PROTOCOL {AXI4} CONFIG.ADDR_WIDTH {32} CONFIG.DATA_WIDTH {32} \
+#     CONFIG.ID_WIDTH {1} CONFIG.ACLK_ASYNC {1} CONFIG.SYNCHRONIZATION_STAGES {3}] [get_bd_cells acoustic_clock_crossing]
+# connect_bd_intf_net [get_bd_intf_ports S_AXI_ACOUSTIC] [get_bd_intf_pins acoustic_clock_crossing/S_AXI]
+# connect_bd_intf_net [get_bd_intf_pins acoustic_clock_crossing/M_AXI] [get_bd_intf_pins acoustic_smartconnect/S00_AXI]
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/clk_out1] [get_bd_pins acoustic_clock_crossing/s_axi_aclk]
+# connect_bd_net [get_bd_pins acoustic_reset/peripheral_aresetn] [get_bd_pins acoustic_clock_crossing/s_axi_aresetn]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins acoustic_smartconnect/aclk] [get_bd_pins acoustic_clock_crossing/m_axi_aclk]
+# connect_bd_net [get_bd_pins proc_sys_reset_100m/peripheral_aresetn] [get_bd_pins acoustic_smartconnect/aresetn] [get_bd_pins acoustic_clock_crossing/m_axi_aresetn]
+# validate_bd_design
+WARNING: [BD 41-3281] Instance '/processing_system7_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+WARNING: [SMARTCONNECT-2] Port S00_AXI of /acoustic_smartconnect is connected to an infrastructure IP (/acoustic_clock_crossing).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /acoustic_clock_crossing.
+clk_domain: design_1_processing_system7_0_0_FCLK_CLK0, clk_domain_1: design_1_processing_system7_0_0_FCLK_CLK0, clkDomainValSrc_1: PROPAGATED, clk_domain_ctrl: 0
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/acoustic_smartconnect/S00_AXI' to master interface '/acoustic_smartconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_acoustic_smartconnect_0: SmartConnect design_1_acoustic_smartconnect_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_acoustic clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 775.965 ; gain = 95.754
+# if {[get_property CONFIG.C_EXT_RESET_HIGH [get_bd_cells acoustic_reset]] != 0} {error "Acoustic reset polarity is not active-low"}
+# save_bd_design
+Wrote  : <C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase14_room_and_pl_20261021\pl_system\board\cache\board_1792625815\assets\vendor_bd\design_1.bd> 
+# write_bd_tcl -force $here/generated_board_bd.tcl
+WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
+/axi_dynclk_0, /rgb2dvi_0
+Please add the following user repository(s):
+c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip
+before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/generated_board_bd.tcl>.
+
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/synth/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/hdl/design_1_wrapper.v
+# set wrappers [make_wrapper -files $bd -top]
+# add_files -norecurse $wrappers
+WARNING: [filemgmt 56-12] File 'c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/hdl/design_1_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+# update_compile_order -fileset sources_1
+# set f [open $here/validated_properties.txt w]
+# foreach {name object property} {
+#     RESET_INPUT_ACTIVE_HIGH acoustic_reset CONFIG.C_EXT_RESET_HIGH
+#     CDC_ASYNC acoustic_clock_crossing CONFIG.ACLK_ASYNC
+#     CDC_STAGES acoustic_clock_crossing CONFIG.SYNCHRONIZATION_STAGES
+#     SMARTCONNECT_CLOCKS acoustic_smartconnect CONFIG.NUM_CLKS
+#     HP1_ENABLED processing_system7_0 CONFIG.PCW_USE_S_AXI_HP1
+# } {puts $f "$name [get_property $property [get_bd_cells $object]]"}
+# puts $f "CORE_CLOCK_HZ [get_property CONFIG.FREQ_HZ [get_bd_ports acoustic_clk_75]]"
+# puts $f "CORE_CLOCK_DOMAIN [get_property CONFIG.CLK_DOMAIN [get_bd_ports acoustic_clk_75]]"
+# puts $f "CORE_CLKOUT_ACTUAL [get_property CONFIG.CLKOUT1_REQUESTED_OUT_FREQ [get_bd_cells clk_wiz_acoustic]]"
+# close $f
+# puts ACOUSTIC_EXPLICIT_CDC_BD_VALIDATED_ONLY
+ACOUSTIC_EXPLICIT_CDC_BD_VALIDATED_ONLY
+# close_project
+# exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:40:40 2026...

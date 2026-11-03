@@ -1,0 +1,53 @@
+﻿id,name,tier,softwareSourceLocated,softwareReference,hardwareState,provider,completeFunctionHardwareAccepted,wholeBoardAccepted,missing
+io_pcm,六通道WAV/PCM,P0,True,sixmic_dsp.io,PARTIAL_RTL,pcm_axi_ring_writer + guard,False,False,I2S跨域、不可变窗口及全局槽池未连接
+levels_core,RMS/Peak/dBFS/波峰因数/削顶,P0,True,sixmic_dsp.spectral.levels,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 1,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+data_continuity,采样连续性与异常输入,P0,True,sixmic_dsp.AnalysisEngine,PARTIAL_RTL,pcm_axi_ring_writer + guard,False,False,I2S跨域、不可变窗口及全局槽池未连接
+fft,FFT幅度谱,P0,True,sixmic_dsp.spectral.frame_fft,PARTIAL_FFT_CONTRACT,frontend1536 selected63bins,False,False,常规2048FFT及完整谱输出未接入；不能用1536代替2048
+psd,Welch PSD,P0,True,sixmic_dsp.AnalysisEngine,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 2,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+stft,STFT与瀑布数据,P0,True,sixmic_dsp.AnalysisEngine,PARTIAL_FFT_CONTRACT,frontend1536 selected63bins,False,False,常规2048FFT及完整谱输出未接入；不能用1536代替2048
+spectrum_average,谱功率平均,P0,True,sixmic_dsp.AnalysisEngine,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 12,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+spatial_interface,二维/三维共用数据,P0,True,interfaces11.py,PARTIAL_PROTOCOL,analysis_axi_control + KERNEL_PORTS,False,False,有效结果包与实际DOA、姿态的物理连接未闭合
+srpdnn_main,单主方向SRP-DNN,P0,True,C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase12j_daily_srp_dnn_20261020\model_j.py,HLS_IP_CONNECTED,frontend + nn_window + doa_first_shared,False,False,物理采集、质量守卫、调度及整机10Hz未闭合
+signal_quality,输入与方向有效性/新鲜度,P0,True,quality_m.py + scheduler_m.py,PARTIAL_RTL,mic_health,False,False,窄带与稀疏频点覆盖率质量策略尚未完整移植
+levels_extended,Peak-to-Peak及扩展电平,P1,True,sixmic_analysis.spectral.extended_levels,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 1,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+octave,1/1倍频程,P1,True,sixmic_dsp.spectral.octave_bands,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 8,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+third_octave,1/3倍频程,P1,True,sixmic_dsp.spectral.octave_bands,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 8,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+peak_hold,谱峰值保持,P1,True,sixmic_dsp.AnalysisEngine,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+smoothing,谱平滑,P1,True,sixmic_analysis.spectral.smooth_power,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 4,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+frequency_tracking,主峰频率跟随,P1,True,sixmic_analysis.spectral.track_frequency,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 3,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+frequency_drift,频率漂移,P1,True,sixmic_analysis.spectral.track_frequency,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+directed_das,指定方向频谱,P1,True,sixmic_dsp.spatial.das_psd,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 10,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+csd,CSD/CSM,P1,True,sixmic_dsp.AnalysisEngine,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 5,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+coherence_phase,相干性与相位差,P1,True,sixmic_dsp.AnalysisEngine,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 5,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+energy_change,短时能量变化,P1,True,sixmic_analysis.events.temporal_features,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 6,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+band_tracking,频带能量跟踪,P1,True,sixmic_analysis.events.temporal_features,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 8,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+centroid,谱质心,P1,True,sixmic_analysis.spectral.spectral_descriptors,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 3,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+flatness,谱平坦度,P1,True,sixmic_analysis.spectral.spectral_descriptors,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 3,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+event_trigger,声音变化事件服务,P1,True,deployment\work_platform_20261013\phase12n_event_capture_20261021\event_engine.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+frequency_time_weighting,A/C/Z与FAST/SLOW,P1,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\noise_metrics.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+level_statistics,LeqFS及L10/L50/L90,P1,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\noise_metrics.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+zoom_fft,Zoom FFT,P2,True,sixmic_analysis.spectral.zoom_spectrum,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+fundamental,基频/周期估计,P2,True,sixmic_analysis.periodic.fundamental,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+harmonic_ratio,谐波与有限带宽THD,P2,True,sixmic_analysis.periodic.harmonic_analysis,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+sidebands,指定载频边带,P2,True,sixmic_analysis.periodic.sidebands,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+envelope_hilbert,Hilbert包络,P2,True,sixmic_analysis.periodic.envelope,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 13,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+envelope_spectrum,包络谱,P2,True,sixmic_analysis.periodic.envelope_spectrum,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 13,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+modulation_spectrum,调制谱,P2,True,sixmic_analysis.periodic.envelope_spectrum,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 13,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+autocorrelation,自相关,P2,True,sixmic_analysis.periodic.autocorrelation,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 9,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+full_das,全空间DAS功率图,P2,True,sixmic_analysis.spatial.das_scan,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 10,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+band_das,带限DAS空间图,P2,True,sixmic_analysis.spatial.das_scan,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 10,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+cross_correlation,互相关,P2,True,sixmic_analysis.delay.channel_delay,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+gcc_phat,GCC-PHAT时延观察,P2,True,sixmic_analysis.delay.channel_delay,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+spectral_flux,谱结构变化,P2,True,sixmic_analysis.events.temporal_features,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 6,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+spectrum_freeze,频谱冻结和A/B,P2,True,sixmic_analysis.events.SpectrumFreeze,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 11,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+relative_limit,相对限值检测,P2,True,sixmic_analysis.events.SpectrumFreeze,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 11,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+cepstrum,实倒谱,P2,True,sixmic_analysis.spectral.cepstrum,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+spectral_kurtosis,谱峭度有限原型,P2,True,sixmic_analysis.spectral.spectral_kurtosis,HARDWARE_PRIMITIVE_ONLY,analysis_dma_safe operations 7,False,False,已有数学原语；完整帧组织、状态、依赖或上层功能仍需连接验收
+spatial_grid,球面网格,P2,True,sixmic_analysis.spatial.sphere_grid,STATIC_REFERENCE_DATA,decoder GRID_ROM614,False,False,静态数据存在；不代表全空间DAS功率图已运行
+spatial_peaks,空间图局部峰辅助,P2,True,sixmic_analysis.spatial.spatial_peaks,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+room_decay,EDT/T20/T30,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\room_ir.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+relative_insulation,相对隔声,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\noise_metrics.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+stipa_experimental,实验STIPA,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\stipa_experimental.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+noise_rating,NC/NR估计,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\noise_metrics.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+room_clarity,C50/C80/D50,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\room_ir.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链
+spectral_decay,分频衰减数据,P2,True,deployment\work_platform_20261013\phase14_room_and_pl_20261021\algorithms\room_ir.py,SOFTWARE_REFERENCE_ONLY,,False,False,需要实际HLS/RTL实现或对应处理链

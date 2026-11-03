@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/pose/s7_imu_rotation_q16.sv" into library work
+INFO: [VRFC 10-311] analyzing module s7_imu_rotation_q16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/pose/direction_pose_transform.sv" into library work
+INFO: [VRFC 10-311] analyzing module direction_pose_transform
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/pose/tb_pose.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pose

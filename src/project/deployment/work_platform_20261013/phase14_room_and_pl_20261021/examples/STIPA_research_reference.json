@@ -1,0 +1,48 @@
+{
+  "profile": "research_STIPA14_reference",
+  "sampleRate": 48000,
+  "seconds": 20,
+  "seed": 14211021,
+  "centersHz": [
+    125.0,
+    250.0,
+    500.0,
+    1000.0,
+    2000.0,
+    4000.0,
+    8000.0
+  ],
+  "modulationHz": [
+    [
+      1.6,
+      8.0
+    ],
+    [
+      1.0,
+      5.0
+    ],
+    [
+      0.63,
+      3.15
+    ],
+    [
+      2.0,
+      10.0
+    ],
+    [
+      1.25,
+      6.25
+    ],
+    [
+      0.8,
+      4.0
+    ],
+    [
+      2.5,
+      12.5
+    ]
+  ],
+  "referenceRequired": true,
+  "calibratedPlayback": false,
+  "standardTestSignalCertified": false
+}

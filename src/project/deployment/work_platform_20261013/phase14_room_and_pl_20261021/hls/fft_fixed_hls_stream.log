@@ -1,0 +1,563 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 07:45:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fft1536_fixed_vendor' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20.341ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(7)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20.341ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(8)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.213 seconds; current allocated memory: 164.340 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' ... 
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1563:25)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:2)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:12)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp
+
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+
+WARNING: [HLS 207-6591] unused parameter 'data_type' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:195:72)
+
+WARNING: [HLS 207-6591] unused parameter 'cp_len_enable' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:219:61)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:232:63)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:409:66)
+
+WARNING: [HLS 207-6591] unused parameter 'has_ovflo' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:422:61)
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.25 seconds; current allocated memory: 171.684 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 1,792 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 732 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 536 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 501 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 422 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 418 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 418 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 420 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 420 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 422 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 418 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 416 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 415 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 415 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 428 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 466 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/report/csynth_design_size.rpt:2)
+
+WARNING: [HLS 214-273] In function 'hls::ip_fft::config_t<fixed_fft512_params>::setDir(bool, unsigned int)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:309:24) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:22:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:310:0)
+
+WARNING: [HLS 214-273] In function 'ssdm_int<8, false>::ssdm_int(unsigned char)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:39) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:22:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:0)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::getDir(unsigned int)' into 'void hls::fft_syn<fixed_fft512_params>(std::complex<ap_fixed<(((fixed_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((fixed_fft512_params::output_width) + (7)) / (8)) * (8), (((((fixed_fft512_params::output_width) + (7)) / (8)) * (8)) - (fixed_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<fixed_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<fixed_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1223:31)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::getSch(unsigned int)' into 'void hls::fft_syn<fixed_fft512_params>(std::complex<ap_fixed<(((fixed_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((fixed_fft512_params::output_width) + (7)) / (8)) * (8), (((((fixed_fft512_params::output_width) + (7)) / (8)) * (8)) - (fixed_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<fixed_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<fixed_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1212:36)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::setDir(bool, unsigned int)' into 'fft_fixed512(std::complex<ap_fixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:25:9)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'in' with compact=bit mode in 48-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:36:23)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'out' with compact=bit mode in 80-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:36:50)
+
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::complex(float, float)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:50:27)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float)' into 'fft1536_fixed_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float) (.35)' into 'fft1536_fixed_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const' into 'fft1536_fixed_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const' into 'fft1536_fixed_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:29:0)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_53_4'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:53:22)
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in_r'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out_r'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+INFO: [HLS 214-115] Multiple burst writes of length 1538 and bit width 32 in loop 'VITIS_LOOP_53_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:53:22) has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:53:22)
+
+WARNING: [HLS 214-375] Impl=vivado_fft in __fpga_ip is deprecated. Consider using a different IP implementation. (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1180:2)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.597 seconds; current allocated memory: 173.480 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 173.480 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 179.957 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+WARNING: [SYNCHK 200-23] ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:42: variable-indexed range selection may cause suboptimal QoR.
+
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 183.004 MB.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'hls::fft<fixed_fft512_params>' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1561:26), detected/extracted 3 process function(s): 
+
+	 'hls::fft<fixed_fft512_params>_Block_newFuncRoot_proc'
+
+	 'hls::fft_syn<fixed_fft512_params>'
+
+	 'hls::fft<fixed_fft512_params>_Block_newFuncRoot_proc.1'.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'fft_fixed512' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:21:1), detected/extracted 1 process function(s): 
+
+	 'hls::fft<fixed_fft512_params>'.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:40:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:39:26) in function 'fft1536_fixed_vendor'... converting 29 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:47:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:46:26) in function 'fft1536_fixed_vendor'... converting 19 basic blocks.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.388 seconds; current allocated memory: 207.410 MB.
+
+WARNING: [HLS 200-765] Process fft_syn<fixed_fft512_params> is made part of the output synchronization in its dataflow region, because it has an external FIFO output and no PIPO output
+
+Resolution: For help on HLS 200-765 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-765.html
+
+WARNING: [HLS 200-1450] Process fft_syn<fixed_fft512_params> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+
+Resolution: For help on HLS 200-1450 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process fft_syn<fixed_fft512_params> has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.495 seconds; current allocated memory: 253.602 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'fft1536_fixed_vendor' ...
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<fixed_fft512_params>_Block_newFuncRoot_proc' to 'fft_fixed_fft512_params_Block_newFuncRoot_proc'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft_syn<fixed_fft512_params>' to 'fft_syn_fixed_fft512_params_s'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<fixed_fft512_params>_Block_newFuncRoot_proc.1' to 'fft_fixed_fft512_params_Block_newFuncRoot_proc_1'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<fixed_fft512_params>' to 'fft_fixed_fft512_params_s'.
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_39_2' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_2'.
+
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 20, loop 'VITIS_LOOP_39_2'
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.2 seconds; current allocated memory: 257.590 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 258.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_fixed_fft512_params_Block_newFuncRoot_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 259.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 259.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_syn_fixed_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Skip scheduling the IP block.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 259.121 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 259.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_fixed_fft512_params_Block_newFuncRoot_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 259.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 259.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_fixed_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO status_data_V (from fft_syn_fixed_fft512_params_U0 to fft_fixed_fft512_params_Block_newFuncRoot_proc_1_U0) to 6 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 259.191 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 259.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_fixed512' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.298 seconds; current allocated memory: 259.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 259.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_46_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_46_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_46_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 260.285 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 260.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft1536_fixed_vendor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 261.336 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.142 seconds; current allocated memory: 261.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_39_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_39_2' pipeline 'VITIS_LOOP_39_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_39_2'.
+INFO: [RTMG 210-279] Implementing memory 'fft1536_fixed_vendor_fft1536_fixed_vendor_Pipeline_VITIS_LOOP_39_2_FFT1536_HANN_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.444 seconds; current allocated memory: 266.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_fixed_fft512_params_Block_newFuncRoot_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_fixed_fft512_params_Block_newFuncRoot_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.486 seconds; current allocated memory: 270.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_syn_fixed_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_syn_fixed_fft512_params_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 270.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_fixed_fft512_params_Block_newFuncRoot_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_fixed_fft512_params_Block_newFuncRoot_proc_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.519 seconds; current allocated memory: 270.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_fixed_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_fixed_fft512_params_s'.
+INFO: [RTMG 210-285] Implementing FIFO 'config_ch_data_V_U(fft1536_fixed_vendor_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'status_data_V_U(fft1536_fixed_vendor_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_fft_syn_fixed_fft512_params_U0_U(fft1536_fixed_vendor_start_for_fft_syn_fixed_fft512_params_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_fft_fixed_fft512_params_Block_newFuncRoot_proc_1_U0_U(fft1536_fixed_vendor_start_for_fft_fixed_fft512_params_Block_newFuncRoot_proc_1_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.298 seconds; current allocated memory: 270.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_fixed512' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_fixed512'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.355 seconds; current allocated memory: 271.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_46_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_46_3' pipeline 'VITIS_LOOP_46_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_40ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_40_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_fixed_vendor_Pipeline_VITIS_LOOP_46_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.394 seconds; current allocated memory: 271.766 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_fixed_vendor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft1536_fixed_vendor/audio' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft1536_fixed_vendor/results' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft1536_fixed_vendor/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fft1536_fixed_vendor/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'fft1536_fixed_vendor' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_fixed_vendor'.
+INFO: [RTMG 210-279] Implementing memory 'fft1536_fixed_vendor_FFT1536_COS_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'fft1536_fixed_vendor_FFT1536_SIN_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fft1536_fixed_vendor_bank_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'in_U(fft1536_fixed_vendor_fifo_w48_d512_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_U(fft1536_fixed_vendor_fifo_w80_d512_A)' using Vivado Default RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.502 seconds; current allocated memory: 276.758 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.394 seconds; current allocated memory: 282.242 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.075 seconds; current allocated memory: 290.621 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fft1536_fixed_vendor.
+INFO: [VLOG 209-307] Generating Verilog RTL for fft1536_fixed_vendor.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 67.34 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Thu Oct 22 07:46:24 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/misc
+
+INFO: Copied 37 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/verilog
+
+INFO: Copied 31 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/vhdl
+
+INFO: Copied 10 swdriver file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/drivers
+
+Generating 6 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/subcore_prj:
+
+impl/misc/fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip.tcl
+
+impl/misc/fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+impl/misc/fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip.tcl
+
+impl/misc/fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/subcore_prj'
+
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 553.020 ; gain = 221.012
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/verilog
+
+INFO: Generating fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip via file impl/misc/fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'ovflo' from 'false' to '0' has been ignored for IP 'fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip'
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip via file impl/misc/fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip.tcl
+
+INFO: Generating fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+INFO: Generating fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip.tcl
+
+INFO: Generating fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: Done generating fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+INFO: Found 2 unique subcore IP: xilinx.com:ip:floating_point:7.1 xilinx.com:ip:xfft:9.1
+
+INFO: Copied 6 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/fft1536_fixed_vendor_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip/fft1536_fixed_vendor_fadd_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip/fft1536_fixed_vendor_fft_syn_fixed_fft512_params_s_core_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip/fft1536_fixed_vendor_fmul_32ns_32ns_32_2_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip/fft1536_fixed_vendor_fpext_32ns_64_1_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/ip/fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip/fft1536_fixed_vendor_sitofp_32ns_32_3_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/hdl/vhdl/fft1536_fixed_vendor.vhd (fft1536_fixed_vendor)
+
+INFO: Add axi4lite interface s_axi_control
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst_n
+
+INFO: Add interrupt interface interrupt
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add axi4full interface m_axi_audio
+
+INFO: Add axi4full interface m_axi_results
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40_stream/hls/impl/ip/xilinx_com_hls_fft1536_fixed_vendor_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:46:55 2026...
+
+INFO: [HLS 200-802] Generated output file p15_fft_fixed40_stream/fft1536_fixed_vendor.zip
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 5 seconds. Total elapsed time: 70.298 seconds; peak allocated memory: 294.848 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 15s

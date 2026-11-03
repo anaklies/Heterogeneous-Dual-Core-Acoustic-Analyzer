@@ -1,0 +1,246 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 18:25:13 2026
+# Process ID         : 34116
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D
+# Command line       : vivado.exe -mode batch -source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/synth_kernel_board_ooc.tcl -log C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/synth.log -journal C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_synth.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/synth.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_synth.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 19294 MB
+#-----------------------------------------------------------
+source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/synth_kernel_board_ooc.tcl
+# set here [file dirname [file normalize [info script]]]
+# set root [file normalize $here/../../../../..]
+# set out $root/tmp/p17_board_kernels
+# set_param general.maxThreads 2
+# open_project $out/project/board_kernels.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/project/board_kernels.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_split/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_nn_convshared/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_shared/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_analysis_dma_shared/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 680.703 ; gain = 347.520
+# set bd [get_files $out/assets/vendor_bd/design_1.bd]
+# generate_target all $bd
+Excluding slave segment /processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM from address space /processing_system7_0/Data.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /frontend/Data_m_axi_audio.
+Excluding slave segment /doa/s_axi_control/Reg from address space /frontend/Data_m_axi_audio.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /frontend/Data_m_axi_audio.
+Excluding slave segment /nn/s_axi_control/Reg from address space /frontend/Data_m_axi_audio.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /frontend/Data_m_axi_cache.
+Excluding slave segment /doa/s_axi_control/Reg from address space /frontend/Data_m_axi_cache.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /frontend/Data_m_axi_cache.
+Excluding slave segment /nn/s_axi_control/Reg from address space /frontend/Data_m_axi_cache.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /frontend/Data_m_axi_features.
+Excluding slave segment /doa/s_axi_control/Reg from address space /frontend/Data_m_axi_features.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /frontend/Data_m_axi_features.
+Excluding slave segment /nn/s_axi_control/Reg from address space /frontend/Data_m_axi_features.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /frontend/Data_m_axi_results.
+Excluding slave segment /doa/s_axi_control/Reg from address space /frontend/Data_m_axi_results.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /frontend/Data_m_axi_results.
+Excluding slave segment /nn/s_axi_control/Reg from address space /frontend/Data_m_axi_results.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /nn/Data_m_axi_aggregate.
+Excluding slave segment /doa/s_axi_control/Reg from address space /nn/Data_m_axi_aggregate.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /nn/Data_m_axi_aggregate.
+Excluding slave segment /nn/s_axi_control/Reg from address space /nn/Data_m_axi_aggregate.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /nn/Data_m_axi_features.
+Excluding slave segment /doa/s_axi_control/Reg from address space /nn/Data_m_axi_features.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /nn/Data_m_axi_features.
+Excluding slave segment /nn/s_axi_control/Reg from address space /nn/Data_m_axi_features.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /nn/Data_m_axi_network.
+Excluding slave segment /doa/s_axi_control/Reg from address space /nn/Data_m_axi_network.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /nn/Data_m_axi_network.
+Excluding slave segment /nn/s_axi_control/Reg from address space /nn/Data_m_axi_network.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /doa/Data_m_axi_observed.
+Excluding slave segment /doa/s_axi_control/Reg from address space /doa/Data_m_axi_observed.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /doa/Data_m_axi_observed.
+Excluding slave segment /nn/s_axi_control/Reg from address space /doa/Data_m_axi_observed.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /doa/Data_m_axi_results.
+Excluding slave segment /doa/s_axi_control/Reg from address space /doa/Data_m_axi_results.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /doa/Data_m_axi_results.
+Excluding slave segment /nn/s_axi_control/Reg from address space /doa/Data_m_axi_results.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /doa/Data_m_axi_templates.
+Excluding slave segment /doa/s_axi_control/Reg from address space /doa/Data_m_axi_templates.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /doa/Data_m_axi_templates.
+Excluding slave segment /nn/s_axi_control/Reg from address space /doa/Data_m_axi_templates.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /analysis/Data_m_axi_memory.
+Excluding slave segment /doa/s_axi_control/Reg from address space /analysis/Data_m_axi_memory.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /analysis/Data_m_axi_memory.
+Excluding slave segment /nn/s_axi_control/Reg from address space /analysis/Data_m_axi_memory.
+Excluding slave segment /analysis/s_axi_control/Reg from address space /S_AXI_ACOUSTIC.
+Excluding slave segment /doa/s_axi_control/Reg from address space /S_AXI_ACOUSTIC.
+Excluding slave segment /frontend/s_axi_control/Reg from address space /S_AXI_ACOUSTIC.
+Excluding slave segment /nn/s_axi_control/Reg from address space /S_AXI_ACOUSTIC.
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_arlock'(1) to pin: '/analysis/m_axi_memory_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_awlock'(1) to pin: '/analysis/m_axi_memory_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S10_AXI_arlock'(1) to pin: '/doa/m_axi_observed_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S11_AXI_awlock'(1) to pin: '/doa/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S12_AXI_arlock'(1) to pin: '/doa/m_axi_templates_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S03_AXI_arlock'(1) to pin: '/frontend/m_axi_audio_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_arlock'(1) to pin: '/frontend/m_axi_cache_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_awlock'(1) to pin: '/frontend/m_axi_cache_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S05_AXI_awlock'(1) to pin: '/frontend/m_axi_features_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_arlock'(1) to pin: '/frontend/m_axi_results_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_awlock'(1) to pin: '/frontend/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S07_AXI_awlock'(1) to pin: '/nn/m_axi_aggregate_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S08_AXI_arlock'(1) to pin: '/nn/m_axi_features_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_arlock'(1) to pin: '/nn/m_axi_network_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_awlock'(1) to pin: '/nn/m_axi_network_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_arlock'(1) to pin: '/analysis/m_axi_memory_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_awlock'(1) to pin: '/analysis/m_axi_memory_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S10_AXI_arlock'(1) to pin: '/doa/m_axi_observed_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S11_AXI_awlock'(1) to pin: '/doa/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S12_AXI_arlock'(1) to pin: '/doa/m_axi_templates_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S03_AXI_arlock'(1) to pin: '/frontend/m_axi_audio_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_arlock'(1) to pin: '/frontend/m_axi_cache_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_awlock'(1) to pin: '/frontend/m_axi_cache_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S05_AXI_awlock'(1) to pin: '/frontend/m_axi_features_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_arlock'(1) to pin: '/frontend/m_axi_results_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_awlock'(1) to pin: '/frontend/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S07_AXI_awlock'(1) to pin: '/nn/m_axi_aggregate_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S08_AXI_arlock'(1) to pin: '/nn/m_axi_features_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_arlock'(1) to pin: '/nn/m_axi_network_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_awlock'(1) to pin: '/nn/m_axi_network_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_subset_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dynclk_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_btn .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+Exporting to file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Hardware Definition File c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_100m .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_150m .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lcd_zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block lcd_gpio_zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_acoustic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acoustic_reset .
+Exporting to file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_acoustic_smartconnect_0/bd_0/hw_handoff/design_1_acoustic_smartconnect_0.hwh
+Generated Hardware Definition File c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_acoustic_smartconnect_0/bd_0/synth/design_1_acoustic_smartconnect_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acoustic_smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block acoustic_clock_crossing .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block analysis_reset .
+WARNING: [IP_Flow 19-982] Invalid parameter order found. Parameter 'super_sample_rates' with  order 27.00 tries to set value on parameter 'scaling_options' of  order 11.00.
+WARNING: [IP_Flow 19-982] Invalid parameter order found. Parameter 'super_sample_rates' with  order 27.00 tries to set value on parameter 'scaling_options' of  order 11.00.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block frontend .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nn .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block doa .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block analysis .
+Exporting to file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_kernel_fabric_0/bd_0/hw_handoff/design_1_kernel_fabric_0.hwh
+Generated Hardware Definition File c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/ip/design_1_kernel_fabric_0/bd_0/synth/design_1_kernel_fabric_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kernel_fabric .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps_kernel_control .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block analysis_data_crossing .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block analysis_control_crossing .
+Exporting to file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/synth/design_1.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/design_1.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/design_1.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/design_1_sv.sveo
+generate_target: Time (s): cpu = 00:01:18 ; elapsed = 00:01:37 . Memory (MB): peak = 1376.133 ; gain = 695.430
+# set wrappers [make_wrapper -files $bd -top]
+# add_files -norecurse $wrappers
+WARNING: [filemgmt 56-12] File 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/hdl/design_1_wrapper.v' cannot be added to the project because it already exists in the project, skipping this file
+# set_property top design_1_wrapper [current_fileset]
+# set_property STEPS.SYNTH_DESIGN.ARGS.MORE_OPTIONS {-mode out_of_context} [get_runs synth_1]
+ERROR: [Common 17-170] Unknown option '-mode out_of_context', please type 'set_property -help' for usage info.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 18:27:08 2026...

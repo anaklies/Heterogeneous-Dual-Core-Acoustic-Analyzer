@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/sensors/air_sound_speed.sv" into library work
+INFO: [VRFC 10-311] analyzing module air_sound_speed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/sensors/i2c_transaction_master.sv" into library work
+INFO: [VRFC 10-311] analyzing module i2c_transaction_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/sensors/sensor_i2c_hub.sv" into library work
+INFO: [VRFC 10-311] analyzing module sensor_i2c_hub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/sensors/environment_frame_snapshot.sv" into library work
+INFO: [VRFC 10-311] analyzing module environment_frame_snapshot
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/sensors/sixmic_sensor_subsystem.sv" into library work
+INFO: [VRFC 10-311] analyzing module sixmic_sensor_subsystem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/sensors/tb_environment_frame_snapshot.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_environment_frame_snapshot

@@ -1,0 +1,109 @@
+{
+  "cases": 20,
+  "complexBinsCompared": 15380,
+  "rows": [
+    {
+      "case": 0,
+      "maxComplexAbsoluteError": 1.0006770314674336e-07,
+      "inputSHA256": "a1ab4bb84b4500ed2474f074a5dc7a16776e2a5f81e5098293271a5dc15d4b80"
+    },
+    {
+      "case": 1,
+      "maxComplexAbsoluteError": 8.013670551868157e-08,
+      "inputSHA256": "23ff9572e85bcad20ed49c920ded823d549b18a8ade397fccf41bd1cccacbacb"
+    },
+    {
+      "case": 2,
+      "maxComplexAbsoluteError": 9.097839205429451e-08,
+      "inputSHA256": "f96a8928e27aaa1c82604672bc7377913b2f0ef352530ad6220c73616a6db42c"
+    },
+    {
+      "case": 3,
+      "maxComplexAbsoluteError": 8.686401447594989e-08,
+      "inputSHA256": "56e291c13a8a7b5cb92fe33498314f24e6eea11ab4d7fec1024d139b356e5d3d"
+    },
+    {
+      "case": 4,
+      "maxComplexAbsoluteError": 8.340185089412323e-08,
+      "inputSHA256": "ca642db276fae8336af7cfb0d4c1a30eb4f02920e7c50f4787bbbaf2fcd5c393"
+    },
+    {
+      "case": 5,
+      "maxComplexAbsoluteError": 9.466985385596537e-08,
+      "inputSHA256": "38d5ba9a3e43f44c3ff7121418550cbdf877fa602d399ec05fbd548da329f669"
+    },
+    {
+      "case": 6,
+      "maxComplexAbsoluteError": 8.95352414075238e-08,
+      "inputSHA256": "eca8c98c96da2454ffac967c844655a6b4880378b70a842b7f40f86d90919240"
+    },
+    {
+      "case": 7,
+      "maxComplexAbsoluteError": 8.839645254525935e-08,
+      "inputSHA256": "4c5f651eef85843ef1dbaa129df86af348c762cabe14b7a7b1dc577746180a4b"
+    },
+    {
+      "case": 8,
+      "maxComplexAbsoluteError": 9.008685895583782e-08,
+      "inputSHA256": "d70f1103f1d27f53f38f91c44ff01d17885691dedecea9ebf97012a8527ad3f6"
+    },
+    {
+      "case": 9,
+      "maxComplexAbsoluteError": 7.237876273388222e-08,
+      "inputSHA256": "cd843fb0bb0065e58753e5f583c68cbcfca7a2ca1622238f5bf37c19ab9da8c2"
+    },
+    {
+      "case": 10,
+      "maxComplexAbsoluteError": 4.190499007387426e-07,
+      "inputSHA256": "88703c03ade35b548cbb173df6380ddb945eedc4c3d70b55fb8f3078fa2283be"
+    },
+    {
+      "case": 11,
+      "maxComplexAbsoluteError": 3.3568330058574383e-07,
+      "inputSHA256": "88bee0110336e934050736f2658928aee67797bcb8cc6670601887eb0ace555a"
+    },
+    {
+      "case": 12,
+      "maxComplexAbsoluteError": 1.8275482709922195e-07,
+      "inputSHA256": "8a93906e38ffeb57eed1e1067687896959c214ce188a0e2a627caa329f578d85"
+    },
+    {
+      "case": 13,
+      "maxComplexAbsoluteError": 3.423338783590644e-07,
+      "inputSHA256": "c6034a360e1ea01bd01165269b11379abda1f6a84ec6600ac4c2e91dcde28e33"
+    },
+    {
+      "case": 14,
+      "maxComplexAbsoluteError": 2.3532398698769637e-07,
+      "inputSHA256": "d661e3fc1d751c6dc1e5669b67dd8a9038ad5e9035f14a2657ae14c839e8e06d"
+    },
+    {
+      "case": 15,
+      "maxComplexAbsoluteError": 2.3538790586275646e-07,
+      "inputSHA256": "b22f020d81ea56a807ac068d5d65901cdc17ce0176ae11524e35edc8b903e0df"
+    },
+    {
+      "case": 16,
+      "maxComplexAbsoluteError": 2.5982572480144136e-07,
+      "inputSHA256": "daa120df488407ee109f9670e363a466baa2fea4a73980b4adb436dc53d54ca8"
+    },
+    {
+      "case": 17,
+      "maxComplexAbsoluteError": 1.3927166864690783e-07,
+      "inputSHA256": "832e607f693428a023dbce1e2ce47fcd8bb7e64759a48d399c259c0ecd1283d9"
+    },
+    {
+      "case": 18,
+      "maxComplexAbsoluteError": 1.3557255771281692e-07,
+      "inputSHA256": "593acc31efd12c5cb4b1f84f936dea6969d8bec804da184f6122599174a83abe"
+    },
+    {
+      "case": 19,
+      "maxComplexAbsoluteError": 2.371239887092448e-07,
+      "inputSHA256": "df00dca2bfcbd2c9f4a07d50b271106cc437812bb9e9a6f9ac50a29fa328abb3"
+    }
+  ],
+  "maximumAbsoluteError": 4.190499007387426e-07,
+  "model": "1536point,periodicHann,noDCremoval,noFFTscaling",
+  "hardwareRTLValidated": false
+}

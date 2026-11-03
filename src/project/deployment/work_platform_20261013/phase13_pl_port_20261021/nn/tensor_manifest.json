@@ -1,0 +1,469 @@
+{
+  "sourceCheckpoint": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12j_daily_srp_dnn_20261020\\models\\small_seed1.pt",
+  "sourceCheckpointSHA256": "b3e8a9f11c6d0a4d4742b0d18c7c5888ac24fa2c12a0a1acc7fdc7e1a56efcce",
+  "sourceFiles": {
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12j_daily_srp_dnn_20261020\\model_j.py": "42c74bda9ad4663ce870d83bc1c6f33d6a47dd866e1faeec8e4c5bedf2b07003",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12j_daily_srp_dnn_20261020\\infer_j.py": "c6c8de93265fde3c41d8d75ae3eb98a40a6a42afaeaee8698c2148087f9b9731",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12h_srp_dnn_salsa_20261020\\features.py": "05ab391e2a70bd8c0b1c6a6ccf7030ec4a55160f973875bc114a2fd50675cdda",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\quality_m.py": "1dbae16ab9e28dbe03c78d09026dfdf1f225e163390e95c50b9e857317343e88"
+  },
+  "parameters": 30958,
+  "int16WeightBytes": 61916,
+  "float32WeightBytes": 123832,
+  "tensors": [
+    {
+      "name": "conv.weight",
+      "shape": [
+        12,
+        6,
+        5,
+        3
+      ],
+      "elements": 1080,
+      "offsetWords16": 0,
+      "offsetBytes": 0,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.6827577352523804,
+      "maximumAbsoluteError": 1.5225261449813843e-05,
+      "quantizedMin": -22373,
+      "quantizedMax": 15166,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "conv.bias",
+      "shape": [
+        12
+      ],
+      "elements": 12,
+      "offsetWords16": 1080,
+      "offsetBytes": 2160,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.2801000475883484,
+      "maximumAbsoluteError": 6.3478946685791016e-06,
+      "quantizedMin": -8670,
+      "quantizedMax": 18357,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "depth.weight",
+      "shape": [
+        12,
+        1,
+        3,
+        3
+      ],
+      "elements": 108,
+      "offsetWords16": 1092,
+      "offsetBytes": 2184,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.7877155542373657,
+      "maximumAbsoluteError": 1.5221536159515381e-05,
+      "quantizedMin": -25778,
+      "quantizedMax": 25812,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "depth.bias",
+      "shape": [
+        12
+      ],
+      "elements": 12,
+      "offsetWords16": 1200,
+      "offsetBytes": 2400,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.47596827149391174,
+      "maximumAbsoluteError": 5.751848220825195e-06,
+      "quantizedMin": -11530,
+      "quantizedMax": 31193,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "point.weight",
+      "shape": [
+        16,
+        12,
+        1,
+        1
+      ],
+      "elements": 192,
+      "offsetWords16": 1212,
+      "offsetBytes": 2424,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.8254488110542297,
+      "maximumAbsoluteError": 1.5109777450561523e-05,
+      "quantizedMin": -21949,
+      "quantizedMax": 27048,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "point.bias",
+      "shape": [
+        16
+      ],
+      "elements": 16,
+      "offsetWords16": 1404,
+      "offsetBytes": 2808,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.29927515983581543,
+      "maximumAbsoluteError": 7.096678018569946e-06,
+      "quantizedMin": -16064,
+      "quantizedMax": 19613,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "embed.weight",
+      "shape": [
+        32,
+        256
+      ],
+      "elements": 8192,
+      "offsetWords16": 1420,
+      "offsetBytes": 2840,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.8931754231452942,
+      "maximumAbsoluteError": 1.52587890625e-05,
+      "quantizedMin": -19269,
+      "quantizedMax": 29268,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "embed.bias",
+      "shape": [
+        32
+      ],
+      "elements": 32,
+      "offsetWords16": 9612,
+      "offsetBytes": 19224,
+      "signedBits": 16,
+      "fractionalExponent": 17,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.1868838667869568,
+      "maximumAbsoluteError": 3.5744160413742065e-06,
+      "quantizedMin": -16874,
+      "quantizedMax": 24495,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "gru.weight_ih_l0",
+      "shape": [
+        144,
+        32
+      ],
+      "elements": 4608,
+      "offsetWords16": 9644,
+      "offsetBytes": 19288,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.7870702743530273,
+      "maximumAbsoluteError": 1.52587890625e-05,
+      "quantizedMin": -20883,
+      "quantizedMax": 25791,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "gru.weight_hh_l0",
+      "shape": [
+        144,
+        48
+      ],
+      "elements": 6912,
+      "offsetWords16": 14252,
+      "offsetBytes": 28504,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.6649296283721924,
+      "maximumAbsoluteError": 1.52587890625e-05,
+      "quantizedMin": -19936,
+      "quantizedMax": 21788,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "gru.bias_ih_l0",
+      "shape": [
+        144
+      ],
+      "elements": 144,
+      "offsetWords16": 21164,
+      "offsetBytes": 42328,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.4267125725746155,
+      "maximumAbsoluteError": 7.543712854385376e-06,
+      "quantizedMin": -27965,
+      "quantizedMax": 15835,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "gru.bias_hh_l0",
+      "shape": [
+        144
+      ],
+      "elements": 144,
+      "offsetWords16": 21308,
+      "offsetBytes": 42616,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.33004921674728394,
+      "maximumAbsoluteError": 7.623806595802307e-06,
+      "quantizedMin": -21630,
+      "quantizedMax": 12977,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "phase.weight",
+      "shape": [
+        126,
+        48
+      ],
+      "elements": 6048,
+      "offsetWords16": 21452,
+      "offsetBytes": 42904,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.32342109084129333,
+      "maximumAbsoluteError": 7.62939453125e-06,
+      "quantizedMin": -21196,
+      "quantizedMax": 16368,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "phase.bias",
+      "shape": [
+        126
+      ],
+      "elements": 126,
+      "offsetWords16": 27500,
+      "offsetBytes": 55000,
+      "signedBits": 16,
+      "fractionalExponent": 17,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.1393059939146042,
+      "maximumAbsoluteError": 3.773719072341919e-06,
+      "quantizedMin": -17349,
+      "quantizedMax": 18259,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "support.weight",
+      "shape": [
+        63,
+        48
+      ],
+      "elements": 3024,
+      "offsetWords16": 27626,
+      "offsetBytes": 55252,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.9277312755584717,
+      "maximumAbsoluteError": 1.52587890625e-05,
+      "quantizedMin": -30400,
+      "quantizedMax": 28368,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "support.bias",
+      "shape": [
+        63
+      ],
+      "elements": 63,
+      "offsetWords16": 30650,
+      "offsetBytes": 61300,
+      "signedBits": 16,
+      "fractionalExponent": 16,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.2628755569458008,
+      "maximumAbsoluteError": 7.584691047668457e-06,
+      "quantizedMin": -6889,
+      "quantizedMax": 17228,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "activity.weight",
+      "shape": [
+        1,
+        48
+      ],
+      "elements": 48,
+      "offsetWords16": 30713,
+      "offsetBytes": 61426,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.8349741697311401,
+      "maximumAbsoluteError": 1.4573335647583008e-05,
+      "quantizedMin": -26062,
+      "quantizedMax": 27360,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "activity.bias",
+      "shape": [
+        1
+      ],
+      "elements": 1,
+      "offsetWords16": 30761,
+      "offsetBytes": 61522,
+      "signedBits": 16,
+      "fractionalExponent": 17,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.19561155140399933,
+      "maximumAbsoluteError": 1.5050172805786133e-06,
+      "quantizedMin": 25639,
+      "quantizedMax": 25639,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "count.weight",
+      "shape": [
+        4,
+        48
+      ],
+      "elements": 192,
+      "offsetWords16": 30762,
+      "offsetBytes": 61524,
+      "signedBits": 16,
+      "fractionalExponent": 15,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.5144947171211243,
+      "maximumAbsoluteError": 1.5214085578918457e-05,
+      "quantizedMin": -16859,
+      "quantizedMax": 13050,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    },
+    {
+      "name": "count.bias",
+      "shape": [
+        4
+      ],
+      "elements": 4,
+      "offsetWords16": 30954,
+      "offsetBytes": 61908,
+      "signedBits": 16,
+      "fractionalExponent": 17,
+      "reconstruction": "q * 2**(-fractionalExponent)",
+      "rounding": "nearest ties to even",
+      "saturationCount": 0,
+      "originalAbsMax": 0.15587811172008514,
+      "maximumAbsoluteError": 3.032386302947998e-06,
+      "quantizedMin": -20431,
+      "quantizedMax": 20214,
+      "layout": "original PyTorch state tensor C-order; GRU rows r,z,n"
+    }
+  ],
+  "layers": [
+    {
+      "name": "conv",
+      "module": "Conv2d(6, 12, kernel_size=(5, 3), stride=(2, 1), padding=(2, 2))",
+      "parameters": 1092
+    },
+    {
+      "name": "depth",
+      "module": "Conv2d(12, 12, kernel_size=(3, 3), stride=(2, 1), padding=(1, 2), groups=12)",
+      "parameters": 120
+    },
+    {
+      "name": "point",
+      "module": "Conv2d(12, 16, kernel_size=(1, 1), stride=(1, 1))",
+      "parameters": 208
+    },
+    {
+      "name": "embed",
+      "module": "Linear(in_features=256, out_features=32, bias=True)",
+      "parameters": 8224
+    },
+    {
+      "name": "gru",
+      "module": "GRU(32, 48, batch_first=True)",
+      "parameters": 11808
+    },
+    {
+      "name": "phase",
+      "module": "Linear(in_features=48, out_features=126, bias=True)",
+      "parameters": 6174
+    },
+    {
+      "name": "support",
+      "module": "Linear(in_features=48, out_features=63, bias=True)",
+      "parameters": 3087
+    },
+    {
+      "name": "activity",
+      "module": "Linear(in_features=48, out_features=1, bias=True)",
+      "parameters": 49
+    },
+    {
+      "name": "count",
+      "module": "Linear(in_features=48, out_features=4, bias=True)",
+      "parameters": 196
+    }
+  ],
+  "bankCount": 12,
+  "bankLayout": "global word i -> bank i%12, address floor(i/12); no per-tensor padding",
+  "MACsPerFull15PairWindow": 28688448,
+  "MACSource": "inherited Phase12M budget, not remeasured RTL",
+  "activationQuantized": false,
+  "nonlinearLUTValidated": false,
+  "GRUGatesFixedPointValidated": false,
+  "fixedPointFrontendValidated": false,
+  "PLImplemented": false,
+  "noRetraining": true,
+  "probeScope": "weight quantization followed by float32 dequantized execution only"
+}

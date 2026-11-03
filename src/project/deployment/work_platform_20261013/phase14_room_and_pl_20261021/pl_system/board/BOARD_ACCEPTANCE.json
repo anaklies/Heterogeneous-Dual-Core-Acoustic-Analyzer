@@ -1,0 +1,29 @@
+{
+  "status": "BD_VALIDATED_ONLY",
+  "part": "xc7z020clg484-2",
+  "vivado": "2025.2",
+  "algorithmImplemented": false,
+  "capabilityMask": 0,
+  "algorithmVersion": 0,
+  "buildPath": "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815",
+  "hp0DisplayPreserved": true,
+  "hp1Enabled": true,
+  "hp1DataWidth": 64,
+  "acousticAXIDataWidth": 32,
+  "acousticClockRequestedHz": 75000000,
+  "hp1ClockHz": 100000000,
+  "explicitAsyncCDC": true,
+  "cdcStages": 3,
+  "mailboxBase": "0x43C20000",
+  "mailboxBytes": 65536,
+  "irqF2PBit": 2,
+  "synthesis": "NOT TESTED",
+  "implementation": "NOT TESTED",
+  "wholeSystemCDC": "NOT TESTED",
+  "bitstreamGenerated": false,
+  "boardTest": "NOT TESTED",
+  "validationLogs": [
+    "validate_board_access.log",
+    "validate_explicit_cdc.log"
+  ]
+}

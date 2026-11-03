@@ -1,0 +1,680 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Wed Oct 21 17:50:45 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=analysis_math' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20.341ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(6)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20.341ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cfg(7)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 2.779 seconds; current allocated memory: 163.832 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp' ... 
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.7 seconds; current allocated memory: 166.344 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 43,122 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 4,070 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,229 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,213 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,590 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,608 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,608 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,577 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,559 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,652 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,685 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 214-131] Inlining function 'log_reduce::log(float)' into 'log_reduce::log10(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\common\hls_log_float.cpp:18:14)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.12.33.43.52.63)' into 'fp_struct<float>::to_float() const (.30.40.49.60)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const (.30.40.49.60)' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::isfinite(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:563:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_isnan<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.12.33.43.52.63)' into 'fp_struct<float>::to_int() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:319:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<float>(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_int() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<float>(float)' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_int() const' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'log_reduce::log10(float)' into 'log10f' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\logfloat.cpp:11:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, float>(float, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, float>(float, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, float>(float, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:65:0)
+
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, float>(float, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' into 'unsigned int generic_cast_IEEE754<unsigned int, float>(float, bool)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, float>(float, bool)' into '__hls_fptoui_float_i32' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:65:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'phase_angle(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:6:0)
+
+INFO: [HLS 214-178] Inlining function 'fminf' into 'phase_angle(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:6:0)
+
+INFO: [HLS 214-178] Inlining function 'fmaxf' into 'phase_angle(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:6:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fmaxf' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fminf' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+INFO: [HLS 214-178] Inlining function 'log10f' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_float_i32' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+INFO: [HLS 214-178] Inlining function 'phase_angle(float, float)' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:20:0)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:54:61)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:55:61)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:61:25)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:65:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:65:36)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:65:52)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:65:69)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:66:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:67:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:67:51)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:67:68)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:74:22)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:74:32)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:75:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:75:50)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:75:80)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:80:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:86:30)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:86:43)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:86:54)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:90:29)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:91:15)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:92:15)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:92:38)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:92:59)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:100:46)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:102:19)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:110:47)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:110:55)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:110:65)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:110:73)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:114:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:114:41)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:114:61)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:114:81)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:115:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:116:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:116:53)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:120:58)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:120:67)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:122:37)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:122:54)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:124:25)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:124:38)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:124:57)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:129:71)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:130:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:131:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:136:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:136:38)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:138:112)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:139:24)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:139:45)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:139:64)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:145:79)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:146:62)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:148:79)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:148:91)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:149:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:151:22)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:161:25)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:161:30)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:161:35)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:161:42)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:165:19)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:170:22)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:170:30)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:170:21)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:171:32)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:171:23)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:176:62)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:176:67)
+
+WARNING: [HLS 214-450] Ignore address on register port 'b' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:176:72)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:176:87)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:176:100)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:179:66)
+
+WARNING: [HLS 214-450] Ignore address on register port 'a' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:179:80)
+
+WARNING: [HLS 214-450] Ignore address on register port 'out' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:179:59)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_58_3'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:58:26)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_107_9'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:107:27)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 16.192 seconds; current allocated memory: 170.820 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 170.820 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 179.762 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+INFO: [XFORM 203-602] Inlining function 'std::isfinite' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:35) automatically.
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 183.117 MB.
+
+INFO: [XFORM 203-602] Inlining function 'std::isfinite' into 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:35) automatically.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:19:18) to (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:42:3) in function 'generic_fmin<float>'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:19:18) to (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:42:3) in function 'generic_fmax<float>'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:64:35) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:58:26) in function 'analysis_math'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:98:30) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:98:30) in function 'analysis_math'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:138:32) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:138:32) in function 'analysis_math'... converting 4 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:170:18) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:169:28) in function 'analysis_math'... converting 3 basic blocks.
+
+INFO: [XFORM 203-11] Balancing expressions in function 'analysis_math' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/analysis_memory.cpp:7:44)...3 expression(s) balanced.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.905 seconds; current allocated memory: 208.508 MB.
+
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 1024 for loop 'VITIS_LOOP_109_10' in function 'analysis_math'.
+
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 1024 for loop 'VITIS_LOOP_129_14' in function 'analysis_math'.
+
+WARNING: [XFORM 203-561] Updating loop lower bound from 2 to 3 for loop 'VITIS_LOOP_129_14' in function 'analysis_math'.
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.529 seconds; current allocated memory: 243.020 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'analysis_math' ...
+
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<float>' to 'generic_fmax_float_s'.
+
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmin<float>' to 'generic_fmin_float_s'.
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'generic_fmax_float_s' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.115 seconds; current allocated memory: 243.020 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 243.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_fmin_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 243.020 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 243.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'analysis_math' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln129) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln110) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.169 seconds; current allocated memory: 273.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.517 seconds; current allocated memory: 273.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_fmax_float_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.472 seconds; current allocated memory: 273.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_fmin_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_fmin_float_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 273.008 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'analysis_math' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/out_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/n' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/frames' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/operation' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/df' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/parameter_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'analysis_math/status' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'analysis_math' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'n', 'frames', 'operation', 'df', 'parameter_r', 'status' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'flog_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_10ns_17s_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_11ns_17s_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_18s_10ns_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitofp_32s_32_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'analysis_math'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.871 seconds; current allocated memory: 278.348 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 4 seconds. Elapsed time: 4.975 seconds; current allocated memory: 311.816 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.539 seconds; current allocated memory: 319.609 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for analysis_math.
+INFO: [VLOG 209-307] Generating Verilog RTL for analysis_math.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 66.55 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Wed Oct 21 17:51:28 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/misc
+
+INFO: Copied 19 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/verilog
+
+INFO: Copied 19 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/vhdl
+
+INFO: Copied 10 swdriver file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/drivers
+
+Generating 10 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/subcore_prj:
+
+impl/misc/analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+impl/misc/analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+impl/misc/analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+impl/misc/analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+impl/misc/analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+impl/misc/analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+impl/misc/analysis_math_uitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+impl/misc/analysis_math_uitofp_32s_32_3_no_dsp_1_ip.tcl
+
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 557.227 ; gain = 222.848
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/verilog
+
+INFO: Generating analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip via file impl/misc/analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip via file impl/misc/analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip'...
+
+INFO: Done generating analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip via file impl/misc/analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip via file impl/misc/analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip'...
+
+INFO: Done generating analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip via file impl/misc/analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_uitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/analysis_math_uitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_uitofp_32ns_32_3_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_uitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_uitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: Done generating analysis_math_uitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/analysis_math_uitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+INFO: Generating analysis_math_uitofp_32s_32_3_no_dsp_1_ip via file impl/misc/analysis_math_uitofp_32s_32_3_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'analysis_math_uitofp_32s_32_3_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'analysis_math_uitofp_32s_32_3_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'analysis_math_uitofp_32s_32_3_no_dsp_1_ip'...
+
+INFO: Done generating analysis_math_uitofp_32s_32_3_no_dsp_1_ip via file impl/misc/analysis_math_uitofp_32s_32_3_no_dsp_1_ip.tcl
+
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+
+INFO: Copied 10 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/analysis_math_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip/analysis_math_fadd_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip/analysis_math_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip/analysis_math_fdiv_32ns_32ns_32_8_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip/analysis_math_fexp_32ns_32ns_32_5_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip/analysis_math_flog_32ns_32ns_32_5_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip/analysis_math_fmul_32ns_32ns_32_2_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip/analysis_math_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_uitofp_32ns_32_3_no_dsp_1_ip/analysis_math_uitofp_32ns_32_3_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/ip/analysis_math_uitofp_32s_32_3_no_dsp_1_ip/analysis_math_uitofp_32s_32_3_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/hdl/vhdl/analysis_math.vhd (analysis_math)
+
+INFO: Add axi4lite interface s_axi_control
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst_n
+
+INFO: Add interrupt interface interrupt
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add data interface a_address0
+
+INFO: Add data interface a_q0
+
+INFO: Add data interface a_address1
+
+INFO: Add data interface a_q1
+
+INFO: Add data interface b_address0
+
+INFO: Add data interface b_q0
+
+INFO: Add data interface b_address1
+
+INFO: Add data interface b_q1
+
+INFO: Add data interface out_r_address0
+
+INFO: Add data interface out_r_d0
+
+INFO: Add data interface out_r_address1
+
+INFO: Add data interface out_r_d1
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_analysis_mem/hls/impl/ip/xilinx_com_hls_analysis_math_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 17:52:05 2026...
+
+INFO: [HLS 200-802] Generated output file p14_analysis_mem/analysis_math.zip
+INFO: [HLS 200-112] Total CPU user time: 10 seconds. Total CPU system time: 9 seconds. Total elapsed time: 75.407 seconds; peak allocated memory: 322.598 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 19s

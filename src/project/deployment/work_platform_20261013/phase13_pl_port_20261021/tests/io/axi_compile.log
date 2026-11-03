@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/control/analysis_axi_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module analysis_axi_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io/tb_analysis_axi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_analysis_axi

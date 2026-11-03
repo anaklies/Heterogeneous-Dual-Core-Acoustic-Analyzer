@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 07:36:17 2026
+# Process ID         : 22060
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board
+# Command line       : vivado.exe -mode batch -source create_board_bd.tcl -log validate_board.log -journal validate_board.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/validate_board.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board\validate_board.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 22050 MB
+#-----------------------------------------------------------
+ERROR: [Common 17-354] Could not open 'C' for writing.
+ERROR: [Common 17-354] Could not open 'C' for writing.
+ERROR: [Common 17-354] Could not open 'C' for writing.
+source create_board_bd.tcl
+# set here [file dirname [file normalize [info script]]]
+# set root [file normalize $here/../../../../..]
+# set vendor $root/deployment/system_candidate_20261012
+# set out $here/cache/board_[clock seconds]
+# file mkdir $out
+# set_param general.maxThreads 2
+# create_project acoustic_board $out/project -part xc7z020clg484-2
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625783/project'
+ERROR: [Common 17-354] Could not open 'C' for writing.
+ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'tclapp::load_apps' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:36:28 2026...

@@ -1,0 +1,21 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_environment_frame_snapshot -s sensor_snapshot_sim 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'snapshot_valid' remains unconnected for this instance [C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/sensors/tb_environment_frame_snapshot.sv:27]
+WARNING: [VRFC 10-3645] port 'snapshot_valid' remains unconnected for this instance [C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/sensors/tb_environment_frame_snapshot.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.air_sound_speed(COEFF_FILE="rtl/...
+Compiling module work.environment_frame_snapshot_defau...
+Compiling module work.environment_frame_snapshot(ENV_T...
+Compiling module work.i2c_transaction_master_default
+Compiling module work.sensor_i2c_hub_default
+Compiling module work.sixmic_sensor_subsystem_default
+Compiling module work.tb_environment_frame_snapshot
+Built simulation snapshot sensor_snapshot_sim

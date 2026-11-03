@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 07:36:52 2026
+# Process ID         : 31360
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board
+# Command line       : vivado.exe -mode batch -source create_board_bd.tcl -log validate_board_access.log -journal validate_board_access.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/validate_board_access.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board\validate_board_access.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 21577 MB
+#-----------------------------------------------------------
+source create_board_bd.tcl
+# set here [file dirname [file normalize [info script]]]
+# set root [file normalize $here/../../../../..]
+# set vendor $root/deployment/system_candidate_20261012
+# set out $here/cache/board_[clock seconds]
+# file mkdir $out
+# set_param general.maxThreads 2
+# create_project acoustic_board $out/project -part xc7z020clg484-2
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/project'
+# set_property ip_repo_paths [list $vendor/vendor_ip] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+# set bdroot $out/assets/vendor_bd
+# file mkdir $bdroot
+# file copy $vendor/vendor_bd/design_1.bd $bdroot/design_1.bd
+# file copy $vendor/vendor_bd/ip $bdroot/ip
+# if {[file exists $vendor/vendor_bd/ipshared]} {file copy $vendor/vendor_bd/ipshared $bdroot/ipshared}
+# read_bd C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd
+INFO: [BD 5-945] read_bd has been aliased to the add_files Tcl command to ensure all associated files with the BD are included with the design.  All messages will reference the add_files Tcl command
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+add_files: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 703.664 ; gain = 136.387
+read_bd: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 703.664 ; gain = 137.859
+# set bd [get_files $bdroot/design_1.bd]
+# open_bd_design $bd
+Reading block design file <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_btn
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100m
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_150m
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_zero
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_gpio_zero
+Successfully read diagram <design_1> from block design file <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/vendor_bd/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 745.207 ; gain = 41.543
+# set ps [get_bd_cells processing_system7_0]
+# set_property -dict [list CONFIG.PCW_USE_S_AXI_HP1 {1}] $ps
+# create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_acoustic
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.695 ; gain = 269.488
+# set_property -dict [list CONFIG.PRIM_IN_FREQ {100.000} \
+#     CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {75.000} \
+#     CONFIG.PRIM_SOURCE {No_buffer} CONFIG.RESET_TYPE {ACTIVE_LOW}] [get_bd_cells clk_wiz_acoustic]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins clk_wiz_acoustic/clk_in1]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins clk_wiz_acoustic/resetn]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 acoustic_reset
+# set_property CONFIG.C_EXT_RESET_HIGH 0 [get_bd_cells acoustic_reset]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter C_EXT_RESET_HIGH on /acoustic_reset. It is read-only.
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/clk_out1] [get_bd_pins acoustic_reset/slowest_sync_clk]
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/locked] [get_bd_pins acoustic_reset/dcm_locked]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins acoustic_reset/ext_reset_in]
+# create_bd_port -dir O -type clk acoustic_clk_75
+# set_property CONFIG.FREQ_HZ 75000000 [get_bd_ports acoustic_clk_75]
+# create_bd_port -dir O -type rst acoustic_resetn_75
+# set_property CONFIG.POLARITY ACTIVE_LOW [get_bd_ports acoustic_resetn_75]
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/clk_out1] [get_bd_ports acoustic_clk_75]
+# connect_bd_net [get_bd_pins acoustic_reset/peripheral_aresetn] [get_bd_ports acoustic_resetn_75]
+# create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_ACOUSTIC
+# set_property -dict [list CONFIG.PROTOCOL {AXI4} CONFIG.ADDR_WIDTH {32} \
+#     CONFIG.DATA_WIDTH {32} CONFIG.ID_WIDTH {0} CONFIG.FREQ_HZ {75000000} \
+#     CONFIG.HAS_BURST {1} CONFIG.MAX_BURST_LENGTH {16} \
+#     CONFIG.NUM_READ_OUTSTANDING {2} CONFIG.NUM_WRITE_OUTSTANDING {2} \
+#     CONFIG.SUPPORTS_NARROW_BURST {0}] [get_bd_intf_ports S_AXI_ACOUSTIC]
+# set_property -dict [list CONFIG.ASSOCIATED_BUSIF {S_AXI_ACOUSTIC} \
+#     CONFIG.ASSOCIATED_RESET {acoustic_resetn_75}] [get_bd_ports acoustic_clk_75]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 acoustic_smartconnect
+# set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1} CONFIG.NUM_CLKS {2}] [get_bd_cells acoustic_smartconnect]
+# connect_bd_intf_net [get_bd_intf_ports S_AXI_ACOUSTIC] [get_bd_intf_pins acoustic_smartconnect/S00_AXI]
+# connect_bd_intf_net [get_bd_intf_pins acoustic_smartconnect/M00_AXI] [get_bd_intf_pins processing_system7_0/S_AXI_HP1]
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/clk_out1] [get_bd_pins acoustic_smartconnect/aclk]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins acoustic_smartconnect/aclk1] [get_bd_pins processing_system7_0/S_AXI_HP1_ACLK]
+# connect_bd_net [get_bd_pins acoustic_reset/peripheral_aresetn] [get_bd_pins acoustic_smartconnect/aresetn]
+# assign_bd_address -offset 0x00000000 -range 0x40000000 \
+#     -target_address_space [get_bd_addr_spaces S_AXI_ACOUSTIC] \
+#     [get_bd_addr_segs processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM]
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/S_AXI_ACOUSTIC' at <0x0000_0000 [ 1G ]>.
+# set mailbox_segments [get_bd_addr_segs -of_objects [get_bd_addr_spaces processing_system7_0/Data] -filter {NAME =~ *M_AXI_MAILBOX*}]
+# if {[llength $mailbox_segments] != 1} {error "Expected one original mailbox address segment"}
+# set_property offset 0x43C20000 $mailbox_segments
+# set_property range 64K $mailbox_segments
+# set_property CONFIG.NUM_PORTS 3 [get_bd_cells xlconcat_0]
+# create_bd_port -dir I acoustic_irq
+# connect_bd_net [get_bd_ports acoustic_irq] [get_bd_pins xlconcat_0/In2]
+# validate_bd_design
+WARNING: [BD 41-3281] Instance '/processing_system7_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+clk_domain: design_1_processing_system7_0_0_FCLK_CLK0, clk_domain_1: design_1_clk_wiz_acoustic_0_clk_out1, clkDomainValSrc_1: DEFAULT, clk_domain_ctrl: 0
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/acoustic_smartconnect/S00_AXI' to master interface '/acoustic_smartconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_acoustic_smartconnect_0: SmartConnect design_1_acoustic_smartconnect_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_acoustic clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1105.203 ; gain = 87.527
+# save_bd_design
+Wrote  : <C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase14_room_and_pl_20261021\pl_system\board\cache\board_1792625815\assets\vendor_bd\design_1.bd> 
+# write_bd_tcl -force $here/generated_board_bd.tcl
+WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
+/axi_dynclk_0, /rgb2dvi_0
+Please add the following user repository(s):
+c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip
+before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/generated_board_bd.tcl>.
+
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/synth/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815/assets/generated/design_1/hdl/design_1_wrapper.v
+# set wrappers [make_wrapper -files $bd -top]
+# add_files -norecurse $wrappers
+# set_property top design_1_wrapper [current_fileset]
+# update_compile_order -fileset sources_1
+# set f [open $here/build_location.txt w]
+# puts $f $out
+# close $f
+# set f [open $here/validated_ports.txt w]
+# foreach p [get_bd_ports] {puts $f "PORT [get_property NAME $p] [get_property DIR $p]"}
+# foreach p [get_bd_intf_ports] {puts $f "INTERFACE [get_property NAME $p] [get_property MODE $p] [get_property VLNV $p]"}
+# puts $f "MAILBOX_OFFSET [get_property OFFSET $mailbox_segments]"
+# puts $f "MAILBOX_RANGE [get_property RANGE $mailbox_segments]"
+# puts $f "STATUS BD_VALIDATED_ONLY_NO_ALGORITHM_OR_BITSTREAM_ACCEPTANCE"
+# close $f
+# puts "ACOUSTIC_BOARD_BD_VALIDATED_ONLY $out"
+ACOUSTIC_BOARD_BD_VALIDATED_ONLY C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board/cache/board_1792625815
+# close_project
+# exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:37:54 2026...

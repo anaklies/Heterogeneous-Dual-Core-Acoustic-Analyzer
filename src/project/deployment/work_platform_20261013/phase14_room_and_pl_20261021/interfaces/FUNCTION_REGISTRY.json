@@ -1,0 +1,377 @@
+{
+  "protocolVersion": "sixmic-analysis/1",
+  "functions": [
+    {
+      "id": "io_pcm",
+      "bit": 0,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "levels_core",
+      "bit": 1,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "data_continuity",
+      "bit": 2,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "fft",
+      "bit": 3,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "psd",
+      "bit": 4,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "stft",
+      "bit": 5,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spectrum_average",
+      "bit": 6,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spatial_interface",
+      "bit": 7,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "srpdnn_main",
+      "bit": 8,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "signal_quality",
+      "bit": 9,
+      "tier": "P0",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "levels_extended",
+      "bit": 10,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "octave",
+      "bit": 11,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "third_octave",
+      "bit": 12,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "peak_hold",
+      "bit": 13,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "smoothing",
+      "bit": 14,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "frequency_tracking",
+      "bit": 15,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "frequency_drift",
+      "bit": 16,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "directed_das",
+      "bit": 17,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "csd",
+      "bit": 18,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "coherence_phase",
+      "bit": 19,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "energy_change",
+      "bit": 20,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "band_tracking",
+      "bit": 21,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "centroid",
+      "bit": 22,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "flatness",
+      "bit": 23,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "event_trigger",
+      "bit": 24,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "frequency_time_weighting",
+      "bit": 25,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "level_statistics",
+      "bit": 26,
+      "tier": "P1",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "zoom_fft",
+      "bit": 27,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "fundamental",
+      "bit": 28,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "harmonic_ratio",
+      "bit": 29,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "sidebands",
+      "bit": 30,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "envelope_hilbert",
+      "bit": 31,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "envelope_spectrum",
+      "bit": 32,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "modulation_spectrum",
+      "bit": 33,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "autocorrelation",
+      "bit": 34,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "full_das",
+      "bit": 35,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "band_das",
+      "bit": 36,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "cross_correlation",
+      "bit": 37,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "gcc_phat",
+      "bit": 38,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spectral_flux",
+      "bit": 39,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spectrum_freeze",
+      "bit": 40,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "relative_limit",
+      "bit": 41,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "cepstrum",
+      "bit": 42,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spectral_kurtosis",
+      "bit": 43,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spatial_grid",
+      "bit": 44,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spatial_peaks",
+      "bit": 45,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "room_decay",
+      "bit": 46,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "relative_insulation",
+      "bit": 47,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "stipa_experimental",
+      "bit": 48,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "noise_rating",
+      "bit": 49,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "room_clarity",
+      "bit": 50,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    },
+    {
+      "id": "spectral_decay",
+      "bit": 51,
+      "tier": "P2",
+      "softwareReference": true,
+      "wholeBoardAccepted": false
+    }
+  ],
+  "tierMasks": {
+    "P0": 1023,
+    "P1": 134216704,
+    "P2": 4503599493152768
+  },
+  "actualHardwareCapabilityMask": 0,
+  "algorithmVersionWhenNoBackend": 0,
+  "warning": "Registered software functions are not automatically deployed hardware capabilities"
+}

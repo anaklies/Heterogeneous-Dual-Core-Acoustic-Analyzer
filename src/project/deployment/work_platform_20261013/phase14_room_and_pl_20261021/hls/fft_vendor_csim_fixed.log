@@ -1,0 +1,257 @@
+
+****** vitis-run v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Wed Oct 21 17:56:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_vendor 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_vendor/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_vendor'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fft1536_vendor' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20.341ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(7)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20.341ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cfg(8)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_vendor/vitis-comp.json
+
+INFO: [SIM 211-2] *************** CSIM start ***************
+
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+
+   Compiling ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+In file included from D:/2025.2/Vitis/include\hls_fft.h:20:
+In file included from D:/2025.2/Vitis/include\ap_int.h:10:
+In file included from D:/2025.2/Vitis/include\etc/ap_common.h:668:
+In file included from D:/2025.2/Vitis/include\etc/ap_private.h:68:
+In file included from D:/2025.2/Vitis/include\hls_half.h:26:
+In file included from D:/2025.2/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/2025.2/Vitis/include\hls_fpo.h:140:
+In file included from D:/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/2025.2/Vitis/include\gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2734:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2735:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2760:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2761:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2785:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2786:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2811:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2812:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2840:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2841:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2870:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2871:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2903:96: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                               ^
+D:/2025.2/Vitis/include\hls_fft.h:2904:97: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                                ^
+D:/2025.2/Vitis/include\hls_fft.h:2937:96: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                               ^
+D:/2025.2/Vitis/include\hls_fft.h:2938:97: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                                ^
+D:/2025.2/Vitis/include\hls_fft.h:2439:24: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(nfft <= _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:2520:5: note: in instantiation of function template specialization 'hls::set_data<fft512_params, float>' requested here
+    set_data<_CONFIG_T, _DATA_IN_T>(nfft, in, out);
+    ^
+D:/2025.2/Vitis/include\hls_fft.h:2845:5: note: in instantiation of function template specialization 'hls::inputdatamover<fft512_params, float>' requested here
+    inputdatamover(in, xn, config, _CONFIG_T_max_nfft, fwd_inv, scale_sch, cp_len);
+    ^
+../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:19:10: note: in instantiation of function template specialization 'hls::fft<fft512_params, float, float>' requested here
+    hls::fft<fft512_params>(in,out,true);
+         ^
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2439:24: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(nfft <= _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2441:31: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(length <= 1 << _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2441:31: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(length <= 1 << _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2587:24: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(nfft <= _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:2699:9: note: in instantiation of function template specialization 'hls::get_data<fft512_params, float>' requested here
+        get_data<_CONFIG_T, _DATA_OUT_T>(in, out, nfft);
+        ^
+D:/2025.2/Vitis/include\hls_fft.h:2847:5: note: in instantiation of function template specialization 'hls::outputdatamover<fft512_params, float>' requested here
+    outputdatamover(xk, out, status, ovflo, blk_exp, _CONFIG_T_max_nfft);
+    ^
+../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:19:10: note: in instantiation of function template specialization 'hls::fft<fft512_params, float, float>' requested here
+    hls::fft<fft512_params>(in,out,true);
+         ^
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2587:24: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(nfft <= _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2588:31: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(length <= 1 << _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_vendor.cpp:2:
+D:/2025.2/Vitis/include\hls_fft.h:2588:31: warning: left operand of comma operator has no effect [-Wunused-value]
+        assert(length <= 1 << _CONFIG_T_max_nfft);
+        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:105:3: note: expanded from macro '_CONFIG_T_max_nfft'
+  HLS_FFT_CHECK(log2_transform_length, max_nfft, 10) 
+  ^
+D:/2025.2/Vitis/include\hls_fft.h:99:6: note: expanded from macro 'HLS_FFT_CHECK'
+    (hls::ip_fft::my_assert<(_CONFIG_T::new_name) == (def_val) || (_CONFIG_T::old_name) == (def_val)>, \
+     ^
+D:/2025.2/Vitis/tps/mingw/10.0.0/win64.o/nt\x86_64-w64-mingw32\include\assert.h:52:7: note: expanded from macro 'assert'
+ ((!!(_Expression)) || \
+      ^~~~~~~~~~~
+25 warnings generated.
+ERROR:hls::fft FFT_SCALING != scaled. It's invalid to access scaling_sch field.
+
+@E Simulation failed: Function 'main' returns nonzero value '1'.
+
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+
+INFO: [SIM 211-3] *************** CSIM finish ***************
+
+ERROR: CSIM Failed
+
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 5.799 seconds; peak allocated memory: 164.078 MB.
+

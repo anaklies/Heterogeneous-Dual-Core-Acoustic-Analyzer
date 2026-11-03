@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Oct 21 14:39:51 2026
+# Process ID         : 31712
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/control
+# Command line       : xsim.exe -log health_simulate.log -mode tcl -source {xsim.dir/mic_health_check/xsim_script.tcl}
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/control/health_simulate.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/control\xsim.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 18834 MB
+#-----------------------------------------------------------
+source xsim.dir/mic_health_check/xsim_script.tcl
+# xsim {mic_health_check} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+MIC_HEALTH_PASS silence duplicate clipping acquisition_stale recovery
+$finish called at time : 1420 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/control/tb_mic_health.sv" Line 28
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 14:39:53 2026...

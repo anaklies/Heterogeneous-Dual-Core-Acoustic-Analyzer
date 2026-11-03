@@ -1,0 +1,345 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 18:13:09 2026
+# Process ID         : 22696
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D
+# Command line       : vivado.exe -mode batch -source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/connect_acoustic_kernels.tcl -log C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/connect.log -journal C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/connect.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 19368 MB
+#-----------------------------------------------------------
+source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/connect_acoustic_kernels.tcl
+# set here [file dirname [file normalize [info script]]]
+# set root [file normalize $here/../../../../..]
+# set old $root/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board
+# set fp [open $old/build_location.txt r]
+# set old_build [string trim [read $fp]]
+# close $fp
+# set out $root/tmp/p17_board_kernels
+# file mkdir $out/assets
+# set_param general.maxThreads 2
+# create_project board_kernels $out/project -part xc7z020clg484-2 -force
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 555.586 ; gain = 223.441
+# set repos [list $root/deployment/system_candidate_20261012/vendor_ip]
+# foreach build {p16_frontend_split p16_nn_convshared p15_doa_shared p17_analysis_dma_shared} {
+#     set repo $root/tmp/$build/hls/impl/ip
+#     if {![file exists $repo/component.xml]} {error "Missing tested IP: $repo"}
+#     lappend repos $repo
+# }
+# set_property ip_repo_paths $repos [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_split/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_nn_convshared/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_shared/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_analysis_dma_shared/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+# file copy $old_build/assets/vendor_bd $out/assets/vendor_bd
+# read_bd C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/design_1.bd
+INFO: [BD 5-945] read_bd has been aliased to the add_files Tcl command to ensure all associated files with the BD are included with the design.  All messages will reference the add_files Tcl command
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 982.379 ; gain = 412.422
+read_bd: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 982.379 ; gain = 413.930
+# open_bd_design [get_files $out/assets/vendor_bd/design_1.bd]
+Reading block design file <C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.3 - rgb2dvi_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_btn
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_100m
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_150m
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_zero
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - lcd_gpio_zero
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_acoustic
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - acoustic_reset
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - acoustic_smartconnect
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - acoustic_clock_crossing
+Successfully read diagram <design_1> from block design file <C:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/vendor_bd/design_1.bd>
+# set_property -dict [list CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT2_USED {true} \
+#     CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50.000}] [get_bd_cells clk_wiz_acoustic]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 analysis_reset
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/clk_out2] [get_bd_pins analysis_reset/slowest_sync_clk]
+# connect_bd_net [get_bd_pins clk_wiz_acoustic/locked] [get_bd_pins analysis_reset/dcm_locked]
+# connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins analysis_reset/ext_reset_in]
+# set clk75 [get_bd_pins clk_wiz_acoustic/clk_out1]
+# set reset75 [get_bd_pins acoustic_reset/peripheral_aresetn]
+# set clk50 [get_bd_pins clk_wiz_acoustic/clk_out2]
+# set reset50 [get_bd_pins analysis_reset/peripheral_aresetn]
+# set clk100 [get_bd_pins processing_system7_0/FCLK_CLK0]
+# set reset100 [get_bd_pins proc_sys_reset_100m/peripheral_aresetn]
+# foreach {name vlnv} {frontend xilinx.com:hls:acoustic_frontend_pipeline:1.0 nn xilinx.com:hls:nn_window:1.0 doa xilinx.com:hls:doa_first_shared:1.0 analysis xilinx.com:hls:analysis_dma:1.0} {
+#     create_bd_cell -type ip -vlnv $vlnv $name
+#     if {$name eq "analysis"} {set c $clk50;set r $reset50} else {set c $clk75;set r $reset75}
+#     connect_bd_net $c [get_bd_pins $name/ap_clk]
+#     connect_bd_net $r [get_bd_pins $name/ap_rst_n]
+# }
+# set oldnet [get_bd_intf_nets -of_objects [get_bd_intf_ports S_AXI_ACOUSTIC]]
+# delete_bd_objs $oldnet
+# set_property CONFIG.ID_WIDTH 8 [get_bd_cells acoustic_clock_crossing]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 kernel_fabric
+# set_property -dict [list CONFIG.NUM_SI {14} CONFIG.NUM_MI {5} CONFIG.NUM_CLKS {1}] [get_bd_cells kernel_fabric]
+# connect_bd_net $clk75 [get_bd_pins kernel_fabric/aclk]
+# connect_bd_net $reset75 [get_bd_pins kernel_fabric/aresetn]
+# connect_bd_intf_net [get_bd_intf_ports S_AXI_ACOUSTIC] [get_bd_intf_pins kernel_fabric/S00_AXI]
+# connect_bd_intf_net [get_bd_intf_pins kernel_fabric/M00_AXI] [get_bd_intf_pins acoustic_clock_crossing/S_AXI]
+# create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:aximm_rtl:1.0 S_AXI_JOB
+# set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.ADDR_WIDTH {32} CONFIG.DATA_WIDTH {32} CONFIG.FREQ_HZ {75000000}] [get_bd_intf_ports S_AXI_JOB]
+# connect_bd_intf_net [get_bd_intf_ports S_AXI_JOB] [get_bd_intf_pins kernel_fabric/S01_AXI]
+# set_property CONFIG.ASSOCIATED_BUSIF {S_AXI_ACOUSTIC:S_AXI_JOB} [get_bd_ports acoustic_clk_75]
+# set_property CONFIG.NUM_MI 7 [get_bd_cells axi_interconnect_0]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 ps_kernel_control
+# set_property -dict [list CONFIG.PROTOCOL {AXI4LITE} CONFIG.DATA_WIDTH {32} CONFIG.ADDR_WIDTH {32} CONFIG.ACLK_ASYNC {1} CONFIG.SYNCHRONIZATION_STAGES {3}] [get_bd_cells ps_kernel_control]
+# connect_bd_net $clk100 [get_bd_pins axi_interconnect_0/M06_ACLK] [get_bd_pins ps_kernel_control/s_axi_aclk]
+# connect_bd_net $reset100 [get_bd_pins axi_interconnect_0/M06_ARESETN] [get_bd_pins ps_kernel_control/s_axi_aresetn]
+# connect_bd_net $clk75 [get_bd_pins ps_kernel_control/m_axi_aclk]
+# connect_bd_net $reset75 [get_bd_pins ps_kernel_control/m_axi_aresetn]
+# connect_bd_intf_net [get_bd_intf_pins axi_interconnect_0/M06_AXI] [get_bd_intf_pins ps_kernel_control/S_AXI]
+# connect_bd_intf_net [get_bd_intf_pins ps_kernel_control/M_AXI] [get_bd_intf_pins kernel_fabric/S02_AXI]
+# set si 3
+# foreach name {frontend nn doa} {
+#     foreach pin [lsort [get_bd_intf_pins -of_objects [get_bd_cells $name] -filter {MODE == Master}]] {
+#         connect_bd_intf_net $pin [get_bd_intf_pins [format "kernel_fabric/S%02d_AXI" $si]]
+#         incr si
+#     }
+# }
+# if {$si != 13} {error "Unexpected HLS master count, nextSI=$si"}
+# foreach {name protocol} {analysis_data_crossing AXI4 analysis_control_crossing AXI4LITE} {
+#     create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 $name
+#     set_property -dict [list CONFIG.PROTOCOL $protocol CONFIG.DATA_WIDTH {32} CONFIG.ADDR_WIDTH {32} CONFIG.ACLK_ASYNC {1} CONFIG.SYNCHRONIZATION_STAGES {3}] [get_bd_cells $name]
+# }
+# connect_bd_net $clk50 [get_bd_pins analysis_data_crossing/s_axi_aclk] [get_bd_pins analysis_control_crossing/m_axi_aclk]
+# connect_bd_net $reset50 [get_bd_pins analysis_data_crossing/s_axi_aresetn] [get_bd_pins analysis_control_crossing/m_axi_aresetn]
+# connect_bd_net $clk75 [get_bd_pins analysis_data_crossing/m_axi_aclk] [get_bd_pins analysis_control_crossing/s_axi_aclk]
+# connect_bd_net $reset75 [get_bd_pins analysis_data_crossing/m_axi_aresetn] [get_bd_pins analysis_control_crossing/s_axi_aresetn]
+# connect_bd_intf_net [get_bd_intf_pins analysis/m_axi_memory] [get_bd_intf_pins analysis_data_crossing/S_AXI]
+# connect_bd_intf_net [get_bd_intf_pins analysis_data_crossing/M_AXI] [get_bd_intf_pins kernel_fabric/S13_AXI]
+# connect_bd_intf_net [get_bd_intf_pins kernel_fabric/M04_AXI] [get_bd_intf_pins analysis_control_crossing/S_AXI]
+# connect_bd_intf_net [get_bd_intf_pins analysis_control_crossing/M_AXI] [get_bd_intf_pins analysis/s_axi_control]
+# foreach {index name} {1 frontend 2 nn 3 doa} {
+#     connect_bd_intf_net [get_bd_intf_pins [format "kernel_fabric/M%02d_AXI" $index]] [get_bd_intf_pins $name/s_axi_control]
+# }
+# set ddr [get_bd_addr_segs processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM]
+# set jobspace [get_bd_addr_spaces S_AXI_JOB]
+# assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space $jobspace $ddr
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/S_AXI_JOB' at <0x0000_0000 [ 1G ]>.
+# foreach name {frontend nn doa analysis} {
+#     foreach port [get_bd_intf_pins -of_objects [get_bd_cells $name] -filter {MODE == Master}] {
+#         set space [get_bd_addr_spaces -of_objects $port]
+#         assign_bd_address -offset 0x00000000 -range 0x40000000 -target_address_space $space $ddr
+#     }
+# }
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/frontend/Data_m_axi_audio' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/frontend/Data_m_axi_cache' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/frontend/Data_m_axi_features' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/frontend/Data_m_axi_results' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/nn/Data_m_axi_aggregate' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/nn/Data_m_axi_features' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/nn/Data_m_axi_network' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/doa/Data_m_axi_observed' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/doa/Data_m_axi_results' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/doa/Data_m_axi_templates' at <0x0000_0000 [ 1G ]>.
+Slave segment '/processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM' is being assigned into address space '/analysis/Data_m_axi_memory' at <0x0000_0000 [ 1G ]>.
+# foreach {name address} {frontend 0x44A00000 nn 0x44A10000 doa 0x44A20000 analysis 0x44A30000} {
+#     set segment [get_bd_addr_segs $name/s_axi_control/Reg]
+#     foreach space [list $jobspace [get_bd_addr_spaces processing_system7_0/Data]] {
+#         assign_bd_address -offset $address -range 64K -target_address_space $space $segment
+#     }
+# }
+Slave segment '/frontend/s_axi_control/Reg' is being assigned into address space '/S_AXI_JOB' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/frontend/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/nn/s_axi_control/Reg' is being assigned into address space '/S_AXI_JOB' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/nn/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/doa/s_axi_control/Reg' is being assigned into address space '/S_AXI_JOB' at <0x44A2_0000 [ 64K ]>.
+Slave segment '/doa/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A2_0000 [ 64K ]>.
+Slave segment '/analysis/s_axi_control/Reg' is being assigned into address space '/S_AXI_JOB' at <0x44A3_0000 [ 64K ]>.
+Slave segment '/analysis/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x44A3_0000 [ 64K ]>.
+# validate_bd_design
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </S_AXI_ACOUSTIC>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </S_AXI_ACOUSTIC>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </S_AXI_ACOUSTIC>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </S_AXI_ACOUSTIC>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM> is not assigned into address space </processing_system7_0/Data>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </analysis/Data_m_axi_memory>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </analysis/Data_m_axi_memory>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </analysis/Data_m_axi_memory>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </analysis/Data_m_axi_memory>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_cache>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_cache>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_cache>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_cache>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_audio>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_audio>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_audio>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_audio>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </frontend/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_network>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_network>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_network>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_network>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_aggregate>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_aggregate>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_aggregate>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_aggregate>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </nn/Data_m_axi_features>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_templates>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_templates>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_templates>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_templates>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_results>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </nn/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_observed>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </analysis/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_observed>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </frontend/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_observed>. Please use Address Editor to either assign or exclude it.
+CRITICAL WARNING: [BD 41-1356] Slave segment </doa/s_axi_control/Reg> is not assigned into address space </doa/Data_m_axi_observed>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-3281] Instance '/processing_system7_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+WARNING: [BD 41-3281] Instance '/acoustic_clock_crossing' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+WARNING: [SMARTCONNECT-2] Port S00_AXI of /acoustic_smartconnect is connected to an infrastructure IP (/acoustic_clock_crossing).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /acoustic_clock_crossing.
+WARNING: [SMARTCONNECT-2] Port M00_AXI of /kernel_fabric is connected to an infrastructure IP (/acoustic_clock_crossing).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /acoustic_clock_crossing.
+WARNING: [SMARTCONNECT-2] Port M04_AXI of /kernel_fabric is connected to an infrastructure IP (/analysis_control_crossing).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /analysis_control_crossing.
+WARNING: [SMARTCONNECT-2] Port S02_AXI of /kernel_fabric is connected to an infrastructure IP (/ps_kernel_control).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /ps_kernel_control.
+WARNING: [SMARTCONNECT-2] Port S13_AXI of /kernel_fabric is connected to an infrastructure IP (/analysis_data_crossing).  It is recommended to attach AXI SmartConnect directly to endpoint IPs to avoid mismatches or other issues during validation.  If mismatches occur, manually assign values for AXI Interface properties of /analysis_data_crossing.
+clk_domain: design_1_processing_system7_0_0_FCLK_CLK0, clk_domain_1: design_1_processing_system7_0_0_FCLK_CLK0, clkDomainValSrc_1: DEFAULT, clk_domain_ctrl: 0
+WARNING: [#UNDEF] When using EMIO pins for SPI_0 tie SSIN High in the PL bitstream
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S00_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S01_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/kernel_fabric/S01_AXI' to master interface '/kernel_fabric/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/kernel_fabric/S01_AXI' to master interface '/kernel_fabric/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A2_0000 [ 64K ]> from slave interface '/kernel_fabric/S01_AXI' to master interface '/kernel_fabric/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A3_0000 [ 64K ]> from slave interface '/kernel_fabric/S01_AXI' to master interface '/kernel_fabric/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/kernel_fabric/S02_AXI' to master interface '/kernel_fabric/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A1_0000 [ 64K ]> from slave interface '/kernel_fabric/S02_AXI' to master interface '/kernel_fabric/M02_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A2_0000 [ 64K ]> from slave interface '/kernel_fabric/S02_AXI' to master interface '/kernel_fabric/M03_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A3_0000 [ 64K ]> from slave interface '/kernel_fabric/S02_AXI' to master interface '/kernel_fabric/M04_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S03_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S04_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S05_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S06_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S07_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S08_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S09_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S10_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S11_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S12_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/kernel_fabric/S13_AXI' to master interface '/kernel_fabric/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_kernel_fabric_0: SmartConnect design_1_kernel_fabric_0 is in High-performance Mode.
+xit::source_ipfile: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1320.047 ; gain = 238.629
+xit::source_ipfile: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1344.977 ; gain = 24.930
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/smartconnect_0/S00_AXI' to master interface '/smartconnect_0/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_smartconnect_0_0: SmartConnect design_1_smartconnect_0_0 is in High-performance Mode.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 1G ]> from slave interface '/acoustic_smartconnect/S00_AXI' to master interface '/acoustic_smartconnect/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_acoustic_smartconnect_0: SmartConnect design_1_acoustic_smartconnect_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_acoustic clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1404.617 ; gain = 361.902
+# save_bd_design
+Wrote  : <C:\Users\sunxi\Desktop\sixmic3D\tmp\p17_board_kernels\assets\vendor_bd\design_1.bd> 
+save_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1404.617 ; gain = 0.000
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S03_AXI_arlock'(1) to pin: '/frontend/m_axi_audio_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_arlock'(1) to pin: '/frontend/m_axi_cache_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_awlock'(1) to pin: '/frontend/m_axi_cache_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S05_AXI_awlock'(1) to pin: '/frontend/m_axi_features_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_arlock'(1) to pin: '/frontend/m_axi_results_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_awlock'(1) to pin: '/frontend/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S07_AXI_awlock'(1) to pin: '/nn/m_axi_aggregate_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S08_AXI_arlock'(1) to pin: '/nn/m_axi_features_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_arlock'(1) to pin: '/nn/m_axi_network_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_awlock'(1) to pin: '/nn/m_axi_network_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S10_AXI_arlock'(1) to pin: '/doa/m_axi_observed_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S11_AXI_awlock'(1) to pin: '/doa/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S12_AXI_arlock'(1) to pin: '/doa/m_axi_templates_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_arlock'(1) to pin: '/analysis/m_axi_memory_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_awlock'(1) to pin: '/analysis/m_axi_memory_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S03_AXI_arlock'(1) to pin: '/frontend/m_axi_audio_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_arlock'(1) to pin: '/frontend/m_axi_cache_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S04_AXI_awlock'(1) to pin: '/frontend/m_axi_cache_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S05_AXI_awlock'(1) to pin: '/frontend/m_axi_features_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_arlock'(1) to pin: '/frontend/m_axi_results_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S06_AXI_awlock'(1) to pin: '/frontend/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S07_AXI_awlock'(1) to pin: '/nn/m_axi_aggregate_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S08_AXI_arlock'(1) to pin: '/nn/m_axi_features_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_arlock'(1) to pin: '/nn/m_axi_network_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S09_AXI_awlock'(1) to pin: '/nn/m_axi_network_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S10_AXI_arlock'(1) to pin: '/doa/m_axi_observed_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S11_AXI_awlock'(1) to pin: '/doa/m_axi_results_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/kernel_fabric/S12_AXI_arlock'(1) to pin: '/doa/m_axi_templates_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_arlock'(1) to pin: '/analysis/m_axi_memory_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/analysis_data_crossing/s_axi_awlock'(1) to pin: '/analysis/m_axi_memory_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_board_kernels/assets/generated/design_1/hdl/design_1_wrapper.v
+# set wrapper [make_wrapper -files [get_files $out/assets/vendor_bd/design_1.bd] -top]
+# add_files -norecurse $wrapper
+# set_property top design_1_wrapper [current_fileset]
+# set fp [open $here/build_location.txt w]
+# puts $fp $out
+# close $fp
+# write_bd_tcl -force $here/generated_kernel_bd.tcl
+WARNING: [BD 41-2937] The design that will be created by this Tcl script contains the following user IPs:
+/axi_dynclk_0, /rgb2dvi_0, /frontend, /nn, /doa, /analysis
+Please add the following user repository(s):
+c:/Users/sunxi/Desktop/sixmic3D/deployment/system_candidate_20261012/vendor_ip
+c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_split/hls/impl/ip
+c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_nn_convshared/hls/impl/ip
+c:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_shared/hls/impl/ip
+c:/Users/sunxi/Desktop/sixmic3D/tmp/p17_analysis_dma_shared/hls/impl/ip
+before sourcing this Tcl script or use write_project_tcl.
+INFO: [BD 5-148] Tcl file written out <C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/board_integrated/generated_kernel_bd.tcl>.
+
+# set fp [open $here/address_map.txt w]
+# foreach space [get_bd_addr_spaces] {
+#     puts $fp "SPACE $space"
+#     foreach segment [get_bd_addr_segs -of_objects $space] {
+#         puts $fp "  $segment [get_property OFFSET $segment] [get_property RANGE $segment]"
+#     }
+# }
+# close $fp
+# puts "KERNEL_BOARD_BD_CONNECTED_AND_VALIDATED"
+KERNEL_BOARD_BD_CONNECTED_AND_VALIDATED
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 18:14:36 2026...

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/control/pcm_axi_ring_writer.sv" into library work
+INFO: [VRFC 10-311] analyzing module pcm_axi_ring_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io/tb_pcm_writer.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pcm_writer

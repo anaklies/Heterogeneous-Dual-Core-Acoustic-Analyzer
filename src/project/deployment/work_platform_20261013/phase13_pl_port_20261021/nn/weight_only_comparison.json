@@ -1,0 +1,1254 @@
+{
+  "cases": 6,
+  "rows": [
+    {
+      "id": "Mroom0_0",
+      "kind": "speech",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom0_0.npz",
+      "inputFileSHA256": "bb9b9a29cfaa8c28020f93a57b2c25e431dea2e522f8996b4ddf7c4c6eab97e2",
+      "inputPCMInt32LESHA256": "60ead80b9aaabf4a75d9fb257d7b6fbd7cabe32f9d19fd7846a517db4aac750b",
+      "floatRawDirections": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 0.0,
+      "floatMainTruthErrorDegrees": 3.041343698763604,
+      "quantizedWeightMainTruthErrorDegrees": 3.041343698763604,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        4.671861825045198e-05,
+        0.9998656511306763,
+        3.702527465065941e-05,
+        5.0495898904046044e-05
+      ],
+      "quantizedWeightCountProbabilities": [
+        4.672133945859969e-05,
+        0.9998656511306763,
+        3.702273534145206e-05,
+        5.04931049363222e-05
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.3236720561981201,
+          "maximumAbsoluteError": 0.00023469328880310059,
+          "RMSAbsoluteError": 6.266625564332368e-05,
+          "meanAbsoluteError": 5.017583517755294e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 9.171843528747559,
+          "maximumAbsoluteError": 0.0005831718444824219,
+          "RMSAbsoluteError": 0.00013740630123634055,
+          "meanAbsoluteError": 0.00011017721846433988
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 5.851162433624268,
+          "maximumAbsoluteError": 0.0004807710647583008,
+          "RMSAbsoluteError": 0.0003215593187584746,
+          "meanAbsoluteError": 0.0002897729476292928
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.541808605194092,
+          "maximumAbsoluteError": 7.43865966796875e-05,
+          "RMSAbsoluteError": 5.034020715326549e-05,
+          "meanAbsoluteError": 4.565715789794922e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 9.515400886535645,
+          "maximumAbsoluteError": 0.00044155120849609375,
+          "RMSAbsoluteError": 0.00011564844095389247,
+          "meanAbsoluteError": 9.31937518608612e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 11.317955017089844,
+          "maximumAbsoluteError": 0.00038814544677734375,
+          "RMSAbsoluteError": 7.989095168759072e-05,
+          "meanAbsoluteError": 5.0656686918391015e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 7.3340582847595215,
+          "maximumAbsoluteError": 0.0004137754440307617,
+          "RMSAbsoluteError": 7.489079198973858e-05,
+          "meanAbsoluteError": 6.0972110676374666e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 9.859244346618652,
+          "maximumAbsoluteError": 0.0004944801330566406,
+          "RMSAbsoluteError": 0.00011106209035429748,
+          "meanAbsoluteError": 8.734458971935336e-05
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.999999463558197,
+          "maximumAbsoluteError": 0.00031398236751556396,
+          "RMSAbsoluteError": 4.49545050558121e-05,
+          "meanAbsoluteError": 2.975475246425902e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.7960737347602844,
+          "maximumAbsoluteError": 0.00011738017201423645,
+          "RMSAbsoluteError": 3.1686935656100126e-05,
+          "meanAbsoluteError": 2.5407803587849735e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 9.171843528747559,
+          "maximumAbsoluteError": 0.0005831718444824219,
+          "RMSAbsoluteError": 0.00013740630123634055,
+          "meanAbsoluteError": 0.00011017721846433988
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 5.851162433624268,
+          "maximumAbsoluteError": 0.0004807710647583008,
+          "RMSAbsoluteError": 0.0003215593187584746,
+          "meanAbsoluteError": 0.0002897729476292928
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.541808605194092,
+          "maximumAbsoluteError": 7.43865966796875e-05,
+          "RMSAbsoluteError": 5.034020715326549e-05,
+          "meanAbsoluteError": 4.565715789794922e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.011210900000151014,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom0_1",
+      "kind": "broad",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom0_1.npz",
+      "inputFileSHA256": "1553e7c6e0bc3f760e1c2ab5be1607b663f0b3d5f204b539215bbf0a23f280f3",
+      "inputPCMInt32LESHA256": "8b5933678ad91551d5251d9d370c85e4853ee5476e3b38cb1422d18e3935924c",
+      "floatRawDirections": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 8.537736462515939e-07,
+      "floatMainTruthErrorDegrees": 0.5000000000005914,
+      "quantizedWeightMainTruthErrorDegrees": 0.5000000000005914,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        0.0062197414226830006,
+        0.9916850328445435,
+        0.0010316686239093542,
+        0.0010636541992425919
+      ],
+      "quantizedWeightCountProbabilities": [
+        0.006219526287168264,
+        0.9916847944259644,
+        0.0010318042477592826,
+        0.001063794014044106
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.4419838190078735,
+          "maximumAbsoluteError": 0.0002600550651550293,
+          "RMSAbsoluteError": 6.379083918044623e-05,
+          "meanAbsoluteError": 5.0771204757356516e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 5.306241989135742,
+          "maximumAbsoluteError": 0.0006854534149169922,
+          "RMSAbsoluteError": 0.00020773724910229448,
+          "meanAbsoluteError": 0.00016987619103213023
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 4.394232273101807,
+          "maximumAbsoluteError": 0.000492095947265625,
+          "RMSAbsoluteError": 0.00026890059484128997,
+          "meanAbsoluteError": 0.00022961475231029368
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.451267719268799,
+          "maximumAbsoluteError": 0.00013566017150878906,
+          "RMSAbsoluteError": 9.705841803190974e-05,
+          "meanAbsoluteError": 7.63237476348877e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 7.709611415863037,
+          "maximumAbsoluteError": 0.00029456615447998047,
+          "RMSAbsoluteError": 6.314482031093993e-05,
+          "meanAbsoluteError": 5.037207760292874e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 12.630324363708496,
+          "maximumAbsoluteError": 0.0003662109375,
+          "RMSAbsoluteError": 5.809349994845966e-05,
+          "meanAbsoluteError": 4.1244116868196564e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 8.735377311706543,
+          "maximumAbsoluteError": 0.0003930330276489258,
+          "RMSAbsoluteError": 7.407140692995926e-05,
+          "meanAbsoluteError": 5.793216774016405e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 7.768150329589844,
+          "maximumAbsoluteError": 0.0007996559143066406,
+          "RMSAbsoluteError": 0.00015212046338910812,
+          "meanAbsoluteError": 0.00011381050668812047
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.9999662637710571,
+          "maximumAbsoluteError": 0.0004971325397491455,
+          "RMSAbsoluteError": 5.6852603118285556e-05,
+          "meanAbsoluteError": 3.788841877170022e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.9097076058387756,
+          "maximumAbsoluteError": 0.00014209747314453125,
+          "RMSAbsoluteError": 3.4585281160691864e-05,
+          "meanAbsoluteError": 2.757798275768329e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 5.306241989135742,
+          "maximumAbsoluteError": 0.0006854534149169922,
+          "RMSAbsoluteError": 0.00020773724910229448,
+          "meanAbsoluteError": 0.00016987619103213023
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 4.394232273101807,
+          "maximumAbsoluteError": 0.000492095947265625,
+          "RMSAbsoluteError": 0.00026890059484128997,
+          "meanAbsoluteError": 0.00022961475231029368
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.451267719268799,
+          "maximumAbsoluteError": 0.00013566017150878906,
+          "RMSAbsoluteError": 9.705841803190974e-05,
+          "meanAbsoluteError": 7.63237476348877e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.0053222999995341524,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom1_0",
+      "kind": "speech",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom1_0.npz",
+      "inputFileSHA256": "031c3c8d404ae7c9bf42da1156bffa5ea27324433a1f3061c608b4a65bf37fdb",
+      "inputPCMInt32LESHA256": "200a1fa8250cd6b5f52e4cb3038e240089bc4076bd835fa8a07a62bbad81df1d",
+      "floatRawDirections": [
+        [
+          0.820332075129187,
+          0.5637986149664382,
+          0.09584575252022398
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.820332075129187,
+          0.5637986149664382,
+          0.09584575252022398
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.820332075129187,
+          0.5637986149664382,
+          0.09584575252022398
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.820332075129187,
+          0.5637986149664382,
+          0.09584575252022398
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 0.0,
+      "floatMainTruthErrorDegrees": 5.522610943586725,
+      "quantizedWeightMainTruthErrorDegrees": 5.522610943586725,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        0.00011617593554547057,
+        0.9996976852416992,
+        9.375601803185418e-05,
+        9.239961946150288e-05
+      ],
+      "quantizedWeightCountProbabilities": [
+        0.00011617903510341421,
+        0.9996976852416992,
+        9.3767826911062e-05,
+        9.240807412425056e-05
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.2143564224243164,
+          "maximumAbsoluteError": 0.0002225339412689209,
+          "RMSAbsoluteError": 5.554805902440946e-05,
+          "meanAbsoluteError": 4.413845599172723e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 8.419878005981445,
+          "maximumAbsoluteError": 0.0007730722427368164,
+          "RMSAbsoluteError": 0.0002723383101487157,
+          "meanAbsoluteError": 0.00023978116798707195
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 5.089361667633057,
+          "maximumAbsoluteError": 0.0007253736257553101,
+          "RMSAbsoluteError": 0.0005534937601140498,
+          "meanAbsoluteError": 0.0005231008485511497
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.112504482269287,
+          "maximumAbsoluteError": 0.00012874603271484375,
+          "RMSAbsoluteError": 8.108028395069927e-05,
+          "meanAbsoluteError": 6.383657455444336e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 6.245443820953369,
+          "maximumAbsoluteError": 0.00031304359436035156,
+          "RMSAbsoluteError": 7.204130317710626e-05,
+          "meanAbsoluteError": 5.8564568457327173e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 8.31289291381836,
+          "maximumAbsoluteError": 0.0003447532653808594,
+          "RMSAbsoluteError": 5.689740712115109e-05,
+          "meanAbsoluteError": 4.1700545067626394e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 5.102271556854248,
+          "maximumAbsoluteError": 0.0002777576446533203,
+          "RMSAbsoluteError": 6.173152351447234e-05,
+          "meanAbsoluteError": 4.839751709844461e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 6.711397171020508,
+          "maximumAbsoluteError": 0.0005777478218078613,
+          "RMSAbsoluteError": 9.667078007792808e-05,
+          "meanAbsoluteError": 7.310826423000199e-05
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.9999504089355469,
+          "maximumAbsoluteError": 0.0002933293581008911,
+          "RMSAbsoluteError": 5.3890281160155705e-05,
+          "meanAbsoluteError": 3.799788202681299e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.7044395804405212,
+          "maximumAbsoluteError": 0.00011560320854187012,
+          "RMSAbsoluteError": 2.8177918031059152e-05,
+          "meanAbsoluteError": 2.2407747542448364e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 8.419878005981445,
+          "maximumAbsoluteError": 0.0007730722427368164,
+          "RMSAbsoluteError": 0.0002723383101487157,
+          "meanAbsoluteError": 0.00023978116798707195
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 5.089361667633057,
+          "maximumAbsoluteError": 0.0007253736257553101,
+          "RMSAbsoluteError": 0.0005534937601140498,
+          "meanAbsoluteError": 0.0005231008485511497
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.112504482269287,
+          "maximumAbsoluteError": 0.00012874603271484375,
+          "RMSAbsoluteError": 8.108028395069927e-05,
+          "meanAbsoluteError": 6.383657455444336e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.003560600001947023,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom1_1",
+      "kind": "broad",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom1_1.npz",
+      "inputFileSHA256": "87f6bcebf06a1ed8c6a469ccb2da37b745a0c22f46185350d593c098640f4ed7",
+      "inputPCMInt32LESHA256": "21e9a9b5527e2751da2a7c77eff4338ddb986768486fae3822095f22cdf225da",
+      "floatRawDirections": [
+        [
+          0.8190272834649945,
+          0.57348907788161,
+          0.01745240643728351
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.8190272834649945,
+          0.57348907788161,
+          0.01745240643728351
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.8190272834649945,
+          0.57348907788161,
+          0.01745240643728351
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.8190272834649945,
+          0.57348907788161,
+          0.01745240643728351
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 0.0,
+      "floatMainTruthErrorDegrees": 0.9999999999999002,
+      "quantizedWeightMainTruthErrorDegrees": 0.9999999999999002,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        0.004726759623736143,
+        0.9941465854644775,
+        0.0005570509238168597,
+        0.0005696832085959613
+      ],
+      "quantizedWeightCountProbabilities": [
+        0.00472665298730135,
+        0.994146466255188,
+        0.0005571331712417305,
+        0.0005697376909665763
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.278904676437378,
+          "maximumAbsoluteError": 0.0002728700637817383,
+          "RMSAbsoluteError": 6.262541867206482e-05,
+          "meanAbsoluteError": 4.984641111010181e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 5.19510555267334,
+          "maximumAbsoluteError": 0.0007666349411010742,
+          "RMSAbsoluteError": 0.00023812345402181133,
+          "meanAbsoluteError": 0.00019247068488992665
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 4.21641206741333,
+          "maximumAbsoluteError": 0.0005915164947509766,
+          "RMSAbsoluteError": 0.0003110630514192757,
+          "meanAbsoluteError": 0.00026005064999615706
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.843339204788208,
+          "maximumAbsoluteError": 0.0001494884490966797,
+          "RMSAbsoluteError": 8.989882280466007e-05,
+          "meanAbsoluteError": 6.747245788574219e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 7.580091953277588,
+          "maximumAbsoluteError": 0.00032782554626464844,
+          "RMSAbsoluteError": 6.278210713164139e-05,
+          "meanAbsoluteError": 5.0051811806996164e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 11.682018280029297,
+          "maximumAbsoluteError": 0.00037097930908203125,
+          "RMSAbsoluteError": 5.740338721009448e-05,
+          "meanAbsoluteError": 4.1000015888693444e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 8.30213451385498,
+          "maximumAbsoluteError": 0.00036226212978363037,
+          "RMSAbsoluteError": 7.28807088833229e-05,
+          "meanAbsoluteError": 5.757276404528545e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 7.847139358520508,
+          "maximumAbsoluteError": 0.0008885860443115234,
+          "RMSAbsoluteError": 0.0001542037791318432,
+          "meanAbsoluteError": 0.00011548382323702372
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.9999581575393677,
+          "maximumAbsoluteError": 0.0004446953535079956,
+          "RMSAbsoluteError": 5.713048829542838e-05,
+          "meanAbsoluteError": 3.851419802351017e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.7572466731071472,
+          "maximumAbsoluteError": 0.00014466047286987305,
+          "RMSAbsoluteError": 3.360811910287743e-05,
+          "meanAbsoluteError": 2.680976739833188e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 5.19510555267334,
+          "maximumAbsoluteError": 0.0007666349411010742,
+          "RMSAbsoluteError": 0.00023812345402181133,
+          "meanAbsoluteError": 0.00019247068488992665
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 4.21641206741333,
+          "maximumAbsoluteError": 0.0005915164947509766,
+          "RMSAbsoluteError": 0.0003110630514192757,
+          "meanAbsoluteError": 0.00026005064999615706
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.843339204788208,
+          "maximumAbsoluteError": 0.0001494884490966797,
+          "RMSAbsoluteError": 8.989882280466007e-05,
+          "meanAbsoluteError": 6.747245788574219e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.0034904999993159436,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom2_0",
+      "kind": "speech",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom2_0.npz",
+      "inputFileSHA256": "4b4da3c71f0c6ce8a9eb1cb60ac9a3ca60b4395b0075cd70794898b5f389a602",
+      "inputPCMInt32LESHA256": "40b6a8ad5d87d9fac45929c18eb3736c7b72df058935aa0fa46bc31a82e213d3",
+      "floatRawDirections": [
+        [
+          0.9470240105953237,
+          0.3168698014012771,
+          -0.052335956242943835
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.9470240105953237,
+          0.3168698014012771,
+          -0.052335956242943835
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.9470240105953237,
+          0.3168698014012771,
+          -0.052335956242943835
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.9470240105953237,
+          0.3168698014012771,
+          -0.052335956242943835
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 0.0,
+      "floatMainTruthErrorDegrees": 16.763047827622124,
+      "quantizedWeightMainTruthErrorDegrees": 16.763047827622124,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        5.500311453943141e-05,
+        0.9998683929443359,
+        3.932635081582703e-05,
+        3.734360871021636e-05
+      ],
+      "quantizedWeightCountProbabilities": [
+        5.500332554220222e-05,
+        0.9998683929443359,
+        3.932875188183971e-05,
+        3.7345464079407975e-05
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.3318088054656982,
+          "maximumAbsoluteError": 0.00025697797536849976,
+          "RMSAbsoluteError": 6.259261264641148e-05,
+          "meanAbsoluteError": 4.9428256502004155e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 8.151424407958984,
+          "maximumAbsoluteError": 0.0009440183639526367,
+          "RMSAbsoluteError": 0.000203650384329481,
+          "meanAbsoluteError": 0.00015321042062541317
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 6.174140930175781,
+          "maximumAbsoluteError": 0.0004820823669433594,
+          "RMSAbsoluteError": 0.00035869146420060695,
+          "meanAbsoluteError": 0.0003412719126100893
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.565136432647705,
+          "maximumAbsoluteError": 7.82012939453125e-05,
+          "RMSAbsoluteError": 5.2737952571563444e-05,
+          "meanAbsoluteError": 4.5180320739746094e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 7.076539039611816,
+          "maximumAbsoluteError": 0.000308990478515625,
+          "RMSAbsoluteError": 7.312999879626115e-05,
+          "meanAbsoluteError": 5.9352980144726175e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 11.509722709655762,
+          "maximumAbsoluteError": 0.0003409385681152344,
+          "RMSAbsoluteError": 5.733286323925866e-05,
+          "meanAbsoluteError": 4.191670088417853e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 8.17835807800293,
+          "maximumAbsoluteError": 0.0003529787063598633,
+          "RMSAbsoluteError": 6.260731087681517e-05,
+          "meanAbsoluteError": 4.906133116774635e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 6.78518533706665,
+          "maximumAbsoluteError": 0.00043773651123046875,
+          "RMSAbsoluteError": 9.642316320797149e-05,
+          "meanAbsoluteError": 7.447998893136779e-05
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.9999991655349731,
+          "maximumAbsoluteError": 0.0003552287817001343,
+          "RMSAbsoluteError": 4.7521392787949316e-05,
+          "meanAbsoluteError": 3.261051444399531e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.8033481240272522,
+          "maximumAbsoluteError": 0.00013127923011779785,
+          "RMSAbsoluteError": 3.1808516242999776e-05,
+          "meanAbsoluteError": 2.5151895146814047e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 8.151424407958984,
+          "maximumAbsoluteError": 0.0009440183639526367,
+          "RMSAbsoluteError": 0.000203650384329481,
+          "meanAbsoluteError": 0.00015321042062541317
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 6.174140930175781,
+          "maximumAbsoluteError": 0.0004820823669433594,
+          "RMSAbsoluteError": 0.00035869146420060695,
+          "meanAbsoluteError": 0.0003412719126100893
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.565136432647705,
+          "maximumAbsoluteError": 7.82012939453125e-05,
+          "RMSAbsoluteError": 5.2737952571563444e-05,
+          "meanAbsoluteError": 4.5180320739746094e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.006388400001014816,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom2_1",
+      "kind": "broad",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom2_1.npz",
+      "inputFileSHA256": "0bc9cb3b2f80549a8f06ef1059b8f8759e3bbf5be73aae5f6dd4562dac7af606",
+      "inputPCMInt32LESHA256": "b63083b2fd0650437c4446bf68660448b1faa62760f0bce2df19a8c3455a748b",
+      "floatRawDirections": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "quantizedWeightRawDirections": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "floatAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "quantizedWeightAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "acceptedMainDirectionDifferenceDegrees": 8.537736462515939e-07,
+      "floatMainTruthErrorDegrees": 0.5000000000005914,
+      "quantizedWeightMainTruthErrorDegrees": 0.5000000000005914,
+      "floatRawSourceCount": 1,
+      "quantizedWeightRawSourceCount": 1,
+      "floatCountProbabilities": [
+        0.008102142252027988,
+        0.9903351068496704,
+        0.0008134058443829417,
+        0.000749360304325819
+      ],
+      "quantizedWeightCountProbabilities": [
+        0.008102175779640675,
+        0.9903349280357361,
+        0.0008134906529448926,
+        0.000749418803025037
+      ],
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.3659223318099976,
+          "maximumAbsoluteError": 0.00026419758796691895,
+          "RMSAbsoluteError": 6.0344813337798e-05,
+          "meanAbsoluteError": 4.75212137428644e-05
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 5.048113822937012,
+          "maximumAbsoluteError": 0.0008028745651245117,
+          "RMSAbsoluteError": 0.00019281768334467026,
+          "meanAbsoluteError": 0.00015028450120106856
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 4.288320064544678,
+          "maximumAbsoluteError": 0.0004830360412597656,
+          "RMSAbsoluteError": 0.00021818428012164857,
+          "meanAbsoluteError": 0.00017268569381148727
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.7655999660491943,
+          "maximumAbsoluteError": 9.846687316894531e-05,
+          "RMSAbsoluteError": 6.114939828408715e-05,
+          "meanAbsoluteError": 4.4733285903930664e-05
+        }
+      },
+      "moduleActivationDifferences": {
+        "conv": {
+          "shape": [
+            15,
+            12,
+            32,
+            29
+          ],
+          "originalAbsMax": 7.826107501983643,
+          "maximumAbsoluteError": 0.00028455257415771484,
+          "RMSAbsoluteError": 6.295654997538939e-05,
+          "meanAbsoluteError": 5.024791419879324e-05
+        },
+        "depth": {
+          "shape": [
+            15,
+            12,
+            16,
+            29
+          ],
+          "originalAbsMax": 12.545059204101562,
+          "maximumAbsoluteError": 0.00036072731018066406,
+          "RMSAbsoluteError": 5.775311619614411e-05,
+          "meanAbsoluteError": 4.108108411727005e-05
+        },
+        "point": {
+          "shape": [
+            15,
+            16,
+            16,
+            27
+          ],
+          "originalAbsMax": 9.068595886230469,
+          "maximumAbsoluteError": 0.0003795623779296875,
+          "RMSAbsoluteError": 7.393980583037519e-05,
+          "meanAbsoluteError": 5.7872856877686466e-05
+        },
+        "embed": {
+          "shape": [
+            15,
+            27,
+            32
+          ],
+          "originalAbsMax": 7.680409908294678,
+          "maximumAbsoluteError": 0.0008475780487060547,
+          "RMSAbsoluteError": 0.00015356389332899902,
+          "meanAbsoluteError": 0.0001131459472005336
+        },
+        "gru": {
+          "shape": [
+            15,
+            27,
+            48
+          ],
+          "originalAbsMax": 0.9999630451202393,
+          "maximumAbsoluteError": 0.00047388672828674316,
+          "RMSAbsoluteError": 5.22960565218799e-05,
+          "meanAbsoluteError": 3.476917514085977e-05
+        },
+        "phase": {
+          "shape": [
+            15,
+            27,
+            126
+          ],
+          "originalAbsMax": 0.8346428871154785,
+          "maximumAbsoluteError": 0.00013272464275360107,
+          "RMSAbsoluteError": 3.239876224721814e-05,
+          "meanAbsoluteError": 2.5561337639896522e-05
+        },
+        "support": {
+          "shape": [
+            15,
+            27,
+            63
+          ],
+          "originalAbsMax": 5.048113822937012,
+          "maximumAbsoluteError": 0.0008028745651245117,
+          "RMSAbsoluteError": 0.00019281768334467026,
+          "meanAbsoluteError": 0.00015028450120106856
+        },
+        "activity": {
+          "shape": [
+            1,
+            27,
+            1
+          ],
+          "originalAbsMax": 4.288320064544678,
+          "maximumAbsoluteError": 0.0004830360412597656,
+          "RMSAbsoluteError": 0.00021818428012164857,
+          "meanAbsoluteError": 0.00017268569381148727
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.7655999660491943,
+          "maximumAbsoluteError": 9.846687316894531e-05,
+          "RMSAbsoluteError": 6.114939828408715e-05,
+          "meanAbsoluteError": 4.4733285903930664e-05
+        }
+      },
+      "CPUSecondsBothModelsAndHooks": 0.00437450000026729,
+      "guardFlags": [],
+      "inferenceThreshold": 0.1,
+      "activityThreshold": 0.5,
+      "fullFixedPoint": false,
+      "hardwareExecuted": false
+    }
+  ],
+  "scope": "weight quantization followed by float32 dequantized execution only"
+}

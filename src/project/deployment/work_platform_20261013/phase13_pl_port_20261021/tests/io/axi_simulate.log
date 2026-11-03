@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Oct 21 18:12:39 2026
+# Process ID         : 26600
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io
+# Command line       : xsim.exe -log axi_simulate.log -mode tcl -source {xsim.dir/analysis_axi/xsim_script.tcl}
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io/axi_simulate.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io\xsim.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 18990 MB
+#-----------------------------------------------------------
+source xsim.dir/analysis_axi/xsim_script.tcl
+# xsim {analysis_axi} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+ANALYSIS_AXI_PASS checks24 independentAW_W strobes stable atomic capabilities errors
+$finish called at time : 4060 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/io/tb_analysis_axi.sv" Line 85
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 18:12:41 2026...

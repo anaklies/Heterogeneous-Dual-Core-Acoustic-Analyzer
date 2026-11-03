@@ -1,0 +1,9 @@
+{
+  "seed": 13211021,
+  "validDots": 100,
+  "invalidDots": 1,
+  "inputBeats": 1692,
+  "signedWidth": 16,
+  "lanes": 12,
+  "accumulatorWidth": 48
+}

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Oct 21 13:51:58 2026
+# Process ID         : 14624
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute
+# Command line       : vivado.exe -mode batch -source simulate.tcl -log simulate_access.log -journal simulate_access.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/simulate_access.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute\simulate_access.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 18008 MB
+#-----------------------------------------------------------
+source simulate.tcl
+# set here [file dirname [file normalize [info script]]]
+# cd $here
+# create_project -in_memory -part xc7z020clg484-2
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 552.082 ; gain = 217.531
+# read_verilog -sv [file normalize ../../rtl/compute/shared_dot12.sv]
+# add_files -fileset sim_1 tb_shared_dot12.sv
+# set_property include_dirs [list $here] [get_filesets sim_1]
+# set_property top tb_shared_dot12 [get_filesets sim_1]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# launch_simulation
+ERROR: [Common 17-53] User Exception: The current project is in-memory. Please use Save Project As to save your work and re-do this operation.
+
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 13:52:07 2026...

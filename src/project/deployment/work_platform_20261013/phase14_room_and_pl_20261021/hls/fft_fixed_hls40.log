@@ -1,0 +1,113 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 07:44:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fft1536_fixed_vendor' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20.341ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(7)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20.341ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(8)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.285 seconds; current allocated memory: 164.316 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' ... 
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1563:25)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:2)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:12)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp
+
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+
+WARNING: [HLS 207-6591] unused parameter 'data_type' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:195:72)
+
+WARNING: [HLS 207-6591] unused parameter 'cp_len_enable' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:219:61)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:232:63)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:409:66)
+
+WARNING: [HLS 207-6591] unused parameter 'has_ovflo' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:422:61)
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 8.141 seconds; current allocated memory: 171.551 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 1,787 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_fft_fixed40/hls/syn/report/csynth_design_size.rpt:2)
+
+WARNING: [HLS 214-273] In function 'hls::ip_fft::config_t<fixed_fft512_params>::setDir(bool, unsigned int)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:309:24) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:22:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:310:0)
+
+WARNING: [HLS 214-273] In function 'ssdm_int<8, false>::ssdm_int(unsigned char)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:39) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:22:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:0)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::getDir(unsigned int)' into 'void hls::fft_syn<fixed_fft512_params>(std::complex<ap_fixed<(((fixed_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((fixed_fft512_params::output_width) + (7)) / (8)) * (8), (((((fixed_fft512_params::output_width) + (7)) / (8)) * (8)) - (fixed_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<fixed_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<fixed_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1223:31)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::getSch(unsigned int)' into 'void hls::fft_syn<fixed_fft512_params>(std::complex<ap_fixed<(((fixed_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((fixed_fft512_params::output_width) + (7)) / (8)) * (8), (((((fixed_fft512_params::output_width) + (7)) / (8)) * (8)) - (fixed_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<fixed_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<fixed_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1212:36)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<fixed_fft512_params>::setDir(bool, unsigned int)' into 'fft_fixed512(std::complex<ap_fixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:25:9)
+
+ERROR: [HLS 214-244] in function 'std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >::imag() const': Failed to implement stream interface on variable 'out'. Each array element of 'out' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.
+
+Resolution: For help on HLS 214-244 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-244.html
+
+ERROR: [HLS 214-244] in function 'std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >::real() const': Failed to implement stream interface on variable 'out'. Each array element of 'out' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.
+
+Resolution: For help on HLS 214-244 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-244.html
+
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+
+ERROR: Pre-synthesis failed.
+
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 3 seconds. Total elapsed time: 20.024 seconds; peak allocated memory: 172.504 MB.
+

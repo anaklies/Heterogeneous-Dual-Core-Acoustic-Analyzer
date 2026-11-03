@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/control/mic_health.sv" into library work
+INFO: [VRFC 10-311] analyzing module mic_health
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/control/tb_mic_health.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_mic_health

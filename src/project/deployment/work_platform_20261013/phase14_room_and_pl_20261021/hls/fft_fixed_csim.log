@@ -1,0 +1,229 @@
+
+****** vitis-run v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Wed Oct 21 18:09:18 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_fixed 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_fixed/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_fixed'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fft1536_fixed_vendor' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20.341ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(7)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20.341ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed.cfg(8)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p14_fft_fixed/vitis-comp.json
+
+INFO: [SIM 211-2] *************** CSIM start ***************
+
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+
+   Compiling ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft_fixed_tb.cpp in debug mode
+   Compiling ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp in debug mode
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:3:
+In file included from D:/2025.2/Vitis/include\hls_fft.h:20:
+In file included from D:/2025.2/Vitis/include\ap_int.h:10:
+In file included from D:/2025.2/Vitis/include\etc/ap_common.h:668:
+In file included from D:/2025.2/Vitis/include\etc/ap_private.h:68:
+In file included from D:/2025.2/Vitis/include\hls_half.h:26:
+In file included from D:/2025.2/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/2025.2/Vitis/include\hls_fpo.h:140:
+In file included from D:/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/2025.2/Vitis/include\gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/2025.2/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:3:
+D:/2025.2/Vitis/include\hls_fft.h:2734:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2735:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2760:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2761:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2785:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2786:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2811:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2812:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2840:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2841:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2870:75: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                          ^
+D:/2025.2/Vitis/include\hls_fft.h:2871:76: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                           ^
+D:/2025.2/Vitis/include\hls_fft.h:2903:96: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                               ^
+D:/2025.2/Vitis/include\hls_fft.h:2904:97: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                                ^
+D:/2025.2/Vitis/include\hls_fft.h:2937:96: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_IN_T>  xn[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                               ^
+D:/2025.2/Vitis/include\hls_fft.h:2938:97: warning: 'no_ctor' attribute ignored [-Wignored-attributes]
+    std::complex<_DATA_OUT_T>  xk[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft]  __attribute__((no_ctor));
+                                                                                                ^
+../../../../../deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/fft1536_fixed_vendor.cpp:22:5: error: no matching function for call to 'fft'
+    hls::fft<fixed_fft512_params>(in,out,&status,&cfg);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/2025.2/Vitis/include\hls_fft.h:1356:7: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'hls::stream<hls::vector<std::complex<ap_fixed<((fixed_fft512_params::input_width + 7) / 8) * 8, 1>>, (hls::ip_fft::my_assert<(fixed_fft512_params::super_sample_rates) == (ip_fft::ssr_1) || (fixed_fft512_params::super_sample_rate) == (ip_fft::ssr_1)> , ((fixed_fft512_params::super_sample_rates) != (ip_fft::ssr_1) ? (fixed_fft512_params::super_sample_rates) : (fixed_fft512_params::super_sample_rate)))>> &' for 1st argument
+void  fft(
+      ^
+D:/2025.2/Vitis/include\hls_fft.h:1396:7: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'hls::stream<std::complex<ap_fixed<((fixed_fft512_params::input_width + 7) / 8) * 8, 1>>> &' for 1st argument
+void  fft(
+      ^
+D:/2025.2/Vitis/include\hls_fft.h:1459:6: note: candidate function template not viable: no known conversion from 'std::complex<FOut> *' (aka 'complex<ap_fixed<34, 11>> *') to 'std::complex<ap_fixed<((fixed_fft512_params::output_width + 7) / 8) * 8, ((fixed_fft512_params::output_width + 7) / 8) * 8 - fixed_fft512_params::input_width + 1>> *' for 2nd argument
+void fft(
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1547:6: note: candidate function template not viable: no known conversion from 'std::complex<FOut> *' (aka 'complex<ap_fixed<34, 11>> *') to 'std::complex<ap_fixed<((fixed_fft512_params::output_width + 7) / 8) * 8, ((fixed_fft512_params::output_width + 7) / 8) * 8 - fixed_fft512_params::input_width + 1>> *' for 2nd argument
+void fft(
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1666:8: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'std::complex<ap_fixed<((fixed_fft512_params::input_width + 7) / 8) * 8, 1>> (*)[512]' for 1st argument
+void   fft(
+       ^
+D:/2025.2/Vitis/include\hls_fft.h:1754:8: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'std::complex<ap_fixed<((fixed_fft512_params::input_width + 7) / 8) * 8, 1>> (*)[512]' for 1st argument
+void   fft(
+       ^
+D:/2025.2/Vitis/include\hls_fft.h:2106:6: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'hls::stream<hls::vector<std::complex<float>, (hls::ip_fft::my_assert<(fixed_fft512_params::super_sample_rates) == (ip_fft::ssr_1) || (fixed_fft512_params::super_sample_rate) == (ip_fft::ssr_1)> , ((fixed_fft512_params::super_sample_rates) != (ip_fft::ssr_1) ? (fixed_fft512_params::super_sample_rates) : (fixed_fft512_params::super_sample_rate)))>> &' for 1st argument
+void fft(hls::stream<hls::vector<std::complex<float>, _CONFIG_T_super_sample_rate>> &xn,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2198:6: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'std::complex<float> *' for 1st argument
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2252:6: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'std::complex<float> *' for 1st argument
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2142:6: note: candidate function template not viable: no known conversion from 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *') to 'hls::stream<std::complex<float>> &' for 1st argument
+void fft(hls::stream<std::complex<float>> &xn,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2825:6: note: candidate function template not viable: no known conversion from 'hls::ip_fft::config_t<fixed_fft512_params> *' to 'int' for 4th argument
+void fft(std::complex<_DATA_IN_T>  in[1 << _CONFIG_T_max_nfft], 
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1428:7: note: candidate template ignored: couldn't infer template argument '_TAG'
+void  fft(
+      ^
+D:/2025.2/Vitis/include\hls_fft.h:1488:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1518:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1600:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:1630:12: note: candidate template ignored: couldn't infer template argument '_TAG'
+void       fft(
+           ^
+D:/2025.2/Vitis/include\hls_fft.h:1710:8: note: candidate template ignored: couldn't infer template argument '_TAG'
+void   fft(
+       ^
+D:/2025.2/Vitis/include\hls_fft.h:1795:8: note: candidate template ignored: couldn't infer template argument '_TAG'
+void   fft(
+       ^
+D:/2025.2/Vitis/include\hls_fft.h:1836:8: note: candidate template ignored: couldn't infer template argument '_TAG'
+void   fft(
+       ^
+D:/2025.2/Vitis/include\hls_fft.h:2170:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(hls::stream<std::complex<float>> &xn,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2224:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2279:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2306:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2330:6: note: candidate template ignored: couldn't infer template argument '_TAG'
+void fft(std::complex<float> xn[1 << _CONFIG_T_max_nfft],
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2723:6: note: candidate template ignored: could not match 'hls::stream<std::complex<_DATA_IN_T>>' against 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *')
+void fft(hls::stream<std::complex<_DATA_IN_T>>& in,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2748:6: note: candidate template ignored: could not match 'hls::stream<std::complex<_DATA_IN_T>>' against 'std::complex<FOut> *' (aka 'complex<ap_fixed<34, 11>> *')
+void fft(unsigned nfft,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2774:6: note: candidate template ignored: could not match 'hls::stream<hls::vector<std::complex<_DATA_IN_T>, (hls::ip_fft::my_assert<(fixed_fft512_params::super_sample_rates) == (ip_fft::ssr_1) || (fixed_fft512_params::super_sample_rate) == (ip_fft::ssr_1)> , ((fixed_fft512_params::super_sample_rates) != (ip_fft::ssr_1) ? (fixed_fft512_params::super_sample_rates) : (fixed_fft512_params::super_sample_rate)))>>' against 'std::complex<FIn> *' (aka 'complex<ap_fixed<24, 1>> *')
+void fft(hls::stream<hls::vector<std::complex<_DATA_IN_T>, _CONFIG_T_super_sample_rate>>&  in,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2799:6: note: candidate template ignored: could not match 'hls::stream<hls::vector<std::complex<_DATA_IN_T>, (hls::ip_fft::my_assert<(fixed_fft512_params::super_sample_rates) == (ip_fft::ssr_1) || (fixed_fft512_params::super_sample_rate) == (ip_fft::ssr_1)> , ((fixed_fft512_params::super_sample_rates) != (ip_fft::ssr_1) ? (fixed_fft512_params::super_sample_rates) : (fixed_fft512_params::super_sample_rate)))>>' against 'std::complex<FOut> *' (aka 'complex<ap_fixed<34, 11>> *')
+void fft(unsigned nfft,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2854:6: note: candidate template ignored: could not match 'complex' against 'status_t'
+void fft(unsigned nfft,
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2884:6: note: candidate template ignored: could not match 'std::complex<_DATA_IN_T>[512]' against 'std::complex<FIn>' (aka 'complex<ap_fixed<24, 1>>')
+void fft(std::complex<_DATA_IN_T>  in[_CONFIG_T::channels][1 << _CONFIG_T_max_nfft], 
+     ^
+D:/2025.2/Vitis/include\hls_fft.h:2917:6: note: candidate function template not viable: requires at least 5 arguments, but 4 were provided
+void fft(unsigned nfft,
+     ^
+17 warnings and 1 error generated.
+mingw32-make: *** [csim.mk:97: obj/fft1536_fixed_vendor.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+
+INFO: [SIM 211-3] *************** CSIM finish ***************
+
+ERROR: CSIM Failed
+
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 3 seconds. Total elapsed time: 8.918 seconds; peak allocated memory: 163.941 MB.
+

@@ -1,0 +1,103 @@
+{
+  "abi": 1,
+  "kernels": {
+    "frontend": {
+      "base": 1151336448,
+      "clockHz": 75000000,
+      "header": "tmp\\p16_frontend_split\\hls\\impl\\ip\\drivers\\acoustic_frontend_pipeline_v1_0\\src\\xacoustic_frontend_pipeline_hw.h",
+      "headerSHA256": "a7013c065a107e01830df85a99788a085e42a8ea37314d36b49c068d07df02d3",
+      "registers": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "PCM_DATA": 16,
+        "PREVIOUS_DATA": 24,
+        "PREVIOUS_META_DATA": 32,
+        "CURRENT_DATA": 40,
+        "SCRATCH_DATA": 48,
+        "QLOGS_DATA": 56,
+        "FEATURES_R_DATA": 64,
+        "META_DATA": 72,
+        "START_SAMPLE_DATA": 80,
+        "CONFIG_R_DATA": 92,
+        "SESSION_DATA": 100,
+        "ALLOW_REUSE_DATA": 108
+      }
+    },
+    "nn": {
+      "base": 1151401984,
+      "clockHz": 75000000,
+      "header": "tmp\\p16_nn_convshared\\hls\\impl\\ip\\drivers\\nn_window_v1_0\\src\\xnn_window_hw.h",
+      "headerSHA256": "d779c3c56c56ce7ab610dc871376ff92c493eeafd95b0c1502807a5493ada518",
+      "registers": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "INPUT_R_DATA": 16,
+        "PHASE_DATA": 28,
+        "SUPPORT_DATA": 40,
+        "LOGITS_DATA": 52,
+        "VECTOR_DATA": 64,
+        "METADATA_DATA": 76,
+        "COUNTERS_DATA": 88
+      }
+    },
+    "doa": {
+      "base": 1151467520,
+      "clockHz": 75000000,
+      "header": "tmp\\p15_doa_shared\\hls\\impl\\ip\\drivers\\doa_first_shared_v1_0\\src\\xdoa_first_shared_hw.h",
+      "headerSHA256": "cf9985cd2d3ca111986bdc0dfa46d91b8dc413c35cf7f6b5cc4a8cb792797dcc",
+      "registers": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "VECTOR_DATA": 16,
+        "BANK_DATA": 28,
+        "BANK_SPEED_DATA": 40,
+        "THRESHOLD_DATA": 48,
+        "ACTIVE_R_DATA": 56,
+        "QUALITY_VALID_DATA": 64,
+        "OUTPUT_R_DATA": 72
+      }
+    },
+    "analysis": {
+      "base": 1151533056,
+      "clockHz": 50000000,
+      "header": "tmp\\p17_analysis_dma_safe\\hls\\impl\\ip\\drivers\\analysis_dma_safe_v1_0\\src\\xanalysis_dma_safe_hw.h",
+      "headerSHA256": "c8cd8249f59f431f3cdeecfb7cbd29153e3ec628bab6b47dba8ed9810f6516bb",
+      "registers": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "MEMORY_R_DATA": 16,
+        "A_OFFSET_DATA": 24,
+        "B_OFFSET_DATA": 32,
+        "OUT_OFFSET_DATA": 40,
+        "ARENA_WORDS_DATA": 48,
+        "N_DATA": 56,
+        "FRAMES_DATA": 64,
+        "OPERATION_DATA": 72,
+        "DF_DATA": 80,
+        "PARAMETER_R_DATA": 88,
+        "STATUS_DATA": 96,
+        "STATUS_CTRL": 100
+      },
+      "vlnv": "xilinx.com:hls:analysis_dma_safe:1.0"
+    }
+  },
+  "algorithmVersion": 0,
+  "actualWholeBoardCapabilityMask": 0,
+  "warning": "Connected IPs and primitives do not imply all52product functions are implemented.",
+  "metadata": {
+    "frontend": "DDRmagic53464631 anderrorword13",
+    "nn": "DDRmassQ15word0 andactiveflagword4",
+    "doa": "DDRfloatvalidword0;pointIDisnottrackID",
+    "analysis": "AXILite ROstatus0x60"
+  },
+  "analysisOffsetsUnit": "float32words withinreservedarena; not byte offsets",
+  "analysisInputUnits": "NormalizedFS PCM or normalizedFFT/power spectra as each opcode specifies; rawADC-count FFT is not interchangeable."
+}

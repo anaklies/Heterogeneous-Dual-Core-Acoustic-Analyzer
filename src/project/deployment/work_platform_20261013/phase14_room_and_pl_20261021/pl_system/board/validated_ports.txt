@@ -1,0 +1,118 @@
+PORT DDR_0_addr IO
+PORT DDR_0_ba IO
+PORT DDR_0_cas_n IO
+PORT DDR_0_ck_n IO
+PORT DDR_0_ck_p IO
+PORT DDR_0_cke IO
+PORT DDR_0_cs_n IO
+PORT DDR_0_dm IO
+PORT DDR_0_dq IO
+PORT DDR_0_dqs_n IO
+PORT DDR_0_dqs_p IO
+PORT DDR_0_odt IO
+PORT DDR_0_ras_n IO
+PORT DDR_0_reset_n IO
+PORT DDR_0_we_n IO
+PORT FIXED_IO_0_ddr_vrn IO
+PORT FIXED_IO_0_ddr_vrp IO
+PORT FIXED_IO_0_mio IO
+PORT FIXED_IO_0_ps_clk IO
+PORT FIXED_IO_0_ps_porb IO
+PORT FIXED_IO_0_ps_srstb IO
+PORT M_AXI_MAILBOX_araddr O
+PORT M_AXI_MAILBOX_arprot O
+PORT M_AXI_MAILBOX_arready I
+PORT M_AXI_MAILBOX_arvalid O
+PORT M_AXI_MAILBOX_awaddr O
+PORT M_AXI_MAILBOX_awprot O
+PORT M_AXI_MAILBOX_awready I
+PORT M_AXI_MAILBOX_awvalid O
+PORT M_AXI_MAILBOX_bready O
+PORT M_AXI_MAILBOX_bresp I
+PORT M_AXI_MAILBOX_bvalid I
+PORT M_AXI_MAILBOX_rdata I
+PORT M_AXI_MAILBOX_rready O
+PORT M_AXI_MAILBOX_rresp I
+PORT M_AXI_MAILBOX_rvalid I
+PORT M_AXI_MAILBOX_wdata O
+PORT M_AXI_MAILBOX_wready I
+PORT M_AXI_MAILBOX_wstrb O
+PORT M_AXI_MAILBOX_wvalid O
+PORT S_AXI_ACOUSTIC_araddr I
+PORT S_AXI_ACOUSTIC_arburst I
+PORT S_AXI_ACOUSTIC_arcache I
+PORT S_AXI_ACOUSTIC_arid I
+PORT S_AXI_ACOUSTIC_arlen I
+PORT S_AXI_ACOUSTIC_arlock I
+PORT S_AXI_ACOUSTIC_arprot I
+PORT S_AXI_ACOUSTIC_arqos I
+PORT S_AXI_ACOUSTIC_arready O
+PORT S_AXI_ACOUSTIC_arregion I
+PORT S_AXI_ACOUSTIC_arsize I
+PORT S_AXI_ACOUSTIC_aruser I
+PORT S_AXI_ACOUSTIC_arvalid I
+PORT S_AXI_ACOUSTIC_awaddr I
+PORT S_AXI_ACOUSTIC_awburst I
+PORT S_AXI_ACOUSTIC_awcache I
+PORT S_AXI_ACOUSTIC_awid I
+PORT S_AXI_ACOUSTIC_awlen I
+PORT S_AXI_ACOUSTIC_awlock I
+PORT S_AXI_ACOUSTIC_awprot I
+PORT S_AXI_ACOUSTIC_awqos I
+PORT S_AXI_ACOUSTIC_awready O
+PORT S_AXI_ACOUSTIC_awregion I
+PORT S_AXI_ACOUSTIC_awsize I
+PORT S_AXI_ACOUSTIC_awuser I
+PORT S_AXI_ACOUSTIC_awvalid I
+PORT S_AXI_ACOUSTIC_bid O
+PORT S_AXI_ACOUSTIC_bready I
+PORT S_AXI_ACOUSTIC_bresp O
+PORT S_AXI_ACOUSTIC_buser O
+PORT S_AXI_ACOUSTIC_bvalid O
+PORT S_AXI_ACOUSTIC_rdata O
+PORT S_AXI_ACOUSTIC_rid O
+PORT S_AXI_ACOUSTIC_rlast O
+PORT S_AXI_ACOUSTIC_rready I
+PORT S_AXI_ACOUSTIC_rresp O
+PORT S_AXI_ACOUSTIC_ruser O
+PORT S_AXI_ACOUSTIC_rvalid O
+PORT S_AXI_ACOUSTIC_wdata I
+PORT S_AXI_ACOUSTIC_wid I
+PORT S_AXI_ACOUSTIC_wlast I
+PORT S_AXI_ACOUSTIC_wready O
+PORT S_AXI_ACOUSTIC_wstrb I
+PORT S_AXI_ACOUSTIC_wuser I
+PORT S_AXI_ACOUSTIC_wvalid I
+PORT TMDS_clk_n O
+PORT TMDS_clk_p O
+PORT TMDS_data_n O
+PORT TMDS_data_p O
+PORT acoustic_clk_75 O
+PORT acoustic_irq I
+PORT acoustic_resetn_75 O
+PORT btns_tri_i I
+PORT hdmi_ddc_scl_i I
+PORT hdmi_ddc_scl_o O
+PORT hdmi_ddc_scl_t O
+PORT hdmi_ddc_sda_i I
+PORT hdmi_ddc_sda_o O
+PORT hdmi_ddc_sda_t O
+PORT hdmi_oen O
+PORT lcd_control O
+PORT lcd_cs_n O
+PORT lcd_mosi O
+PORT lcd_sck O
+PORT leds_tri_o O
+PORT mailbox_clk O
+PORT mailbox_resetn O
+INTERFACE DDR_0 Master xilinx.com:interface:ddrx_rtl:1.0
+INTERFACE FIXED_IO_0 Master xilinx.com:display_processing_system7:fixedio_rtl:1.0
+INTERFACE M_AXI_MAILBOX Master xilinx.com:interface:aximm_rtl:1.0
+INTERFACE S_AXI_ACOUSTIC Slave xilinx.com:interface:aximm_rtl:1.0
+INTERFACE TMDS Master digilentinc.com:interface:tmds_rtl:1.0
+INTERFACE btns Master xilinx.com:interface:gpio_rtl:1.0
+INTERFACE hdmi_ddc Master xilinx.com:interface:iic_rtl:1.0
+INTERFACE leds Master xilinx.com:interface:gpio_rtl:1.0
+MAILBOX_OFFSET 0x43C20000
+MAILBOX_RANGE 0x00010000
+STATUS BD_VALIDATED_ONLY_NO_ALGORITHM_OR_BITSTREAM_ACCEPTANCE

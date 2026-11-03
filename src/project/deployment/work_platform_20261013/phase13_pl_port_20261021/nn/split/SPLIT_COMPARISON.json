@@ -1,0 +1,150 @@
+{
+  "sourceInputs": {
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\srpdnn_float.cpp": "814bd346a23d1ec350b3a5a2bc154783a56c86de829c1972316b4d666cceee6b",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\srpdnn_float.h": "7a14191cc434ad257a78d186b6f0cf65e3b0db92f6b1ce71e9249fc11e79e052",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\run_float.cpp": "eab17d6902de5d0cac695ad96c51826565a1f90184f3571ff341d84983caca34",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\weights_f32_reference.bin": "c588161428acf94fd84ee51caedb5c11afb849ed8a49806136d296084419e067",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\tensor_manifest.json": "bd4da6487e3cf4f39a285c34e6c1edb66fb60f4af0792bf6e2f9114ea071b39b",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\cpp_input_features.bin": "e3d3ae965dbcf08c7b25946ccfe7ba3ad0ad3588800dcd0b87432299a5c68676",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\cpp_outputs.bin": "d65a6874c090908173cf7e7f1714d1737a7ef00a936a23a2f0dedffefb172aba",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\torch_outputs.bin": "e6d4224b239e1b7d142565bd92ecbd716fa0ab82a4b3f2ccbd90a477cb246b36"
+  },
+  "transformation": "one monolithic NN_WEIGHTS ROM replaced by per-tensor W_* ROM declarations and direct references",
+  "parameterWords": 30958,
+  "arrays": [
+    {
+      "name": "W_CONV_WEIGHT",
+      "elements": 1080,
+      "bytes": 4320,
+      "SHA256Float32LE": "ed1b44a946eb71e20ce703e817366f5391f1d47c63f99cd3da9f07fbcc5a4a92"
+    },
+    {
+      "name": "W_CONV_BIAS",
+      "elements": 12,
+      "bytes": 48,
+      "SHA256Float32LE": "51e21e2c359b020bd060f9051f31b250722ebf35a9cc5ea75294fcb62cc9ba9b"
+    },
+    {
+      "name": "W_DEPTH_WEIGHT",
+      "elements": 108,
+      "bytes": 432,
+      "SHA256Float32LE": "c6073dfb22b5277c8ecc985f3d4ef088331e09e61aad9aab3ff08b966e58f18b"
+    },
+    {
+      "name": "W_DEPTH_BIAS",
+      "elements": 12,
+      "bytes": 48,
+      "SHA256Float32LE": "ff4df43c4c32a6923c60d3c55ac038a6ccb34fa340046777de7f646d4c4c5b7a"
+    },
+    {
+      "name": "W_POINT_WEIGHT",
+      "elements": 192,
+      "bytes": 768,
+      "SHA256Float32LE": "cf92a325cadf956db9f5d462335ef43b4dad4af7c16b8bb0324ba179043ff483"
+    },
+    {
+      "name": "W_POINT_BIAS",
+      "elements": 16,
+      "bytes": 64,
+      "SHA256Float32LE": "959bdd3b2a09ac6d54c8f3ae9957a19376b186c468be73237e3cfaba3b9a04be"
+    },
+    {
+      "name": "W_EMBED_WEIGHT",
+      "elements": 8192,
+      "bytes": 32768,
+      "SHA256Float32LE": "b789d50b6a0ec1e475128bd47b3449e1f07a0106350ffcde3d5a4f37b84c209d"
+    },
+    {
+      "name": "W_EMBED_BIAS",
+      "elements": 32,
+      "bytes": 128,
+      "SHA256Float32LE": "1e03a4c85f2fd93f4d2f82b89b6a0d7f74c8cdeae2bc34c7ab7ef35dd1f70f8c"
+    },
+    {
+      "name": "W_GRU_WEIGHT_IH_L0",
+      "elements": 4608,
+      "bytes": 18432,
+      "SHA256Float32LE": "c2d05537078edb23e7593028aa1d87cc703e30c95855241214ca7f32a1366e07"
+    },
+    {
+      "name": "W_GRU_WEIGHT_HH_L0",
+      "elements": 6912,
+      "bytes": 27648,
+      "SHA256Float32LE": "ca99fe571cde7aac9e7746d6714d13fea566da21647f4193dbbc58f290fefb94"
+    },
+    {
+      "name": "W_GRU_BIAS_IH_L0",
+      "elements": 144,
+      "bytes": 576,
+      "SHA256Float32LE": "b90ac4af3f96a5ba90afea69bb1ea48ca1831cfca46c4a4fff59312719a62671"
+    },
+    {
+      "name": "W_GRU_BIAS_HH_L0",
+      "elements": 144,
+      "bytes": 576,
+      "SHA256Float32LE": "fc5581e2ec83335f1c820da663215dd28ca0384fbddb42526c70549987ed07dc"
+    },
+    {
+      "name": "W_PHASE_WEIGHT",
+      "elements": 6048,
+      "bytes": 24192,
+      "SHA256Float32LE": "2f6da56601e7e3300470aba6dd032b761d6e46a01fa26b96d98c8ff709fb2660"
+    },
+    {
+      "name": "W_PHASE_BIAS",
+      "elements": 126,
+      "bytes": 504,
+      "SHA256Float32LE": "e7e72be7b4d38bdb896aa737920d53205f44e7c044fd93fec958fb3d5bcb7bda"
+    },
+    {
+      "name": "W_SUPPORT_WEIGHT",
+      "elements": 3024,
+      "bytes": 12096,
+      "SHA256Float32LE": "194d9e0c0ebd8e49553bc3e98995ce39cad024bd0cfe0717492cc25a7b9e1872"
+    },
+    {
+      "name": "W_SUPPORT_BIAS",
+      "elements": 63,
+      "bytes": 252,
+      "SHA256Float32LE": "5588b60f41efe98eef9f8b4088a934fdd0ce0efcfe46029a006e308e654b9432"
+    },
+    {
+      "name": "W_ACTIVITY_WEIGHT",
+      "elements": 48,
+      "bytes": 192,
+      "SHA256Float32LE": "959cdb87e0f03511babbe5766e8b9b55527ebbcdf131d77b7d9f6ddaeb5a06b3"
+    },
+    {
+      "name": "W_ACTIVITY_BIAS",
+      "elements": 1,
+      "bytes": 4,
+      "SHA256Float32LE": "800fa34222c04e2b739ce08320bb738a5af82b839c7f94c79c73c9d0efeb0210"
+    },
+    {
+      "name": "W_COUNT_WEIGHT",
+      "elements": 192,
+      "bytes": 768,
+      "SHA256Float32LE": "ad9d71de766acca6467e96da865ce447d0176009ee4a5225c2bfa3d1b9d0c66c"
+    },
+    {
+      "name": "W_COUNT_BIAS",
+      "elements": 4,
+      "bytes": 16,
+      "SHA256Float32LE": "0c5663dbe9daf41b45713b2def215e26ac177b16366a6592c505678ccdbf474a"
+    }
+  ],
+  "unchangedAlgorithm": true,
+  "unchangedFloatingPointWeights": true,
+  "full15PairOutputElements": 76576,
+  "nativeSplitVsOriginalBitExact": true,
+  "splitVsTorchMaxAbsoluteError": 3.814697265625e-06,
+  "comparisonTolerance": {
+    "absolute": 0.0002,
+    "relative": 0.0002
+  },
+  "compileAndRunWallSeconds": 0.5915053999997326,
+  "HLSExecuted": false,
+  "resourceFitPassed": false,
+  "hardwareThroughputPassed": false,
+  "originalProbePreserved": true
+}

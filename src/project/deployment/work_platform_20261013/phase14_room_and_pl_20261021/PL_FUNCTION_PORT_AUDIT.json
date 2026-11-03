@@ -1,0 +1,19 @@
+{
+  "functionCount": 52,
+  "softwareSourcesLocated": 52,
+  "stateCounts": {
+    "HARDWARE_PRIMITIVE_ONLY": 25,
+    "HLS_IP_CONNECTED": 1,
+    "PARTIAL_FFT_CONTRACT": 2,
+    "PARTIAL_PROTOCOL": 1,
+    "PARTIAL_RTL": 3,
+    "SOFTWARE_REFERENCE_ONLY": 19,
+    "STATIC_REFERENCE_DATA": 1
+  },
+  "allAlgorithmsPorted": false,
+  "wholeBoardAccepted": false,
+  "readyToFlash": false,
+  "actualCapabilityMask": 0,
+  "unresolvedSoftwareReferences": [],
+  "note": "原语存在不是完整功能移植；没有将软件或旧MUSIC资源当作新整机验收。"
+}

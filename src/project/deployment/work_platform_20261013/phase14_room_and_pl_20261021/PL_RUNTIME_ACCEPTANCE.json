@@ -1,0 +1,91 @@
+{
+  "status": "NOT_READY_FUNCTION_GAPS_AND_MAJOR_AREA_OVERFLOW",
+  "wholePLAccepted": false,
+  "allAlgorithmsPorted": false,
+  "readyToFlash": false,
+  "bitstreamGenerated": false,
+  "burnPerformed": false,
+  "combined": {
+    "LUT": 86500,
+    "LUTCapacity": 53200,
+    "LUTPercent": 162.59,
+    "FF": 90459,
+    "BRAM36Equivalent": 126.5,
+    "BRAM36Capacity": 140,
+    "DSP": 197,
+    "DSPCapacity": 220,
+    "fits": false,
+    "stage": "COMBINED_OOC_SYNTHESIS_NOT_PHYSICAL_TOP",
+    "unresolvedBlackBoxes": 0
+  },
+  "sharedAnalysisHLS": {
+    "LUT": 22710,
+    "FF": 14716,
+    "DSP": 39,
+    "BRAM_18K": 0,
+    "estimatedClockNs": 11.368,
+    "intendedBoardClockHz": 50000000,
+    "fullLatencyBounded": false
+  },
+  "softwareFunctions": 52,
+  "softwareOnlyFunctions": 19,
+  "primitiveOnlyFunctions": 25,
+  "newRTLTests": [
+    {
+      "test": "axi_guard",
+      "status": "PASS",
+      "evidence": "deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\results\\runtime_evidence\\axi_guard_simulate.log",
+      "marker": "AXI_ACTIVITY_GUARD_PASS checks=18"
+    },
+    {
+      "test": "job_bridge",
+      "status": "PASS",
+      "evidence": "deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\results\\runtime_evidence\\job_bridge_simulate.log",
+      "marker": "HLS_JOB_BRIDGE_PASS checks=423"
+    },
+    {
+      "test": "arguments",
+      "status": "PASS",
+      "evidence": "deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\results\\runtime_evidence\\arguments_simulate.log",
+      "marker": "KERNEL_ARGUMENTS_PASS checks=18"
+    }
+  ],
+  "newMathTests": {
+    "comparisons": 3137,
+    "numericTests": 21,
+    "invalidInputs": 5,
+    "vendorBurstTransport": "PASS3opsandboundary"
+  },
+  "actualCapabilityMask": 0,
+  "kernelControlAddresses": {
+    "frontend": "0x44A00000",
+    "nn": "0x44A10000",
+    "doa": "0x44A20000",
+    "analysis": "0x44A30000"
+  },
+  "interruptsAndSensorsIntegrated": false,
+  "globalSlotPoolIntegrated": false,
+  "qualityGuardFullyPorted": false,
+  "automaticSoCResetImplemented": false,
+  "fullPhysicalTopImplemented": false,
+  "originalFrozenSourcesModified": false,
+  "old620InputTestsRepeated": false,
+  "blockers": [
+    "Current combined IP design exceeds LUT capacity by33300before physical capture/controller completion.",
+    "19registeredfunctionsremainsoftwareonly;25haveprimitivesbutnotcompletehardwarechains.",
+    "Needarchitecturelevelsharinginstead of four independentlarge engines and a14input5outputfabric.",
+    "PhysicalI2S/CDC/PCMwindowcopy,globalbuffers,qualityguard,P0/P1/P2dispatch,PSmailboxandsensorsremainunclosed.",
+    "Currentcontinuous10Hz,fullplace/route/DRC/CDCandphysicalboardtestnotpassed."
+  ],
+  "recovery": {
+    "project": "tmp\\p17_board_kernels\\project\\board_kernels.xpr",
+    "checkpoint": "tmp\\p17_board_kernels\\combined_kernels_synth.dcp",
+    "rebuildScript": "pl_system/board_integrated/connect_acoustic_kernels.tcl",
+    "note": "Preserve this measurable failedbaseline.Do not route or publish it as release."
+  },
+  "sources": [
+    "https://docs.amd.com/r/2025.2-English/ug1399-vitis-hls/Using-Manual-Burst",
+    "https://docs.amd.com/r/2025.2-English/ug1399-vitis-hls/M_AXI-Resources",
+    "https://docs.amd.com/r/en-US/pg101-axi-protocol-checker/AXI-Protocol-Checks-and-Descriptions"
+  ]
+}

@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Oct 21 14:00:58 2026
+# Process ID         : 32300
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute
+# Command line       : vivado.exe -mode batch -source simulate.tcl -log simulate_fixed.log -journal simulate_fixed.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/simulate_fixed.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute\simulate_fixed.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 17267 MB
+#-----------------------------------------------------------
+source simulate.tcl
+# set here [file dirname [file normalize [info script]]]
+# cd $here
+# create_project -force dot_sim $here/cache/dot_sim -part xc7z020clg484-2
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim'
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 553.148 ; gain = 222.691
+# read_verilog -sv [file normalize ../../rtl/compute/shared_dot12.sv]
+# add_files -fileset sim_1 tb_shared_dot12.sv
+# set_property include_dirs [list $here] [get_filesets sim_1]
+# set_property top tb_shared_dot12 [get_filesets sim_1]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Oct 21 14:01:13 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_shared_dot12'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_shared_dot12' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_shared_dot12_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/compute/shared_dot12.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shared_dot12
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/tb_shared_dot12.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_shared_dot12
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_shared_dot12_behav xil_defaultlib.tb_shared_dot12 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_shared_dot12_behav xil_defaultlib.tb_shared_dot12 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.shared_dot12_default
+Compiling module xil_defaultlib.tb_shared_dot12
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_shared_dot12_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_shared_dot12_behav -key {Behavioral:sim_1:Functional:tb_shared_dot12} -tclbatch {tb_shared_dot12.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_shared_dot12.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+WARNING: [Wavedata 42-489] Can't add object "/tb_shared_dot12/inputs" to the wave window because it has 727560 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+## run all
+SHARED_DOT12_PASS valid100 invalid1 cycles3889
+$finish called at time : 77860 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/tests/compute/tb_shared_dot12.sv" Line 49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_shared_dot12_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 576.281 ; gain = 23.133
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set f [open $here/cache/dot_sim/dot_sim.sim/sim_1/behav/xsim/simulate.log r]
+# set result [read $f]
+# close $f
+# if {[string first SHARED_DOT12_PASS $result]<0 || [string first {Fatal:} $result]>=0} {error "RTL numerical test did not pass"}
+# exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 14:01:22 2026...
