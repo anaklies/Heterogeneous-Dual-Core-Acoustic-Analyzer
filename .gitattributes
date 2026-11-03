@@ -1,3 +1,5 @@
 board/project/recoverable_project.zip filter=lfs diff=lfs merge=lfs -text
 board/sd/image.ub filter=lfs diff=lfs merge=lfs -text
 build/deps/arm_sysroot.zip filter=lfs diff=lfs merge=lfs -text
+
+src/pl_project/instrument_board.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp filter=lfs diff=lfs merge=lfs -text
