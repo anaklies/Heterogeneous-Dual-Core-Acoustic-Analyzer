@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1120" viewBox="0 0 1680 1120">
+<rect width="1680" height="1120" fill="#f3f6fb"/>
+<text x="65" y="69.58" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="38" font-weight="700" fill="#23364e">ECHO｜双核共享计算架构与功能总览</text>
+<text x="67" y="111.93" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#61758d">一套采集链 · 两个共享计算核 · 45项声学分析功能</text>
+<rect x="65" y="155" width="285" height="140" rx="18" fill="#e5efff" stroke="#a9c4e9" stroke-width="2"/>
+<text x="90" y="198.66" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#23364e">六路数字麦克风</text>
+<text x="90" y="242.11" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#23364e">INMP441 · 同步I²S</text>
+<text x="90" y="272.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">六通道连续采集 · 48 kHz</text>
+<rect x="385" y="155" width="1230" height="685" rx="23" fill="#ffffff" stroke="#9cb4d3" stroke-width="2"/>
+<text x="415" y="200.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="28" font-weight="700" fill="#25496e">Zynq-7020 · PL共享计算</text>
+<text x="1190" y="198.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">核心声学运算在FPGA完成</text>
+<rect x="425" y="235" width="1150" height="75" rx="18" fill="#edf3fa" stroke="#d5deeb" stroke-width="2"/>
+<text x="450" y="269.75" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#23364e">同步采集 → FIFO / 跨时钟域 → PCM环形缓存与窗口</text>
+<text x="450" y="296.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">持续保留输入数据，向共享计算核提供一致的数据窗口</text>
+<polyline points="350,225 367,225 367,272 425,272" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="425,272 413.0,277.0 413.0,267.0" fill="#47627f"/>
+<rect x="425" y="345" width="1150" height="80" rx="18" fill="#e7eefb" stroke="#b5c8e7" stroke-width="2"/>
+<text x="450" y="377.75" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#23364e">统一任务调度器</text>
+<text x="450" y="410.11" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#42658b">P0 必需实时任务    /    P1 周期任务    /    P2 用户调用任务</text>
+<polyline points="1000,310 1000,345" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1000,345 995.0,333.0 1005.0,333.0" fill="#47627f"/>
+<rect x="425" y="480" width="525" height="166" rx="18" fill="#e7f6f0" stroke="#87c2ab" stroke-width="2"/>
+<text x="450" y="519.57" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#1c6552">共享核 ①  FFT变换核</text>
+<text x="450" y="561.93" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#23364e">六通道复用 · FFT / IFFT</text>
+<text x="450" y="600.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#47756a">频谱基础量 + 高级分析的变换服务</text>
+<rect x="1050" y="480" width="525" height="166" rx="18" fill="#e9efff" stroke="#a6b5e6" stroke-width="2"/>
+<text x="1075" y="519.57" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#3a4b8b">共享核 ②  标量分析核</text>
+<text x="1075" y="561.93" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#23364e">加载算法指令 · 分块执行与恢复</text>
+<text x="1075" y="600.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#596a9e">统计、频带、相关、包络及房间指标</text>
+<polyline points="687,425 687,480" fill="none" stroke="#377f6c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="687,480 682.0,468.0 692.0,468.0" fill="#377f6c"/>
+<polyline points="1312,425 1312,480" fill="none" stroke="#596eac" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1312,480 1307.0,468.0 1317.0,468.0" fill="#596eac"/>
+<polyline points="950,560 1050,560" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1050,560 1038.0,565.0 1038.0,555.0" fill="#47627f"/>
+<polygon points="950,560 962.0,555.0 962.0,565.0" fill="#47627f"/>
+<text x="983.0" y="537.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#61758d">协同</text>
+<rect x="425" y="710" width="1150" height="85" rx="18" fill="#edf3fa" stroke="#d5deeb" stroke-width="2"/>
+<text x="450" y="743.75" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#23364e">共享数据与结果区 · DDR</text>
+<text x="450" y="776.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#61758d">PCM / FFT窗口 / 算法状态 / 事件音频  ｜  帧号、时间戳、版本与有效性</text>
+<polyline points="687,646 687,710" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="687,710 682.0,698.0 692.0,698.0" fill="#47627f"/>
+<polygon points="687,646 692.0,658.0 682.0,658.0" fill="#47627f"/>
+<polyline points="1312,646 1312,710" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1312,710 1307.0,698.0 1317.0,698.0" fill="#47627f"/>
+<polygon points="1312,646 1317.0,658.0 1307.0,658.0" fill="#47627f"/>
+<rect x="65" y="340" width="285" height="500" rx="18" fill="#ffffff" stroke="#d5deeb" stroke-width="2"/>
+<text x="90" y="386.57" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#23364e">45项功能 · 7组</text>
+<circle cx="94" cy="435" r="4" fill="#6b88aa"/>
+<text x="109" y="440.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">采集、电平与输入质量</text>
+<circle cx="94" cy="488" r="4" fill="#6b88aa"/>
+<text x="109" y="493.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">频谱、时频与频带分析</text>
+<circle cx="94" cy="541" r="4" fill="#6b88aa"/>
+<text x="109" y="546.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">多通道相关、相干与相位</text>
+<circle cx="94" cy="594" r="4" fill="#6b88aa"/>
+<text x="109" y="599.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">周期、谐波与调制分析</text>
+<circle cx="94" cy="647" r="4" fill="#6b88aa"/>
+<text x="109" y="652.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">房间衰减与清晰度</text>
+<circle cx="94" cy="700" r="4" fill="#6b88aa"/>
+<text x="109" y="705.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">频谱对照及噪声评价</text>
+<circle cx="94" cy="753" r="4" fill="#6b88aa"/>
+<text x="109" y="758.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#23364e">环境变化事件与音频留证</text>
+<rect x="385" y="905" width="640" height="155" rx="18" fill="#e9f0fa" stroke="#b2c4dd" stroke-width="2"/>
+<text x="412" y="943.66" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#23364e">PS · 双核ARM / Linux</text>
+<text x="412" y="986.02" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#23364e">7寸触摸屏 · 参数控制 · 传感器读数</text>
+<text x="412" y="1022.2" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#526d8d">事件文件 / SD存储 · 网络服务 · 故障管理</text>
+<rect x="1195" y="905" width="420" height="155" rx="18" fill="#ffffff" stroke="#b2c4dd" stroke-width="2"/>
+<text x="1220" y="943.66" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="26" font-weight="700" fill="#23364e">PC · ECHO分析软件</text>
+<text x="1220" y="986.02" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#23364e">实时图表 · 功能调用</text>
+<text x="1220" y="1024.02" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#23364e">事件下载 · 数据导出</text>
+<polyline points="705,795 705,905" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="705,905 700.0,893.0 710.0,893.0" fill="#47627f"/>
+<polygon points="705,795 710.0,807.0 700.0,807.0" fill="#47627f"/>
+<text x="727" y="871.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">AXI / MMIO + DDR结果</text>
+<polyline points="1025,988 1195,988" fill="none" stroke="#47627f" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1195,988 1183.0,993.0 1183.0,983.0" fill="#47627f"/>
+<polygon points="1025,988 1037.0,983.0 1037.0,993.0" fill="#47627f"/>
+<text x="1070.25" y="935.29" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" fill="#42658b">PS以太网</text>
+<text x="1051.25" y="963.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="17" font-weight="400" fill="#61758d">48120 / 48121</text>
+<text x="65" y="940.93" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" fill="#23364e">共享的价值</text>
+<text x="65" y="979.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">算法轮流使用同一套硬件，</text>
+<text x="65" y="1012.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">按任务分配计算与缓存，</text>
+<text x="65" y="1045.38" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" fill="#61758d">兼顾功能数量与资源开销。</text>
+</svg>

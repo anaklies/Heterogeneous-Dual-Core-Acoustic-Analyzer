@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "image.ub": true,
+    "ECHO_RELEASE.json": true,
+    "gateway": true,
+    "pc_exe": true,
+    "registry_45": true,
+    "gateway_source_45": true,
+    "root_readme_empty": true,
+    "report_empty": true,
+    "xsa_bit_matches": true,
+    "recovery_project": true,
+    "hann_rom_in_archive": true,
+    "all_pc_bundle_files": true
+  },
+  "scope": "packaging integrity only; inherited acoustic/board results retain original scope",
+  "softwareData": {
+    "featureInputReferencePaths": 45,
+    "nativeCaptureFiles": 92,
+    "suiteStatuses": "6 PASS",
+    "reproductionScriptSyntax": "PASS"
+  }
+}

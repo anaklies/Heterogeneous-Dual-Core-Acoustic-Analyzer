@@ -1,0 +1,45 @@
+{
+  "features": 45,
+  "inputWavs": 11,
+  "nativeSuites": [
+    {
+      "suite": "test_programs",
+      "status": "PASS",
+      "seconds": 0.16797049999968294
+    },
+    {
+      "suite": "test_cross_spectral_services",
+      "status": "PASS",
+      "seconds": 0.18340189999980794
+    },
+    {
+      "suite": "test_noise_services",
+      "status": "PASS",
+      "seconds": 0.42103170000063983
+    },
+    {
+      "suite": "test_p2_chains",
+      "status": "PASS",
+      "seconds": 0.19697050000013405
+    },
+    {
+      "suite": "test_extra_spectral",
+      "status": "PASS",
+      "seconds": 0.3340682000007291
+    },
+    {
+      "suite": "test_room_services",
+      "status": "PASS",
+      "seconds": 0.19364560000030906
+    }
+  ],
+  "nativeCapturedCases": 92,
+  "softwareOnly": true,
+  "noBoardAccess": true,
+  "seed": 20261101,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "nativeEngineSHA256": "741e601a86aeed610c8d65475f3fbd47d381038d96f8de5d4e1aadd96c58ea53",
+  "coverageRule": "45 reference fixtures are not 45 deployed full-stack acceptance passes; native core pairs and workflow-only fixtures are labelled separately"
+}

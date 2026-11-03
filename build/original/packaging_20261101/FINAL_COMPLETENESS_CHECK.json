@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "45_feature_registry": true,
+    "registry_references_present": true,
+    "45_input_reference_pairs": true,
+    "92_native_case_data_files": true,
+    "six_room_reference_arrays_exported": true,
+    "seven_band_decay_references": true,
+    "empty_reserved_locations": true,
+    "reproduction_python_syntax": true,
+    "source_index_paths_exist": true
+  },
+  "registryFileReferencesChecked": 330,
+  "missingRegistryFiles": [],
+  "staleSourceIndexRowsRemoved": 1,
+  "noBoardAccess": true,
+  "noAlgorithmRerunThisAudit": true,
+  "scope": "directory/dependencies/reference exports; does not upgrade the inherited per-feature acceptance scope"
+}

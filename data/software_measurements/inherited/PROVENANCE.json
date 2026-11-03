@@ -1,0 +1,7 @@
+{
+  "source": "deployment\\echo_stipa_8s_progress_20261030\\SAME_PCM_CHECK.json",
+  "sha256": "95f4adef7df75c1df26e37d7ee7903ee5fe4f3b4b08e50abd39bc54482e3e7dc",
+  "rerun": false,
+  "reason": "15-stage result already verified; reused instead of a long duplicate test",
+  "syntheticInputRegeneratedWithSameFormula": true
+}

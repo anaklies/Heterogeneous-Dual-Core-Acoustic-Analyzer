@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "date": "2026-11-02",
+  "scope": "submission contents, read-only artifact consistency and newly added utility validation; not new DUT acceptance",
+  "activeFeatures": 45,
+  "featureInputReferencePairs": 45,
+  "registryReferencedFiles": 784,
+  "missingReferences": [],
+  "skillSelfTests": 12,
+  "armCommandsDryRun": 6,
+  "imageAssemblyNoOpBitExact": true,
+  "docxPages": 10,
+  "docxFigures": 9,
+  "docxTables": 8,
+  "docxVisualQA": "rendered with Microsoft Word; all pages visually reviewed",
+  "changedPreviousFiles": [
+    "README.md",
+    "board/config/WIRING.md",
+    "build/PACKAGE_INFO.json",
+    "build/check_package.py",
+    "build/rebuild_ps.py",
+    "skill/README.md"
+  ],
+  "protectedSourcesAndBinariesUnchanged": true,
+  "newBoardTests": false,
+  "newSynthesisOrImplementation": false,
+  "disclosedLimits": [
+    "Full vendor Linux/FSBL/U-Boot source and BSP are external dependencies, not supplied",
+    "Not all 45 features have complete hardware acoustic acceptance; original fields preserved",
+    "10 input and 20 output delay constraint gaps retained",
+    "Public repository publication and third-party license review are not performed",
+    "AMD Ross recommended, not claimed used"
+  ]
+}

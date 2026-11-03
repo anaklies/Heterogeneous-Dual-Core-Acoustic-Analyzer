@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "vivado": "2025.2",
+  "part": "xc7z020clg484-2",
+  "sourceProject": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\echo_separate_io_20261026\\instrument_board\\instrument_board.xpr",
+  "readImplementedRun": "impl_1",
+  "newSynthesis": false,
+  "newImplementation": false,
+  "newBoardTest": false,
+  "screenshots": [
+    "01_实际资源占用汇总.png",
+    "02_实际模块分层资源.png",
+    "03_实际芯片布局.png",
+    "04_实际时序汇总.png",
+    "05_整板模块接线总览.png",
+    "06_分析核心接口放大.png",
+    "Vivado_Block_Design_高清.png"
+  ],
+  "nativeBlockDesignExports": [
+    "Vivado_Block_Design.svg",
+    "Vivado_Block_Design_原生导出.pdf"
+  ],
+  "archivedBitSHA256": "dd21798ca74a244ce61b900f143ee89ccf92db4f626e259130f6698361d6a625"
+}

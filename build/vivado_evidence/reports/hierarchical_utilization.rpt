@@ -1,0 +1,95 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sun Nov  1 12:07:11 2026
+| Host         : chuan running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 4 -file C:/Users/sunxi/Desktop/sixmic3D/deployment/echo_vivado_screenshots_20261101/hierarchical_utilization.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-2
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+|                              Instance                             |                              Module                             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+| design_1_wrapper                                                  |                                                           (top) |      40127 |      38620 |     710 |  797 | 42117 |     48 |     19 |         88 |
+|   (design_1_wrapper)                                              |                                                           (top) |          0 |          0 |       0 |    0 |     0 |      0 |      0 |          0 |
+|   design_1_i                                                      |                                                        design_1 |      40127 |      38620 |     710 |  797 | 42117 |     48 |     19 |         88 |
+|     axi_dynclk_0                                                  |                                         design_1_axi_dynclk_0_0 |        199 |        199 |       0 |    0 |   348 |      0 |      0 |          0 |
+|       U0                                                          |                                                      axi_dynclk |        199 |        199 |       0 |    0 |   348 |      0 |      0 |          0 |
+|         axi_dynclk_S00_AXI_inst                                   |                                              axi_dynclk_S00_AXI |        148 |        148 |       0 |    0 |   267 |      0 |      0 |          0 |
+|         Inst_mmcme2_drp                                           |                                                      mmcme2_drp |         50 |         50 |       0 |    0 |    75 |      0 |      0 |          0 |
+|     axi_gpio_btn                                                  |                                         design_1_axi_gpio_btn_0 |         39 |         39 |       0 |    0 |    50 |      0 |      0 |          0 |
+|     axi_interconnect_0                                            |                                   design_1_axi_interconnect_0_0 |        644 |        583 |       0 |   61 |   684 |      0 |      0 |          0 |
+|       s00_couplers                                                |                                         s00_couplers_imp_O7FAN0 |        404 |        343 |       0 |   61 |   552 |      0 |      0 |          0 |
+|         auto_pc                                                   |                       design_1_axi_interconnect_0_imp_auto_pc_0 |        404 |        343 |       0 |   61 |   552 |      0 |      0 |          0 |
+|       xbar                                                        |                          design_1_axi_interconnect_0_imp_xbar_0 |        240 |        240 |       0 |    0 |   132 |      0 |      0 |          0 |
+|         inst                                                      |                               axi_crossbar_v2_1_38_axi_crossbar |        240 |        240 |       0 |    0 |   132 |      0 |      0 |          0 |
+|     axi_vdma_0                                                    |                                           design_1_axi_vdma_0_0 |        746 |        687 |       0 |   59 |  1126 |      1 |      0 |          0 |
+|       U0                                                          |                                                        axi_vdma |        746 |        687 |       0 |   59 |  1126 |      1 |      0 |          0 |
+|         AXI_LITE_REG_INTERFACE_I                                  |                                                 axi_vdma_reg_if |        132 |        130 |       0 |    2 |   231 |      0 |      0 |          0 |
+|         GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR                  |                                                   axi_vdma_mngr |        130 |        130 |       0 |    0 |   262 |      0 |      0 |          0 |
+|         GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I                       |                                           axi_vdma_mm2s_linebuf |        105 |        105 |       0 |    0 |   126 |      1 |      0 |          0 |
+|         GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I                  |                                             axi_vdma_reg_module |         37 |         37 |       0 |    0 |   137 |      0 |      0 |          0 |
+|         I_PRMRY_DATAMOVER                                         |                                                   axi_datamover |        268 |        211 |       0 |   57 |   252 |      0 |      0 |          0 |
+|         I_RST_MODULE                                              |                                             axi_vdma_rst_module |         42 |         42 |       0 |    0 |    83 |      0 |      0 |          0 |
+|     instrument                                                    |                                           design_1_instrument_0 |      33933 |      32904 |     494 |  535 | 32239 |     44 |     19 |         88 |
+|       inst                                                        |                                                   instrument_bd |      33933 |      32904 |     494 |  535 | 32239 |     44 |     19 |         88 |
+|         u_core                                                    |                                                  instrument_top |      33933 |      32904 |     494 |  535 | 32239 |     44 |     19 |         88 |
+|     instrument_ddr                                                |                                       design_1_instrument_ddr_0 |       2110 |       1968 |      16 |  126 |  2552 |      0 |      0 |          0 |
+|       m00_couplers                                                |                                        m00_couplers_imp_1D43YFR |        170 |        170 |       0 |    0 |   395 |      0 |      0 |          0 |
+|         auto_cc                                                   |                           design_1_instrument_ddr_imp_auto_cc_0 |        170 |        170 |       0 |    0 |   395 |      0 |      0 |          0 |
+|       s00_couplers                                                |                                         s00_couplers_imp_K1JJ9X |        232 |        208 |       4 |   20 |   289 |      0 |      0 |          0 |
+|         auto_pc                                                   |                           design_1_instrument_ddr_imp_auto_pc_0 |         81 |         77 |       4 |    0 |   133 |      0 |      0 |          0 |
+|         auto_us                                                   |                           design_1_instrument_ddr_imp_auto_us_0 |        151 |        131 |       0 |   20 |   156 |      0 |      0 |          0 |
+|       s01_couplers                                                |                                        s01_couplers_imp_1AGG0QC |        239 |        214 |       4 |   21 |   291 |      0 |      0 |          0 |
+|         auto_pc                                                   |                           design_1_instrument_ddr_imp_auto_pc_1 |         84 |         80 |       4 |    0 |   133 |      0 |      0 |          0 |
+|         auto_us                                                   |                           design_1_instrument_ddr_imp_auto_us_1 |        155 |        134 |       0 |   21 |   158 |      0 |      0 |          0 |
+|       s02_couplers                                                |                                         s02_couplers_imp_LM6W9I |        430 |        391 |       4 |   35 |   593 |      0 |      0 |          0 |
+|         auto_pc                                                   |                           design_1_instrument_ddr_imp_auto_pc_2 |        120 |        116 |       4 |    0 |   216 |      0 |      0 |          0 |
+|         auto_us                                                   |                           design_1_instrument_ddr_imp_auto_us_2 |        310 |        275 |       0 |   35 |   377 |      0 |      0 |          0 |
+|       s03_couplers                                                |                                        s03_couplers_imp_195G7QV |        430 |        391 |       4 |   35 |   593 |      0 |      0 |          0 |
+|         auto_pc                                                   |                           design_1_instrument_ddr_imp_auto_pc_3 |        119 |        115 |       4 |    0 |   216 |      0 |      0 |          0 |
+|         auto_us                                                   |                           design_1_instrument_ddr_imp_auto_us_3 |        311 |        276 |       0 |   35 |   377 |      0 |      0 |          0 |
+|       s04_couplers                                                |                                         s04_couplers_imp_IR1GSZ |        174 |        159 |       0 |   15 |   299 |      0 |      0 |          0 |
+|         auto_pc                                                   |                           design_1_instrument_ddr_imp_auto_pc_4 |         40 |         40 |       0 |    0 |    81 |      0 |      0 |          0 |
+|         auto_us                                                   |                           design_1_instrument_ddr_imp_auto_us_4 |        134 |        119 |       0 |   15 |   218 |      0 |      0 |          0 |
+|       xbar                                                        |                              design_1_instrument_ddr_imp_xbar_0 |        445 |        445 |       0 |    0 |    92 |      0 |      0 |          0 |
+|         inst                                                      |               axi_crossbar_v2_1_38_axi_crossbar__parameterized0 |        445 |        445 |       0 |    0 |    92 |      0 |      0 |          0 |
+|     ps_analysis_control                                           |                                  design_1_ps_analysis_control_0 |         49 |         49 |       0 |    0 |   283 |      0 |      0 |          0 |
+|       inst                                                        | axi_clock_converter_v2_1_35_axi_clock_converter__parameterized0 |         49 |         49 |       0 |    0 |   283 |      0 |      0 |          0 |
+|         gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w  |          axi_clock_converter_v2_1_35_lite_async__parameterized0 |         11 |         11 |       0 |    0 |    93 |      0 |      0 |          0 |
+|         gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r |          axi_clock_converter_v2_1_35_lite_async__parameterized2 |          9 |          9 |       0 |    0 |    84 |      0 |      0 |          0 |
+|     rgb2dvi_0                                                     |                                            design_1_rgb2dvi_0_0 |        158 |        158 |       0 |    0 |   134 |      0 |      0 |          0 |
+|       U0                                                          |                                                         rgb2dvi |        158 |        158 |       0 |    0 |   134 |      0 |      0 |          0 |
+|         DataEncoders[1].DataEncoder                               |                                                TMDS_Encoder_252 |         51 |         51 |       0 |    0 |    42 |      0 |      0 |          0 |
+|         DataEncoders[0].DataEncoder                               |                                                    TMDS_Encoder |         57 |         57 |       0 |    0 |    48 |      0 |      0 |          0 |
+|     smartconnect_0                                                |                                       design_1_smartconnect_0_0 |        978 |        770 |     200 |    8 |  1383 |      0 |      0 |          0 |
+|       inst                                                        |                                                         bd_48ac |        978 |        770 |     200 |    8 |  1383 |      0 |      0 |          0 |
+|         m00_exit_pipeline                                         |                                    m00_exit_pipeline_imp_CVVFJV |        280 |        273 |       0 |    7 |   457 |      0 |      0 |          0 |
+|         m00_nodes                                                 |                                            m00_nodes_imp_Z1B1P3 |        248 |        150 |      98 |    0 |   250 |      0 |      0 |          0 |
+|         s00_entry_pipeline                                        |                                  s00_entry_pipeline_imp_1C3JDRS |        161 |        161 |       0 |    0 |   260 |      0 |      0 |          0 |
+|         s00_nodes                                                 |                                           s00_nodes_imp_1FAO4F6 |        278 |        176 |     102 |    0 |   246 |      0 |      0 |          0 |
+|         switchboards                                              |                                        switchboards_imp_1MKJLH2 |          0 |          0 |       0 |    0 |   140 |      0 |      0 |          0 |
+|     v_axi4s_vid_out_0                                             |                                    design_1_v_axi4s_vid_out_0_0 |        256 |        256 |       0 |    0 |   578 |      3 |      0 |          0 |
+|       inst                                                        |                                         v_axi4s_vid_out_v4_0_20 |        256 |        256 |       0 |    0 |   578 |      3 |      0 |          0 |
+|         SYNC_INST                                                 |                                    v_axi4s_vid_out_v4_0_20_sync |         60 |         60 |       0 |    0 |    74 |      0 |      0 |          0 |
+|         COUPLER_INST                                              |                                 v_axi4s_vid_out_v4_0_20_coupler |        194 |        194 |       0 |    0 |   468 |      3 |      0 |          0 |
+|     v_tc_0                                                        |                                               design_1_v_tc_0_0 |        943 |        938 |       0 |    5 |  2597 |      0 |      0 |          0 |
+|       U0                                                          |                                                            v_tc |        943 |        938 |       0 |    5 |  2597 |      0 |      0 |          0 |
+|         U_VIDEO_CTRL                                              |                                                      video_ctrl |        751 |        748 |       0 |    3 |  2355 |      0 |      0 |          0 |
+|         U_TC_TOP                                                  |                                                          tc_top |        191 |        189 |       0 |    2 |   239 |      0 |      0 |          0 |
++-------------------------------------------------------------------+-----------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
