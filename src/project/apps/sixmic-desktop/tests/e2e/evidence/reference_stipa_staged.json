@@ -1,0 +1,42 @@
+{
+  "artifact": "reference_stipa_staged",
+  "generatedAt": "2026-10-26T17:58:24+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "featureId": "stipa_experimental",
+    "referenceJobId": "feature-1",
+    "stagedJobId": "feature-2",
+    "totalStages": 101,
+    "observedCompletedStages": 2,
+    "cancelRequested": true,
+    "finalState": "canceled",
+    "referenceStateDuringRun": "completed",
+    "note": "experimental, not certified STIPA; 101 stages; cancel is a safe boundary, not a hard PL interrupt",
+    "fixture": {
+      "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+      "sourceKind": "test-fixture",
+      "simulated": true,
+      "numericDSPVerified": false,
+      "hardwareState": "NOT_TESTED",
+      "fixtureExe": "deployment\\echo_feature_closure_20261025\\ps\\build\\host\\test-feature-server.exe",
+      "fixtureReady": {
+        "controlPort": 59356,
+        "binaryPort": 59357,
+        "sourceKind": "test-fixture",
+        "numericDSPVerified": false
+      },
+      "fixtureExeSha256": "3fc04a201b41c2b83f202f1f6385551ce08fe1547c58eae25f9c5eb08f9f0a6a",
+      "clientPacing": {
+        "class": "pc_client.client.FeatureClient",
+        "rate": 64.0,
+        "capacity": 64.0,
+        "requests": 29,
+        "waitedSeconds": 0.0
+      }
+    }
+  }
+}

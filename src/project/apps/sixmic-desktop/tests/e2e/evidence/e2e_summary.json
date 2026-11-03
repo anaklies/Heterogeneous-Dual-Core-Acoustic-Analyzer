@@ -1,0 +1,1275 @@
+{
+  "artifact": "e2e_summary",
+  "generatedAt": "2026-10-26T17:58:25+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "suite": "apps/sixmic-desktop/tests/e2e",
+    "pytestExitStatus": 0,
+    "startedAt": "2026-10-26T17:58:02+0800",
+    "finishedAt": "2026-10-26T17:58:25+0800",
+    "durationSeconds": 22.851,
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "fixtureExecutable": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\echo_feature_closure_20261025\\ps\\build\\host\\test-feature-server.exe",
+    "fixtureExecutableSha256": "3fc04a201b41c2b83f202f1f6385551ce08fe1547c58eae25f9c5eb08f9f0a6a",
+    "specPath": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\ui\\config\\feature_view_spec.json",
+    "specSha256": "5e54db2d2649c1fbaae9f4c377cac2e577b5cd1ea15f0ea4c6255dbcef8373fe",
+    "registryPath": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\echo_feature_closure_20261025\\registry\\INTERFACE_REGISTRY.json",
+    "registrySha256": "6b5790d2dbc0762dff84f9ba2a7eea615c000ff60def645e6042408ae215c938",
+    "fixtureProcessStarts": 89,
+    "counts": {
+      "passed": 54,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0
+    },
+    "tests": [
+      {
+        "nodeid": "tests/e2e/test_all_feature_starts.py::test_all_51_features_start_on_host_fixture",
+        "name": "test_all_51_features_start_on_host_fixture",
+        "outcome": "passed",
+        "durationSeconds": 3.8165,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 3.8162,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_bool_false_live_pcm_is_not_available",
+        "name": "test_bool_false_live_pcm_is_not_available",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_bool_true_capabilities_remain_accepted",
+        "name": "test_bool_true_capabilities_remain_accepted",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_candidate_bool_encoding_normalizes[False-not_ready]",
+        "name": "test_candidate_bool_encoding_normalizes[False-not_ready]",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_candidate_bool_encoding_normalizes[True-available]",
+        "name": "test_candidate_bool_encoding_normalizes[True-available]",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_missing_and_unknown_values_keep_documented_defaults",
+        "name": "test_missing_and_unknown_values_keep_documented_defaults",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_old_style_string_states_still_parse[available]",
+        "name": "test_old_style_string_states_still_parse[available]",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_old_style_string_states_still_parse[experimental]",
+        "name": "test_old_style_string_states_still_parse[experimental]",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_old_style_string_states_still_parse[not_ready]",
+        "name": "test_old_style_string_states_still_parse[not_ready]",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_capability_state.py::test_old_style_string_states_still_parse[unsupported]",
+        "name": "test_old_style_string_states_still_parse[unsupported]",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_catalog_invalid_limits_rejected[0]",
+        "name": "test_catalog_invalid_limits_rejected[0]",
+        "outcome": "passed",
+        "durationSeconds": 0.0562,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0438,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0026,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0098,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_catalog_invalid_limits_rejected[17]",
+        "name": "test_catalog_invalid_limits_rejected[17]",
+        "outcome": "passed",
+        "durationSeconds": 0.0665,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0593,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0026,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0046,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_catalog_invalid_limits_rejected[99]",
+        "name": "test_catalog_invalid_limits_rejected[99]",
+        "outcome": "passed",
+        "durationSeconds": 0.0332,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0265,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0028,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0039,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_raw_catalog_limit_1_walks_every_entry",
+        "name": "test_raw_catalog_limit_1_walks_every_entry",
+        "outcome": "passed",
+        "durationSeconds": 0.0428,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0272,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0113,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0043,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_raw_catalog_pagination_limit_8_and_16[16-4-expected_sizes1]",
+        "name": "test_raw_catalog_pagination_limit_8_and_16[16-4-expected_sizes1]",
+        "outcome": "passed",
+        "durationSeconds": 0.0436,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0268,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0057,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0111,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_raw_catalog_pagination_limit_8_and_16[8-7-expected_sizes0]",
+        "name": "test_raw_catalog_pagination_limit_8_and_16[8-7-expected_sizes0]",
+        "outcome": "passed",
+        "durationSeconds": 0.0376,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0267,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0068,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0041,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_catalog_pagination.py::test_stock_client_catalog_returns_all_51_unique_features",
+        "name": "test_stock_client_catalog_returns_all_51_unique_features",
+        "outcome": "passed",
+        "durationSeconds": 0.041,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0281,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0085,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0044,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_feature_client_exposes_configurable_pacing[0.0-1]",
+        "name": "test_feature_client_exposes_configurable_pacing[0.0-1]",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_feature_client_exposes_configurable_pacing[32.0-8]",
+        "name": "test_feature_client_exposes_configurable_pacing[32.0-8]",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_feature_client_exposes_configurable_pacing[64.0-64]",
+        "name": "test_feature_client_exposes_configurable_pacing[64.0-64]",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_token_bucket_allows_burst_then_paces_at_rate",
+        "name": "test_token_bucket_allows_burst_then_paces_at_rate",
+        "outcome": "passed",
+        "durationSeconds": 0.0004,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0002,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_token_bucket_can_be_disabled_for_tests_only",
+        "name": "test_token_bucket_can_be_disabled_for_tests_only",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_client_pacing.py::test_token_bucket_sustained_rate_matches_documented_budget",
+        "name": "test_token_bucket_sustained_rate_matches_documented_budget",
+        "outcome": "passed",
+        "durationSeconds": 0.0003,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_events_mode_monitor_runs_until_stopped_and_cancels",
+        "name": "test_events_mode_monitor_runs_until_stopped_and_cancels",
+        "outcome": "passed",
+        "durationSeconds": 0.0583,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0274,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0268,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0041,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_p0_feature_completes_and_returns_result",
+        "name": "test_p0_feature_completes_and_returns_result",
+        "outcome": "passed",
+        "durationSeconds": 0.0514,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0269,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0209,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0036,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_p1_feature_completes_and_returns_result",
+        "name": "test_p1_feature_completes_and_returns_result",
+        "outcome": "passed",
+        "durationSeconds": 0.0466,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0259,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0014,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0193,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_room_decay_completes_after_confirmation",
+        "name": "test_room_decay_completes_after_confirmation",
+        "outcome": "passed",
+        "durationSeconds": 0.135,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0269,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.1037,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0044,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_staged_mode_requires_io_pcm_reference",
+        "name": "test_staged_mode_requires_io_pcm_reference",
+        "outcome": "passed",
+        "durationSeconds": 0.0315,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0265,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.004,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_feature_lifecycle.py::test_zoom_fft_completes_after_registry_fix",
+        "name": "test_zoom_fft_completes_after_registry_fix",
+        "outcome": "passed",
+        "durationSeconds": 0.1332,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0507,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0783,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0042,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_gateway_capability.py::test_device_session_connects_and_normalizes_bool_capabilities",
+        "name": "test_device_session_connects_and_normalizes_bool_capabilities",
+        "outcome": "passed",
+        "durationSeconds": 0.0324,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0272,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0015,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0037,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_gateway_capability.py::test_fixture_ready_line_is_marked_simulated",
+        "name": "test_fixture_ready_line_is_marked_simulated",
+        "outcome": "passed",
+        "durationSeconds": 0.0429,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0276,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0029,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0124,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_gateway_capability.py::test_gateway_feature_api_is_reported",
+        "name": "test_gateway_feature_api_is_reported",
+        "outcome": "passed",
+        "durationSeconds": 0.0361,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0295,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0025,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0041,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_gateway_capability.py::test_live_pcm_capability_is_not_treated_as_available",
+        "name": "test_live_pcm_capability_is_not_treated_as_available",
+        "outcome": "passed",
+        "durationSeconds": 0.0313,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0268,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0044,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_large_results.py::test_io_pcm_720000_long_capture_full_result_transfer_with_pacing",
+        "name": "test_io_pcm_720000_long_capture_full_result_transfer_with_pacing",
+        "outcome": "passed",
+        "durationSeconds": 10.7084,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0278,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 10.6748,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0058,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_large_results.py::test_room_decay_48032_word_result_transfers_through_stock_client",
+        "name": "test_room_decay_48032_word_result_transfers_through_stock_client",
+        "outcome": "passed",
+        "durationSeconds": 0.1489,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0413,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.1039,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0037,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_large_results.py::test_unpaced_client_is_rejected_by_gateway_rate_limit",
+        "name": "test_unpaced_client_is_rejected_by_gateway_rate_limit",
+        "outcome": "passed",
+        "durationSeconds": 5.2081,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0474,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 5.1553,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0054,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_client_pagination_reassembles_exact_words",
+        "name": "test_client_pagination_reassembles_exact_words",
+        "outcome": "passed",
+        "durationSeconds": 0.0632,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0542,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0026,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0064,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_invalid_result_pages_are_rejected[0-0]",
+        "name": "test_invalid_result_pages_are_rejected[0-0]",
+        "outcome": "passed",
+        "durationSeconds": 0.0636,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0575,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0005,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0056,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_invalid_result_pages_are_rejected[0-2048]",
+        "name": "test_invalid_result_pages_are_rejected[0-2048]",
+        "outcome": "passed",
+        "durationSeconds": 0.0723,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0537,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0006,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.018,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_invalid_result_pages_are_rejected[2048-1024]",
+        "name": "test_invalid_result_pages_are_rejected[2048-1024]",
+        "outcome": "passed",
+        "durationSeconds": 0.0623,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0544,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0008,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0071,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_result_before_completion_is_not_readable",
+        "name": "test_result_before_completion_is_not_readable",
+        "outcome": "passed",
+        "durationSeconds": 0.093,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0612,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0255,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0063,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_result_pages_are_capped_at_1024_words",
+        "name": "test_result_pages_are_capped_at_1024_words",
+        "outcome": "passed",
+        "durationSeconds": 0.0536,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0467,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.001,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0059,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_pagination_boundaries.py::test_unknown_job_and_feature_identities_are_rejected",
+        "name": "test_unknown_job_and_feature_identities_are_rejected",
+        "outcome": "passed",
+        "durationSeconds": 0.0839,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0608,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0115,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0116,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reconnect_identity.py::test_reconnect_reclaims_control_and_keeps_job_identity",
+        "name": "test_reconnect_reclaims_control_and_keeps_job_identity",
+        "outcome": "passed",
+        "durationSeconds": 0.1147,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0535,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0549,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0063,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reconnect_identity.py::test_result_identity_is_stable_across_pages_and_operations",
+        "name": "test_result_identity_is_stable_across_pages_and_operations",
+        "outcome": "passed",
+        "durationSeconds": 0.0481,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0339,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0079,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0063,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_noise_rating_reference_confirmation_gate",
+        "name": "test_noise_rating_reference_confirmation_gate",
+        "outcome": "passed",
+        "durationSeconds": 0.0955,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0416,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0458,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0081,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_relative_insulation_reference_then_confirmed_measure",
+        "name": "test_relative_insulation_reference_then_confirmed_measure",
+        "outcome": "passed",
+        "durationSeconds": 0.0944,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0342,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0528,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0074,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_relative_limit_reference_then_compare",
+        "name": "test_relative_limit_reference_then_compare",
+        "outcome": "passed",
+        "durationSeconds": 0.1501,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0598,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0827,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0076,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_room_stimulus_confirmation_gate",
+        "name": "test_room_stimulus_confirmation_gate",
+        "outcome": "passed",
+        "durationSeconds": 0.1214,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0345,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0813,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0056,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_spectrum_freeze_reference_then_compare",
+        "name": "test_spectrum_freeze_reference_then_compare",
+        "outcome": "passed",
+        "durationSeconds": 0.1358,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0362,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.0784,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0212,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_reference_flows.py::test_stipa_staged_reference_two_stages_then_cancel",
+        "name": "test_stipa_staged_reference_two_stages_then_cancel",
+        "outcome": "passed",
+        "durationSeconds": 0.1824,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0333,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.1427,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0064,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_scheduling.py::test_eight_bounded_job_slots_recycle_oldest_terminal_job",
+        "name": "test_eight_bounded_job_slots_recycle_oldest_terminal_job",
+        "outcome": "passed",
+        "durationSeconds": 0.2022,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0475,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.1365,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0182,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_scheduling.py::test_exclusive_job_reports_busy_then_accepts_after_cancel",
+        "name": "test_exclusive_job_reports_busy_then_accepts_after_cancel",
+        "outcome": "passed",
+        "durationSeconds": 0.1723,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0618,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.1042,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0063,
+            "wasxfail": null
+          }
+        }
+      },
+      {
+        "nodeid": "tests/e2e/test_scheduling.py::test_stop_immediately_after_start_reaches_canceled",
+        "name": "test_stop_immediately_after_start_reaches_canceled",
+        "outcome": "passed",
+        "durationSeconds": 0.09,
+        "phases": {
+          "setup": {
+            "outcome": "passed",
+            "durationSeconds": 0.0596,
+            "wasxfail": null
+          },
+          "call": {
+            "outcome": "passed",
+            "durationSeconds": 0.024,
+            "wasxfail": null
+          },
+          "teardown": {
+            "outcome": "passed",
+            "durationSeconds": 0.0064,
+            "wasxfail": null
+          }
+        }
+      }
+    ]
+  }
+}

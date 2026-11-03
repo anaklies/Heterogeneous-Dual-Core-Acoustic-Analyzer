@@ -1,0 +1,47 @@
+{
+  "artifact": "zoom_fft_registry_fix",
+  "generatedAt": "2026-10-26T17:58:06+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "featureId": "zoom_fft",
+    "state": "completed",
+    "capturedSamples": 4159,
+    "totalWords": 4096,
+    "schemaKind": "tensor",
+    "sourceKind": "test-fixture",
+    "registryFix": {
+      "inputWords": 4159,
+      "inputWordOffset": 1069056
+    },
+    "hardwareState": "NOT_TESTED",
+    "numericDSPVerified": false,
+    "hardwareAccepted": false,
+    "interpretation": "Device registry fix verified on host fixture; PC wiring complete; physical board/acoustic acceptance still pending.",
+    "fixture": {
+      "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+      "sourceKind": "test-fixture",
+      "simulated": true,
+      "numericDSPVerified": false,
+      "hardwareState": "NOT_TESTED",
+      "fixtureExe": "deployment\\echo_feature_closure_20261025\\ps\\build\\host\\test-feature-server.exe",
+      "fixtureReady": {
+        "controlPort": 57347,
+        "binaryPort": 57348,
+        "sourceKind": "test-fixture",
+        "numericDSPVerified": false
+      },
+      "fixtureExeSha256": "3fc04a201b41c2b83f202f1f6385551ce08fe1547c58eae25f9c5eb08f9f0a6a",
+      "clientPacing": {
+        "class": "pc_client.client.FeatureClient",
+        "rate": 64.0,
+        "capacity": 64.0,
+        "requests": 18,
+        "waitedSeconds": 0.0
+      }
+    }
+  }
+}

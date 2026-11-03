@@ -1,0 +1,36 @@
+{
+  "artifact": "capability_gateway_device",
+  "generatedAt": "2026-10-26T17:58:07+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "sessionId": "sess-1-01",
+    "connectionEpoch": 1,
+    "deviceId": "sixmic-dev-0001",
+    "capabilities": {
+      "livePcm": "not_ready",
+      "liveResults": "not_ready",
+      "resultSnapshotProtocol": 3,
+      "serviceSnapshots": [],
+      "eventCapture": "available",
+      "eventDownload": "available",
+      "rawRecording": "not_ready",
+      "profileUpload": "not_ready",
+      "profileActivate": "not_ready",
+      "taskControl": "not_ready",
+      "sensorSnapshot": "not_ready",
+      "deviceLog": "available",
+      "configCommit": "available",
+      "configVersion": 1,
+      "protocol3": true,
+      "missing": [
+        "PS gateway not integrated on a real board",
+        "PL raw ring PS consumer/lease and full bandwidth NOT accepted",
+        "MMIO is a deterministic fixture model, not hardware"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+field,value\nrecordingId,demo-fixture-recording\ndeviceId,sixmic-demo-fixture\nsessionId,demo-session\nsourceKind,test-fixture\nrealSampleRateHz,48009.775390625\nintegerRateHz,48010\nrateRoundingErrorHz,0.224609375\nrecords,192039\nfirstSampleIndex,9007199254740993\nlastSampleIndex,9007199254933061\ngaps,1\n

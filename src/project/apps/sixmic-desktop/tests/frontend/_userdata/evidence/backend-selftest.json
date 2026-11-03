@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "protocolRoot": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\dist\\SixMic3D-BackendCheck\\protocol",
+  "backendVersion": "0.1.0",
+  "durationMs": 187.0,
+  "checks": [
+    {
+      "name": "golden_suite",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "20 files, 12 binary frames, 7 control lines"
+    },
+    {
+      "name": "pcm_golden",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "corner samples, 2^53+1 sample index, 32-byte records"
+    },
+    {
+      "name": "result_words",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "32-word decode + u64 string boundary"
+    },
+    {
+      "name": "jsonline_rules",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "split/sticky, duplicate keys, NaN, invalid UTF-8, oversize, envelopes"
+    },
+    {
+      "name": "framing_rules",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "header layout, CRC, bad magic, unknown message type"
+    },
+    {
+      "name": "event_container",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "SMC1 header + CRC + record index checks"
+    },
+    {
+      "name": "feature_catalog",
+      "ok": true,
+      "durationMs": 15.0,
+      "detail": "{\"available\": 0, \"experimental\": 42, \"not_ready\": 9, \"total\": 52, \"unsupported\": 1}"
+    },
+    {
+      "name": "data_store_bounds",
+      "ok": true,
+      "durationMs": 0.0,
+      "detail": "reference counting + bounded capacity"
+    },
+    {
+      "name": "storage_recovery",
+      "ok": true,
+      "durationMs": 16.0,
+      "detail": "corrupt db quarantined and recreated (True)"
+    },
+    {
+      "name": "recording_replay",
+      "ok": true,
+      "durationMs": 16.0,
+      "detail": "120 records, 1 segments, wav+manifest+replay identical, gaps preserved"
+    },
+    {
+      "name": "mock_end_to_end",
+      "ok": true,
+      "durationMs": 140.0,
+      "detail": "fixture end-to-end: 2 frames, 2 audio chunks, event verified, recording stopped"
+    }
+  ],
+  "error": null,
+  "timestampNs": "1792912665373105000",
+  "exports": null
+}

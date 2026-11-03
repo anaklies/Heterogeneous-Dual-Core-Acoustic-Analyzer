@@ -1,0 +1,45 @@
+{
+  "artifact": "pagination_boundaries",
+  "generatedAt": "2026-10-26T17:58:23+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "featureId": "fft",
+    "totalWords": 1025,
+    "pageBoundary": {
+      "page0": 1024,
+      "page1": 1
+    },
+    "invalidPageErrors": {
+      "maxWords2048": "bad_state",
+      "maxWords0": "bad_state",
+      "offsetBeyond": "bad_state"
+    },
+    "clientReassemblyExact": true,
+    "fixture": {
+      "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+      "sourceKind": "test-fixture",
+      "simulated": true,
+      "numericDSPVerified": false,
+      "hardwareState": "NOT_TESTED",
+      "fixtureExe": "deployment\\echo_feature_closure_20261025\\ps\\build\\host\\test-feature-server.exe",
+      "fixtureReady": {
+        "controlPort": 59337,
+        "binaryPort": 59338,
+        "sourceKind": "test-fixture",
+        "numericDSPVerified": false
+      },
+      "fixtureExeSha256": "3fc04a201b41c2b83f202f1f6385551ce08fe1547c58eae25f9c5eb08f9f0a6a",
+      "clientPacing": {
+        "class": "pc_client.client.FeatureClient",
+        "rate": 64.0,
+        "capacity": 64.0,
+        "requests": 7,
+        "waitedSeconds": 0.0
+      }
+    }
+  }
+}

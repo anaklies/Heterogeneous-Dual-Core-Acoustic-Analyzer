@@ -1,0 +1,1309 @@
+{
+  "artifact": "feature_start_matrix",
+  "generatedAt": "2026-10-26T17:58:06+0800",
+  "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance.",
+  "sourceKind": "test-fixture",
+  "simulated": true,
+  "numericDSPVerified": false,
+  "hardwareState": "NOT_TESTED",
+  "payload": {
+    "summary": {
+      "total": 51,
+      "lifecyclePassed": 51,
+      "deviceGaps": 0,
+      "failures": 0,
+      "deviceGapFeatureIds": [],
+      "failedFeatureIds": [],
+      "elapsedSeconds": 3.813,
+      "fixtureProcessStarts": 51,
+      "hardwareState": "NOT_TESTED",
+      "numericDSPVerified": false,
+      "sourceKind": "test-fixture",
+      "banner": "SIMULATED / test-fixture - host fixture gateway (deployment/echo_feature_closure_20261025/ps/build/host/test-feature-server.exe); sourceKind=test-fixture; numericDSPVerified=false; hardwareState=NOT_TESTED; this is not pl-live, not a board, not acoustic acceptance."
+    },
+    "features": [
+      {
+        "featureId": "io_pcm",
+        "page": "time",
+        "group": "acquisition",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "samples": 2048,
+          "channels": 6,
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 12288,
+        "schemaKind": "waveform",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.079,
+        "fixtureControlPort": 58208
+      },
+      {
+        "featureId": "levels_core",
+        "page": "time",
+        "group": "acquisition",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 48,
+        "schemaKind": "scalars",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.046,
+        "fixtureControlPort": 58211
+      },
+      {
+        "featureId": "levels_extended",
+        "page": "time",
+        "group": "acquisition",
+        "tier": "P1",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 48,
+        "schemaKind": "scalars",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.047,
+        "fixtureControlPort": 58214
+      },
+      {
+        "featureId": "data_continuity",
+        "page": "time",
+        "group": "acquisition",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 32,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.047,
+        "fixtureControlPort": 58217
+      },
+      {
+        "featureId": "signal_quality",
+        "page": "time",
+        "group": "acquisition",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 32,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.047,
+        "fixtureControlPort": 58220
+      },
+      {
+        "featureId": "fft",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 58223
+      },
+      {
+        "featureId": "psd",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P0",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1026,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.047,
+        "fixtureControlPort": 58226
+      },
+      {
+        "featureId": "stft",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "frames": 8,
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 8200,
+        "schemaKind": "timeFrequency",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.156,
+        "fixtureControlPort": 58229
+      },
+      {
+        "featureId": "spectrum_average",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P0",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 58232
+      },
+      {
+        "featureId": "peak_hold",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.032,
+        "fixtureControlPort": 58235
+      },
+      {
+        "featureId": "smoothing",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 58238
+      },
+      {
+        "featureId": "zoom_fft",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {},
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 4096,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.109,
+        "fixtureControlPort": 58241
+      },
+      {
+        "featureId": "spectrum_freeze",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "reference_compare",
+        "launchParams": {
+          "referenceParams": {
+            "action": "reference"
+          },
+          "compareParams": {
+            "action": "compare"
+          }
+        },
+        "outcome": "passed",
+        "states": {
+          "reference": "completed",
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": 3075,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.11,
+        "fixtureControlPort": 57197
+      },
+      {
+        "featureId": "relative_limit",
+        "page": "spectrum",
+        "group": "spectrum_compare",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "reference_compare",
+        "launchParams": {
+          "referenceParams": {
+            "action": "reference"
+          },
+          "compareParams": {
+            "action": "compare"
+          }
+        },
+        "outcome": "passed",
+        "states": {
+          "reference": "completed",
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": 3075,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.109,
+        "fixtureControlPort": 57200
+      },
+      {
+        "featureId": "octave",
+        "page": "bands",
+        "group": "bands_stats",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57203
+      },
+      {
+        "featureId": "third_octave",
+        "page": "bands",
+        "group": "bands_stats",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 28,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57206
+      },
+      {
+        "featureId": "frequency_time_weighting",
+        "page": "bands",
+        "group": "bands_stats",
+        "tier": "P1",
+        "mode": "p2",
+        "launchKind": "dual_variant",
+        "launchParams": [
+          {
+            "weighting": "A",
+            "timeResponse": false
+          },
+          {
+            "timeResponse": true
+          }
+        ],
+        "outcome": "passed",
+        "states": {
+          "frequency": "completed",
+          "time": "completed"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": 48032,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.125,
+        "fixtureControlPort": 57209
+      },
+      {
+        "featureId": "level_statistics",
+        "page": "bands",
+        "group": "bands_stats",
+        "tier": "P1",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 40,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.079,
+        "fixtureControlPort": 57212
+      },
+      {
+        "featureId": "noise_rating",
+        "page": "bands",
+        "group": "bands_stats",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "dual_variant",
+        "launchParams": [
+          {
+            "family": "NR",
+            "channel": 0,
+            "referenceConfirmed": true,
+            "referenceOffsetDb": 0.0,
+            "calibrationSource": "名义数字参考（用户声明，非声学校准）"
+          },
+          {
+            "family": "NC",
+            "channel": 0,
+            "referenceConfirmed": true,
+            "referenceOffsetDb": 0.0,
+            "calibrationSource": "名义数字参考（用户声明，非声学校准）"
+          }
+        ],
+        "outcome": "passed",
+        "states": {
+          "NR": "completed",
+          "NC": "completed"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": 172,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.125,
+        "fixtureControlPort": 57215
+      },
+      {
+        "featureId": "frequency_tracking",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 4,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57218
+      },
+      {
+        "featureId": "frequency_drift",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 7,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.047,
+        "fixtureControlPort": 57221
+      },
+      {
+        "featureId": "centroid",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 4,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57224
+      },
+      {
+        "featureId": "flatness",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 4,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57227
+      },
+      {
+        "featureId": "spectral_kurtosis",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 4101,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57230
+      },
+      {
+        "featureId": "cepstrum",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2048,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57233
+      },
+      {
+        "featureId": "fundamental",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2051,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.094,
+        "fixtureControlPort": 57236
+      },
+      {
+        "featureId": "harmonic_ratio",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.062,
+        "fixtureControlPort": 57239
+      },
+      {
+        "featureId": "sidebands",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 6,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57242
+      },
+      {
+        "featureId": "envelope_hilbert",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2048,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.079,
+        "fixtureControlPort": 57245
+      },
+      {
+        "featureId": "envelope_spectrum",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57248
+      },
+      {
+        "featureId": "modulation_spectrum",
+        "page": "periodic",
+        "group": "periodic",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1025,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.093,
+        "fixtureControlPort": 57251
+      },
+      {
+        "featureId": "csd",
+        "page": "multichannel",
+        "group": "multichannel",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel_i": 0,
+          "channel_j": 1
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 11276,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.032,
+        "fixtureControlPort": 57254
+      },
+      {
+        "featureId": "coherence_phase",
+        "page": "multichannel",
+        "group": "multichannel",
+        "tier": "P1",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel_i": 0,
+          "channel_j": 1
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 11276,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.062,
+        "fixtureControlPort": 57257
+      },
+      {
+        "featureId": "autocorrelation",
+        "page": "multichannel",
+        "group": "multichannel",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2048,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.094,
+        "fixtureControlPort": 57260
+      },
+      {
+        "featureId": "cross_correlation",
+        "page": "multichannel",
+        "group": "multichannel",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0,
+          "other": 1
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2048,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57263
+      },
+      {
+        "featureId": "gcc_phat",
+        "page": "multichannel",
+        "group": "multichannel",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0,
+          "other": 1
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 2048,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57266
+      },
+      {
+        "featureId": "spatial_interface",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P0",
+        "mode": "p0",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 0,
+        "schemaKind": "capability",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57269
+      },
+      {
+        "featureId": "directed_das",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P1",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "azimuth_deg": 0.0,
+          "elevation_deg": 0.0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 384,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57272
+      },
+      {
+        "featureId": "full_das",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {},
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10249,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57275
+      },
+      {
+        "featureId": "band_das",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {},
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10249,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.094,
+        "fixtureControlPort": 57278
+      },
+      {
+        "featureId": "spatial_grid",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {},
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10249,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57281
+      },
+      {
+        "featureId": "spatial_peaks",
+        "page": "directional",
+        "group": "spatial",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {},
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 10249,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.094,
+        "fixtureControlPort": 57284
+      },
+      {
+        "featureId": "energy_change",
+        "page": "events",
+        "group": "events",
+        "tier": "P1",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 6,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.093,
+        "fixtureControlPort": 57287
+      },
+      {
+        "featureId": "band_tracking",
+        "page": "events",
+        "group": "events",
+        "tier": "P1",
+        "mode": "p2",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 6,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57292
+      },
+      {
+        "featureId": "spectral_flux",
+        "page": "events",
+        "group": "events",
+        "tier": "P2",
+        "mode": "p1",
+        "launchKind": "single",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 1028,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.031,
+        "fixtureControlPort": 57296
+      },
+      {
+        "featureId": "event_trigger",
+        "page": "events",
+        "group": "events",
+        "tier": "P1",
+        "mode": "events",
+        "launchKind": "monitor",
+        "launchParams": {
+          "channel": 0
+        },
+        "outcome": "passed",
+        "states": {
+          "running": "running",
+          "final": "canceled"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": null,
+        "schemaKind": null,
+        "sourceKind": null,
+        "error": null,
+        "elapsedSeconds": 0.063,
+        "fixtureControlPort": 57299
+      },
+      {
+        "featureId": "room_decay",
+        "page": "room",
+        "group": "room",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "room_stimulus",
+        "launchParams": {
+          "stimulus": "clap"
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 48032,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.109,
+        "fixtureControlPort": 57302
+      },
+      {
+        "featureId": "room_clarity",
+        "page": "room",
+        "group": "room",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "room_stimulus",
+        "launchParams": {
+          "stimulus": "clap"
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 48032,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.11,
+        "fixtureControlPort": 57305
+      },
+      {
+        "featureId": "spectral_decay",
+        "page": "room",
+        "group": "room",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "room_stimulus",
+        "launchParams": {
+          "stimulus": "clap"
+        },
+        "outcome": "passed",
+        "states": {
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1"
+        ],
+        "totalWords": 48032,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.109,
+        "fixtureControlPort": 57308
+      },
+      {
+        "featureId": "relative_insulation",
+        "page": "room",
+        "group": "room",
+        "tier": "P2",
+        "mode": "p2",
+        "launchKind": "reference_measure",
+        "launchParams": {
+          "referenceParams": {
+            "action": "reference"
+          },
+          "measureParams": {
+            "action": "measure",
+            "confirmed": true
+          }
+        },
+        "outcome": "passed",
+        "states": {
+          "reference": "completed",
+          "result": "completed"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": 36,
+        "schemaKind": "tensor",
+        "sourceKind": "test-fixture",
+        "error": null,
+        "elapsedSeconds": 0.078,
+        "fixtureControlPort": 57311
+      },
+      {
+        "featureId": "stipa_experimental",
+        "page": "room",
+        "group": "room",
+        "tier": "P2",
+        "mode": "staged",
+        "launchKind": "staged_stipa",
+        "launchParams": {
+          "referenceParams": {
+            "samples": 720000,
+            "channels": 1,
+            "channel": 0
+          },
+          "stipaParams": {
+            "testSignalConfirmed": true
+          }
+        },
+        "outcome": "passed",
+        "states": {
+          "reference": "completed",
+          "running": "running",
+          "final": "canceled"
+        },
+        "jobIds": [
+          "feature-1",
+          "feature-2"
+        ],
+        "totalWords": null,
+        "schemaKind": null,
+        "sourceKind": null,
+        "error": null,
+        "elapsedSeconds": 0.172,
+        "fixtureControlPort": 57314,
+        "completedStages": 2
+      }
+    ],
+    "specSha256": "5e54db2d2649c1fbaae9f4c377cac2e577b5cd1ea15f0ea4c6255dbcef8373fe",
+    "registrySha256": "6b5790d2dbc0762dff84f9ba2a7eea615c000ff60def645e6042408ae215c938",
+    "fixtureExeSha256": "3fc04a201b41c2b83f202f1f6385551ce08fe1547c58eae25f9c5eb08f9f0a6a"
+  }
+}
