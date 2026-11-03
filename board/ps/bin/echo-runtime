@@ -1,0 +1,117 @@
+#!/bin/sh
+set -eu
+base=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+[ ! -r "$base/runtime.env" ] || . "$base/runtime.env"
+[ ! -r /etc/echo/runtime.env ] || . /etc/echo/runtime.env
+mkdir -p /run/echo /var/lib/echo /var/log/echo
+export LD_LIBRARY_PATH="$base/lib"
+export QT_PLUGIN_PATH="$base/plugins"
+export QT_QPA_PLATFORM_PLUGIN_PATH="$base/plugins/platforms"
+export QT_QPA_FONTDIR="$base/share/fonts"
+export SIXMIC_FONT_FILE="$base/share/fonts/NotoSansCJK-Regular.ttc"
+export QT_QPA_PLATFORM=linuxfb:fb=/dev/fb0
+export QT_QPA_FB_HIDECURSOR=1
+export QT_SCALE_FACTOR=1
+export QT_FONT_DPI=96
+export LANG=C.UTF-8 TZ=CST-8
+export XKB_CONFIG_ROOT="$base/share/X11/xkb"
+export XDG_RUNTIME_DIR=/run/echo/qt
+mkdir -p "$XDG_RUNTIME_DIR"; chmod 700 "$XDG_RUNTIME_DIR"
+export XDG_CONFIG_HOME=/var/lib/echo/panel
+if [ -n "${ECHO_TOUCH_DEVICE:-}" ]; then export QT_QPA_EVDEV_TOUCHSCREEN_PARAMETERS="$ECHO_TOUCH_DEVICE"; fi
+export ECHO_HEARTBEAT_FILE=/run/echo/panel.heartbeat
+case "${1:-}" in
+ start)
+    if [ -f /run/echo/runtime.pid ]; then
+      if kill -0 "$(cat /run/echo/runtime.pid)" 2>/dev/null; then echo "echo is already started"; exit 1; fi
+      rm -f /run/echo/runtime.pid
+    fi
+    if ! ip -4 addr show dev eth0 | grep -q "inet "; then ifconfig eth0 192.168.77.2 netmask 255.255.255.0 up; fi
+    modprobe uio_pdrv_genirq of_id=generic-uio 2>/dev/null || true
+    modprobe hid-multitouch 2>/dev/null || true
+    udevadm trigger --subsystem-match=input 2>/dev/null || true
+    # This portable instrument has a fixed HDMI panel. Avoid periodic DDC
+    # probe failures switching off an otherwise valid framebuffer.
+    [ ! -w /sys/module/drm_kms_helper/parameters/poll ] || echo N >/sys/module/drm_kms_helper/parameters/poll
+    [ ! -w /sys/class/drm/card0-HDMI-A-1/status ] || echo on >/sys/class/drm/card0-HDMI-A-1/status
+    [ ! -w /sys/class/graphics/fb0/blank ] || echo 0 >/sys/class/graphics/fb0/blank
+    storage=${ECHO_DATA_DIR:-/var/lib/echo}
+    # Only use the SD volume carrying this release marker. Never format media.
+    mkdir -p /mnt/echo-sd
+    if [ -f /mnt/echo-sd/ECHO_RELEASE.json ]; then
+      storage=/mnt/echo-sd/echo-data
+    else
+    for part in /dev/mmcblk*p1; do
+      if mount -t vfat "$part" /mnt/echo-sd 2>/dev/null; then
+        if [ -f /mnt/echo-sd/ECHO_RELEASE.json ]; then storage=/mnt/echo-sd/echo-data;break;fi
+        umount /mnt/echo-sd
+      fi
+    done
+    fi
+    mkdir -p "$storage/spool" "$storage/state"
+    # Circular recording is enabled only on the identified SD data volume.
+    export ECHO_EVENT_LOOP=0
+    ECHO_EVENT_LIMIT=67108864
+    if [ "$storage" = /mnt/echo-sd/echo-data ];then
+      export ECHO_EVENT_LOOP=1
+      ECHO_EVENT_LIMIT=536870912
+    fi
+    export ECHO_EVENT_LIMIT
+    printf '%s\n' "$storage" >/run/echo/storage
+    "$base/bin/echo-bootstrap" "$base/profiles/default/PROFILE.json" "$storage/state" >/var/log/echo/bootstrap.log 2>&1 || { cat /var/log/echo/bootstrap.log >/dev/console;exit 78; }
+    if [ -f /mnt/echo-sd/ECHO_WATCHDOG_ENABLE ] && [ -c /dev/uio0 ] && [ -c /dev/watchdog0 ]; then "$base/bin/echo-pl-watchdog" /dev/uio0 /dev/watchdog0 >/var/log/echo/watchdog.log 2>&1 & echo $! >/run/echo/watchdog.pid; fi
+    "$0" supervise "$storage" </dev/null >/var/log/echo/runtime.log 2>&1 &
+    echo $! >/run/echo/runtime.pid
+    ;;
+ supervise)
+    storage=$2
+    cleanup(){ for child in ${gateway_pid:-} ${panel_pid:-} ${lcd_pid:-}; do [ "$child" -gt 1 ] 2>/dev/null && kill "$child" 2>/dev/null || true; done; if [ -f /run/echo/runtime.pid ] && [ "$(cat /run/echo/runtime.pid)" = "$$" ];then rm -f /run/echo/runtime.pid;fi; }
+    trap cleanup EXIT
+    trap 'exit 0' INT TERM
+    start_gateway(){ "$base/bin/echo-gateway" --memdev /dev/mem --mmio-base 0x43c20000 --mmio-bytes 4096 --ddr-memdev /dev/mem --ddr-base 0x10000000 --ddr-bytes 67108864 --bind 0.0.0.0 --control-port 48120 --binary-port 48121 --state-dir "$storage/state" --spool-dir "$storage/spool" --spool-limit "${ECHO_EVENT_LIMIT:-67108864}" --service-catalog "$base/profiles/default/services.json" --feature-registry "$base/registry/INTERFACE_REGISTRY.json" --service-snapshot-words 16384 --allow-live-results --allow-config-commit --allow-event-capture > /var/log/echo/gateway.log 2>&1 & gateway_pid=$!; }
+    start_panel(){ "$base/bin/echo-portable" --profile "$base/profiles/default/PROFILE.json" >/var/log/echo/panel.log 2>&1 & panel_pid=$!; }
+    start_lcd(){ "$base/bin/echo-lcd-gif" --reserved-spi0 --gif "$base/assets/easter-egg.gif" >>/var/log/echo/lcd.log 2>&1 & lcd_pid=$!;echo "$lcd_pid" >/run/echo/lcd.pid; }
+    lcd_pid=0;lcd_restarts=0;lcd_cooldown=0
+    if [ "${ECHO_LCD_ENABLE:-1}" = 1 ] && [ -x "$base/bin/echo-lcd-gif" ];then start_lcd;fi
+    start_gateway
+    if [ -c /dev/fb0 ];then start_panel;else panel_pid=0;echo 'HDMI framebuffer missing; network remains available';fi
+    attempts=0;health_fail=0;previous_beat=;beat_stall=0
+    while :;do
+      sleep 2
+      # Optional animation must never take the acquisition service down.
+      if [ "$lcd_pid" != 0 ] && ! kill -0 "$lcd_pid" 2>/dev/null;then
+        if [ "$lcd_cooldown" -gt 0 ];then lcd_cooldown=$((lcd_cooldown-1));
+        elif [ "$lcd_restarts" -lt 5 ];then
+          wait "$lcd_pid" 2>/dev/null || true
+          lcd_restarts=$((lcd_restarts+1));echo "LCD recovery $lcd_restarts/5" >>/var/log/echo/lcd.log
+          start_lcd;lcd_cooldown=15
+        else echo 'LCD unavailable after bounded retries; analysis continues';lcd_pid=0;fi
+      fi
+      if ! kill -0 "$gateway_pid" 2>/dev/null;then attempts=$((attempts+1));[ "$attempts" -le 3 ] || { echo 'Gateway safe mode: restart limit reached';break; };start_gateway;fi
+      if [ "$panel_pid" != 0 ] && ! kill -0 "$panel_pid" 2>/dev/null;then attempts=$((attempts+1));[ "$attempts" -le 3 ] || { echo 'Panel safe mode: restart limit reached';break; };start_panel;fi
+      if [ "$panel_pid" != 0 ];then
+        current_beat=$(cat "$ECHO_HEARTBEAT_FILE" 2>/dev/null || true)
+        if [ -z "$current_beat" ] || [ "$current_beat" = "$previous_beat" ];then beat_stall=$((beat_stall+1));else beat_stall=0;fi
+        previous_beat=$current_beat
+        if [ "$beat_stall" -ge 3 ];then
+          kill "$panel_pid" 2>/dev/null || true;sleep 1;kill -9 "$panel_pid" 2>/dev/null || true
+          attempts=$((attempts+1));[ "$attempts" -le 3 ] || { echo 'Panel stalled; restart limit reached';break; };start_panel;beat_stall=0
+        fi
+      fi
+      if [ -x "$base/bin/echo-health" ];then
+        if "$base/bin/echo-health";then health_fail=0;else health_fail=$((health_fail+1));fi
+        if [ "$health_fail" -ge 3 ];then
+          kill "$gateway_pid" 2>/dev/null || true;sleep 1;kill -9 "$gateway_pid" 2>/dev/null || true;sleep 1
+          if kill -0 "$gateway_pid" 2>/dev/null;then echo 'Uninterruptible bus access; do not start a second MMIO owner';break;fi
+          attempts=$((attempts+1));[ "$attempts" -le 3 ] || { echo 'Gateway unresponsive; restart limit reached';break; };start_gateway;health_fail=0
+        fi
+      fi
+    done
+    # No automatic PS/PL reset while DMA or leased recordings may exist.
+    ;;
+ stop)
+    for kind in lcd watchdog; do if [ -f /run/echo/$kind.pid ]; then kill "$(cat /run/echo/$kind.pid)" 2>/dev/null || true; rm -f /run/echo/$kind.pid; fi; done
+    if [ -f /run/echo/runtime.pid ];then kill "$(cat /run/echo/runtime.pid)" 2>/dev/null || true;rm -f /run/echo/runtime.pid;fi
+    ;;
+ *) echo 'Usage: echo-runtime start|stop' >&2;exit 2;;
+esac

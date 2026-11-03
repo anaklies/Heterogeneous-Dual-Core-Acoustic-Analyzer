@@ -1,0 +1,14 @@
+{
+  "baselineSHA256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+  "ramdiskEntries": 2840,
+  "otherImageSHA256": {
+    "kernel-1": "91f6859abac029d1a6922996ef6b166cfdc9806a7dac4548d2857d1017701c86",
+    "fdt-system-top.dtb": "8395c6e2167ce5c5fef110362c9be4bce24bf931da44b838ebaf2fbb984410f7"
+  },
+  "changedEntries": [
+    "opt/echo/bin/echo-gateway"
+  ],
+  "outputSHA256": "646631abdd1add91b96ea28d2553eafeac647c42267386e03fddaf17613b6565",
+  "kernelAndOtherImagesUnchanged": true,
+  "untouchedCpioEntriesUnchanged": true
+}

@@ -1,0 +1,53 @@
+{
+  "product": "ECHO",
+  "release": "20261031-spatial-off-45-features-gatewayfix",
+  "activeFeatureCount": 45,
+  "removedFeatures": [
+    "band_das",
+    "directed_das",
+    "full_das",
+    "spatial_grid",
+    "spatial_interface",
+    "spatial_peaks"
+  ],
+  "rootReadmeAndSkillReadme": "completed 2026-11-02",
+  "report": "competition design report and six evidence-backed engineering collaboration cases; no dialogue excerpts",
+  "sourceLayout": "src/project preserves original relative imports; src/pl_project is matched physical project",
+  "physicalPL": "unchanged separate IO bitstream; disabled spatial services may remain in shared hardware; not claimed physically removed",
+  "validation": "inherited original evidence with scope preserved; packaging check is not a new acoustic acceptance",
+  "vendorLinux": "delivered binary FIT baseline; vendor kernel source/BSP is not claimed present",
+  "toolchain": {
+    "Vivado": "2025.2",
+    "part": "xc7z020clg484-2",
+    "ARM": "arm-linux-gnueabihf Cortex-A9 hard-float",
+    "PC": "packaging/requirements-lock.txt"
+  },
+  "originalWorkspace": "C:\\Users\\sunxi\\Desktop\\sixmic3D",
+  "newExperimentsRun": true,
+  "boardWritten": false,
+  "buildEntrypoints": {
+    "PL": "build/rebuild_pl.ps1 -Vivado <vivado.bat>",
+    "PS": "python build/rebuild_ps.py --toolchain-bin <ARM compiler bin>",
+    "PC": "build/rebuild_pc.ps1 -PythonExecutable <locked Python environment>",
+    "BOOT": "build/rebuild_boot.ps1 -Bootgen <bootgen.bat>",
+    "integrity": "python build/check_package.py",
+    "HLS_config_relocation": "python build/prepare_hls_configs.py"
+  },
+  "buildScope": "Existing matched binaries preserved; rebuild wrappers packaged but full synthesis/compiler rebuild not rerun during packaging.",
+  "softwareData": {
+    "directory": "data/software_measurements",
+    "index": "45项输入结果参考索引.csv",
+    "features": 45,
+    "nativeCapturedCases": 92,
+    "fastNativeSuitesPassed": 6,
+    "boardAccessed": false,
+    "reproduce": "python sim/generate_software_measurements.py",
+    "requirements": "sim/software_data_requirements.txt",
+    "scope": "See data/software_measurements/数据说明.md; reference fixtures are not board acceptance.",
+    "inputWavs": 11
+  },
+  "newValidationScope": "six bounded native software suites; no board, RTL or physical implementation rerun",
+  "submissionPreparedAt": "2026-11-02",
+  "noNewBoardOrLongTests": true,
+  "collaborationRecordRevision": "2026-11-02 design decisions edition"
+}

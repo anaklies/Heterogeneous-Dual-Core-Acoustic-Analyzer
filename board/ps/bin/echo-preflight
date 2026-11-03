@@ -1,0 +1,21 @@
+#!/bin/sh
+# Read-only, bounded target check. Never programs PL, flash or storage.
+set -eu
+base=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+fail(){ echo "NOT_READY: $*" >&2; exit 78; }
+[ "$(uname -m)" = armv7l ] || fail 'Requires Zynq ARM Linux'
+[ -r /sys/firmware/devicetree/base/reserved-memory/echo-analysis@10000000/no-map ] || fail 'Matching reserved DDR device tree is absent; do not start DMA'
+reg=/sys/firmware/devicetree/base/reserved-memory/echo-analysis@10000000/reg
+[ "$(od -An -tx1 "$reg" | tr -d ' \n')" = 1000000004000000 ] || fail 'DDR reservation differs from this release'
+found=0
+for n in /sys/class/uio/uio*/name; do
+ if [ -r "$n" ] && [ "$(cat "$n")" = echo-analysis ]; then found=1; fi
+done
+[ "$found" = 1 ] || fail 'Matching echo-analysis UIO device is absent'
+[ -c /dev/fb0 ] || fail 'HDMI framebuffer is absent'
+echo "Framebuffer: $(cat /sys/class/graphics/fb0/virtual_size 2>/dev/null || true)"
+echo 'Touchscreen candidates (verify the actual event node):'
+grep -E 'Name=|Handlers=' /proc/bus/input/devices || true
+LD_LIBRARY_PATH="$base/lib" "$base/bin/echo-gateway" --version
+LD_LIBRARY_PATH="$base/lib" "$base/bin/echo-bootstrap" --validate-only "$base/profiles/default/PROFILE.json"
+echo 'PREFLIGHT_PASS: software/DT prerequisites only; no microphone or MMIO test'
