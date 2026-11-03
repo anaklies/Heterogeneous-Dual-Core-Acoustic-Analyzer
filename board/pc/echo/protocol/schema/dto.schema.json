@@ -1,0 +1,1015 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sixmic.local/pc_backend_v1/dto.schema.json",
+  "title": "pc-backend-dto v1",
+  "$defs": {
+    "u64string": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,19})$",
+      "maxLength": 20
+    },
+    "sourceKind": {
+      "enum": [
+        "pl-live",
+        "file-replay",
+        "offline-reference",
+        "test-fixture"
+      ]
+    },
+    "capabilityState": {
+      "enum": [
+        "available",
+        "experimental",
+        "not_ready",
+        "unsupported"
+      ]
+    },
+    "bufferRef": {
+      "type": "object",
+      "required": [
+        "handleId",
+        "bytes",
+        "elementType",
+        "count",
+        "layout",
+        "displayOnly",
+        "sourceKind"
+      ],
+      "properties": {
+        "handleId": {
+          "type": "string"
+        },
+        "bytes": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,19})$",
+          "maxLength": 20
+        },
+        "elementType": {
+          "enum": [
+            "int32",
+            "uint32",
+            "float32",
+            "float64",
+            "uint8"
+          ]
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "layout": {
+          "enum": [
+            "interleaved",
+            "planar"
+          ]
+        },
+        "alignment": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "displayOnly": {
+          "type": "boolean"
+        },
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "errorInfo": {
+      "type": "object",
+      "required": [
+        "code",
+        "messageKey",
+        "retryable"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "messageKey": {
+          "type": "string"
+        },
+        "retryable": {
+          "type": "boolean"
+        },
+        "detail": {
+          "type": "object"
+        },
+        "occurredMonotonicNs": {
+          "type": "string",
+          "pattern": "^(0|[1-9][0-9]{0,19})$",
+          "maxLength": 20
+        }
+      }
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "livePcm",
+        "liveResults",
+        "resultSnapshotProtocol",
+        "serviceSnapshots",
+        "eventCapture",
+        "eventDownload",
+        "rawRecording",
+        "profileUpload",
+        "profileActivate",
+        "taskControl",
+        "sensorSnapshot",
+        "deviceLog",
+        "configCommit",
+        "configVersion",
+        "protocol3",
+        "missing"
+      ],
+      "properties": {
+        "livePcm": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "liveResults": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "resultSnapshotProtocol": {
+          "type": "integer"
+        },
+        "serviceSnapshots": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "eventCapture": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "eventDownload": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "rawRecording": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "profileUpload": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "profileActivate": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "taskControl": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "sensorSnapshot": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "deviceLog": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "configCommit": {
+          "$ref": "#/$defs/capabilityState"
+        },
+        "configVersion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "protocol3": {
+          "type": "boolean"
+        },
+        "missing": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "deviceInfo": {
+      "type": "object",
+      "required": [
+        "deviceId",
+        "hardwareProtocolVersion",
+        "networkProtocolVersion",
+        "connectionEpoch",
+        "capabilities",
+        "verifiedOnBoard"
+      ],
+      "properties": {
+        "deviceId": {
+          "type": "string"
+        },
+        "firmwareId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "hardwareProtocolVersion": {
+          "const": 3
+        },
+        "gatewayVersion": {
+          "type": "string"
+        },
+        "networkProtocolVersion": {
+          "const": 1
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sampleRateHz": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "boardBaseAddress": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "capabilities": {
+          "$ref": "#/$defs/capabilities"
+        },
+        "verifiedOnBoard": {
+          "const": false
+        }
+      }
+    },
+    "connectionState": {
+      "type": "object",
+      "required": [
+        "state",
+        "host",
+        "controlPort",
+        "binaryPort",
+        "controlHeld",
+        "reconnectAttempt",
+        "changedMonotonicNs"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "disconnected",
+            "connecting",
+            "handshaking",
+            "connected",
+            "degraded",
+            "reconnecting",
+            "failed"
+          ]
+        },
+        "host": {
+          "type": "string"
+        },
+        "controlPort": {
+          "type": "integer"
+        },
+        "binaryPort": {
+          "type": "integer"
+        },
+        "deviceId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "connectionEpoch": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sessionId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "controlHeld": {
+          "type": "boolean"
+        },
+        "controlExpiresInMs": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "reconnectAttempt": {
+          "type": "integer"
+        },
+        "lastError": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/errorInfo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "changedMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        }
+      }
+    },
+    "liveFrame": {
+      "type": "object",
+      "required": [
+        "sourceKind",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "frameId",
+        "configVersion",
+        "sampleIndex",
+        "sampleRateHz",
+        "receivedMonotonicNs",
+        "words",
+        "decoded",
+        "validity",
+        "quality"
+      ],
+      "properties": {
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "frameId": {
+          "type": "integer"
+        },
+        "configVersion": {
+          "type": "integer"
+        },
+        "sampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sampleRateHz": {
+          "type": "number"
+        },
+        "deviceMonotonicNs": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "receivedMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        },
+        "algorithmId": {
+          "type": "integer"
+        },
+        "faults": {
+          "type": "integer"
+        },
+        "words": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 32,
+          "maxItems": 32
+        },
+        "decoded": {
+          "type": "object"
+        },
+        "validity": {
+          "type": "object"
+        },
+        "quality": {
+          "type": "object"
+        }
+      }
+    },
+    "audioChunk": {
+      "type": "object",
+      "required": [
+        "sourceKind",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "streamId",
+        "firstSampleIndex",
+        "sampleCount",
+        "channels",
+        "sampleFormat",
+        "sampleRateHz",
+        "units",
+        "records",
+        "gapBefore",
+        "continuity"
+      ],
+      "properties": {
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "streamId": {
+          "type": "integer"
+        },
+        "firstSampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sampleCount": {
+          "type": "integer"
+        },
+        "channels": {
+          "const": 6
+        },
+        "channelOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sampleFormat": {
+          "const": "int24-le-signextended-in-int32"
+        },
+        "sampleRateHz": {
+          "type": "number"
+        },
+        "units": {
+          "type": "string"
+        },
+        "records": {
+          "$ref": "#/$defs/bufferRef"
+        },
+        "gapBefore": {
+          "type": "boolean"
+        },
+        "continuity": {
+          "type": "object"
+        },
+        "deviceMonotonicNs": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "spectrumFrame": {
+      "type": "object",
+      "required": [
+        "sourceKind",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "frameId",
+        "configVersion",
+        "sampleIndex",
+        "spectrumKind",
+        "fftSize",
+        "binCount",
+        "window",
+        "scaling",
+        "frequencyAxis",
+        "units",
+        "values",
+        "validity",
+        "displayOnly"
+      ],
+      "properties": {
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "frameId": {
+          "type": "integer"
+        },
+        "configVersion": {
+          "type": "integer"
+        },
+        "sampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "serviceId": {
+          "type": "string"
+        },
+        "spectrumKind": {
+          "enum": [
+            "fft-magnitude",
+            "psd-welch",
+            "stft-frame",
+            "octave-band",
+            "das-map"
+          ]
+        },
+        "fftSize": {
+          "type": "integer"
+        },
+        "binCount": {
+          "type": "integer"
+        },
+        "window": {
+          "type": "string"
+        },
+        "scaling": {
+          "type": "string"
+        },
+        "frequencyAxis": {
+          "type": "object",
+          "required": [
+            "firstBinHz",
+            "binWidthHz",
+            "sampleRateHz"
+          ]
+        },
+        "units": {
+          "type": "string"
+        },
+        "values": {
+          "$ref": "#/$defs/bufferRef"
+        },
+        "validity": {
+          "type": "object"
+        },
+        "displayOnly": {
+          "type": "boolean"
+        },
+        "algorithmVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "sensorSnapshot": {
+      "type": "object",
+      "required": [
+        "valid",
+        "imuScaleStatus"
+      ],
+      "properties": {
+        "temperatureC": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "humidityRaw": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pressurePa": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "soundSpeedMps": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "valid": {
+          "type": "object"
+        },
+        "environmentMode": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "poseRaw": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "sensorErrors": {
+          "type": "integer"
+        },
+        "sensorFaults": {
+          "type": "integer"
+        },
+        "envSequence": {
+          "type": "integer"
+        },
+        "poseSequence": {
+          "type": "integer"
+        },
+        "deviceMonotonicNs": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "imuScaleStatus": {
+          "const": "unverified"
+        }
+      }
+    },
+    "serviceResult": {
+      "type": "object",
+      "required": [
+        "sourceKind",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "serviceId",
+        "descriptor",
+        "slot",
+        "session",
+        "config",
+        "generation",
+        "programVersion",
+        "sourceFrame",
+        "words",
+        "validity",
+        "provenance"
+      ],
+      "properties": {
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "serviceId": {
+          "type": "string"
+        },
+        "descriptor": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "slot": {
+          "type": "integer"
+        },
+        "session": {
+          "type": "integer"
+        },
+        "config": {
+          "type": "integer"
+        },
+        "generation": {
+          "type": "integer"
+        },
+        "programVersion": {
+          "type": "integer"
+        },
+        "sourceFrame": {
+          "type": "integer"
+        },
+        "sampleIndex": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "units": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "words": {
+          "$ref": "#/$defs/bufferRef"
+        },
+        "decoded": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "validity": {
+          "type": "object"
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "kind"
+          ]
+        }
+      }
+    },
+    "eventRecord": {
+      "type": "object",
+      "required": [
+        "eventId",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "sourceKind",
+        "capturedFirstSampleIndex",
+        "capturedLastSampleIndex",
+        "frames",
+        "sampleRateHz",
+        "clipReason",
+        "flags",
+        "file",
+        "ack"
+      ],
+      "properties": {
+        "eventId": {
+          "$ref": "#/$defs/u64string"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "capturedFirstSampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "capturedLastSampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "frames": {
+          "type": "integer"
+        },
+        "sampleRateHz": {
+          "type": "number"
+        },
+        "clipReason": {
+          "type": "integer"
+        },
+        "flags": {
+          "type": "object",
+          "properties": {
+            "incomplete": {
+              "type": "boolean"
+            },
+            "lostEvents": {
+              "type": "boolean"
+            },
+            "summaryStale": {
+              "type": "boolean"
+            },
+            "envInvalid": {
+              "type": "boolean"
+            },
+            "poseInvalid": {
+              "type": "boolean"
+            }
+          }
+        },
+        "file": {
+          "type": "object"
+        },
+        "ack": {
+          "type": "object"
+        },
+        "manifestPath": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "createdMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        }
+      }
+    },
+    "jobState": {
+      "type": "object",
+      "required": [
+        "jobId",
+        "kind",
+        "state",
+        "createdAtMonotonicNs",
+        "updatedAtMonotonicNs",
+        "cancelRequested",
+        "cancelAcknowledged"
+      ],
+      "properties": {
+        "jobId": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "accepted",
+            "running",
+            "cancel_requested",
+            "completed",
+            "failed",
+            "canceled"
+          ]
+        },
+        "progress": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "createdAtMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        },
+        "updatedAtMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        },
+        "clientTaskKey": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requestId": {
+          "type": "string"
+        },
+        "result": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "error": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/errorInfo"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cancelRequested": {
+          "type": "boolean"
+        },
+        "cancelAcknowledged": {
+          "type": "boolean"
+        }
+      }
+    },
+    "recordingManifest": {
+      "type": "object",
+      "required": [
+        "format",
+        "recordingId",
+        "deviceId",
+        "connectionEpoch",
+        "sessionId",
+        "sourceKind",
+        "channels",
+        "sampleFormat",
+        "units",
+        "realSampleRateHz",
+        "integerRateHz",
+        "rateRoundingErrorHz",
+        "records",
+        "firstSampleIndex",
+        "lastSampleIndex",
+        "segments",
+        "gaps",
+        "flags",
+        "sha256"
+      ],
+      "properties": {
+        "format": {
+          "const": "smc-recording-v1"
+        },
+        "recordingId": {
+          "type": "string"
+        },
+        "deviceId": {
+          "type": "string"
+        },
+        "connectionEpoch": {
+          "$ref": "#/$defs/u64string"
+        },
+        "sessionId": {
+          "type": "string"
+        },
+        "sourceKind": {
+          "$ref": "#/$defs/sourceKind"
+        },
+        "startedMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        },
+        "stoppedMonotonicNs": {
+          "$ref": "#/$defs/u64string"
+        },
+        "channels": {
+          "const": 6
+        },
+        "sampleFormat": {
+          "const": "int24-le-signextended-in-int32"
+        },
+        "units": {
+          "type": "string"
+        },
+        "realSampleRateHz": {
+          "type": "number"
+        },
+        "integerRateHz": {
+          "type": "integer"
+        },
+        "rateRoundingErrorHz": {
+          "type": "number"
+        },
+        "records": {
+          "$ref": "#/$defs/u64string"
+        },
+        "firstSampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "lastSampleIndex": {
+          "$ref": "#/$defs/u64string"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "wav": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "flags": {
+          "type": "object"
+        },
+        "algorithmVersions": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  }
+}

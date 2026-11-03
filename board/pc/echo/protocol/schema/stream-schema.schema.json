@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sixmic.local/pc_backend_v1/stream-schema.schema.json",
+  "title": "sixmic-analysis v1 STREAM_SCHEMA payload (sent before any data)",
+  "type": "object",
+  "required": [
+    "streamId",
+    "streamType",
+    "sourceKind",
+    "deviceId",
+    "connectionEpoch",
+    "encoding"
+  ],
+  "properties": {
+    "streamId": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "streamType": {
+      "enum": [
+        "pcmRecord32",
+        "resultWords32",
+        "serviceSnapshot",
+        "eventFile"
+      ]
+    },
+    "sourceKind": {
+      "enum": [
+        "pl-live",
+        "file-replay",
+        "offline-reference",
+        "test-fixture"
+      ]
+    },
+    "deviceId": {
+      "type": "string"
+    },
+    "connectionEpoch": {
+      "$ref": "dto.schema.json#/$defs/u64string"
+    },
+    "encoding": {
+      "const": "sma1"
+    },
+    "simulated": {
+      "type": "boolean"
+    },
+    "units": {
+      "type": "string"
+    },
+    "validity": {
+      "type": "object"
+    },
+    "createdMonotonicNs": {
+      "$ref": "dto.schema.json#/$defs/u64string"
+    },
+    "pcm": {
+      "type": "object",
+      "required": [
+        "channels",
+        "channelOrder",
+        "sampleFormat",
+        "recordBytes",
+        "sampleIndexOffset",
+        "sampleIndexEncoding",
+        "sampleRateHz",
+        "sampleRateSource",
+        "gapPolicy"
+      ],
+      "properties": {
+        "channels": {
+          "const": 6
+        },
+        "channelOrder": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "sampleFormat": {
+          "const": "int24-le-signextended-in-int32"
+        },
+        "recordBytes": {
+          "const": 32
+        },
+        "sampleIndexOffset": {
+          "const": 24
+        },
+        "sampleIndexEncoding": {
+          "const": "uint64-le-low-word-first"
+        },
+        "sampleRateHz": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "sampleRateExactHz": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "sampleRateSource": {
+          "type": "string"
+        },
+        "recordRateHz": {
+          "type": "number"
+        },
+        "frameGroupRecords": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "gapPolicy": {
+          "type": "string"
+        }
+      }
+    },
+    "wordCount": {
+      "type": "integer"
+    },
+    "wordEncoding": {
+      "type": "string"
+    },
+    "snapshotConsistency": {
+      "type": "string"
+    },
+    "wordMap": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "serviceId": {
+      "type": "string"
+    },
+    "descriptor": {
+      "type": "integer"
+    },
+    "session": {
+      "type": "integer"
+    },
+    "config": {
+      "type": "integer"
+    },
+    "generation": {
+      "type": "integer"
+    },
+    "headerWords": {
+      "type": "integer"
+    },
+    "headerMap": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "payloadWords": {
+      "type": "integer"
+    },
+    "eventId": {
+      "$ref": "dto.schema.json#/$defs/u64string"
+    },
+    "totalBytes": {
+      "$ref": "dto.schema.json#/$defs/u64string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "chunkBytes": {
+      "type": "integer"
+    },
+    "container": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "sourceKind": {
+            "const": "pl-live"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "simulated": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

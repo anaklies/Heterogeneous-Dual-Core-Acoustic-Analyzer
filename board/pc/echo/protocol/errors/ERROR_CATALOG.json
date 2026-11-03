@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "catalogVersion": 1,
+  "protocol": "sixmic-analysis",
+  "protocolVersion": 1,
+  "frozenAt": "2026-10-24",
+  "rules": [
+    "code 是稳定机器码，只增不改语义；messageKey 供 UI 翻译。",
+    "retryable=true 仅表示同一请求可在退避后重试，不代表数据可伪造。",
+    "detail 必须可追踪，但不得包含密钥、token、任意文件路径或物理内存内容。",
+    "错误码不得被 UI 当作成功状态处理；accepted/job 状态不是完成。"
+  ],
+  "errors": [
+    {
+      "code": "bad_json",
+      "messageKey": "errors.bad_json",
+      "retryable": false,
+      "description": "请求不是合法 JSON，或含重复键/NaN/Infinity/超深度/超节点。"
+    },
+    {
+      "code": "bad_utf8",
+      "messageKey": "errors.bad_utf8",
+      "retryable": false,
+      "description": "控制通道收到非法 UTF-8；连接关闭。"
+    },
+    {
+      "code": "line_too_long",
+      "messageKey": "errors.line_too_long",
+      "retryable": false,
+      "description": "单行超过 65536 字节；连接关闭。"
+    },
+    {
+      "code": "protocol_mismatch",
+      "messageKey": "errors.protocol_mismatch",
+      "retryable": false,
+      "description": "protocol 字段不是 sixmic-analysis。"
+    },
+    {
+      "code": "unsupported_version",
+      "messageKey": "errors.unsupported_version",
+      "retryable": false,
+      "description": "协议主版本不为 1。"
+    },
+    {
+      "code": "unknown_op",
+      "messageKey": "errors.unknown_op",
+      "retryable": false,
+      "description": "op 不在 v1 白名单。"
+    },
+    {
+      "code": "bad_args",
+      "messageKey": "errors.bad_args",
+      "retryable": false,
+      "description": "args 缺失/类型/范围错误；detail.field 指出字段。"
+    },
+    {
+      "code": "bad_state",
+      "messageKey": "errors.bad_state",
+      "retryable": false,
+      "description": "当前设备/配置状态不允许该操作。"
+    },
+    {
+      "code": "not_authenticated",
+      "messageKey": "errors.not_authenticated",
+      "retryable": false,
+      "description": "首帧不是 hello，或会话已失效。"
+    },
+    {
+      "code": "unknown_session",
+      "messageKey": "errors.unknown_session",
+      "retryable": false,
+      "description": "sessionId 不是服务端当前会话；需要重新 hello。"
+    },
+    {
+      "code": "epoch_mismatch",
+      "messageKey": "errors.epoch_mismatch",
+      "retryable": false,
+      "description": "connectionEpoch 与当前网关纪元不符；旧会话结果一律拒绝。"
+    },
+    {
+      "code": "bad_token",
+      "messageKey": "errors.bad_token",
+      "retryable": false,
+      "description": "controlToken 无效或已过期。"
+    },
+    {
+      "code": "control_conflict",
+      "messageKey": "errors.control_conflict",
+      "retryable": true,
+      "description": "另一客户端持有设备控制权；detail.holder 给出占用方。"
+    },
+    {
+      "code": "control_not_held",
+      "messageKey": "errors.control_not_held",
+      "retryable": false,
+      "description": "该操作需要控制权，但当前客户端未持有。"
+    },
+    {
+      "code": "rejected",
+      "messageKey": "errors.rejected",
+      "retryable": false,
+      "description": "设备/PL 明确拒绝请求（例如配置版本重复或被 RTL 拒绝）；detail 给出 rejectedReason。"
+    },
+    {
+      "code": "not_ready",
+      "messageKey": "errors.not_ready",
+      "retryable": false,
+      "description": "能力尚未打通/未验收（livePcm、profile 上传、事件下载等）；detail.missing 说明真实缺口。"
+    },
+    {
+      "code": "unsupported_feature",
+      "messageKey": "errors.unsupported_feature",
+      "retryable": false,
+      "description": "用户已取消或产品不提供的能力（例如自动 DOA/XYZ/自动源数）。"
+    },
+    {
+      "code": "busy",
+      "messageKey": "errors.busy",
+      "retryable": true,
+      "description": "设备忙或超过请求速率；退避后重试。"
+    },
+    {
+      "code": "timeout",
+      "messageKey": "errors.timeout",
+      "retryable": true,
+      "description": "等待设备响应超时；不代表请求未生效，需查询状态。"
+    },
+    {
+      "code": "io_error",
+      "messageKey": "errors.io_error",
+      "retryable": true,
+      "description": "设备访问/网络 IO 失败（AXI SLVERR、socket 错误）。"
+    },
+    {
+      "code": "storage_full",
+      "messageKey": "errors.storage_full",
+      "retryable": false,
+      "description": "PC 或 PS spool 空间不足；必须显式记录未保存原因，不得假装已保存。"
+    },
+    {
+      "code": "cursor_expired",
+      "messageKey": "errors.cursor_expired",
+      "retryable": false,
+      "description": "事件列表 cursor 已超出保留窗口；重新从列表头开始。"
+    },
+    {
+      "code": "unknown_event",
+      "messageKey": "errors.unknown_event",
+      "retryable": false,
+      "description": "eventId 不存在或已释放。"
+    },
+    {
+      "code": "event_hash_mismatch",
+      "messageKey": "errors.event_hash_mismatch",
+      "retryable": true,
+      "description": "事件下载 sha256 不匹配；PC 不得 ack，需重传。"
+    },
+    {
+      "code": "job_not_found",
+      "messageKey": "errors.job_not_found",
+      "retryable": false,
+      "description": "jobId 不存在或已超出保留窗口。"
+    },
+    {
+      "code": "rate_limited",
+      "messageKey": "errors.rate_limited",
+      "retryable": true,
+      "description": "超过每连接请求速率；退避后重试。"
+    },
+    {
+      "code": "cancelled",
+      "messageKey": "errors.cancelled",
+      "retryable": false,
+      "description": "任务已被取消（仅在实际安全停止后出现）。"
+    },
+    {
+      "code": "internal_error",
+      "messageKey": "errors.internal_error",
+      "retryable": false,
+      "description": "未分类内部错误；detail 带技术信息但不含敏感数据。"
+    },
+    {
+      "code": "bad_frame",
+      "messageKey": "errors.bad_frame",
+      "retryable": false,
+      "scope": "binary",
+      "description": "SMA1 帧头/magic/长度/CRC 层面非法；接收方关闭该连接。"
+    },
+    {
+      "code": "bad_crc",
+      "messageKey": "errors.bad_crc",
+      "retryable": false,
+      "scope": "binary",
+      "description": "二进制负载 CRC32 不匹配；连接终止。"
+    },
+    {
+      "code": "payload_cap_too_small",
+      "messageKey": "errors.payload_cap_too_small",
+      "retryable": false,
+      "scope": "binary",
+      "description": "协商的二进制负载上限过小，无法发送 STREAM_SCHEMA/块。"
+    },
+    {
+      "code": "bad_hello",
+      "messageKey": "errors.bad_hello",
+      "retryable": false,
+      "scope": "binary",
+      "description": "二进制 HELLO 的 token/epoch/字段非法；连接拒绝。"
+    }
+  ],
+  "scopeNote": "control 为控制通道错误码；scope=binary 的错误码出现在二进制 ERROR/BYE 负载中；scope=both 两处通用。"
+}

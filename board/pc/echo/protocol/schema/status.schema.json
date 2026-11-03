@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sixmic.local/pc_backend_v1/status.schema.json",
+  "title": "sixmic-analysis v1 status.get snapshot",
+  "type": "object",
+  "required": [
+    "connectionEpoch",
+    "sessionId",
+    "deviceState",
+    "control",
+    "config",
+    "resultFreshness",
+    "faults",
+    "queues",
+    "recording",
+    "jobs",
+    "pl"
+  ],
+  "properties": {
+    "connectionEpoch": {
+      "$ref": "dto.schema.json#/$defs/u64string"
+    },
+    "sessionId": {
+      "type": "string"
+    },
+    "deviceState": {
+      "enum": [
+        "ready",
+        "no_link",
+        "degraded",
+        "fault",
+        "reconnecting"
+      ]
+    },
+    "deviceStateReasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "control": {
+      "type": "object",
+      "required": [
+        "held"
+      ],
+      "properties": {
+        "held": {
+          "type": "boolean"
+        },
+        "expiresInMs": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "holder": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "config": {
+      "type": "object",
+      "required": [
+        "activeVersion",
+        "pending"
+      ],
+      "properties": {
+        "activeVersion": {
+          "type": "integer"
+        },
+        "shadowVersion": {
+          "type": "integer"
+        },
+        "pending": {
+          "type": "boolean"
+        },
+        "lastRejectedVersion": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "resultFreshness": {
+      "type": "object",
+      "required": [
+        "stale"
+      ],
+      "properties": {
+        "frameId": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "configVersion": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "sampleIndex": {
+          "type": "array",
+          "items": {
+            "$ref": "dto.schema.json#/$defs/u64string"
+          },
+          "maxItems": 2
+        },
+        "deviceMonotonicNs": {
+          "oneOf": [
+            {
+              "$ref": "dto.schema.json#/$defs/u64string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "receivedMonotonicNs": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "stale": {
+          "type": "boolean"
+        }
+      }
+    },
+    "sensors": {
+      "oneOf": [
+        {
+          "$ref": "dto.schema.json#/$defs/sensorSnapshot"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "faults": {
+      "type": "object",
+      "required": [
+        "faultBits"
+      ],
+      "properties": {
+        "faultBits": {
+          "type": "integer"
+        },
+        "sensorErrors": {
+          "type": "integer"
+        },
+        "microphoneStatus": {
+          "type": "integer"
+        },
+        "missedWindows": {
+          "type": "integer"
+        },
+        "droppedSamples": {
+          "type": "integer"
+        },
+        "lostEvents": {
+          "type": "integer"
+        },
+        "handoffDrops": {
+          "type": "integer"
+        }
+      }
+    },
+    "queues": {
+      "type": "object",
+      "required": [
+        "pcmPendingBytes",
+        "pcmDroppedBytes",
+        "resultDroppedFrames",
+        "eventSpoolBytes",
+        "eventSpoolLimitBytes"
+      ],
+      "properties": {
+        "pcmPendingBytes": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "pcmDroppedBytes": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "resultDroppedFrames": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "eventSpoolBytes": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "eventSpoolLimitBytes": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        }
+      }
+    },
+    "recording": {
+      "type": "object",
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "recordingId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "enum": [
+            "idle",
+            "recording",
+            "stopping",
+            "stopped",
+            "failed"
+          ]
+        },
+        "records": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "bytes": {
+          "$ref": "dto.schema.json#/$defs/u64string"
+        },
+        "gaps": {
+          "type": "integer"
+        }
+      }
+    },
+    "jobs": {
+      "type": "object",
+      "required": [
+        "pending"
+      ],
+      "properties": {
+        "pending": {
+          "type": "integer"
+        }
+      }
+    },
+    "pl": {
+      "type": "object",
+      "properties": {
+        "resultWordProtocol": {
+          "type": "integer"
+        },
+        "algorithmId": {
+          "type": "string"
+        },
+        "capabilities": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
