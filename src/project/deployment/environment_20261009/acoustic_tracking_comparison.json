@@ -1,0 +1,598 @@
+{
+  "before": {
+    "reacquire_step_cm": 0.0,
+    "invalid_frame_range": 0,
+    "subnormal_dt_ids": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "trajectory": {
+      "static_track": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 0,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 39,
+          "same_id_consecutive_max_step_cm": 0.0,
+          "static_jitter_rms_cm": 0.0,
+          "static_jitter_max_cm": 0.0
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 40,
+          "detected_targets": 101,
+          "valid_coordinate_outputs": 41,
+          "matched_coordinate_targets": 40,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 61,
+          "full_count_and_range_scenes": 0,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 1.399090441025955,
+          "mean_error_cm": 0.1509776617984355,
+          "rmse_3d_cm": 0.1509776617984355,
+          "median_cm": 0.1509776617984355,
+          "p90_cm": 0.1509776617984355,
+          "p95_cm": 0.1509776617984355,
+          "max_cm": 0.1509776617984355,
+          "min_cm": 0.1509776617984355,
+          "p99_cm": 0.1509776617984355,
+          "matched_coordinates_within_10cm": 40,
+          "angle_mean_deg": 0.024654618921320585,
+          "angle_p95_deg": 0.04297826270799159,
+          "radial_mae_cm": 0.09829279678374991,
+          "axis_mae_cm": [
+            0.029028674330489057,
+            0.10021070102861351,
+            0.10913022417319149
+          ],
+          "axis_rmse_cm": [
+            0.029028674330489064,
+            0.10021070102861349,
+            0.10913022417319146
+          ],
+          "axis_bias_cm": [
+            0.029028674330489057,
+            0.10021070102861351,
+            0.10913022417319149
+          ]
+        }
+      },
+      "moving_two": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 2,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 77,
+          "same_id_consecutive_max_step_cm": 9.028839526557467
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 80,
+          "detected_targets": 120,
+          "valid_coordinate_outputs": 82,
+          "matched_coordinate_targets": 80,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 40,
+          "full_count_and_range_scenes": 0,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 4.772528433023811,
+          "mean_error_cm": 3.1829826498243636,
+          "rmse_3d_cm": 3.790238822045239,
+          "median_cm": 2.7489947400449273,
+          "p90_cm": 6.12168955779292,
+          "p95_cm": 7.595699300906158,
+          "max_cm": 8.630427203181853,
+          "min_cm": 0.18293954264204623,
+          "p99_cm": 8.529193141302848,
+          "matched_coordinates_within_10cm": 80,
+          "angle_mean_deg": 0.08581763076366494,
+          "angle_p95_deg": 0.1304038262777019,
+          "radial_mae_cm": 2.9345578825501186,
+          "axis_mae_cm": [
+            0.9594562626615841,
+            2.7888694532645615,
+            0.6461719894147132
+          ],
+          "axis_rmse_cm": [
+            1.1952189825329835,
+            3.4684656912796736,
+            0.9524219969884742
+          ],
+          "axis_bias_cm": [
+            -0.8875657750909213,
+            0.3929295716466099,
+            0.15588785673607924
+          ]
+        }
+      },
+      "crossing_two": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 12,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 4,
+          "assigned_confirmed_target_frames": 75,
+          "same_id_consecutive_max_step_cm": 12.577508091606695
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 80,
+          "detected_targets": 114,
+          "valid_coordinate_outputs": 102,
+          "matched_coordinate_targets": 80,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 34,
+          "full_count_and_range_scenes": 6,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 22.496674397107473,
+          "mean_error_cm": 5.900807512313541,
+          "rmse_3d_cm": 8.251017198677152,
+          "median_cm": 4.457430941835806,
+          "p90_cm": 10.879166135915877,
+          "p95_cm": 13.420845649070058,
+          "max_cm": 43.00528767660468,
+          "min_cm": 0.8998412615745764,
+          "p99_cm": 25.749384760612422,
+          "matched_coordinates_within_10cm": 71,
+          "angle_mean_deg": 0.9675577345138565,
+          "angle_p95_deg": 1.854727625944194,
+          "radial_mae_cm": 5.279096220485586,
+          "axis_mae_cm": [
+            4.92155880117393,
+            2.175350909711937,
+            0.8769315561447055
+          ],
+          "axis_rmse_cm": [
+            7.578760867980015,
+            2.750884304144056,
+            1.753369346160364
+          ],
+          "axis_bias_cm": [
+            2.8089458215477654,
+            -0.24213957436849948,
+            0.38313621976710516
+          ]
+        }
+      },
+      "moving_three": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 0,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 117,
+          "same_id_consecutive_max_step_cm": 16.996116430600182
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 120,
+          "detected_targets": 120,
+          "valid_coordinate_outputs": 120,
+          "matched_coordinate_targets": 120,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 0,
+          "full_count_and_range_scenes": 40,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 4.5188448434299575,
+          "mean_error_cm": 4.5188448434299575,
+          "rmse_3d_cm": 5.977783826693072,
+          "median_cm": 3.282360811994949,
+          "p90_cm": 10.441273007648046,
+          "p95_cm": 10.979848583268046,
+          "max_cm": 21.643575547454116,
+          "min_cm": 0.1404821558201493,
+          "p99_cm": 18.3496352670137,
+          "matched_coordinates_within_10cm": 104,
+          "angle_mean_deg": 0.07839877622364481,
+          "angle_p95_deg": 0.1381211094451014,
+          "radial_mae_cm": 4.385331602569607,
+          "axis_mae_cm": [
+            2.697818182876298,
+            2.7165546428393244,
+            1.034764684465867
+          ],
+          "axis_rmse_cm": [
+            4.241622661218799,
+            3.92851444638628,
+            1.519641708773062
+          ],
+          "axis_bias_cm": [
+            0.9365812546770832,
+            -0.49083880448577405,
+            0.7365097257829565
+          ]
+        }
+      }
+    }
+  },
+  "candidate": {
+    "reacquire_step_cm": 0.0,
+    "invalid_frame_range": 0,
+    "subnormal_dt_ids": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "trajectory": {
+      "static_track": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 0,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 39,
+          "same_id_consecutive_max_step_cm": 0.0,
+          "static_jitter_rms_cm": 0.0,
+          "static_jitter_max_cm": 0.0
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 40,
+          "detected_targets": 107,
+          "valid_coordinate_outputs": 41,
+          "matched_coordinate_targets": 40,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 67,
+          "full_count_and_range_scenes": 0,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 1.399090441025955,
+          "mean_error_cm": 0.1509776617984355,
+          "rmse_3d_cm": 0.1509776617984355,
+          "median_cm": 0.1509776617984355,
+          "p90_cm": 0.1509776617984355,
+          "p95_cm": 0.1509776617984355,
+          "max_cm": 0.1509776617984355,
+          "min_cm": 0.1509776617984355,
+          "p99_cm": 0.1509776617984355,
+          "matched_coordinates_within_10cm": 40,
+          "angle_mean_deg": 0.024654618921320585,
+          "angle_p95_deg": 0.04297826270799159,
+          "radial_mae_cm": 0.09829279678374991,
+          "axis_mae_cm": [
+            0.029028674330489057,
+            0.10021070102861351,
+            0.10913022417319149
+          ],
+          "axis_rmse_cm": [
+            0.029028674330489064,
+            0.10021070102861349,
+            0.10913022417319146
+          ],
+          "axis_bias_cm": [
+            0.029028674330489057,
+            0.10021070102861351,
+            0.10913022417319149
+          ]
+        }
+      },
+      "moving_two": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 0,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 78,
+          "same_id_consecutive_max_step_cm": 9.028839526557467
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 80,
+          "detected_targets": 120,
+          "valid_coordinate_outputs": 81,
+          "matched_coordinate_targets": 80,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 40,
+          "full_count_and_range_scenes": 0,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 3.9707717724696763,
+          "mean_error_cm": 3.149400791624466,
+          "rmse_3d_cm": 3.76699662112809,
+          "median_cm": 2.674585530233677,
+          "p90_cm": 6.12168955779292,
+          "p95_cm": 7.595699300906158,
+          "max_cm": 8.630427203181853,
+          "min_cm": 0.18293954264204623,
+          "p99_cm": 8.529193141302848,
+          "matched_coordinates_within_10cm": 80,
+          "angle_mean_deg": 0.08538340358336907,
+          "angle_p95_deg": 0.12770040552832482,
+          "radial_mae_cm": 2.8976672104499004,
+          "axis_mae_cm": [
+            0.9589320046000914,
+            2.7615943678153427,
+            0.6251911544537757
+          ],
+          "axis_rmse_cm": [
+            1.1950553763715337,
+            3.4506124034843446,
+            0.9248676834639286
+          ],
+          "axis_bias_cm": [
+            -0.9066201879327179,
+            0.4198994813145786,
+            0.13513590361107927
+          ]
+        }
+      },
+      "crossing_two": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 7,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 4,
+          "assigned_confirmed_target_frames": 75,
+          "same_id_consecutive_max_step_cm": 26.02632258788097
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 80,
+          "detected_targets": 112,
+          "valid_coordinate_outputs": 97,
+          "matched_coordinate_targets": 80,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 32,
+          "full_count_and_range_scenes": 8,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 18.443915898354685,
+          "mean_error_cm": 5.295168052580445,
+          "rmse_3d_cm": 6.383307407290362,
+          "median_cm": 4.472909456526914,
+          "p90_cm": 10.178589180678108,
+          "p95_cm": 12.460297976979305,
+          "max_cm": 17.394443752331725,
+          "min_cm": 0.8998412615745764,
+          "p99_cm": 15.75193934316577,
+          "matched_coordinates_within_10cm": 71,
+          "angle_mean_deg": 0.8492825844043356,
+          "angle_p95_deg": 1.0303552928235007,
+          "radial_mae_cm": 4.673295970643934,
+          "axis_mae_cm": [
+            4.359307183979489,
+            2.1588526118259126,
+            0.6583326553130601
+          ],
+          "axis_rmse_cm": [
+            5.689617616207945,
+            2.765160492895486,
+            0.8536698927771865
+          ],
+          "axis_bias_cm": [
+            3.3416682946922975,
+            -0.2642075980501401,
+            0.5089640090737462
+          ]
+        }
+      },
+      "moving_three": {
+        "tracking": {
+          "frames": 40,
+          "id_changes_on_assigned_truth": 0,
+          "gaps_before_reacquisition": 0,
+          "missing_direction_target_frames": 0,
+          "assigned_held_target_frames": 0,
+          "assigned_confirmed_target_frames": 117,
+          "same_id_consecutive_max_step_cm": 16.996116430600182
+        },
+        "errors": {
+          "scenes": 40,
+          "truth_targets": 120,
+          "detected_targets": 120,
+          "valid_coordinate_outputs": 120,
+          "matched_coordinate_targets": 120,
+          "missed_direction_targets": 0,
+          "extra_direction_outputs": 0,
+          "full_count_and_range_scenes": 40,
+          "nonzero_status_scenes": 0,
+          "quiet_mode_scenes": 0,
+          "noise_mode_scenes": 40,
+          "usable_bins_min": 85,
+          "usable_bins_max": 85,
+          "mean_ospa_cm_cap100": 4.5188448434299575,
+          "mean_error_cm": 4.5188448434299575,
+          "rmse_3d_cm": 5.977783826693072,
+          "median_cm": 3.282360811994949,
+          "p90_cm": 10.441273007648046,
+          "p95_cm": 10.979848583268046,
+          "max_cm": 21.643575547454116,
+          "min_cm": 0.1404821558201493,
+          "p99_cm": 18.3496352670137,
+          "matched_coordinates_within_10cm": 104,
+          "angle_mean_deg": 0.07839877622364481,
+          "angle_p95_deg": 0.1381211094451014,
+          "radial_mae_cm": 4.385331602569607,
+          "axis_mae_cm": [
+            2.697818182876298,
+            2.7165546428393244,
+            1.034764684465867
+          ],
+          "axis_rmse_cm": [
+            4.241622661218799,
+            3.92851444638628,
+            1.519641708773062
+          ],
+          "axis_bias_cm": [
+            0.9365812546770832,
+            -0.49083880448577405,
+            0.7365097257829565
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+before reacquire step cm 0.0 dt IDs [[1], [1], [1], [1]]
+static_track ID changes 0 mean cm 0.1509776617984355 OSPA 1.399090441025955
+moving_two ID changes 2 mean cm 3.1829826498243636 OSPA 4.772528433023811
+crossing_two ID changes 12 mean cm 5.900807512313541 OSPA 22.496674397107473
+moving_three ID changes 0 mean cm 4.5188448434299575 OSPA 4.5188448434299575
+candidate reacquire step cm 0.0 dt IDs [[1], [1], [1], [1]]
+static_track ID changes 0 mean cm 0.1509776617984355 OSPA 1.399090441025955
+moving_two ID changes 0 mean cm 3.149400791624466 OSPA 3.9707717724696763
+crossing_two ID changes 7 mean cm 5.295168052580445 OSPA 18.443915898354685
+moving_three ID changes 0 mean cm 4.5188448434299575 OSPA 4.5188448434299575

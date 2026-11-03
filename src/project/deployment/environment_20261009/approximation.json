@@ -1,0 +1,14 @@
+{
+  "maxErrorMps": 0.006740982893290948,
+  "worstTemperatureHumidityRawPressure": [
+    29.61,
+    64512,
+    75000
+  ],
+  "domain": "0..30 C, RH 0..100%, 75..102 kPa",
+  "temperatureStepTestC": 0.01,
+  "humidityRawStep": 1024,
+  "pressureStepPa": 1000,
+  "ROMWords": 96,
+  "co2AssumedPpm": 425
+}

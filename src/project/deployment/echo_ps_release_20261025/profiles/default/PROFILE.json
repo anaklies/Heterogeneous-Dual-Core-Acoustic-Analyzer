@@ -1,0 +1,609 @@
+{
+  "format": "SMI1 sparse LE32, private clear before patches",
+  "session": 1,
+  "config": 1,
+  "generation": 1,
+  "arena_words": 4194304,
+  "arena_byte_address": 268435456,
+  "p1_services": {
+    "snapshot": {
+      "descriptor": 600000,
+      "output": 608192,
+      "output_words": 1025,
+      "program_instructions": 9,
+      "bytecode_bytes": 144,
+      "slot_count": 4,
+      "metadata": {
+        "service": "copy",
+        "units": "FS squared per bin",
+        "first_bin": 0,
+        "bins": 1025
+      }
+    },
+    "peak_hold": {
+      "descriptor": 624576,
+      "output": 632768,
+      "output_words": 1025,
+      "program_instructions": 11,
+      "bytecode_bytes": 176,
+      "slot_count": 4,
+      "metadata": {
+        "service": "peak_hold",
+        "units": "FS squared per bin",
+        "first_bin": 0,
+        "bins": 1025
+      }
+    },
+    "spectrum_ema": {
+      "descriptor": 649152,
+      "output": 657344,
+      "output_words": 1025,
+      "program_instructions": 15,
+      "bytecode_bytes": 240,
+      "slot_count": 4,
+      "metadata": {
+        "service": "ema",
+        "units": "FS squared per bin",
+        "first_bin": 0,
+        "bins": 1025
+      }
+    },
+    "smoothing": {
+      "descriptor": 673728,
+      "output": 681920,
+      "output_words": 1025,
+      "program_instructions": 25,
+      "bytecode_bytes": 400,
+      "slot_count": 4,
+      "metadata": {
+        "service": "triangular_smoothing",
+        "units": "FS squared per bin",
+        "bins": 1025
+      }
+    },
+    "octave": {
+      "descriptor": 698304,
+      "output": 706496,
+      "output_words": 10,
+      "program_instructions": 103,
+      "bytecode_bytes": 1648,
+      "slot_count": 4,
+      "metadata": {
+        "service": "relative_octave_energy",
+        "fraction": 1,
+        "centers_hz": [
+          31.25,
+          62.5,
+          125.0,
+          250.0,
+          500.0,
+          1000.0,
+          2000.0,
+          4000.0,
+          8000.0,
+          16000.0
+        ],
+        "bin_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            16
+          ],
+          [
+            16,
+            31
+          ],
+          [
+            31,
+            61
+          ],
+          [
+            61,
+            121
+          ],
+          [
+            121,
+            242
+          ],
+          [
+            242,
+            483
+          ],
+          [
+            483,
+            966
+          ]
+        ],
+        "units": "FS squared"
+      }
+    },
+    "third_octave": {
+      "descriptor": 722880,
+      "output": 731072,
+      "output_words": 28,
+      "program_instructions": 259,
+      "bytecode_bytes": 4144,
+      "slot_count": 4,
+      "metadata": {
+        "service": "relative_octave_energy",
+        "fraction": 3,
+        "centers_hz": [
+          31.25,
+          39.37253280921478,
+          49.60628287400625,
+          62.5,
+          78.74506561842958,
+          99.21256574801247,
+          125.0,
+          157.49013123685916,
+          198.42513149602493,
+          250.0,
+          314.9802624737183,
+          396.8502629920499,
+          500.0,
+          629.9605249474366,
+          793.7005259840998,
+          1000.0,
+          1259.9210498948732,
+          1587.4010519681995,
+          2000.0,
+          2519.8420997897465,
+          3174.8021039363994,
+          4000.0,
+          5039.684199579493,
+          6349.604207872798,
+          8000.0,
+          10079.368399158986,
+          12699.208415745596,
+          16000.0
+        ],
+        "bin_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            16,
+            20
+          ],
+          [
+            20,
+            24
+          ],
+          [
+            24,
+            31
+          ],
+          [
+            31,
+            39
+          ],
+          [
+            39,
+            48
+          ],
+          [
+            48,
+            61
+          ],
+          [
+            61,
+            77
+          ],
+          [
+            77,
+            96
+          ],
+          [
+            96,
+            121
+          ],
+          [
+            121,
+            153
+          ],
+          [
+            153,
+            192
+          ],
+          [
+            192,
+            242
+          ],
+          [
+            242,
+            305
+          ],
+          [
+            305,
+            384
+          ],
+          [
+            384,
+            483
+          ],
+          [
+            483,
+            609
+          ],
+          [
+            609,
+            767
+          ]
+        ],
+        "units": "FS squared"
+      }
+    },
+    "shape": {
+      "descriptor": 747456,
+      "output": 755648,
+      "output_words": 4,
+      "program_instructions": 43,
+      "bytecode_bytes": 688,
+      "slot_count": 4,
+      "metadata": {
+        "service": "spectral_shape",
+        "fields": [
+          "centroid_hz",
+          "flatness",
+          "peak_bin_power",
+          "peak_hz"
+        ],
+        "floor": 1e-20,
+        "bins": 1024,
+        "first_bin": 1
+      }
+    },
+    "flux_delta": {
+      "descriptor": 772032,
+      "output": 780224,
+      "output_words": 1028,
+      "program_instructions": 27,
+      "bytecode_bytes": 432,
+      "slot_count": 4,
+      "metadata": {
+        "service": "flux_delta",
+        "fields": [
+          "positive_flux",
+          "absolute_delta_sum",
+          "rms_delta"
+        ],
+        "history_offset": 3,
+        "warmup_frames": 1
+      }
+    },
+    "welch": {
+      "descriptor": 796608,
+      "output": 804800,
+      "output_words": 1026,
+      "program_instructions": 19,
+      "bytecode_bytes": 304,
+      "slot_count": 4,
+      "metadata": {
+        "service": "welch_cumulative",
+        "units": "FS squared/Hz",
+        "history": "uint32 distinct frame count plus cumulative mean PSD",
+        "window": "2048 Hann, nonoverlapping retained frames",
+        "scope": "selected channel; periodic P1, not six-channel per-hop guarantee"
+      }
+    },
+    "frequency_drift": {
+      "descriptor": 821184,
+      "output": 829376,
+      "output_words": 7,
+      "program_instructions": 45,
+      "bytecode_bytes": 720,
+      "slot_count": 4,
+      "metadata": {
+        "service": "peak_frequency_drift",
+        "fields": [
+          "peak_hz",
+          "delta_hz",
+          "drift_hz_per_second",
+          "drift_valid",
+          "history_hz",
+          "initialized",
+          "frame_uint"
+        ],
+        "bin_resolution_hz": 23.442273139953613,
+        "scope": "dominant mixed-signal FFT peak, not source tracking",
+        "lifetime": "reset history on channel/config change; scheduler must supply distinct monotonic frame IDs"
+      }
+    },
+    "selected_pair_CSD": {
+      "descriptor": 851968,
+      "output": 860160,
+      "output_words": 11276,
+      "program_instructions": 121,
+      "bytecode_bytes": 1936,
+      "slot_count": 4,
+      "metadata": {
+        "service": "selected_pair_cross_spectra",
+        "pair": [
+          0,
+          1
+        ],
+        "first_bin": 0,
+        "bins": 1025,
+        "sample_rate": 48009.775390625,
+        "window_energy": 768.0,
+        "convention": "conj(X_i)*X_j",
+        "count_word": 0,
+        "stride": 11,
+        "fields": [
+          "sum_xx",
+          "sum_yy",
+          "sum_real",
+          "sum_imag",
+          "Sxx",
+          "Syy",
+          "CSD_real",
+          "CSD_imag",
+          "coherence",
+          "phase_rad",
+          "valid"
+        ],
+        "units": "PSD/CSD FS squared per Hz; phase radians; coherence dimensionless",
+        "history_reset_required": "pair/config/source session changes",
+        "validity": "count >=2 AND nonzero powers; caller must guarantee distinct independent frame IDs",
+        "maximum_instruction_steps_per_bin": 140,
+        "hardware": "shared existing PL scalar engine; no new arithmetic datapath"
+      }
+    }
+  },
+  "p2": null,
+  "config32": [
+    1,
+    1,
+    268435456,
+    4194304,
+    268435456,
+    285212672,
+    524288,
+    525312,
+    9,
+    301989888,
+    16777216,
+    301989888,
+    335544320,
+    318767104,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    64,
+    0
+  ],
+  "allocations": [
+    [
+      600000,
+      624576,
+      "snapshot"
+    ],
+    [
+      624576,
+      649152,
+      "peak_hold"
+    ],
+    [
+      649152,
+      673728,
+      "spectrum_ema"
+    ],
+    [
+      673728,
+      698304,
+      "smoothing"
+    ],
+    [
+      698304,
+      722880,
+      "octave"
+    ],
+    [
+      722880,
+      747456,
+      "third_octave"
+    ],
+    [
+      747456,
+      772032,
+      "shape"
+    ],
+    [
+      772032,
+      796608,
+      "flux_delta"
+    ],
+    [
+      796608,
+      821184,
+      "welch"
+    ],
+    [
+      821184,
+      845760,
+      "frequency_drift"
+    ],
+    [
+      851968,
+      876544,
+      "selected_pair_CSD"
+    ]
+  ],
+  "p2_requires_input": false,
+  "input_ready": false,
+  "all_service_RTL_accepted": false,
+  "activation": "Only after PS DDR reservation and with P1/P2 disabled+drained during upload",
+  "special_limits": [
+    "FAST/SLOW needs consecutive raw frames; ordinary periodic carousel cannot guarantee it",
+    "STIPA stage graph and cost remain separately pending",
+    "No automatic DOA, XYZ, tracker or absolute SPL"
+  ],
+  "installed_programs_are": "PL scalar instructions; no CPU DSP fallback",
+  "optimization": {
+    "policy": "OPTIMIZATION_POLICY.json",
+    "changes": [
+      {
+        "service": "snapshot",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "peak_hold",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "spectrum_ema",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "smoothing",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "octave",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "third_octave",
+        "applied": true,
+        "budget": 512,
+        "changedWordIndices": [
+          524617,
+          524633,
+          524649,
+          524665,
+          722889,
+          722905,
+          722921,
+          722937
+        ],
+        "publicInterfaceChanged": false
+      },
+      {
+        "service": "shape",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "flux_delta",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "welch",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "frequency_drift",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      },
+      {
+        "service": "selected_pair_CSD",
+        "applied": false,
+        "reason": "unverified profile; keep original budget"
+      }
+    ],
+    "changedBudgetWords": 8,
+    "algorithmInputAndBindingsUnchanged": true,
+    "testFixtureIncluded": false,
+    "activation": "Use existing SDK only after actual disable/drain and matching session/config/generation; template build is not device activation"
+  },
+  "image_sha256": "074bd32bc82331c55041486bb7c5a86fff28d877d14cce69523fcdf259a15102",
+  "image_bytes": 16404,
+  "managedP1Tables": [
+    524288,
+    528384
+  ],
+  "echoManagedPrivatePools": {
+    "tableA": [
+      524288,
+      525312
+    ],
+    "tableB": [
+      528384,
+      529408
+    ],
+    "contextB": [
+      532480,
+      537600
+    ],
+    "contextA": [
+      540672,
+      545792
+    ],
+    "units": "32-bit word indices, private DDR only"
+  },
+  "echo_boot_policy": "Cold boot only; recorder provisioned, event arm off; no hot upload",
+  "sourceProfileSHA256": "de446b27c7f5382a074942ebaa2c03b66b5cc10214129722c04f49f8e5d46bbe"
+}

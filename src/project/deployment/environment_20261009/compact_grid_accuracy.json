@@ -1,0 +1,14 @@
+{
+  "maxKernelSpeedErrorMps": 0.006727986327121016,
+  "worstTemperatureHumidityRawPressure": [
+    29.53,
+    65535,
+    75000
+  ],
+  "gridCases": 5461820,
+  "temperatureStepC": 0.01,
+  "humidityRawStep": 1024,
+  "pressureStepPa": 1000,
+  "includesFullHumidityEndpoint": true,
+  "boundary": "bounded-model gridded numerical error, not actual sensor or localization error"
+}

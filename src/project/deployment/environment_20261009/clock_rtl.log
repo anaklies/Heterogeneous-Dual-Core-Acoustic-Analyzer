@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct  9 18:00:41 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/clock_guard/xsim_script.tcl
+# xsim {clock_guard} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS independent clock guard: normal startup, stopped heartbeat, bounded PLL restart, stable rearm, lock loss
+$finish called at time : 5560 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_clock_domain_guard.sv" Line 43
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct  9 18:00:42 2026...

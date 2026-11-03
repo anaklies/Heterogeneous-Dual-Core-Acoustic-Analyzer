@@ -1,0 +1,82 @@
+{
+  "format": "echo-service-routes-v1",
+  "routes": [
+    {
+      "name": "snapshot",
+      "address": 270868224,
+      "words": 1025,
+      "descriptor": 524288,
+      "generation": 1
+    },
+    {
+      "name": "peak_hold",
+      "address": 270966528,
+      "words": 1025,
+      "descriptor": 524352,
+      "generation": 1
+    },
+    {
+      "name": "spectrum_ema",
+      "address": 271064832,
+      "words": 1025,
+      "descriptor": 524416,
+      "generation": 1
+    },
+    {
+      "name": "smoothing",
+      "address": 271163136,
+      "words": 1025,
+      "descriptor": 524480,
+      "generation": 1
+    },
+    {
+      "name": "octave",
+      "address": 271261440,
+      "words": 10,
+      "descriptor": 524544,
+      "generation": 1
+    },
+    {
+      "name": "third_octave",
+      "address": 271359744,
+      "words": 28,
+      "descriptor": 524608,
+      "generation": 1
+    },
+    {
+      "name": "shape",
+      "address": 271458048,
+      "words": 4,
+      "descriptor": 524672,
+      "generation": 1
+    },
+    {
+      "name": "flux_delta",
+      "address": 271556352,
+      "words": 1028,
+      "descriptor": 524736,
+      "generation": 1
+    },
+    {
+      "name": "welch",
+      "address": 271654656,
+      "words": 1026,
+      "descriptor": 524800,
+      "generation": 1
+    },
+    {
+      "name": "frequency_drift",
+      "address": 271752960,
+      "words": 7,
+      "descriptor": 524864,
+      "generation": 1
+    },
+    {
+      "name": "selected_pair_CSD",
+      "address": 271876096,
+      "words": 11276,
+      "descriptor": 524928,
+      "generation": 1
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/air_sound_speed.sv" into library work
+INFO: [VRFC 10-311] analyzing module air_sound_speed
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_air_sound_speed.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_air_sound_speed

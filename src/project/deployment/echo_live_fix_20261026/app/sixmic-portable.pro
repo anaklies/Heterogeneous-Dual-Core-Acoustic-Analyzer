@@ -1,0 +1,10 @@
+QT += core gui widgets network
+CONFIG += c++11 warn_on
+CONFIG -= app_bundle
+TEMPLATE = app
+TARGET = echo-portable
+SOURCES += main.cpp client.cpp
+HEADERS += client.h protocol.h
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
+target.path = /opt/sixmic/bin
+INSTALLS += target

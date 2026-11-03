@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/clock_domain_guard.sv" into library work
+INFO: [VRFC 10-311] analyzing module clock_domain_guard
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_clock_domain_guard.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_clock_domain_guard
