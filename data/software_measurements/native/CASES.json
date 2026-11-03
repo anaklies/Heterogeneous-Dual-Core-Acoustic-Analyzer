@@ -1,0 +1,1711 @@
+[
+  {
+    "suite": "test_programs",
+    "case": "copy_first",
+    "data": "native/test_programs/001.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "copy_first",
+      "chunks": 81,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "copy_cross_slot",
+    "data": "native/test_programs/002.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "copy_cross_slot",
+      "chunks": 81,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "peak_hold_first",
+    "data": "native/test_programs/003.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "peak_hold_first",
+      "chunks": 113,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "peak_hold_cross_slot",
+    "data": "native/test_programs/004.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "peak_hold_cross_slot",
+      "chunks": 113,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "ema_first",
+    "data": "native/test_programs/005.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "ema_first",
+      "chunks": 145,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "ema_cross_slot",
+    "data": "native/test_programs/006.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "ema_cross_slot",
+      "chunks": 145,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "smoothing",
+    "data": "native/test_programs/007.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "smoothing",
+      "chunks": 193,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "octave_1",
+    "data": "native/test_programs/008.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 8.506365702487528e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "octave_1",
+      "chunks": 92,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "octave_3",
+    "data": "native/test_programs/009.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 9.330688044428825e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "octave_3",
+      "chunks": 74,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "shape",
+    "data": "native/test_programs/010.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0013591943898063619,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "shape",
+      "chunks": 241,
+      "rtol": 0.0001,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "flux_initial",
+    "data": "native/test_programs/011.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.9073486328125e-05,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "flux_initial",
+      "chunks": 209,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "flux_cross_slot",
+    "data": "native/test_programs/012.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.1444091796875e-05,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "flux_cross_slot",
+      "chunks": 209,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "shape_silence",
+    "data": "native/test_programs/013.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "shape_silence",
+      "chunks": 241,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_programs",
+    "case": "shape_single_tone",
+    "data": "native/test_programs/014.npz",
+    "arrays": [
+      "actual",
+      "expected",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "shape_single_tone",
+      "chunks": 241,
+      "rtol": 3e-05,
+      "atol": 1e-08
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "random_independent_four_snapshots",
+    "data": "native/test_cross_spectral_services/015.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "random_independent_four_snapshots",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 3.569136374892423e-06,
+      "steps": 1635,
+      "frame": 3,
+      "slot": 3,
+      "chunks": 1634
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "unity_coherence_positive_phase",
+    "data": "native/test_cross_spectral_services/016.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "unity_coherence_positive_phase",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 1.8200097331444454e-06,
+      "steps": 1618,
+      "frame": 2,
+      "slot": 2,
+      "chunks": 1618
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "unity_coherence_negative_phase",
+    "data": "native/test_cross_spectral_services/017.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "unity_coherence_negative_phase",
+      "first": 400,
+      "count": 256,
+      "maxerr": 1.5419009500305947e-06,
+      "steps": 413,
+      "frame": 2,
+      "slot": 2,
+      "chunks": 413
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "weak_unity_coherence",
+    "data": "native/test_cross_spectral_services/018.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "weak_unity_coherence",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 0,
+      "steps": 1618,
+      "frame": 1,
+      "slot": 1,
+      "chunks": 1618
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "silence_two_frames",
+    "data": "native/test_cross_spectral_services/019.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "silence_two_frames",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 0,
+      "steps": 1010,
+      "frame": 1,
+      "slot": 1,
+      "chunks": 1010
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "quadrant_and_endpoint_normalization",
+    "data": "native/test_cross_spectral_services/020.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "quadrant_and_endpoint_normalization",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 8.742278012618954e-08,
+      "steps": 1630,
+      "frame": 1,
+      "slot": 1,
+      "chunks": 1630
+    }
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "case": "scipy_csd_welch_three_time_blocks",
+    "data": "native/test_cross_spectral_services/021.npz",
+    "arrays": [
+      "frames",
+      "x",
+      "a",
+      "b",
+      "gold",
+      "out",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "scipy_csd_welch_three_time_blocks",
+      "first": 0,
+      "count": 1025,
+      "maxerr": 1.94132060293839e-06,
+      "steps": 1634,
+      "frame": 2,
+      "slot": 2,
+      "chunks": 1634
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "A",
+    "data": "native/test_noise_services/022.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.917533923925021e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "A",
+      "chunks": 129,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "C",
+    "data": "native/test_noise_services/023.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 2.439656547892355e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "C",
+      "chunks": 129,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "Z",
+    "data": "native/test_noise_services/024.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 4.576614216489361e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "Z",
+      "chunks": 129,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "silent_weighting",
+    "data": "native/test_noise_services/025.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.52587890625e-05,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "silent_weighting",
+      "chunks": 129,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "FAST",
+    "data": "native/test_noise_services/026.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 4.056949258313125e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "FAST",
+      "chunks": 353,
+      "rtol": 8e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "FAST_resume",
+    "data": "native/test_noise_services/027.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 4.877062821151412e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "FAST_resume",
+      "chunks": 353,
+      "rtol": 8e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "SLOW",
+    "data": "native/test_noise_services/028.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 8.574424938956327e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "SLOW",
+      "chunks": 353,
+      "rtol": 8e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "SLOW_resume",
+    "data": "native/test_noise_services/029.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 4.877062821151412e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "SLOW_resume",
+      "chunks": 353,
+      "rtol": 8e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "rolling_level_statistics",
+    "data": "native/test_noise_services/030.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.977026999280042e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "rolling_level_statistics",
+      "chunks": 14,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "rolling_level_statistics",
+    "data": "native/test_noise_services/031.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.7260461454025062e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "rolling_level_statistics",
+      "chunks": 14,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "rolling_level_statistics",
+    "data": "native/test_noise_services/032.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.3176421518323878e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "rolling_level_statistics",
+      "chunks": 14,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "relative_insulation_False",
+    "data": "native/test_noise_services/033.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "relative_insulation_False",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "relative_insulation_True",
+    "data": "native/test_noise_services/034.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 7.120809097926895e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "relative_insulation_True",
+      "chunks": 2,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "insufficient_band_power",
+    "data": "native/test_noise_services/035.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "insufficient_band_power",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "mtf_combine",
+    "data": "native/test_noise_services/036.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.8678149572035636e-10,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "mtf_combine",
+      "chunks": 5,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "mtf_combine",
+    "data": "native/test_noise_services/037.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 2.9415540891974956e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "mtf_combine",
+      "chunks": 5,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "mtf_combine",
+    "data": "native/test_noise_services/038.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 5.9082683634414934e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "mtf_combine",
+      "chunks": 5,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "bad_mtf_rejected",
+    "data": "native/test_noise_services/039.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "bad_mtf_rejected",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "bad_mtf_rejected",
+    "data": "native/test_noise_services/040.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "bad_mtf_rejected",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "unconfirmed_stipa",
+    "data": "native/test_noise_services/041.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "unconfirmed_stipa",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_None",
+    "data": "native/test_noise_services/042.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_None",
+    "data": "native/test_noise_services/043.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_None",
+    "data": "native/test_noise_services/044.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_nominal",
+    "data": "native/test_noise_services/045.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_nominal",
+      "chunks": 2,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_nominal",
+    "data": "native/test_noise_services/046.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_nominal",
+      "chunks": 28,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_nominal",
+    "data": "native/test_noise_services/047.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_nominal",
+      "chunks": 55,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_calibrated",
+    "data": "native/test_noise_services/048.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_calibrated",
+      "chunks": 2,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_calibrated",
+    "data": "native/test_noise_services/049.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_calibrated",
+      "chunks": 28,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_calibrated",
+    "data": "native/test_noise_services/050.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_calibrated",
+      "chunks": 55,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NR_above_table",
+    "data": "native/test_noise_services/051.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NR_above_table",
+      "chunks": 54,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_None",
+    "data": "native/test_noise_services/052.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_None",
+    "data": "native/test_noise_services/053.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_None",
+    "data": "native/test_noise_services/054.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_None",
+      "chunks": 1,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_nominal",
+    "data": "native/test_noise_services/055.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_nominal",
+      "chunks": 2,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_nominal",
+    "data": "native/test_noise_services/056.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_nominal",
+      "chunks": 5,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_nominal",
+    "data": "native/test_noise_services/057.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_nominal",
+      "chunks": 7,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_calibrated",
+    "data": "native/test_noise_services/058.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_calibrated",
+      "chunks": 2,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_calibrated",
+    "data": "native/test_noise_services/059.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_calibrated",
+      "chunks": 5,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_calibrated",
+    "data": "native/test_noise_services/060.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_calibrated",
+      "chunks": 7,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_noise_services",
+    "case": "NC_above_table",
+    "data": "native/test_noise_services/061.npz",
+    "arrays": [
+      "a",
+      "b",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "NC_above_table",
+      "chunks": 6,
+      "rtol": 5e-05,
+      "atol": 1e-07
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_62",
+    "data": "native/test_p2_chains/062.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.309417273555937e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 610
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_63",
+    "data": "native/test_p2_chains/063.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 7.036234386248452e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 546
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_64",
+    "data": "native/test_p2_chains/064.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 8.820499641792878e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 738
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_65",
+    "data": "native/test_p2_chains/065.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 4.7115427947996835e-09,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 962
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_66",
+    "data": "native/test_p2_chains/066.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.503115220127029e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 674
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_67",
+    "data": "native/test_p2_chains/067.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.7100803780276692e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 0.0002,
+      "chunks": 835
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_68",
+    "data": "native/test_p2_chains/068.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 2.980232227667301e-09,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 674
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_69",
+    "data": "native/test_p2_chains/069.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 2.980232227667301e-09,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 674
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_70",
+    "data": "native/test_p2_chains/070.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 674
+    }
+  },
+  {
+    "suite": "test_p2_chains",
+    "case": "case_71",
+    "data": "native/test_p2_chains/071.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "rtol": 0.0002,
+      "atol": 2e-06,
+      "chunks": 962
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "case_72",
+    "data": "native/test_extra_spectral/072.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 5.9071895375240047e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "chunks": 3
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "case_73",
+    "data": "native/test_extra_spectral/073.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.1892127638191141e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "chunks": 2
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "case_74",
+    "data": "native/test_extra_spectral/074.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 9.056423855291484e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "chunks": 2
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "sideband_silence",
+    "data": "native/test_extra_spectral/075.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "sideband_silence",
+      "chunks": 2
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_1",
+    "data": "native/test_extra_spectral/076.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_1",
+      "chunks": 27
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_2",
+    "data": "native/test_extra_spectral/077.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 3.91169818758641e-10,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_2",
+      "chunks": 27
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_3",
+    "data": "native/test_extra_spectral/078.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.0165108204063245e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_3",
+      "chunks": 29
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_4",
+    "data": "native/test_extra_spectral/079.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 8.554070194399799e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_4",
+      "chunks": 29
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_5",
+    "data": "native/test_extra_spectral/080.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 1.1159010560035654e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_5",
+      "chunks": 29
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_6",
+    "data": "native/test_extra_spectral/081.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 8.980357444343667e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_6",
+      "chunks": 29
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "kurtosis_frame_7",
+    "data": "native/test_extra_spectral/082.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 5.682668593465223e-07,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "kurtosis_frame_7",
+      "chunks": 29
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "periodicity_tone",
+    "data": "native/test_extra_spectral/083.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 6.73887563529263e-08,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "periodicity_tone",
+      "chunks": 589
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "periodicity_offbin",
+    "data": "native/test_extra_spectral/084.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 9.39002404720668e-06,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "periodicity_offbin",
+      "chunks": 589
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "periodicity_noise",
+    "data": "native/test_extra_spectral/085.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 5.122687829484107e-09,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "periodicity_noise",
+      "chunks": 589
+    }
+  },
+  {
+    "suite": "test_extra_spectral",
+    "case": "periodicity_silence",
+    "data": "native/test_extra_spectral/086.npz",
+    "arrays": [
+      "gold",
+      "a",
+      "VM_memory_after"
+    ],
+    "maxAbsoluteError": 0.0,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "label": "periodicity_silence",
+      "chunks": 589
+    }
+  },
+  {
+    "suite": "test_room_services",
+    "case": "exponential_rt_0p25",
+    "data": "native/test_room_services/087.npz",
+    "arrays": [
+      "x",
+      "a",
+      "d",
+      "reference_decay_dB",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "exponential_rt_0p25",
+      "fs": 48000,
+      "begin": 6642.5142717,
+      "chunks": 17223,
+      "j": 1,
+      "off": 7
+    },
+    "referenceExported": true
+  },
+  {
+    "suite": "test_room_services",
+    "case": "gain_scaled_decay",
+    "data": "native/test_room_services/088.npz",
+    "arrays": [
+      "x",
+      "a",
+      "d",
+      "reference_decay_dB",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "gain_scaled_decay",
+      "fs": 48000,
+      "begin": 6642.5769111,
+      "chunks": 18261,
+      "j": 1,
+      "off": 7
+    },
+    "referenceExported": true
+  },
+  {
+    "suite": "test_room_services",
+    "case": "nondefault_rate",
+    "data": "native/test_room_services/089.npz",
+    "arrays": [
+      "x",
+      "a",
+      "d",
+      "reference_decay_dB",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "nondefault_rate",
+      "fs": 24000,
+      "begin": 6642.6384269,
+      "chunks": 8873,
+      "j": 1,
+      "off": 7
+    },
+    "referenceExported": true
+  },
+  {
+    "suite": "test_room_services",
+    "case": "silence",
+    "data": "native/test_room_services/090.npz",
+    "arrays": [
+      "x",
+      "a",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "silence",
+      "fs": 48000,
+      "begin": 6642.6699707,
+      "chunks": 602,
+      "j": 2,
+      "off": 22
+    },
+    "referenceExported": true
+  },
+  {
+    "suite": "test_room_services",
+    "case": "stationary_tail_insufficient_decay",
+    "data": "native/test_room_services/091.npz",
+    "arrays": [
+      "x",
+      "a",
+      "d",
+      "reference_decay_dB",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "stationary_tail_insufficient_decay",
+      "fs": 48000,
+      "begin": 6642.6729965,
+      "chunks": 4432,
+      "j": 2,
+      "off": 22
+    },
+    "referenceExported": true
+  },
+  {
+    "suite": "test_room_services",
+    "case": "impulse_near_step",
+    "data": "native/test_room_services/092.npz",
+    "arrays": [
+      "x",
+      "a",
+      "d",
+      "reference_decay_dB",
+      "reference_summary_indices",
+      "reference_summary",
+      "actual_summary"
+    ],
+    "maxAbsoluteError": null,
+    "checks": "original test assertions passed before capture",
+    "meta": {
+      "name": "impulse_near_step",
+      "fs": 48000,
+      "begin": 6642.6877214,
+      "chunks": 2928,
+      "j": 2,
+      "off": 22
+    },
+    "referenceExported": true
+  }
+]

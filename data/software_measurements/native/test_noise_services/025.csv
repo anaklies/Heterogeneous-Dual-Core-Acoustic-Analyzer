@@ -1,0 +1,4 @@
+﻿index,native_actual,reference,absolute_error
+0,0.0,0,0.0
+1,-199.99998,-200,1.52587890625e-05
+2,0.0,0,0.0

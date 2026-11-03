@@ -1,0 +1,32 @@
+[
+  {
+    "suite": "test_programs",
+    "status": "PASS",
+    "seconds": 0.16797049999968294
+  },
+  {
+    "suite": "test_cross_spectral_services",
+    "status": "PASS",
+    "seconds": 0.18340189999980794
+  },
+  {
+    "suite": "test_noise_services",
+    "status": "PASS",
+    "seconds": 0.42103170000063983
+  },
+  {
+    "suite": "test_p2_chains",
+    "status": "PASS",
+    "seconds": 0.19697050000013405
+  },
+  {
+    "suite": "test_extra_spectral",
+    "status": "PASS",
+    "seconds": 0.3340682000007291
+  },
+  {
+    "suite": "test_room_services",
+    "status": "PASS",
+    "seconds": 0.19364560000030906
+  }
+]
