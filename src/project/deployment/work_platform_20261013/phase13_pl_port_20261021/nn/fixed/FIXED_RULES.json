@@ -1,0 +1,43 @@
+{
+  "input": {
+    "bits": 16,
+    "fraction": 11
+  },
+  "postGELU": {
+    "bits": 16,
+    "fraction": 10
+  },
+  "GRUHidden": {
+    "bits": 16,
+    "fraction": 14
+  },
+  "GRUGatePreactivation": {
+    "bits": 16,
+    "fraction": 10
+  },
+  "phase": {
+    "bits": 16,
+    "fraction": 13
+  },
+  "logits": {
+    "bits": 16,
+    "fraction": 10
+  },
+  "affineAccumulatorBits": 64,
+  "weights": "per-tensor signed16 power-of-two scale inherited unmodified",
+  "sigmoid": {
+    "outputFraction": 15,
+    "storedIntermediateBits": 32
+  },
+  "LUT": {
+    "points": 4097,
+    "inputMinimum": -8,
+    "inputMaximum": 8,
+    "inputFraction": 10,
+    "inputStepInteger": 4,
+    "interpolation": "linear two fractional bits; signed nearest ties away from zero"
+  },
+  "rounding": "input and offline tables nearest ties even; runtime rescale/interpolation nearest ties away from zero",
+  "noTraining": true,
+  "noHoldoutScaleTuning": true
+}

@@ -1,0 +1,3 @@
+D:/mingw64/bin/g++.exe -O2 -std=c++17 -fno-fast-math C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase13_pl_port_20261021\nn\fixed\srpdnn_fixed.cpp C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase13_pl_port_20261021\nn\fixed\run_fixed.cpp -o C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase13_pl_port_20261021\nn\fixed\nn_fixed.exe
+
+D:/mingw64/bin/g++.exe -O2 -std=c++17 -fno-fast-math C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase13_pl_port_20261021\nn\fixed\primitive_tests.cpp -o C:\Users\sunxi\Desktop\sixmic3D\deployment\work_platform_20261013\phase13_pl_port_20261021\nn\fixed\primitive_tests.exe

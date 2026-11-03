@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "scope": "full15pair C++ equivalence after changing only firstconvolution",
+  "comparedOutputInt16": 76576,
+  "allOutputBitExact": true,
+  "all18CountersExact": true,
+  "inputSHA256": "a52ed40636943b336953f387941973b35dab078dd6b2d74aaaa76dca1cb7cdfb",
+  "goldenOutputSHA256": "31914b174a813d9951eee5240fc6fff8fa5fe53b3eb2b40e75517fc6b2ed03ac",
+  "newOutputSHA256": "31914b174a813d9951eee5240fc6fff8fa5fe53b3eb2b40e75517fc6b2ed03ac",
+  "CPUSeconds": 0.10203299999557203,
+  "fullNetwork10HzVerified": false,
+  "sources": {
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\srpdnn_fixed.cpp": "8da4dc4fef318a045f82a8f8e8c11bb3ac40a925cb129b473d24fdbe1b795b8e",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\hls_parallel\\srpdnn_parallel.cpp": "e2e7fc37e81cba25b12d1d697002a0858d5c9e442f6d806f3488d8c0b62a73c6",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\hls_parallel\\conv_elements.h": "c47d3f1ff07f61df8e67abae18695a15e140de34faecde006d1e72a43bf98876"
+  }
+}

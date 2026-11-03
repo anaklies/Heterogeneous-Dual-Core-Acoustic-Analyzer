@@ -1,0 +1,67 @@
+{
+  "cases": 1,
+  "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom0_0.npz",
+  "inputFileSHA256": "bb9b9a29cfaa8c28020f93a57b2c25e431dea2e522f8996b4ddf7c4c6eab97e2",
+  "featureInputSHA256": "e3d3ae965dbcf08c7b25946ccfe7ba3ad0ad3588800dcd0b87432299a5c68676",
+  "testedFull15Pairs": true,
+  "outputElements": 76576,
+  "tolerance": {
+    "absolute": 0.0002,
+    "relative": 0.0002
+  },
+  "differences": {
+    "z": {
+      "shape": [
+        1,
+        15,
+        2,
+        63,
+        27
+      ],
+      "originalAbsMax": 1.3236720561981201,
+      "maximumAbsoluteError": 8.195638656616211e-07,
+      "RMSAbsoluteError": 1.3461464866125796e-07,
+      "meanAbsoluteError": 1.0530674619650913e-07
+    },
+    "support": {
+      "shape": [
+        1,
+        15,
+        63,
+        27
+      ],
+      "originalAbsMax": 9.171843528747559,
+      "maximumAbsoluteError": 3.814697265625e-06,
+      "RMSAbsoluteError": 6.965477324571805e-07,
+      "meanAbsoluteError": 5.092023788434301e-07
+    },
+    "activity": {
+      "shape": [
+        1,
+        27
+      ],
+      "originalAbsMax": 5.851162433624268,
+      "maximumAbsoluteError": 9.5367431640625e-07,
+      "RMSAbsoluteError": 4.779740859555963e-07,
+      "meanAbsoluteError": 3.741847144232856e-07
+    },
+    "count": {
+      "shape": [
+        1,
+        4
+      ],
+      "originalAbsMax": 5.541808605194092,
+      "maximumAbsoluteError": 4.76837158203125e-07,
+      "RMSAbsoluteError": 4.76837158203125e-07,
+      "meanAbsoluteError": 4.76837158203125e-07
+    }
+  },
+  "floatRawSourceCount": 1,
+  "cppRawSourceCount": 1,
+  "mainDirectionDifferenceDegrees": 0.0,
+  "CPUSecondsIncludingProcessStartup": 0.09397790000002715,
+  "runtime": "native C++ float reference, no Torch runtime",
+  "PLImplemented": false,
+  "synthesized": false,
+  "fixedPoint": false
+}

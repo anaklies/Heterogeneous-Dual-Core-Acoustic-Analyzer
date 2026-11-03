@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "layer": "conv",
+      "inputFraction": 11,
+      "productFraction": 26,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 12019799040,
+      "signedBitsNeeded": 35,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "depth",
+      "inputFraction": 10,
+      "productFraction": 25,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 4860987904,
+      "signedBitsNeeded": 34,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "point",
+      "inputFraction": 10,
+      "productFraction": 25,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 3817473024,
+      "signedBitsNeeded": 33,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "embed",
+      "inputFraction": 10,
+      "productFraction": 25,
+      "biasFraction": 17,
+      "conservativeMaximumAbsoluteAccumulator": 26415790080,
+      "signedBitsNeeded": 36,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "gru_ih",
+      "inputFraction": 10,
+      "productFraction": 25,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 9606937600,
+      "signedBitsNeeded": 35,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "gru_hh",
+      "inputFraction": 14,
+      "productFraction": 29,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 10933903360,
+      "signedBitsNeeded": 35,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "phase",
+      "inputFraction": 14,
+      "productFraction": 30,
+      "biasFraction": 17,
+      "conservativeMaximumAbsoluteAccumulator": 7676616704,
+      "signedBitsNeeded": 34,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    },
+    {
+      "layer": "support",
+      "inputFraction": 14,
+      "productFraction": 29,
+      "biasFraction": 16,
+      "conservativeMaximumAbsoluteAccumulator": 14083416064,
+      "signedBitsNeeded": 35,
+      "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+    }
+  ],
+  "hardwareAccumulatorBits": 48,
+  "doesNotProveTiming": true,
+  "doesNotIncludeUnimplementedFrontend": true
+}

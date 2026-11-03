@@ -1,0 +1,15 @@
+{
+  "jobCount": 567,
+  "matrixMACIssueCycles": 79056,
+  "derivedMatrixCycles": 149391,
+  "formula": "groups*(columns+34)+1 from V3matrix12HLS endpoints; must recheckV4report; not wholepaircycleproof",
+  "excludes": [
+    "conv",
+    "depth",
+    "copy/control",
+    "GRUnonlinear",
+    "input/outputAXI",
+    "full15pairglobalheads",
+    "FFT/features/decoder"
+  ]
+}

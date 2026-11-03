@@ -1,0 +1,309 @@
+{
+  "rules": {
+    "input": {
+      "bits": 16,
+      "fraction": 11
+    },
+    "postGELU": {
+      "bits": 16,
+      "fraction": 10
+    },
+    "GRUHidden": {
+      "bits": 16,
+      "fraction": 14
+    },
+    "GRUGatePreactivation": {
+      "bits": 16,
+      "fraction": 10
+    },
+    "phase": {
+      "bits": 16,
+      "fraction": 13
+    },
+    "logits": {
+      "bits": 16,
+      "fraction": 10
+    },
+    "affineAccumulatorBits": 64,
+    "weights": "per-tensor signed16 power-of-two scale inherited unmodified",
+    "sigmoid": {
+      "outputFraction": 15,
+      "storedIntermediateBits": 32
+    },
+    "LUT": {
+      "points": 4097,
+      "inputMinimum": -8,
+      "inputMaximum": 8,
+      "inputFraction": 10,
+      "inputStepInteger": 4,
+      "interpolation": "linear two fractional bits; signed nearest ties away from zero"
+    },
+    "rounding": "input and offline tables nearest ties even; runtime rescale/interpolation nearest ties away from zero",
+    "noTraining": true,
+    "noHoldoutScaleTuning": true
+  },
+  "sourceHashes": {
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\srpdnn_fixed.cpp": "8da4dc4fef318a045f82a8f8e8c11bb3ac40a925cb129b473d24fdbe1b795b8e",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\srpdnn_fixed.h": "cdb6d528eca8d9bca80fb19f049d705aabf1e53464da3600bd53fd4b1da7a5f8",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\run_fixed.cpp": "1e240650406958893b2e73b8df9a0c5b2befed16be837c5fb4eda3991aa0a434",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\weights_fixed.h": "fbeaaed24dc56bf2935cd8882a30ba10ba16cc07b0a8c1a132f7d9176a58d149",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\fixed\\nonlinear_lut.h": "00d27d12b298bb5e0f0b3dd0a4bcad0d09ea791caea5a61a718adeadb1cfb211",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12j_daily_srp_dnn_20261020\\model_j.py": "42c74bda9ad4663ce870d83bc1c6f33d6a47dd866e1faeec8e4c5bedf2b07003",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12j_daily_srp_dnn_20261020\\models\\small_seed1.pt": "b3e8a9f11c6d0a4d4742b0d18c7c5888ac24fa2c12a0a1acc7fdc7e1a56efcce",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\tensor_manifest.json": "bd4da6487e3cf4f39a285c34e6c1edb66fb60f4af0792bf6e2f9114ea071b39b",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\nn\\weights_i16.bin": "268eb77b569e6dfd042a1107db58c3c40d69c329df4bf9a892ff10a7044c13e0"
+  },
+  "primitiveTests": {
+    "integerChecks": 2162704,
+    "GELUMaxAbsoluteError": 0.000944105945324,
+    "sigmoidMaxAbsoluteError": 0.000335022909623,
+    "tanhMaxAbsoluteError": 5.94933365314e-05,
+    "status": "PASS"
+  },
+  "cases": 2,
+  "rows": [
+    {
+      "id": "Mroom0_0",
+      "kind": "speech",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom0_0.npz",
+      "inputFileSHA256": "bb9b9a29cfaa8c28020f93a57b2c25e431dea2e522f8996b4ddf7c4c6eab97e2",
+      "fixedFeatureFileSHA256": "a52ed40636943b336953f387941973b35dab078dd6b2d74aaaa76dca1cb7cdfb",
+      "inputFeatureSaturations": 0,
+      "saturations": {
+        "conv_affine": 0,
+        "depth_affine": 0,
+        "point_affine": 0,
+        "embed_affine": 0,
+        "gru_input_affine": 0,
+        "gru_hidden_affine": 0,
+        "gru_reset_pre": 0,
+        "gru_update_pre": 0,
+        "gru_new_pre": 0,
+        "gru_hidden": 0,
+        "phase_affine": 0,
+        "support_affine": 0,
+        "global_mean": 0,
+        "activity_affine": 0,
+        "count_affine": 0
+      },
+      "nonlinearDomainClamps": {
+        "gelu": 497,
+        "sigmoid": 310,
+        "tanh": 2
+      },
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.3236720561981201,
+          "maximumAbsoluteError": 0.002157732844352722,
+          "RMSAbsoluteError": 0.0006176359540261501,
+          "meanAbsoluteError": 0.0005186002637769672
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 9.171843528747559,
+          "maximumAbsoluteError": 0.005480766296386719,
+          "RMSAbsoluteError": 0.0014899463339152611,
+          "meanAbsoluteError": 0.0011613741525827192
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 5.851162433624268,
+          "maximumAbsoluteError": 0.0013213157653808594,
+          "RMSAbsoluteError": 0.0005506579430629685,
+          "meanAbsoluteError": 0.0004523081911934747
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 5.541808605194092,
+          "maximumAbsoluteError": 0.00026226043701171875,
+          "RMSAbsoluteError": 0.00018394190384853705,
+          "meanAbsoluteError": 0.00017511844635009766
+        }
+      },
+      "floatAcceptedMainDirection": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "fixedAcceptedMainDirection": [
+        [
+          0.8129998013326498,
+          0.5799071224922216,
+          0.052335956242943835
+        ]
+      ],
+      "acceptedDirectionDifferenceDegrees": 0.0,
+      "floatRawSourceCount": 1,
+      "fixedRawSourceCount": 1,
+      "floatCountProbabilities": [
+        4.671861825045198e-05,
+        0.9998656511306763,
+        3.702527465065941e-05,
+        5.0495898904046044e-05
+      ],
+      "fixedCountProbabilities": [
+        4.6697772631887347e-05,
+        0.9998656511306763,
+        3.7013200198998675e-05,
+        5.0492333684815094e-05
+      ],
+      "floatQualities": [
+        0.7534236907958984
+      ],
+      "fixedQualities": [
+        0.7534340023994446
+      ],
+      "CPUSecondsIncludingProcessStartup": 0.028286699998716358,
+      "full15Pairs": true,
+      "integerNetworkCore": true,
+      "floatPCMFeatureFrontend": true,
+      "originalFloatSpatialDecoder": true,
+      "hardwareExecuted": false
+    },
+    {
+      "id": "Mroom0_1",
+      "kind": "broad",
+      "inputFile": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12m_product_algorithm_acceptance_20261021\\data\\cases\\Mroom0_1.npz",
+      "inputFileSHA256": "1553e7c6e0bc3f760e1c2ab5be1607b663f0b3d5f204b539215bbf0a23f280f3",
+      "fixedFeatureFileSHA256": "47af82fec886722e57dbfe21c737cef2a94191b0292f5b857d10332e492c3b26",
+      "inputFeatureSaturations": 0,
+      "saturations": {
+        "conv_affine": 0,
+        "depth_affine": 0,
+        "point_affine": 0,
+        "embed_affine": 0,
+        "gru_input_affine": 0,
+        "gru_hidden_affine": 0,
+        "gru_reset_pre": 0,
+        "gru_update_pre": 0,
+        "gru_new_pre": 0,
+        "gru_hidden": 0,
+        "phase_affine": 0,
+        "support_affine": 0,
+        "global_mean": 0,
+        "activity_affine": 0,
+        "count_affine": 0
+      },
+      "nonlinearDomainClamps": {
+        "gelu": 227,
+        "sigmoid": 322,
+        "tanh": 0
+      },
+      "outputDifferences": {
+        "z": {
+          "shape": [
+            1,
+            15,
+            2,
+            63,
+            27
+          ],
+          "originalAbsMax": 1.4419838190078735,
+          "maximumAbsoluteError": 0.002069041132926941,
+          "RMSAbsoluteError": 0.0005674743527794587,
+          "meanAbsoluteError": 0.0004773251519083751
+        },
+        "support": {
+          "shape": [
+            1,
+            15,
+            63,
+            27
+          ],
+          "originalAbsMax": 5.306241989135742,
+          "maximumAbsoluteError": 0.004140377044677734,
+          "RMSAbsoluteError": 0.0008281764362670045,
+          "meanAbsoluteError": 0.0006278162001585251
+        },
+        "activity": {
+          "shape": [
+            1,
+            27
+          ],
+          "originalAbsMax": 4.394232273101807,
+          "maximumAbsoluteError": 0.0010814666748046875,
+          "RMSAbsoluteError": 0.00042108933760184755,
+          "meanAbsoluteError": 0.0003498130374484592
+        },
+        "count": {
+          "shape": [
+            1,
+            4
+          ],
+          "originalAbsMax": 3.451267719268799,
+          "maximumAbsoluteError": 0.0002924203872680664,
+          "RMSAbsoluteError": 0.0002124762797808026,
+          "meanAbsoluteError": 0.00017783045768737793
+        }
+      },
+      "floatAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "fixedAcceptedMainDirection": [
+        [
+          0.8191208534891674,
+          0.5735545963178863,
+          0.008726535498373935
+        ]
+      ],
+      "acceptedDirectionDifferenceDegrees": 8.537736462515939e-07,
+      "floatRawSourceCount": 1,
+      "fixedRawSourceCount": 1,
+      "floatCountProbabilities": [
+        0.0062197414226830006,
+        0.9916850328445435,
+        0.0010316686239093542,
+        0.0010636541992425919
+      ],
+      "fixedCountProbabilities": [
+        0.006222140975296497,
+        0.9916826486587524,
+        0.0010317320702597499,
+        0.0010634437203407288
+      ],
+      "floatQualities": [
+        0.6436662673950195
+      ],
+      "fixedQualities": [
+        0.6437382698059082
+      ],
+      "CPUSecondsIncludingProcessStartup": 0.02667229999860865,
+      "full15Pairs": true,
+      "integerNetworkCore": true,
+      "floatPCMFeatureFrontend": true,
+      "originalFloatSpatialDecoder": true,
+      "hardwareExecuted": false
+    }
+  ],
+  "fullFixedPointPCMToDOA": false,
+  "NNArithmetic": "integer only",
+  "fixedPointInferenceCoreImplemented": true,
+  "HLSExecuted": false,
+  "PLImplemented": false,
+  "resourceFitPassed": false,
+  "hardware10HzValidated": false
+}

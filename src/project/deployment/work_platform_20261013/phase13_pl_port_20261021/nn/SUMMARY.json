@@ -1,0 +1,13 @@
+{
+  "cases": 6,
+  "allExpectedParameterWordsRoundTrip": true,
+  "sourceCheckpointSHA256": "b3e8a9f11c6d0a4d4742b0d18c7c5888ac24fa2c12a0a1acc7fdc7e1a56efcce",
+  "signed16Bytes": 61916,
+  "acceptedMainDirectionCoordinatesChanged": 0,
+  "maximumMainDirectionDifferenceDegrees": 8.537736462515939e-07,
+  "maximumPhaseOutputAbsoluteError": 0.0002728700637817383,
+  "acceptedDirectionCountChanged": 0,
+  "rawSourceCountChanged": 0,
+  "PLDeploymentApproved": false,
+  "allFixedPointInferenceValidated": false
+}

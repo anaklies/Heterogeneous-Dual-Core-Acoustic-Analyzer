@@ -1,0 +1,233 @@
+{
+  "status": "HLS_candidate_only",
+  "variants": {
+    "baseline": {
+      "minimumCycles": 7659583,
+      "maximumCycles": 16067140,
+      "estimatedPeriodNS": 14.849,
+      "targetPeriodNS": 20.34,
+      "resources": {
+        "BRAM_18K": 104,
+        "DSP": 18,
+        "FF": 6633,
+        "LUT": 12591
+      }
+    },
+    "v1": {
+      "minimumCycles": 5100392,
+      "maximumCycles": 5109869,
+      "estimatedPeriodNS": 17.62,
+      "targetPeriodNS": 20.34,
+      "resources": {
+        "BRAM_18K": 152,
+        "DSP": 32,
+        "FF": 6903,
+        "LUT": 11405
+      }
+    },
+    "v2_rejected": {
+      "minimumCycles": 372780,
+      "maximumCycles": 2293776,
+      "estimatedPeriodNS": 17.62,
+      "targetPeriodNS": 20.34,
+      "resources": {
+        "BRAM_18K": 1415,
+        "DSP": 83,
+        "FF": 18665,
+        "LUT": 55727
+      }
+    },
+    "v3": {
+      "minimumCycles": 291259,
+      "maximumCycles": 3165382,
+      "estimatedPeriodNS": 17.62,
+      "targetPeriodNS": 20.34,
+      "resources": {
+        "BRAM_18K": 221,
+        "DSP": 56,
+        "FF": 11208,
+        "LUT": 25678
+      }
+    },
+    "v4": {
+      "minimumCycles": 236095,
+      "maximumCycles": 2904964,
+      "estimatedPeriodNS": 17.62,
+      "targetPeriodNS": 20.34,
+      "resources": {
+        "BRAM_18K": 205,
+        "DSP": 56,
+        "FF": 11143,
+        "LUT": 25970
+      }
+    },
+    "v4_75mhz": {
+      "minimumCycles": 238363,
+      "maximumCycles": 2973004,
+      "estimatedPeriodNS": 12.504,
+      "targetPeriodNS": 13.33,
+      "resources": {
+        "BRAM_18K": 205,
+        "DSP": 56,
+        "FF": 13138,
+        "LUT": 25973
+      }
+    }
+  },
+  "selectedCandidate": "v4",
+  "unchangedFrozenIntegerGolden": true,
+  "originalInputCasesReused": 2,
+  "newAcousticDataset": false,
+  "originalAll15PairOutputInt16PerCase": 76576,
+  "all18CountersBitExact": true,
+  "accumulatorProof": {
+    "status": "PASS",
+    "rows": [
+      {
+        "layer": "conv",
+        "inputFraction": 11,
+        "productFraction": 26,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 12019799040,
+        "signedBitsNeeded": 35,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "depth",
+        "inputFraction": 10,
+        "productFraction": 25,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 4860987904,
+        "signedBitsNeeded": 34,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "point",
+        "inputFraction": 10,
+        "productFraction": 25,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 3817473024,
+        "signedBitsNeeded": 33,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "embed",
+        "inputFraction": 10,
+        "productFraction": 25,
+        "biasFraction": 17,
+        "conservativeMaximumAbsoluteAccumulator": 26415790080,
+        "signedBitsNeeded": 36,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "gru_ih",
+        "inputFraction": 10,
+        "productFraction": 25,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 9606937600,
+        "signedBitsNeeded": 35,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "gru_hh",
+        "inputFraction": 14,
+        "productFraction": 29,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 10933903360,
+        "signedBitsNeeded": 35,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "phase",
+        "inputFraction": 14,
+        "productFraction": 30,
+        "biasFraction": 17,
+        "conservativeMaximumAbsoluteAccumulator": 7676616704,
+        "signedBitsNeeded": 34,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      },
+      {
+        "layer": "support",
+        "inputFraction": 14,
+        "productFraction": 29,
+        "biasFraction": 16,
+        "conservativeMaximumAbsoluteAccumulator": 14083416064,
+        "signedBitsNeeded": 35,
+        "proof": "abs(alignedBias)+32768*sum(abs(actualQuantizedWeights)); all possible signed16 activations"
+      }
+    ],
+    "hardwareAccumulatorBits": 48,
+    "doesNotProveTiming": true,
+    "doesNotIncludeUnimplementedFrontend": true
+  },
+  "onePairRTL": {
+    "status": "PASS",
+    "cycles": 373202,
+    "comparedValues": 6399,
+    "comparedCounters": 18,
+    "input": "firstpair of existing room0_speech_input_q11.bin",
+    "clockConfigNS": 20.341,
+    "transactions": 1,
+    "II": null,
+    "AXIAssumptions": "autogenerated HLS AXI simulation model; random_stall not enabled; no real DDR contention or CDC",
+    "includes": [
+      "pairNNphase",
+      "pairNNsupport",
+      "pairGRUhidden",
+      "18counters"
+    ],
+    "excludes": [
+      "PCM",
+      "FFT/features",
+      "all15pairruntime",
+      "globalactivity/countheads",
+      "decoder",
+      "fullsystem"
+    ]
+  },
+  "schedule567": {
+    "jobCount": 567,
+    "matrixMACIssueCycles": 79056,
+    "derivedMatrixCycles": 149391,
+    "formula": "groups*(columns+34)+1 from V3matrix12HLS endpoints; must recheckV4report; not wholepaircycleproof",
+    "excludes": [
+      "conv",
+      "depth",
+      "copy/control",
+      "GRUnonlinear",
+      "input/outputAXI",
+      "full15pairglobalheads",
+      "FFT/features/decoder"
+    ]
+  },
+  "sameCost15PairProjectionAtCaptureClock": {
+    "cycles": 5598030,
+    "milliseconds": 113.86902203551075,
+    "snapshotBudgetCycles": 4718592,
+    "measuredFull15Pair": false,
+    "meets96ms": false
+  },
+  "separate75MHzFeasibility": {
+    "HLSLogicSourceUnchanged": true,
+    "I2SSamplingClockUnchanged": true,
+    "estimatedPeriodNS": 12.504,
+    "targetPeriodNS": 13.333,
+    "assumedDerivedSinglePairCycles": 379898,
+    "derivation": "50MHz onepair373202 +2052matrixgroups*2additionalcycles +27GRUnonlinearblocks*(1008-912)",
+    "conditional15PairMilliseconds": 75.97959999999999,
+    "simulationAt75MHz": false,
+    "routedTiming": false,
+    "fullSystem10HzPassed": false
+  },
+  "readyToFlash": false,
+  "fullPLPortComplete": false,
+  "bitstreamGenerated": false,
+  "futureRequired": [
+    "completePCMfixedfrontend",
+    "all15pairPLsequencer/globalheads",
+    "realspatialdecoder/qualityguard",
+    "full96mssteadythroughput",
+    "DDR/CDC/capabilityintegration",
+    "wholeboardphysicaltiming"
+  ]
+}

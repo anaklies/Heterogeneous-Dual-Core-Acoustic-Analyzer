@@ -1,0 +1,12 @@
+{
+  "hardwareValidated": false,
+  "testbench": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\tests\\control\\tb_profile_scheduler.sv",
+  "scope": "scheduler control RTL only; not algorithms or whole board",
+  "source": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\rtl\\control\\profile_scheduler.sv",
+  "sourceSHA256": "22db2d0b25ab179291bc27411dabfb240c44dda32ac70e2a09a158525ad0d39a",
+  "checks": 94,
+  "noSynthesis": true,
+  "testSHA256": "2cfa0f603dc57acb1f6633ead2026899b7c3bdf059c5e14f5aa2bbda2b3feabf",
+  "status": "PASS",
+  "runDirectory": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase13_pl_port_20261021\\cache\\control_20261021_055617_0480"
+}

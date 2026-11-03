@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "kind": "speech",
+      "comparedOutputInt16": 76576,
+      "allOutputBitExact": true,
+      "all18CountersExact": true,
+      "CPUSeconds": 0.13307080000231508
+    },
+    {
+      "kind": "broad",
+      "comparedOutputInt16": 76576,
+      "allOutputBitExact": true,
+      "all18CountersExact": true,
+      "CPUSeconds": 0.051854799996363
+    }
+  ],
+  "fullNetwork10HzVerified": false
+}
