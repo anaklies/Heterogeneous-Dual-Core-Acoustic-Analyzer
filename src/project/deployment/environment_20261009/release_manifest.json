@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-09",
+  "resourcesOptimizedNotRouted": {
+    "Slice LUTs": 52710.0,
+    "Slice Registers": 41003.0,
+    "Block RAM Tile": 140.0,
+    "DSPs": 211.0
+  },
+  "activeCnnWeights": "unchanged prior production model",
+  "activeTrackerIP": "pl/ip/track_sources_environment_final_20261009",
+  "newBitstream": false,
+  "soundSpeedModelError": {
+    "maxKernelSpeedErrorMps": 0.006727986327121016,
+    "worstTemperatureHumidityRawPressure": [
+      29.53,
+      65535,
+      75000
+    ],
+    "gridCases": 5461820,
+    "temperatureStepC": 0.01,
+    "humidityRawStep": 1024,
+    "pressureStepPa": 1000,
+    "includesFullHumidityEndpoint": true,
+    "boundary": "bounded-model gridded numerical error, not actual sensor or localization error"
+  },
+  "trackerDetectionInputTest": {
+    "before": {
+      "IDchanges": 18,
+      "missingFreshTargets": 0,
+      "meanFreshErrorCm": 1.4991751263268718,
+      "maxFreshErrorCm": 3.2635306134292823,
+      "freshCoordinateLeaksDuringSilence": 0
+    },
+    "candidate": {
+      "IDchanges": 0,
+      "missingFreshTargets": 0,
+      "meanFreshErrorCm": 1.4991751263268718,
+      "maxFreshErrorCm": 3.2635306134292823,
+      "freshCoordinateLeaksDuringSilence": 0
+    }
+  },
+  "sha256": {
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\sensor_i2c_hub.sv": "4aa1c85769faceccf22915117951e38c4bf6aece5fd8135067f70eeeed2532ac",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\air_speed_correction.sv": "c9406514bb5dac2973a35bd752d57c4ae4c3651240f76b93b627a8df33de13a5",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\sensor_config_writer.sv": "3533d66a110a9493a854de945017adf568098dad47ff187dbd59627beec1b903",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\sixmic_pl_top.sv": "281b56d57d55518577c82031c0b2ded3ebc6d913eabed7070e016496163fb37e",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\sixmic_frontend_top.sv": "a73695f5c0acab9dccb5af39f0d11ffdcfd9972a76c0d07b529ec7a38bddc9ec",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\pl_adaptive_mode.sv": "4f6f9e0b254d2324611ead59f1a3a5f4b9c68af2936bb6a1e189f56cc8ff3515",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\pl_background_covariance.sv": "106dcdee584d0a0105ed6469c962b6bf7b53c683cd8fcf0ea98eac177be8adb2",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\pl_noise_floor.sv": "b1f869671c0d44ccf8d5db3900a635565fc24b9eb2d592df79f1c251fbc9cff5",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\imu_rotation_q16.sv": "aa844ec7259126e5cc7b040b3ded803b52fe3f06e15ee950565c1dfec4d181b5",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\covariance_6ch.sv": "7e6aa9cf0b4ebaaa45635c4d33c49ee0e2446a15679554a27c173ac3559c359a",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\cnn_v3_fixed.sv": "1acafd3992069630ecd4372d2512a09ce1043f61f45efb92369c0b04d7dc0f04",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\cnn_v3_tiled.sv": "0e6d0994cf3c8b34128a3099136d5002ac3c2282a20cd7dc920f8e483686e52e",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\rtl\\clock_domain_guard.sv": "dcfe27f17cbe5efbfe2ba304ddb03e61cdf403cab5ec86915529984fef3d2ea9",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\hls\\track_sources.cpp": "324ac53b6bb2fccb3115dd2f42f0ffb01d55fc446098b5c7d3dfba717821a71d",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\pl\\coeff\\air_delta_coeff.mem": "3764d90bd5519e59e6faee8942eb980951ec779e194abfc2f3ab464f1ca69369",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D_fpga\\sixmic3D\\sixmic3D.xpr": "c0f208b2b48e58947c0b78019a62a3e840e1cbc6009d05d39f7acda006f6f398",
+    "C:\\Users\\sunxi\\Desktop\\sixmic3D\\update_multisource_tracks.m": "6e592ee09f487351fcb55f3e29cc58aa75e099467912f4fa4785db6020d6e25c"
+  }
+}

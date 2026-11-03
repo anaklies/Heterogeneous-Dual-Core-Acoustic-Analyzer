@@ -1,0 +1,311 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct  9 18:42:36 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source deployment/environment_20261009/opt_sequential.tcl
+# set stage C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009
+# open_checkpoint [file join $stage final_release_opt.dcp]
+Command: open_checkpoint C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/final_release_opt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 348.512 ; gain = 4.828
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1019.238 ; gain = 6.586
+INFO: [Netlist 29-17] Analyzing 7055 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1200.699 ; gain = 22.094
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1790.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1790.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 362 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM16X1S => RAM32X1S (RAMS32): 360 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1790.207 ; gain = 1456.445
+# opt_design -directive ExploreSequentialArea
+Command: opt_design -directive ExploreSequentialArea
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: ExploreSequentialArea
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.470 . Memory (MB): peak = 1790.207 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2135.805 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 2135.805 ; gain = 0.000
+Phase 1 Initialization | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2135.805 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2148.035 ; gain = 12.230
+
+Phase 2.2 Timer Update
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.2 Timer Update | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.723 ; gain = 203.918
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.723 ; gain = 203.918
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.723 ; gain = 203.918
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2339.723 ; gain = 203.918
+Retarget | Checksum: 2a2c4dff6
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 2a2c4dff6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.723 ; gain = 203.918
+Constant propagation | Checksum: 2a2c4dff6
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2339.723 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1fd8a8e6e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.723 ; gain = 203.918
+Sweep | Checksum: 1fd8a8e6e
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1fd8a8e6e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.723 ; gain = 203.918
+BUFG optimization | Checksum: 1fd8a8e6e
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1fd8a8e6e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.723 ; gain = 203.918
+Shift Register Optimization | Checksum: 1fd8a8e6e
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+INFO: [Opt 31-1555] control_set_opt supports Versal devices only, and device 7z020 is unsupported
+
+Phase 8 Resynthesis
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-74] Optimized 73 modules.
+INFO: [Opt 31-75] Optimized module 'cnn_activation_ram__parameterized1'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_cnn_features_band_Outline_1'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_cnn_features_band_Outline_10'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_cnn_features_band_Outline_VITIS_LOOP_22_2'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_cnn_features_band_Outline_VITIS_LOOP_43_11'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_cnn_features_band_Outline_VITIS_LOOP_54_14'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_features_RAM_AUTO_1R1W'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_fmul_32ns_32ns_32_2_max_dsp_1__xdcDup__1'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_fmul_32ns_32ns_32_2_max_dsp_1__xdcDup__2'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_powers_RAM_AUTO_1R1W'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_row_RAM_AUTO_1R1W'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_cnn_features_band_sitofp_32ns_32_3_no_dsp_1__xdcDup__1'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_xbip_pipe_v3_0_11_viv__parameterized183'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_xbip_pipe_v3_0_11_viv__parameterized41_227'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_xbip_pipe_v3_0_11_viv__parameterized41_788'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_xbip_pipe_v3_0_11_viv__parameterized41_854'.
+INFO: [Opt 31-75] Optimized module 'cnn_features_band_0_xbip_pipe_v3_0_11_viv__parameterized41_920'.
+INFO: [Opt 31-75] Optimized module 'fft_pl_axi_wrapper_output_fifo'.
+INFO: [Opt 31-75] Optimized module 'fft_pl_mux_bus16'.
+INFO: [Opt 31-75] Optimized module 'fft_pl_mux_bus16__parameterized0'.
+INFO: [Opt 31-75] Optimized module 'localization_backend'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_carry_chain__parameterized9_135'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_carry_chain__parameterized9_164'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_carry_chain__parameterized9_194'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_carry_chain__parameterized9_677'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_d_RAM_AUTO_1R1W'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_eig6'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_faddfsub_32ns_32ns_32_4_full_dsp_1__xdcDup__2'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_faddfsub_32ns_32ns_32_4_full_dsp_1__xdcDup__3'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_fmul_32ns_32ns_32_2_max_dsp_1'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_multiply6'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_multiply6_1'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_multiply6_3'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_271_1'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_272_2_v_i_RAM_AUTO_1R1W_146'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_275_3'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_283_5'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_331_24'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_nearfield_music_Outline_VITIS_LOOP_332_25'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_rotate2'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_score_core'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_score_core_Outline_VITIS_LOOP_133_1'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_score_core_Outline_VITIS_LOOP_135_2'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_score_core_Outline_VITIS_LOOP_141_5'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_search_one'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_search_one_profile_RAM_AUTO_1R1W'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_search_one_ranges_ROM_AUTO_1R'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_nearfield_music_wave_sine_table_ROM_AUTO_1R'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_122'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_1364'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_1430'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_1496'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_54'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_580'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_662'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_745'.
+INFO: [Opt 31-75] Optimized module 'nearfield_music_0_xbip_pipe_v3_0_11_viv__parameterized87_955'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_carry_chain__parameterized5_152'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_carry_chain__parameterized5_169'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_acos'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_122_15'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_213_30'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_238_33'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_240_34'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_51_2'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_track_sources_track_sources_Outline_VITIS_LOOP_71_7'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized147'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized147_104'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized155'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized41_135'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized41_383'.
+INFO: [Opt 31-75] Optimized module 'track_sources_global_0_xbip_pipe_v3_0_11_viv__parameterized41_449'.
+INFO: [Opt 31-1566] Pulled 476 inverters resulting in an inversion of 1248 pins
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 16 load pin(s).
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2551.996 ; gain = 0.000
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2551.996 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Phase 8 Resynthesis | Checksum: 295685df9
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:02:11 . Memory (MB): peak = 2551.996 ; gain = 416.191
+Resynthesis | Checksum: 295685df9
+INFO: [Opt 31-389] Phase Resynthesis created 13265 cells and removed 13891 cells
+INFO: [Opt 31-1021] In phase Resynthesis, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Post Processing Netlist
+Phase 9 Post Processing Netlist | Checksum: 295685df9
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:02:11 . Memory (MB): peak = 2551.996 ; gain = 416.191
+Post Processing Netlist | Checksum: 295685df9
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 10 Finalization
+
+Phase 10.1 Finalizing Design Cores and Updating Shapes
+Phase 10.1 Finalizing Design Cores and Updating Shapes | Checksum: 21ccbf9b2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:02:12 . Memory (MB): peak = 2551.996 ; gain = 416.191
+
+Phase 10.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Phase 10.2 Verifying Netlist Connectivity | Checksum: 21ccbf9b2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:02:12 . Memory (MB): peak = 2551.996 ; gain = 416.191
+Phase 10 Finalization | Checksum: 21ccbf9b2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:02:12 . Memory (MB): peak = 2551.996 ; gain = 416.191
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Resynthesis                  |           13265  |           13891  |                                              2  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 21ccbf9b2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:02:12 . Memory (MB): peak = 2551.996 ; gain = 416.191
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2551.996 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+104 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:50 ; elapsed = 00:02:15 . Memory (MB): peak = 2551.996 ; gain = 761.789
+# report_utilization -file [file join $stage sequential_utilization.rpt]
+# report_drc -file [file join $stage sequential_drc.rpt]
+Command: report_drc -file C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/sequential_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/sequential_drc.rpt.
+report_drc completed successfully
+# write_checkpoint -force [file join $stage sequential_opt.dcp]
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.100 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2551.996 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.121 . Memory (MB): peak = 2551.996 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/sequential_opt.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  9 18:45:25 2026...

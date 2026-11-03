@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/cnn_mask_reduce.sv" into library work
+INFO: [VRFC 10-311] analyzing module cnn_mask_reduce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_cnn_mask_reduce.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cnn_mask_reduce

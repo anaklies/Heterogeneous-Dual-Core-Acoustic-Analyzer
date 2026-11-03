@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct  9 18:14:59 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_cnn_mask_reduce/xsim_script.tcl
+# xsim {tb_cnn_mask_reduce} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS CNN mask reduction: 1740 inputs, 85 weights, mean/interpolation, band limits, backpressure, gap rejection
+$finish called at time : 43420 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_cnn_mask_reduce.sv" Line 67
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct  9 18:15:01 2026...

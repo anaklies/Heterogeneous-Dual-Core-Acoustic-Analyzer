@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/pl_window_scheduler.sv" into library work
+INFO: [VRFC 10-311] analyzing module pl_window_scheduler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_pl_window_scheduler.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pl_window_scheduler

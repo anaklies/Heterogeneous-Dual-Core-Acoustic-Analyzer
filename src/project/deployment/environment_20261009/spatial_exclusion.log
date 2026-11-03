@@ -1,0 +1,42 @@
+{
+  "ordinary": {
+    "before": {
+      "validMatched": 100,
+      "within10cm": 96,
+      "meanCm": 2.405587318440524,
+      "p95Cm": 9.01798868600774,
+      "maxCm": 14.601954926487739,
+      "meanOspaCm": 17.375423600221175,
+      "extraDirections": 24
+    },
+    "candidate": {
+      "validMatched": 54,
+      "within10cm": 50,
+      "meanCm": 3.1456593671849933,
+      "p95Cm": 15.712549613626555,
+      "maxCm": 23.47446391333195,
+      "meanOspaCm": 54.14629519234984,
+      "extraDirections": 78
+    }
+  },
+  "crossing": {
+    "before": {
+      "validMatched": 80,
+      "within10cm": 67,
+      "meanCm": 6.032690679261245,
+      "p95Cm": 13.71548959801505,
+      "maxCm": 68.3237422258394,
+      "meanOspaCm": 19.38155816168132,
+      "extraDirections": 21
+    },
+    "candidate": {
+      "validMatched": 55,
+      "within10cm": 26,
+      "meanCm": 19.63763446064104,
+      "p95Cm": 71.56199724205572,
+      "maxCm": 87.50321600096514,
+      "meanOspaCm": 49.3778209668299,
+      "extraDirections": 46
+    }
+  }
+}

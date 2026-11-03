@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/pl_noise_floor.sv" into library work
+INFO: [VRFC 10-311] analyzing module pl_noise_floor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_pl_noise_floor.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_pl_noise_floor

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/sensor_i2c_hub.sv" into library work
+INFO: [VRFC 10-311] analyzing module sensor_i2c_hub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/i2c_transaction_master.sv" into library work
+INFO: [VRFC 10-311] analyzing module i2c_transaction_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_sensor_environment.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sensor_i2c_hub

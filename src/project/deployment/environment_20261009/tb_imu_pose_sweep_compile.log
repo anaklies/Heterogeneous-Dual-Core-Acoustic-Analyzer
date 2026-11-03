@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/imu_rotation_q16.sv" into library work
+INFO: [VRFC 10-311] analyzing module imu_rotation_q16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_imu_pose_sweep.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_imu_pose_sweep

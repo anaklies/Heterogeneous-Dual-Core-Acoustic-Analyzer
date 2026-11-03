@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/air_speed_correction.sv" into library work
+INFO: [VRFC 10-311] analyzing module air_speed_correction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/sensor_config_writer.sv" into library work
+INFO: [VRFC 10-311] analyzing module sensor_config_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_compact_environment_config.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_compact_environment_config

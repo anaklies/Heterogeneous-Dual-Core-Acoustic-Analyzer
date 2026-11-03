@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct  9 18:14:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_pl_result_sequencer/xsim_script.tcl
+# xsim {tb_pl_result_sequencer} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS result sequencer: dual ports, atomic frames, backpressure, partial rejection, both watchdogs, count guard, conflicting writes, invalid addresses, receiver stall timeout, recovery
+$finish called at time : 26800 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_pl_result_sequencer.sv" Line 194
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct  9 18:14:50 2026...

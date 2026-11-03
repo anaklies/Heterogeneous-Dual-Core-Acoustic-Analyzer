@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/covariance_6ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module covariance_6ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_covariance_6ch.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_covariance_6ch

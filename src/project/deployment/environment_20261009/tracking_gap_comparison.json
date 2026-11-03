@@ -1,0 +1,16 @@
+{
+  "before": {
+    "IDchanges": 18,
+    "missingFreshTargets": 0,
+    "meanFreshErrorCm": 1.4991751263268718,
+    "maxFreshErrorCm": 3.2635306134292823,
+    "freshCoordinateLeaksDuringSilence": 0
+  },
+  "candidate": {
+    "IDchanges": 0,
+    "missingFreshTargets": 0,
+    "meanFreshErrorCm": 1.4991751263268718,
+    "maxFreshErrorCm": 3.2635306134292823,
+    "freshCoordinateLeaksDuringSilence": 0
+  }
+}

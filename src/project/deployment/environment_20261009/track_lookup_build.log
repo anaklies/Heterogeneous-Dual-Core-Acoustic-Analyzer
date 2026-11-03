@@ -1,0 +1,857 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Fri Oct  9 18:21:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/environment_20261009/track_gap.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tracker_gap_candidate.cpp' from ../deployment/environment_20261009/track_gap.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tracker_gap_candidate.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_track_gap.cpp' from ../deployment/environment_20261009/track_gap.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/environment_20261009/tb_track_gap.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=track_sources' from ../deployment/environment_20261009/track_gap.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/environment_20261009/track_gap.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/environment_20261009/track_gap.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=20ns' from ../deployment/environment_20261009/track_gap.cfg(7)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+
+INFO: [HLS 200-1465] Applying config ini 'cosim.tool=xsim' from ../deployment/environment_20261009/track_gap.cfg(10)
+
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=0' from ../deployment/environment_20261009/track_gap.cfg(8)
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/environment_20261009/track_gap.cfg(9)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 2.525 seconds; current allocated memory: 164.250 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/environment_20261009/tracker_gap_candidate.cpp' ... 
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.14 seconds; current allocated memory: 166.879 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 24,131 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 2,978 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 2,459 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 2,364 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,417 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,413 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,413 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,413 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,413 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,430 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,430 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,423 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,785 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,724 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,718 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,804 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.9.30.40.49.60)' into 'fp_struct<float>::to_float() const (.27.37.46.57)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const (.27.37.46.57)' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::isfinite(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:563:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_isnan<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const (.9.30.40.49.60)' into 'fp_struct<float>::to_int() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:319:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<float>(float)' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_int() const' into 'float generic_fmax<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'norm3(float const*)' into 'unit3(float*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:18:0)
+
+INFO: [HLS 214-178] Inlining function 'fmaxf' into 'unit3(float*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:18:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<float>(float)' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_int() const' into 'float generic_fmin<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmin.h:20:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'track_acos(float)' (../deployment/environment_20261009/track_acos.h:5:0)
+
+INFO: [HLS 214-178] Inlining function 'std::isfinite(float)' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'unit3(float*)' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'fmaxf' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'fminf' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'norm3(float const*)' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-178] Inlining function 'q16(float)' into 'track_sources(int const*, float, bool, int*)' (../deployment/environment_20261009/tracker_gap_candidate.cpp:29:0)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_255_36'. (../deployment/environment_20261009/tracker_gap_candidate.cpp:255:22)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_210_29'. (../deployment/environment_20261009/tracker_gap_candidate.cpp:210:22)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_104_12'. (../deployment/environment_20261009/tracker_gap_candidate.cpp:104:24)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_65_6'. (../deployment/environment_20261009/tracker_gap_candidate.cpp:65:20)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.id)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.hits)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.age)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.miss)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.alive)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.range)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array 'track_sources(int const*, float, bool, int*)::tracks (.haspos)' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-421] Partitioning small array '__const._Z13track_sourcesPKifbPi.assignment' due to array size.
+
+INFO: [HLS 214-421] Partitioning small array 'range' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:8)
+
+INFO: [HLS 214-421] Partitioning small array 'used' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:18)
+
+INFO: [HLS 214-421] Partitioning small array 'matched' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:32)
+
+INFO: [HLS 214-421] Partitioning small array 'residual' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:83:19)
+
+INFO: [HLS 214-421] Partitioning small array 'assignment' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:98:7)
+
+INFO: [HLS 214-421] Partitioning small array 'choices' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:101:9)
+
+INFO: [HLS 214-421] Partitioning small array 'rate' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:126:13)
+
+INFO: [HLS 214-421] Partitioning small array 'delta' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:153:17)
+
+INFO: [HLS 214-421] Partitioning small array 'residual465' due to array size. (../deployment/environment_20261009/tracker_gap_candidate.cpp:166:17)
+
+INFO: [HLS 214-248] Applying array_partition to '__const._Z13track_sourcesPKifbPi.assignment': Complete partitioning on dimension 1.
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.range': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.miss': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.id': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.hits': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.haspos': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.alive': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13track_sourcesPKifbPiE6tracks.age': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:40:0)
+
+INFO: [HLS 214-248] Applying array_partition to 'range': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:8)
+
+INFO: [HLS 214-248] Applying array_partition to 'used': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:18)
+
+INFO: [HLS 214-248] Applying array_partition to 'matched': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:50:32)
+
+INFO: [HLS 214-248] Applying array_partition to 'residual': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:83:19)
+
+INFO: [HLS 214-248] Applying array_partition to 'assignment': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:98:7)
+
+INFO: [HLS 214-248] Applying array_partition to 'choices': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:101:9)
+
+INFO: [HLS 214-248] Applying array_partition to 'rate': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:126:13)
+
+INFO: [HLS 214-248] Applying array_partition to 'delta': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:153:17)
+
+INFO: [HLS 214-248] Applying array_partition to 'residual465': Complete partitioning on dimension 1. (../deployment/environment_20261009/tracker_gap_candidate.cpp:166:17)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.243 seconds; current allocated memory: 171.223 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 171.223 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 180.949 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+INFO: [XFORM 203-602] Inlining function 'generic_fmin<float>' into 'track_sources' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fminfloat.cpp:7->../deployment/environment_20261009/tracker_gap_candidate.cpp:78) automatically.
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 183.527 MB.
+
+INFO: [XFORM 203-602] Inlining function 'generic_fmin<float>' into 'track_sources' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fminfloat.cpp:7->../deployment/environment_20261009/tracker_gap_candidate.cpp:78) automatically.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/tracker_gap_candidate.cpp:61:31) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:61:22) in function 'track_sources'... converting 4 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fmaxfloat.cpp:6:30) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:79:13) in function 'track_sources'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/tracker_gap_candidate.cpp:132:17) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:140:26) in function 'track_sources'... converting 8 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/tracker_gap_candidate.cpp:206:16) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:207:19) in function 'track_sources'... converting 5 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/tracker_gap_candidate.cpp:227:11) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:228:26) in function 'track_sources'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/tracker_gap_candidate.cpp:241:37) to (../deployment/environment_20261009/tracker_gap_candidate.cpp:241:28) in function 'track_sources'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/environment_20261009/q16_exact.h:6:1) to (../deployment/environment_20261009/q16_exact.h:24:1) in function 'q16_exact'... converting 6 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:19:18) to (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_fmax.h:42:3) in function 'generic_fmax<float>'... converting 7 basic blocks.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.921 seconds; current allocated memory: 207.078 MB.
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.455 seconds; current allocated memory: 354.391 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'track_sources' ...
+
+WARNING: [SYN 201-103] Legalizing function name 'generic_fmax<float>' to 'generic_fmax_float_s'.
+
+WARNING: [SYN 201-223] Checking resource limit in 'track_sources': cannot find any operation of 'fdiv'.
+
+WARNING: [SYN 201-223] Checking resource limit in 'track_sources': cannot find any operation of 'fadd'.
+
+WARNING: [SYN 201-223] Checking resource limit in 'track_sources': cannot find any operation of 'fsub'.
+
+WARNING: [SYN 201-223] Checking resource limit in 'track_sources': cannot find any operation of 'fsqrt'.
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_1' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 358.180 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 359.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 359.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 359.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'norm_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 359.918 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.28 seconds; current allocated memory: 360.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 360.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 360.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_51_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 361.457 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 361.586 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_60_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 361.961 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 362.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_65_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 362.484 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 362.555 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_acos' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.816 seconds; current allocated memory: 362.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 363.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_71_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 364.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 364.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 365.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 365.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_100_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 365.895 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 365.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_122_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 372.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.679 seconds; current allocated memory: 372.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_210_29' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 372.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 372.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_225_31' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 372.680 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 372.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_250_34' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 372.781 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 372.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources_Outline_VITIS_LOOP_252_35' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 372.887 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.014 seconds; current allocated memory: 372.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'q16_exact' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.74 seconds; current allocated memory: 373.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 373.266 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'track_sources' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 375.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 376.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 377.578 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 378.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'norm_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'norm_core'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 379.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'generic_fmax_float_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'generic_fmax_float_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 380.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_51_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_3_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_51_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.652 seconds; current allocated memory: 382.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_60_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_60_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.148 seconds; current allocated memory: 385.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_65_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_65_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 386.387 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_acos' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_7_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_acos'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 387.859 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_71_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_71_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 390.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_1_1_1' is changed to 'sparsemux_7_2_1_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.551 seconds; current allocated memory: 394.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_100_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_2_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_100_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 394.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_122_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_15_6_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_122_15'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 402.254 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_210_29' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_210_29'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.583 seconds; current allocated memory: 415.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_225_31' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_225_31'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.158 seconds; current allocated memory: 415.352 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_250_34' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_250_34'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.934 seconds; current allocated memory: 418.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources_Outline_VITIS_LOOP_252_35' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources_Outline_VITIS_LOOP_252_35'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 418.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'q16_exact' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_32_1_1' is changed to 'sparsemux_7_2_32_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'q16_exact'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 419.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'track_sources' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'track_sources/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'track_sources/dt' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'track_sources/reset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'track_sources/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'track_sources' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'nextid' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_alive_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_alive_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_alive_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_miss_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_miss_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_miss_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_haspos_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_haspos_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_haspos_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_age_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_age_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_age_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_hits_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_hits_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_hits_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_range_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_range_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_range_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_id_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_id_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'track_sources_int_const_float_bool_int_tracks_id_2' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_8_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'track_sources'.
+INFO: [RTMG 210-278] Implementing memory 'track_sources_tracks_p_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'track_sources_tracks_observed_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'track_sources_pos_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'track_sources_dir_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'track_sources_predU_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.948 seconds; current allocated memory: 423.773 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.649 seconds; current allocated memory: 434.055 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.807 seconds; current allocated memory: 444.355 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for track_sources.
+INFO: [VLOG 209-307] Generating Verilog RTL for track_sources.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 69.86 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Fri Oct  9 18:22:24 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/misc
+
+INFO: Copied 39 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/verilog
+
+INFO: Copied 37 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/vhdl
+
+Generating 7 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/subcore_prj:
+
+impl/misc/track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+impl/misc/track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+impl/misc/track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+impl/misc/track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+impl/misc/track_sources_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/verilog
+
+INFO: Generating track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: Done generating track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+INFO: Generating track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip via file impl/misc/track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip'...
+
+INFO: Done generating track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip via file impl/misc/track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip.tcl
+
+INFO: Generating track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip'...
+
+INFO: Done generating track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip via file impl/misc/track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip.tcl
+
+INFO: Generating track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip via file impl/misc/track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip'...
+
+INFO: Done generating track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip via file impl/misc/track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.tcl
+
+INFO: Generating track_sources_sitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/track_sources_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'track_sources_sitofp_32ns_32_3_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'track_sources_sitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'track_sources_sitofp_32ns_32_3_no_dsp_1_ip'...
+
+INFO: Done generating track_sources_sitofp_32ns_32_3_no_dsp_1_ip via file impl/misc/track_sources_sitofp_32ns_32_3_no_dsp_1_ip.tcl
+
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+
+INFO: Copied 7 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/track_sources_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip/track_sources_fadd_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip/track_sources_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip/track_sources_fdiv_32ns_32ns_32_8_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip/track_sources_fmul_32ns_32ns_32_2_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip/track_sources_fsqrt_32ns_32ns_32_7_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/ip/track_sources_sitofp_32ns_32_3_no_dsp_1_ip/track_sources_sitofp_32ns_32_3_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/hdl/vhdl/track_sources.vhd (track_sources)
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst
+
+INFO: Add ap_ctrl interface ap_ctrl
+
+INFO: Add data interface input_r_address0
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add data interface input_r_q0
+
+INFO: Add data interface input_r_address1
+
+INFO: Add data interface input_r_q1
+
+INFO: Add data interface dt
+
+INFO: Add data interface reset
+
+INFO: Add data interface output_r_address0
+
+INFO: Add data interface output_r_d0
+
+INFO: Add data interface output_r_address1
+
+INFO: Add data interface output_r_d1
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/track_gap_lookup/hls/impl/ip/xilinx_com_hls_track_sources_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  9 18:22:43 2026...
+
+INFO: [HLS 200-802] Generated output file track_gap_lookup/track_sources.zip
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 4 seconds. Total elapsed time: 55.93 seconds; peak allocated memory: 448.836 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 0s
