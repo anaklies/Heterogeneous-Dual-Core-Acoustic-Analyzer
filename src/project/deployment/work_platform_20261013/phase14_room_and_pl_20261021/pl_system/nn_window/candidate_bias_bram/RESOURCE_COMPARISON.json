@@ -1,0 +1,47 @@
+{
+  "status": "BIT_EXACT_C_AND_HLS_BRAM_IMPROVEMENT",
+  "baseline": {
+    "LUT": 21735,
+    "FF": 15227,
+    "DSP": 85,
+    "BRAM18K": 234,
+    "bestCycles": 4003997,
+    "worstCycles": 44683428,
+    "intervalMin": 4003998,
+    "intervalMax": 44683429,
+    "estimatedClockNs": 9.733
+  },
+  "candidate": {
+    "LUT": 21804,
+    "FF": 15788,
+    "DSP": 85,
+    "BRAM18K": 216,
+    "bestCycles": 4003997,
+    "worstCycles": 44683428,
+    "intervalMin": 4003998,
+    "intervalMax": 44683429,
+    "estimatedClockNs": 9.733
+  },
+  "delta": {
+    "LUT": 69,
+    "FF": 561,
+    "DSP": 0,
+    "BRAM18K": -18,
+    "bestCycles": 0,
+    "worstCycles": 0,
+    "intervalMin": 0,
+    "intervalMax": 0,
+    "estimatedClockNs": 0.0
+  },
+  "preservedStaticBiasAlignment": true,
+  "bankFactor": 12,
+  "biasBRAMBefore": 18,
+  "biasBRAMAfter": 0,
+  "unchangedCycleBounds": true,
+  "wholeBoard": false,
+  "rtlCosim": false,
+  "routedTiming": false,
+  "continuous10HzProven": false,
+  "ipArchive": "tmp/p15_nnwindow_bias_bram/hls/impl/ip/xilinx_com_hls_nn_window_1_0.zip",
+  "limitation": "HLS only;12lane throughput preserved in HLS schedule, not RTL cosim.64BRAM18K remain for other modules before integration;10Hz and wholeboard resource/timing are not accepted."
+}

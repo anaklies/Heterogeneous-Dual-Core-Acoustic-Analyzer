@@ -1,0 +1,126 @@
+{
+  "scope": "Native scalar instruction execution with NumPy FFT-request golden emulation; NOT HLS/RTL/board acceptance",
+  "cases": [
+    {
+      "service": "real_cepstrum",
+      "values": 2048,
+      "instructions": 29,
+      "chunks": 610,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 3.309417273555937e-08
+    },
+    {
+      "service": "autocorrelation",
+      "values": 2048,
+      "instructions": 27,
+      "chunks": 546,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 7.036234386248452e-07
+    },
+    {
+      "service": "cross_correlation",
+      "values": 2048,
+      "instructions": 34,
+      "chunks": 738,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 8.820499641792878e-08
+    },
+    {
+      "service": "gcc_phat",
+      "values": 2048,
+      "instructions": 41,
+      "chunks": 962,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 4.7115427947996835e-09
+    },
+    {
+      "service": "hilbert_envelope",
+      "values": 2048,
+      "instructions": 69,
+      "chunks": 674,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 3.503115220127029e-08
+    },
+    {
+      "service": "envelope_spectrum",
+      "values": 1025,
+      "instructions": 82,
+      "chunks": 835,
+      "fft_modes": [
+        2,
+        1
+      ],
+      "max_absolute_error": 3.7100803780276692e-06
+    },
+    {
+      "service": "hilbert_envelope",
+      "values": 2048,
+      "instructions": 69,
+      "chunks": 674,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 2.980232227667301e-09,
+      "case": "dc"
+    },
+    {
+      "service": "hilbert_envelope",
+      "values": 2048,
+      "instructions": 69,
+      "chunks": 674,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 2.980232227667301e-09,
+      "case": "nyquist"
+    },
+    {
+      "service": "hilbert_envelope",
+      "values": 2048,
+      "instructions": 69,
+      "chunks": 674,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 0.0,
+      "case": "silence"
+    },
+    {
+      "service": "gcc_phat",
+      "values": 2048,
+      "instructions": 41,
+      "chunks": 962,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 0.0,
+      "case": "silent_phat"
+    }
+  ],
+  "total_compared": 19457,
+  "implemented": [
+    "real cepstrum",
+    "circular autocorrelation",
+    "circular cross-correlation",
+    "GCC-PHAT correlation",
+    "Hilbert envelope",
+    "envelope spectrum"
+  ],
+  "limitations": [
+    "Windowed 2048-sample circular correlation, not unbiased long-lag correlation",
+    "No automatic DOA or XYZ",
+    "No multi-frame spectral kurtosis or STIPA service added here",
+    "FFT requests require actual PL scheduler source-slot ownership and completion fences",
+    "Long bounded microcode may span many P2 chunks; no real-time deadline claimed"
+  ]
+}

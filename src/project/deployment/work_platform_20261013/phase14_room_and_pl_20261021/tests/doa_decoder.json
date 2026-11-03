@@ -1,0 +1,36 @@
+{
+  "status": "C_GOLDEN_PASS",
+  "rows": [
+    {
+      "id": "speech",
+      "angleVsFrozenDecoderDegrees": 0.49988996400744606,
+      "scoreAbsoluteDifference": 5.364418029785156e-07
+    },
+    {
+      "id": "broad",
+      "angleVsFrozenDecoderDegrees": 0.0,
+      "scoreAbsoluteDifference": 8.940696716308594e-07
+    },
+    {
+      "id": "northpole",
+      "syntheticUnitOnly": true,
+      "angleErrorDegrees": 0.0
+    },
+    {
+      "id": "southpole",
+      "syntheticUnitOnly": true,
+      "angleErrorDegrees": 0.0
+    },
+    {
+      "id": "seam",
+      "syntheticUnitOnly": true,
+      "angleErrorDegrees": 0.0
+    }
+  ],
+  "coarseBankBytes": 2320920,
+  "coarseBankSHA256": "71533ab46039722dae6e0040135e1a51dd763b313e159ecebda56482fe977c7f",
+  "bankSoundSpeed": 343.42,
+  "dynamicSoundSpeedBankGenerationImplemented": false,
+  "fullPCMRTL": false,
+  "notTrackIDs": true
+}

@@ -1,0 +1,375 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 13:02:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/neural_features.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(7)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/neural_features.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=acoustic_frontend_pipeline' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=13.333ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(8)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(9)
+
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_addr64=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend.cfg(10)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 2.974 seconds; current allocated memory: 163.871 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp' ... 
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1563:25)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:2)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:12)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp
+
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+
+WARNING: [HLS 207-6591] unused parameter 'data_type' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:195:72)
+
+WARNING: [HLS 207-6591] unused parameter 'cp_len_enable' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:219:61)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:232:63)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:409:66)
+
+WARNING: [HLS 207-6591] unused parameter 'has_ovflo' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:422:61)
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.797 seconds; current allocated memory: 171.805 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 20,867 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 2,483 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,789 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,643 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,168 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,145 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,145 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,147 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,147 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,187 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,179 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,176 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,190 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,178 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,322 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,376 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/syn/report/csynth_design_size.rpt:2)
+
+WARNING: [HLS 214-273] In function 'hls::ip_fft::config_t<burst_fft512_params>::setDir(bool, unsigned int)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:309:24) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:23:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:310:0)
+
+WARNING: [HLS 214-273] In function 'ssdm_int<8, false>::ssdm_int(unsigned char)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:39) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:23:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:0)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::getDir(unsigned int)' into 'void hls::fft_syn<burst_fft512_params>(std::complex<ap_fixed<(((burst_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((burst_fft512_params::output_width) + (7)) / (8)) * (8), (((((burst_fft512_params::output_width) + (7)) / (8)) * (8)) - (burst_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<burst_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<burst_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1223:31)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::getSch(unsigned int)' into 'void hls::fft_syn<burst_fft512_params>(std::complex<ap_fixed<(((burst_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((burst_fft512_params::output_width) + (7)) / (8)) * (8), (((((burst_fft512_params::output_width) + (7)) / (8)) * (8)) - (burst_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<burst_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<burst_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1212:36)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::setDir(bool, unsigned int)' into 'fft_fixed512(std::complex<ap_fixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:26:9)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'in' with compact=bit mode in 48-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:37:23)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'out' with compact=bit mode in 80-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:37:50)
+
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::complex(float, float)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:51:27)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float)' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float) (.97)' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::isfinite(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:563:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::fabs(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:242:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'safe_magnitude(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:8:0)
+
+INFO: [HLS 214-178] Inlining function 'std::sqrt(float)' into 'safe_magnitude(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:8:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:51:0)
+
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'to_q11(float, unsigned int&)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:16:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'to_q11(float, unsigned int&)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:16:0)
+
+INFO: [HLS 214-178] Inlining function 'std::isfinite(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:31:0)
+
+INFO: [HLS 214-178] Inlining function 'std::sqrt(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:31:0)
+
+INFO: [HLS 214-178] Inlining function 'std::log(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:31:0)
+
+INFO: [HLS 214-449] Partitioning array 'acoustic_frontend_pipeline::mic' dimension 2 due to constant index. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:121:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ26acoustic_frontend_pipelineE3mic': Complete partitioning on dimension 2. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:121:0)
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+INFO: [HLS 214-115] Multiple burst writes of length 16 and bit width 32 in loop 'VITIS_LOOP_56_1'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:56:22) has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:56:22)
+
+INFO: [HLS 214-115] Multiple burst writes of length 9 and bit width 32 has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:61:20)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:63:43)
+
+INFO: [HLS 214-115] Multiple burst reads of length 30 and bit width 32 in loop 'VITIS_LOOP_74_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:74:30) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:74:30)
+
+INFO: [HLS 214-115] Multiple burst writes of length 30 and bit width 32 in loop 'VITIS_LOOP_74_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:74:30) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:74:30)
+
+INFO: [HLS 214-115] Multiple burst writes of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:96:46)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:108:17)
+
+INFO: [HLS 214-115] Multiple burst reads of length 10206 and bit width 32 in loop 'VITIS_LOOP_117_10'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:117:24) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:117:24)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:134:22)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:134:58)
+
+WARNING: [HLS 214-375] Impl=vivado_fft in __fpga_ip is deprecated. Consider using a different IP implementation. (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1180:2)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 15.265 seconds; current allocated memory: 176.398 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 176.398 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 184.789 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+INFO: [XFORM 203-602] Inlining function 'safe_magnitude' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:112) automatically.
+
+WARNING: [SYNCHK 200-23] ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:43: variable-indexed range selection may cause suboptimal QoR.
+
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 189.297 MB.
+
+INFO: [XFORM 203-602] Inlining function 'safe_magnitude' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:112) automatically.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'hls::fft<burst_fft512_params>' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1561:26), detected/extracted 3 process function(s): 
+
+	 'hls::fft<burst_fft512_params>_Block_newFuncRoot_proc'
+
+	 'hls::fft_syn<burst_fft512_params>'
+
+	 'hls::fft<burst_fft512_params>_Block_newFuncRoot_proc.1'.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'fft_fixed512' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:22:1), detected/extracted 1 process function(s): 
+
+	 'hls::fft<burst_fft512_params>'.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:15:34) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:24:1) in function 'to_q11'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:41:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:40:26) in function 'fft1536_burst_vendor'... converting 29 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:48:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:47:26) in function 'fft1536_burst_vendor'... converting 19 basic blocks.
+
+INFO: [XFORM 203-11] Balancing expressions in function 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:9:30)...18 expression(s) balanced.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.943 seconds; current allocated memory: 215.996 MB.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_73_3'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:73:73) and 'VITIS_LOOP_74_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:74:30) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_73_2'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:73:26) and 'VITIS_LOOP_73_3'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:73:73) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_131_13'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:131:28) and 'VITIS_LOOP_131_14'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:131:70) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_125_12'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:125:63) and 'VITIS_LOOP_131_13'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:131:28) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_73_3' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:73:73) in function 'acoustic_frontend_pipeline'.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_73_2' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:73:26) in function 'acoustic_frontend_pipeline'.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_131_13' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:131:28) in function 'acoustic_frontend_pipeline'.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_125_12' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_pipeline.cpp:125:63) in function 'acoustic_frontend_pipeline'.
+
+Stack dump:
+0.	Running pass 'Function Pass Manager' on module 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_pipeline/hls/.autopilot/db/a.o.2.bc'.
+1.	Running pass 'Instruction simplification' on function '@acoustic_frontend_pipeline'
+0x00007FFD49E694FB (0x0000023B89525490 0x0000023B913F8D40 0x000000A9331F9660 0x0000023B913F5380), exp2() + 0x887ACB bytes(s)
+0x00007FFD4949D1EA (0x0000023B89524C30 0x0000023B91AB4680 0x0000023B89524C01 0x0000023B00000000), ?save_object_ptr@?$pointer_oserializer@Vxml_oarchive@archive@boost@@VTransition@DBFsm@fsmd@@@detail@archive@boost@@EEBAXAEAVbasic_oarchive@234@PEBX@Z() + 0x681D9A bytes(s)
+0x00007FFD49B8E213 (0x0000023B91AB4680 0x0000023B916D3EC0 0x0000000000000001 0x0000023B916D3EC0), exp2() + 0x5AC7E3 bytes(s)
+0x00007FFD49B8E36C (0x0000023B91D66600 0x0000023B91F99201 0x0000000000000000 0x0000023B916D3EC0), exp2() + 0x5AC93C bytes(s)
+0x00007FFD49B8E581 (0x0000023B8F8E5AE0 0x0000023B8A786670 0x0000023B91D66530 0x0000000000000000), exp2() + 0x5ACB51 bytes(s)
+0x00007FFD49B8DC40 (0x0000023B91063D60 0x000000A9331FA1E0 0x0000023B91B294C0 0x0000023B91B294C0), exp2() + 0x5AC210 bytes(s)
+0x00007FFD484CE461 (0x0000000000000000 0x000000A900000001 0x0000000000000000 0x0000000000000000), ?type2string@OptDef@HLSCmdDefs@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4TOptType@xpcl@@@Z() + 0x266F1 bytes(s)
+0x00007FFD51D84D01 (0x0000023B81F8BAE0 0x00007FFD4A6D4C90 0x0000000000000000 0x00007FFD4A6D4C90), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0x13D1 bytes(s)
+0x00007FFD51D845A0 (0x0000000000200010 0x0000000000000000 0x0000023B907E2310 0x0000023B83B17260), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0xC70 bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B8AF2A9C0 0x0000023B834EB050 0x0000000000000000 0x0000023B8AF24860), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B9080D530 0x0000023B834EB050 0x0000000000000000 0x0000023B8514C7E0), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B8AB78D80 0x0000023B834EB050 0x0000000000000000 0x0000023B8AB78BA0), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B8AB78BA0 0x0000000000000003 0x000000000000000C 0x0000023B81F8B3E0), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x0000023B85760470 0x00007FFD4A19DCEC 0x00007FFD51D56201), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD582FDCDF (0x0000023B834EB050 0x000000A9331FAB40 0x0000023B00000000 0x0000023B00000000), Tcl_Eval() + 0x2F bytes(s)
+0x00007FFD485C6C1C (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000023B87933800), Java_com_xilinx_hls_services_hlsvwrap_set_1IntMinMax_1min() + 0x18E3C bytes(s)
+0x00007FFD51D84D8E (0x0000023B81F8AF70 0x0000023B850C1030 0x0000000000000000 0x0000023B850C1030), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0x145E bytes(s)
+0x00007FFD51D845A0 (0x0000023B00200010 0x0000000000000000 0x0000023B8AB79E30 0x0000023B84D6F110), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0xC70 bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B87B29910 0x0000023B834EB050 0x0000000000000000 0x0000023B8F8FF270), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B8F8FF270 0x0000000000000003 0x000000000000000C 0x0000023B81F8AC90), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x0000023B8DD0E330 0x00007FFD4A19DCEC 0x00007FFD51D56201), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD582FDCDF (0x0000023B834EB050 0x000000A9331FB480 0x0000023B00000000 0x0000023B00000000), Tcl_Eval() + 0x2F bytes(s)
+0x00007FFD485C6C1C (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000023B836D0D00), Java_com_xilinx_hls_services_hlsvwrap_set_1IntMinMax_1min() + 0x18E3C bytes(s)
+0x00007FFD51D84D8E (0x0000023B81F8A6D0 0x0000023B8505B060 0x0000000000000000 0x0000023B8505B060), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0x145E bytes(s)
+0x00007FFD51D845A0 (0x0000023B00200010 0x0000000000000000 0x0000023B87B29580 0x0000023B839502B0), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0xC70 bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B8514F6F0 0x0000023B834EB050 0x0000000000000000 0x0000023B871031A0), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B871031A0 0x0000000000000003 0x000000000000000C 0x0000023B81F8A3F0), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x0000023B87772040 0x00007FFD4A19DCEC 0x00007FFD51D56201), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD582FDCDF (0x0000023B834EB050 0x000000A9331FBDC0 0x0000023B00000000 0x0000023B00000000), Tcl_Eval() + 0x2F bytes(s)
+0x00007FFD485C6C1C (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000023B8D5DE300), Java_com_xilinx_hls_services_hlsvwrap_set_1IntMinMax_1min() + 0x18E3C bytes(s)
+0x00007FFD51D84D8E (0x0000000000000001 0x0000023B8505BAE0 0x0000000000000000 0x0000023B8505BAE0), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0x145E bytes(s)
+0x00007FFD51D845A0 (0x0000023B00200010 0x0000000000000000 0x0000023B871047F0 0x0000023B8394EBB0), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0xC70 bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B84CAC2D0 0x0000023B834EB050 0x0000000000000000 0x0000023B8514DDD0), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B85142140 0x0000023B834EB050 0x0000000000000000 0x0000023B85148780), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B85149D70 0x0000023B834EB050 0x0000000000000000 0x0000023B85141990), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B85141990 0x0000000000000003 0x000000000000000C 0x0000023B81F89640), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x0000023B86DA5020 0x00007FFD4A19DCEC 0x00007FFD51D56201), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD582FDCDF (0x0000023B834EB050 0x000000A9331FC880 0x0000023B00000000 0x0000023B00000000), Tcl_Eval() + 0x2F bytes(s)
+0x00007FFD485C6C1C (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000023B8372BA00), Java_com_xilinx_hls_services_hlsvwrap_set_1IntMinMax_1min() + 0x18E3C bytes(s)
+0x00007FFD51D84D8E (0x0000023B81F89160 0x0000023B84CB7B50 0x0000000000000000 0x0000023B84CB7B50), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0x145E bytes(s)
+0x00007FFD51D845A0 (0x0000000000200010 0x0000000000000000 0x0000023B8514D350 0x0000023B84D85F70), ?addOwnedOption@TclCommand@xpcl@@QEAAPEAVOption@2@PEAV32@@Z() + 0xC70 bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000003 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B8514DF50 0x0000023B834EB050 0x0000000000000000 0x0000023B83532290), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B83532290 0x0000000000000001 0x0000023B81F88E40 0x0000000000000000), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x00007FFD51F7A330 0x0000000000000000 0x00007FFE4AA5E0FB), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD582FDCDF (0x0000023B834EB050 0x0000023B834EB050 0x0000000000000000 0x0000000000000000), Tcl_Eval() + 0x2F bytes(s)
+0x00007FFD51D8FC70 (0x00007FFD51F7A53C 0x00007FFD51F7A53C 0x00007FFD51F7A53C 0x0000023B84C38CB0), ?setSkipSolutionActions@TclCommand@xpcl@@SAX_N@Z() + 0xBE0 bytes(s)
+0x00007FFD51D8C328 (0x0000000000000000 0x00007FFD5E970A84 0x0000023B81F88B38 0x000000000000000A), ?issueFromTcl@TclManager@xpcl@@QEAAHPEAUTcl_Interp@@_N@Z() + 0x418 bytes(s)
+0x00007FFD52057114 (0x0000023B83531120 0x0000023B00000000 0x0000000000000000 0x00007FFE4D0EF164), Xv_hlstasks_Init() + 0x3A94 bytes(s)
+0x00007FFD5EEE5D92 (0x000000A9331FD850 0x0000023B834EB050 0x0000023B0000000A 0x0000023B81F88B30), ?eval_in_tcl_throw@task_manager@tcltasks@hdi@@SAHPEBD0_N@Z() + 0x4B2 bytes(s)
+0x00007FFD5EEE941A (0x00007FFD52069618 0x0000023B834EB050 0x0000023B0000000A 0x0000023B81F88B30), ?retrieve_except_msg_instance@task_manager@tcltasks@hdi@@SA_NAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z() + 0x66A bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x0000000000000004 0x0000023B83368190 0x00007FFD582FB7C4), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD5134B45B (0x0000023B832C3E30 0x0000023B834EB050 0x0000000000000000 0x0000023B832C5BA0), Java_ui_data_tclapp_tclappi_update() + 0x2387B bytes(s)
+0x00007FFD582FBADC (0x0000023B832C5BA0 0x0000000000000004 0x0000000000000010 0x0000023B81F88748), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD582FD6ED (0x0000023B834EB050 0x0000023B832E8B15 0x0000023B834EB050 0x0000000000000002), Tcl_EvalEx() + 0xD8D bytes(s)
+0x00007FFD583DEE5F (0x0000023B81000000 0x0000023B81F88318 0x0000000000000001 0x0000000000000000), TclSubstTokens() + 0x28F bytes(s)
+0x00007FFD582FCFED (0x0000023B834EB050 0x0000023B832E89E0 0x0000000000000000 0x0000023B834EB050), Tcl_EvalEx() + 0x68D bytes(s)
+0x00007FFD583A7954 (0x00007FFD5FAEAAB8 0x0000000000000000 0x0000023B83555F70 0x0000000000000000), Tcl_FSEvalFileEx() + 0x3B4 bytes(s)
+0x00007FFD513D22A6 (0x0000023B83555F80 0x0000023B834EB050 0x0000023B834EB050 0x0000023B834E9590), Java_ui_data_tclapp_tclappi_update() + 0xAA6C6 bytes(s)
+0x00007FFD513D13F3 (0x0000023B832C6080 0x0000023B00000000 0x0000000000000000 0x00007FFE4D0EF164), Java_ui_data_tclapp_tclappi_update() + 0xA9813 bytes(s)
+0x00007FFD5EEE5D92 (0x000000A9331FE720 0x0000023B834EB050 0x0000023B00000003 0x0000023B834E9590), ?eval_in_tcl_throw@task_manager@tcltasks@hdi@@SAHPEBD0_N@Z() + 0x4B2 bytes(s)
+0x00007FFD5EEE941A (0x00007FFD5172F020 0x0000023B834EB050 0x0000023B00000003 0x0000023B834E9590), ?retrieve_except_msg_instance@task_manager@tcltasks@hdi@@SA_NAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z() + 0x66A bytes(s)
+0x00007FFD582FBADC (0x0000023B832C3530 0x000000A9331FE969 0x0000000000000000 0x00007FFD00000001), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD51448537 (0x0000023B836AC880 0x0000023B836AC160 0x0000023B836AC880 0x0000000000000001), Java_ui_data_tclapp_tclappi_update() + 0x120957 bytes(s)
+0x00007FFD5144873C (0x0000000000000000 0x0000000000000000 0x0000023B836AC880 0x0000000000000000), Java_ui_data_tclapp_tclappi_update() + 0x120B5C bytes(s)
+0x00007FFD5143D3EA (0x0000023B83389950 0x0000023B834EB050 0x0000023B834EB050 0x0000000000000000), Java_ui_data_tclapp_tclappi_update() + 0x11580A bytes(s)
+0x00007FFD5143D906 (0x000000A9331FF430 0x0000023B00000000 0x0000023B832C68F0 0x00007FFE4D0EF164), Java_ui_data_tclapp_tclappi_update() + 0x115D26 bytes(s)
+0x00007FFD5EEE5D92 (0x000000A9331FF430 0x0000023B834EB050 0x0000023B0000001C 0x0000023B832DCDC0), ?eval_in_tcl_throw@task_manager@tcltasks@hdi@@SAHPEBD0_N@Z() + 0x4B2 bytes(s)
+0x00007FFD5EEE941A (0x00007FFD517295F0 0x0000023B834EB050 0x0000023B0000001C 0x0000023B832DCDC0), ?retrieve_except_msg_instance@task_manager@tcltasks@hdi@@SA_NAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z() + 0x66A bytes(s)
+0x00007FFD582FBADC (0x0000023B834EB050 0x000000A9331FF6F0 0x0000000000000000 0x0000000000000000), TclNRRunCallbacks() + 0x5C bytes(s)
+0x00007FFD85B84933 (0x0000023B834EB050 0x0000023BFFD59528 0x0000000000000000 0x0000023B834EB050), Java_ui_frmwork_rdimaini_initWhenStartingFromJava() + 0x11D53 bytes(s)
+0x00007FFD583B9796 (0x0000023B83241910 0x0000000000000000 0x0000023B8328FCC0 0x0000000000000000), Tcl_MainEx() + 0x206 bytes(s)
+0x00007FFD5E84797F (0x0000023B83241910 0x00007FFE4AA4386D 0x0000000000080001 0x0000000000000001), ??1InteractiveGraphVisitor@detail@xm@@QEAA@XZ() + 0x30CF bytes(s)
+0x00007FFD5E8ABB60 (0x0000023B83241910 0x0000000000000000 0x0000000000000000 0x0000000000000000), ?join@HCTNativeThread@@QEAAXXZ() + 0x90 bytes(s)
+0x00007FFE4AA437B0 (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000000000000000), wcsrchr() + 0x150 bytes(s)
+0x00007FFE4C73E8D7 (0x0000000000000000 0x0000000000000000 0x000004F0FFFFFB30 0x000004D0FFFFFB30), BaseThreadInitThunk() + 0x17 bytes(s)
+0x00007FFE4D11C34C (0x0000000000000000 0x0000000000000000 0x0000000000000000 0x0000000000000000), RtlUserThreadStart() + 0x2C bytes(s)
+Abnormal program termination (EXCEPTION_ACCESS_VIOLATION)
+
+Please check 'C:/Users/sunxi/Desktop/sixmic3D/tmp/hs_err_pid26420.log' for details
+

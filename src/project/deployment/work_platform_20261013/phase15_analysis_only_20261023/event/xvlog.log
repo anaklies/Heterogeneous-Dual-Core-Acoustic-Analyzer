@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event/event_power_detector.sv" into library work
+INFO: [VRFC 10-311] analyzing module event_power_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event/tb_event_power_detector.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_event_power_detector

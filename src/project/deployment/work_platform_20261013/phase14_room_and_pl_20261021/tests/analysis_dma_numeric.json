@@ -1,0 +1,113 @@
+{
+  "tests": 21,
+  "valuesCompared": 3137,
+  "rows": [
+    {
+      "test": "levels_rms",
+      "values": 6,
+      "maximumAbsoluteError": 1.022506566222825e-08
+    },
+    {
+      "test": "levels_peak",
+      "values": 6,
+      "maximumAbsoluteError": 0.0
+    },
+    {
+      "test": "levels_p2p",
+      "values": 6,
+      "maximumAbsoluteError": 0.0
+    },
+    {
+      "test": "levels_dbfs",
+      "values": 6,
+      "maximumAbsoluteError": 7.025336032029372e-06
+    },
+    {
+      "test": "PSD_vs_Scipy",
+      "values": 1025,
+      "maximumAbsoluteError": 7.105427357601002e-15
+    },
+    {
+      "test": "binPower_PSD_df",
+      "values": 1025,
+      "maximumAbsoluteError": 2.2737367544323206e-13
+    },
+    {
+      "test": "centroid",
+      "values": 1,
+      "maximumAbsoluteError": 0.0006087626716180239
+    },
+    {
+      "test": "flatness",
+      "values": 1,
+      "maximumAbsoluteError": 1.1920928955078125e-07
+    },
+    {
+      "test": "edgeNormalizedSmoothing",
+      "values": 257,
+      "maximumAbsoluteError": 2.0265579214751028e-07
+    },
+    {
+      "test": "CSD_conjugate_real",
+      "values": 33,
+      "maximumAbsoluteError": 3.2927277137523303e-10
+    },
+    {
+      "test": "CSD_conjugate_imag",
+      "values": 33,
+      "maximumAbsoluteError": 2.4529019440611144e-10
+    },
+    {
+      "test": "coherence",
+      "values": 33,
+      "maximumAbsoluteError": 2.701982435571182e-07
+    },
+    {
+      "test": "relativePhase_j_minus_i",
+      "values": 33,
+      "maximumAbsoluteError": 1.7367016601488316e-06
+    },
+    {
+      "test": "temporalEnergyChangeFlux",
+      "values": 3,
+      "maximumAbsoluteError": 1.7104570062542734e-06
+    },
+    {
+      "test": "spectralKurtosisFiniteM",
+      "values": 33,
+      "maximumAbsoluteError": 1.290775099693775e-06
+    },
+    {
+      "test": "bandIntegration",
+      "values": 2,
+      "maximumAbsoluteError": 0.0009765625
+    },
+    {
+      "test": "autocorrelation_vs_fft",
+      "values": 101,
+      "maximumAbsoluteError": 1.4421015887000621e-06
+    },
+    {
+      "test": "DAS_knownWeights",
+      "values": 17,
+      "maximumAbsoluteError": 1.1832673642991898e-10
+    },
+    {
+      "test": "relative_reference_dB",
+      "values": 257,
+      "maximumAbsoluteError": 2.0281453361192803e-07
+    },
+    {
+      "test": "slidingAverageUpdate",
+      "values": 257,
+      "maximumAbsoluteError": 7.450580596923828e-09
+    },
+    {
+      "test": "analyticMagnitude",
+      "values": 2,
+      "maximumAbsoluteError": 0.0
+    }
+  ],
+  "invalidInputTests": 5,
+  "hardwareRTLValidated": false
+}

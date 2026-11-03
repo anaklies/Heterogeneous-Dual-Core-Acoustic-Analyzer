@@ -1,0 +1,41 @@
+{
+  "status": "PASS_AFFECTED_C_MODEL",
+  "variant": "shared",
+  "rows": [
+    {
+      "id": "saved_window",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 0.0
+    },
+    {
+      "id": "fixed_fft_window",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 0.0
+    },
+    {
+      "id": "coarse_point_0",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 0.0
+    },
+    {
+      "id": "coarse_point_292",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 0.0
+    },
+    {
+      "id": "coarse_point_613",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 0.0
+    }
+  ],
+  "format": "unchanged float arithmetic; shared wave/angle hardware",
+  "mathematicalAbsoluteScoreQuantizationBound": 0,
+  "coarsePointCount": 614,
+  "componentsPerPoint": 1890,
+  "fullRTL": false
+}

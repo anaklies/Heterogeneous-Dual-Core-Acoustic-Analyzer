@@ -1,0 +1,28 @@
+{
+  "status": "C_GOLDEN_AND_HLS_PASS_NOT_WHOLE_BOARD",
+  "baseline": {
+    "LUT": 21804,
+    "FF": 15788,
+    "DSP": 85,
+    "BRAM_18K": 216
+  },
+  "candidate": {
+    "LUT": 21592,
+    "FF": 15638,
+    "DSP": 83,
+    "BRAM_18K": 200,
+    "Best-caseLatency": 3848402,
+    "Worst-caseLatency": 44527833,
+    "Interval-min": 3848403,
+    "Interval-max": 44527834,
+    "estimatedClockNs": 9.733,
+    "build": "tmp\\p16_nn_convshared",
+    "estimateOnly": true
+  },
+  "change": "Convolution output and depthwise input share one12-bank activation RAM; removed copy.",
+  "outputsInt16": 76576,
+  "counters": 18,
+  "bitExact": true,
+  "wholeSystem10Hz": false,
+  "rtlCosim": false
+}

@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "room": 0,
+      "frequencyBandHz": [
+        250,
+        8000
+      ],
+      "oldT20": 0.27450362561926545,
+      "newT20": 0.27450362561926545,
+      "absoluteDifferenceSeconds": 0.0,
+      "notNewIndependentRoom": true
+    },
+    {
+      "room": 1,
+      "frequencyBandHz": [
+        250,
+        8000
+      ],
+      "oldT20": 0.37363455189621714,
+      "newT20": 0.37363455189621714,
+      "absoluteDifferenceSeconds": 0.0,
+      "notNewIndependentRoom": true
+    },
+    {
+      "room": 2,
+      "frequencyBandHz": [
+        250,
+        8000
+      ],
+      "oldT20": 0.48356785771711375,
+      "newT20": 0.48356785771711375,
+      "absoluteDifferenceSeconds": 0.0,
+      "notNewIndependentRoom": true
+    }
+  ],
+  "scope": "matchingfrequencybands only; fullbandRT60 cannotbecompared to250..8000HzlegacyT20"
+}

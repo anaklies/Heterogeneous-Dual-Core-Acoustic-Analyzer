@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "id": "Mroom0_0",
+      "elements": 153090,
+      "maximumDifferenceLSB": 1,
+      "differingElements": 172,
+      "saturations": 0,
+      "inputSHA256": "f91227922cf76d60326987b37b3478dce08e6eeb745f422d3ffef7102ae40ae7",
+      "fixedFormat": "signed16Q11",
+      "fullRTL": false
+    },
+    {
+      "id": "Mroom0_1",
+      "elements": 153090,
+      "maximumDifferenceLSB": 1,
+      "differingElements": 21,
+      "saturations": 0,
+      "inputSHA256": "62e7f47f86da2639f984f54a54f30b177c526fc0d87a073f187e3f709ea979bf",
+      "fixedFormat": "signed16Q11",
+      "fullRTL": false
+    },
+    {
+      "id": "Mroom1_0",
+      "elements": 153090,
+      "maximumDifferenceLSB": 1,
+      "differingElements": 74,
+      "saturations": 0,
+      "inputSHA256": "5f5d11e4882f20bd6de805a6e1d025f21bdbb1777bcc784d0ee44a8437e28aac",
+      "fixedFormat": "signed16Q11",
+      "fullRTL": false
+    },
+    {
+      "id": "Mroom1_1",
+      "elements": 153090,
+      "maximumDifferenceLSB": 1,
+      "differingElements": 94,
+      "saturations": 0,
+      "inputSHA256": "8459f5da290f99f4f1b4fe041fb9c5759722325b06c16325f64af4cecc92c316",
+      "fixedFormat": "signed16Q11",
+      "fullRTL": false
+    }
+  ],
+  "totalElements": 612360,
+  "status": "PASS_Q11_TOLERANCE_1LSB"
+}

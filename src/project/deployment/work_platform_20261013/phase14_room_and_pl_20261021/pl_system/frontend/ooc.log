@@ -1,0 +1,1674 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Oct 22 13:16:37 2026
+# Process ID         : 8260
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D
+# Command line       : vivado.exe -mode batch -source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/synth_frontend_ooc.tcl -log C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/ooc.log -journal C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc.jou
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/ooc.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 18615 MB
+#-----------------------------------------------------------
+source C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/synth_frontend_ooc.tcl
+# set root [file normalize [file join [file dirname [info script]] ../../..]]
+# set workspace [file normalize [file join $root ../..]]
+# set out [file join $workspace tmp p16_frontend_ooc]
+# set repo [file join $workspace tmp p16_frontend_split hls impl ip]
+# create_project frontend_ooc $out -part xc7z020clg484-2 -force
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 553.891 ; gain = 223.930
+# set_property ip_repo_paths [list $repo] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_split/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+# create_ip -vlnv xilinx.com:hls:acoustic_frontend_pipeline:1.0 -module_name frontend_hw
+# generate_target all [get_ips frontend_hw]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'frontend_hw'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'frontend_hw'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'frontend_hw'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'frontend_hw'...
+INFO: [IP_Flow 19-1686] Generating 'Software Driver' target for IP 'frontend_hw'...
+WARNING: [IP_Flow 19-982] Invalid parameter order found. Parameter 'super_sample_rates' with  order 27.00 tries to set value on parameter 'scaling_options' of  order 11.00.
+WARNING: [IP_Flow 19-982] Invalid parameter order found. Parameter 'super_sample_rates' with  order 27.00 tries to set value on parameter 'scaling_options' of  order 11.00.
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 663.977 ; gain = 87.445
+# synth_ip [get_ips frontend_hw]
+CRITICAL WARNING: [Vivado 12-5447] synth_ip is not supported in project mode, please use non-project mode.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+WARNING: [Vivado 12-13650] The IP file 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.srcs/sources_1/ip/frontend_hw/frontend_hw.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+Command: synth_design -top frontend_hw -part xc7z020clg484-2 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-2162] IP 'frontend_hw' is locked:
+* IP definition 'acoustic_frontend_pipeline (1.0)' for IP 'frontend_hw' (customized with software release 2025.2) was not found in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27952
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1456.527 ; gain = 541.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'frontend_hw' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/synth/frontend_hw.v:53]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mic_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_mic_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mic_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_bank_RAM_AUTO_1R1W' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_bank_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_bank_RAM_AUTO_1R1W' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_bank_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft_fixed512' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_fixed512.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_s' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s.v:11]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip/synth/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.vhd:84]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 80 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_NSSR bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 9 - type: integer 
+	Parameter C_ARCH bound to: 2 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 0 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 24 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 34 - type: integer 
+	Parameter C_HAS_SCALING bound to: 0 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 0 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 1 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 0 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 0 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 1 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 0 - type: integer 
+	Parameter C_SYSTOLICFFT_INV bound to: 0 - type: integer 
+	Parameter C_IS_BLOCKING_RUNTIME_CONF bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_15' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip/hdl/xfft_v9_1_vh_rfs.vhd:103927' bound to instance 'U0' of component 'xfft_v9_1_15' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip/synth/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip/synth/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.vhd:84]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s.v:11]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_Block_newFuncRoot_proc_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w8_d2_S' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w8_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w8_d2_S_ShiftReg' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w8_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w8_d2_S_ShiftReg' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w8_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w8_d2_S' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w8_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0_ShiftReg' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0_ShiftReg' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0_ShiftReg' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0_ShiftReg' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft_burst_fft512_params_s' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_burst_fft512_params_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft_fixed512' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_fixed512.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R.dat' is read successfully [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_bitselect_1ns_54ns_6ns_1_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_bitselect_1ns_54ns_6ns_1_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_24_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_24_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_24_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_24_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_1_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_1_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_flow_control_loop_pipe_sequential_init' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_ctlz_40_40_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_ctlz_40_40_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_ctlz_40_40_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_ctlz_40_40_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_bitselect_1ns_40ns_6ns_1_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_bitselect_1ns_40ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_bitselect_1ns_40ns_6ns_1_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_bitselect_1ns_40ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w48_d512_A' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w48_d512_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w48_d512_A_ram' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w48_d512_A.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w48_d512_A_ram' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w48_d512_A.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w48_d512_A' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w48_d512_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w80_d512_A' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w80_d512_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_fifo_w80_d512_A_ram' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w80_d512_A.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w80_d512_A_ram' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w80_d512_A.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fifo_w80_d512_A' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fifo_w80_d512_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_fft1536_burst_vendor' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft1536_burst_vendor.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mul_3ns_13ns_15_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_13ns_15_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mul_3ns_13ns_15_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_13ns_15_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mul_6ns_7ns_12_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_6ns_7ns_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mul_6ns_7ns_12_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_6ns_7ns_12_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_123_9' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_123_9.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_123_9' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_123_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_make_pair' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_make_pair.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_make_pair_Pipeline_VITIS_LOOP_30_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_make_pair_Pipeline_VITIS_LOOP_30_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_32_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_sparsemux_7_2_32_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_7_2_32_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_sparsemux_9_3_16_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_sparsemux_9_3_16_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_sparsemux_9_3_16_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_make_pair_Pipeline_VITIS_LOOP_30_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_make_pair_Pipeline_VITIS_LOOP_30_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mul_4ns_16ns_19_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_4ns_16ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mul_4ns_16ns_19_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_4ns_16ns_19_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mul_3ns_12ns_13_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_12ns_13_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mul_3ns_12ns_13_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_12ns_13_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_mul_3ns_12ns_14_1_1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_12ns_14_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_mul_3ns_12ns_14_1_1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_mul_3ns_12ns_14_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_make_pair' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_make_pair.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_control_s_axi' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_control_s_axi.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_control_s_axi' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_load' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_srl' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_srl' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_mem' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_mem' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_load' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_read' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_srl__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_srl__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_fifo__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_burst_converter' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_burst_sequential' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_burst_sequential' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_burst_converter' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi_read' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_audio_m_axi' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_audio_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_store' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:917]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_mem' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3883]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_mem' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3883]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized2' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized3' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized2' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized3' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_store' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:917]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_load' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:413]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized4' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_mem__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3883]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_mem__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3883]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized4' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_load' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:413]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_write' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:1961]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_burst_converter' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:2256]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_burst_sequential' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:2862]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_burst_sequential' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:2862]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_burst_converter' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:2256]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_throttle' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3257]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized5' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized3' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_srl__parameterized3' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3843]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_fifo__parameterized5' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3630]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_throttle' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3257]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized2' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_write' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:1961]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_read' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:1709]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized3' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized3' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3526]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi_read' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:1709]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_cache_m_axi' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_store' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl__parameterized0' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized0' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl__parameterized1' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized1' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_srl__parameterized2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized2' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_mem' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:3034]
+INFO: [Synth 8-6155] done synthesizing module 'acoustic_frontend_pipeline_features_m_axi_fifo__parameterized3' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2781]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip/synth/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/synth/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/synth/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/synth/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 1 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 1 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 8 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/synth/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip/synth/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-2 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 1 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 7 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip/synth/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip' (0#1) [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/ip/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip/synth/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.vhd:70]
+INFO: [Synth 8-3848] Net ap_idle in module/entity acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s does not have driver. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s.v:26]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_control_s_axi.v:392]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized7 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized30 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized30 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized30 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized30 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized30 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized104 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized104 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized104 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized13 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized32 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized32 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized32 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized32 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized32 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized124 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized124 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized124 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized124 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized124 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized203 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized203 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized203 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized203 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized203 is either unconnected or has no load
+INFO: [Synth 8-7129] Port use_hp_path in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[23] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[22] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[21] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[20] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[19] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[18] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[17] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[16] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[15] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[14] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[13] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[12] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[11] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[10] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[9] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[8] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[7] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[6] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[5] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[4] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[3] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[2] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[1] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port norm_data[0] in module flt_log_rnd is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized211 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized211 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized211 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized211 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized211 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized9 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized3 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized34 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized34 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized34 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized34 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized34 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized11 is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[5] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[4] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[3] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[2] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[1] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port DIST_IN[0] in module flt_log_lead_zero_encode is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized213 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized213 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized213 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_11_viv__parameterized26 is either unconnected or has no load
+INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized26 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized26 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_11_viv__parameterized26 is either unconnected or has no load
+INFO: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_11_viv__parameterized26 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:27 ; elapsed = 00:01:51 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:28 ; elapsed = 00:01:52 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5166 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/constraints/acoustic_frontend_pipeline_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/constraints/acoustic_frontend_pipeline_ooc.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 198 instances were transformed.
+  FDE => FDRE: 198 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2786.293 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:02 ; elapsed = 00:02:26 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:02 ; elapsed = 00:02:26 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:27 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3936] Found unconnected internal register 'reg_426_reg' and it is trimmed from '32' to '31' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_make_pair_Pipeline_VITIS_LOOP_30_1.v:1956]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'acoustic_frontend_pipeline_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'acoustic_frontend_pipeline_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized3'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'acoustic_frontend_pipeline_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'acoustic_frontend_pipeline_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_audio_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_cache_m_axi_reg_slice__parameterized3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_features_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'acoustic_frontend_pipeline_results_m_axi_reg_slice__parameterized3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:22 ; elapsed = 00:02:47 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/grp_fft1536_burst_vendor_fu_740/grp_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_fu_276/fpext_32ns_64_2_no_dsp_1_U16/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (floating_point_v7_1_21_delay__parameterized2) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsub_32ns_32ns_32_4_full_dsp_1_U124/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsub_32ns_32ns_32_4_full_dsp_1_U124/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsub_32ns_32ns_32_4_full_dsp_1_U124/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsub_32ns_32ns_32_4_full_dsp_1_U124/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (floating_point_v7_1_21_delay__parameterized2) to 'inst/sitofp_32ns_32_4_no_dsp_1_U129/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (floating_point_v7_1_21_delay__parameterized1) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_21_delay__parameterized2) to 'inst/fsqrt_32ns_32ns_32_10_no_dsp_1_U133/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW' (floating_point_v7_1_21_delay__parameterized2) to 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW' (floating_point_v7_1_21_delay__parameterized2) to 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_OVERFLOW' (floating_point_v7_1_21_delay__parameterized2) to 'inst/flog_32ns_32ns_32_9_full_dsp_1_U134/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Debug: swapped A/B pins for adder 0000029B171EB8C0
+DSP Debug: swapped A/B pins for adder 0000029B0F449F60
+DSP Debug: swapped A/B pins for adder 0000029B171EB8C0
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_results_m_axi.v:3559]
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_results_m_axi.v:3580]
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3559]
+INFO: [Synth 8-3936] Found unconnected internal register 'wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_cache_m_axi.v:3580]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '41' to '40' bits. [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/hdl/verilog/acoustic_frontend_pipeline_features_m_axi.v:2731]
+INFO: [Synth 8-3971] The signal "inst/transformed_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-5784] Optimized 24 bits of RAM "in_fifo_U/U_acoustic_frontend_pipeline_fifo_w48_d512_A_ram/mem_reg" due to constant propagation. Old ram width 48 bits, new ram width 24 bits.
+INFO: [Synth 8-3332] Sequential element (shl_ln_reg_399_reg) is unused and will be removed from module acoustic_frontend_pipeline_make_pair.
+INFO: [Synth 8-3332] Sequential element (shl_ln_reg_399_reg__0) is unused and will be removed from module acoustic_frontend_pipeline_make_pair.
+INFO: [Synth 8-3332] Sequential element (shl_ln_reg_399_reg__1) is unused and will be removed from module acoustic_frontend_pipeline_make_pair.
+INFO: [Synth 8-3332] Sequential element (shl_ln32_1_reg_404_reg) is unused and will be removed from module acoustic_frontend_pipeline_make_pair.
+INFO: [Synth 8-3332] Sequential element (shl_ln32_1_reg_404_reg__0) is unused and will be removed from module acoustic_frontend_pipeline_make_pair.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module acoustic_frontend_pipeline_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module acoustic_frontend_pipeline_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/twiddle_address_generator/n512.mux9/use_mux16.use_lut6.sixteen_to_one_mux[8].use_output_reg_and_pipe_reg.reg0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/twiddle_address_generator/n512.mux9/use_mux16.use_lut6.sixteen_to_one_mux[8].use_output_reg_and_pipe_reg.reg1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/cntrl/max_rank_flops[3].max_rank_ff) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre1) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/control/delay_line_for_xk_index/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_0r/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_0i/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_1r/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_flt_non_ssr_fft.xfft_inst/non_floating_point.arch_c.xfft_inst/single_channel.datapath/pe/round.rounder_1i/reg_gate.delay_d_2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_15_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:32 ; elapsed = 00:04:58 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+ Sort Area is acoustic_frontend_pipeline__GB1 gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg_d : 0 0 : 1784 1784 : Used 1 time 100
+ Sort Area is acoustic_frontend_pipeline__GB1 gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg_b : 0 0 : 1089 1089 : Used 1 time 100
+ Sort Area is acoustic_frontend_pipeline__GB0 add_ln30_1_fu_225_p2_2 : 0 0 : 232 232 : Used 1 time 0
+ Sort Area is acoustic_frontend_pipeline__GB0 add_ln30_3_fu_251_p2_4 : 0 0 : 232 232 : Used 1 time 0
+ Sort Area is acoustic_frontend_pipeline__GB0 add_ln30_5_fu_277_p2_6 : 0 0 : 232 232 : Used 1 time 0
+ Sort Area is acoustic_frontend_pipeline__GB0 add_ln30_7_fu_303_p2_8 : 0 0 : 232 232 : Used 1 time 0
+ Sort Area is acoustic_frontend_pipeline__GB0 add_ln30_9_fu_329_p2_9 : 0 0 : 232 232 : Used 1 time 0
+ Sort Area is acoustic_frontend_pipeline__GB0 mul_ln30_reg_364_reg_0 : 0 0 : 176 176 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:43 ; elapsed = 00:05:09 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:51 ; elapsed = 00:05:17 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/results_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/cache_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/audio_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft1536_burst_vendor_fu_740/in_fifo_U/U_acoustic_frontend_pipeline_fifo_w48_d512_A_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft1536_burst_vendor_fu_740/out_fifo_U/U_acoustic_frontend_pipeline_fifo_w80_d512_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_fft1536_burst_vendor_fu_740/out_fifo_U/U_acoustic_frontend_pipeline_fifo_w80_d512_A_ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/samples_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:05 ; elapsed = 00:05:32 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:12 ; elapsed = 00:05:39 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:12 ; elapsed = 00:05:40 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:16 ; elapsed = 00:05:43 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:16 ; elapsed = 00:05:43 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:17 ; elapsed = 00:05:44 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:17 ; elapsed = 00:05:44 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized2_576  | Dynamic               | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3_526  | C+A*B                 | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized2_510  | Dynamic               | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3_460  | C+A*B                 | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_206  | C'+A':B'              | 17     | 18     | 41     | -      | 48     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized4_205  | C'+A':B'              | 14     | 18     | 41     | -      | 48     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp                                  | (C+A*B)'              | 25     | 6      | 0      | -      | 43     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp__parameterized0                  | (C+A*B)'              | 24     | 4      | 4      | -      | 43     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4      | C'+A':B'              | 11     | 18     | 30     | -      | 48     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5_202  | C-(A:B)               | 11     | 18     | 31     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp                                  | (A*B)'                | 21     | 6      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized6_201  | (C+A:B)'              | 8      | 18     | 26     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized6      | (C-(A:B))'            | 7      | 18     | 27     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp                                  | (A*B)'                | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized7      | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized8      | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5      | C+A:B                 | 30     | 18     | 27     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_182                  | A*B                   | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_183  | PCIN>>17+A*B          | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_180  | PCIN+A:B+C            | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_164                  | A*B                   | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_165  | PCIN>>17+A*B          | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_162  | PCIN+A:B+C            | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized2      | Dynamic               | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized3      | C+A*B                 | 24     | 16     | 35     | -      | 35     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper_109                  | A*B                   | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0_110  | PCIN>>17+A*B          | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1_107  | PCIN+A:B+C            | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                      | A*B                   | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized0      | PCIN>>17+A*B          | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1      | PCIN+A:B+C            | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmpy_4_dsp48_mult                    | (C+(A'*B')')'         | 25     | 17     | 19     | -      | 0      | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | Dynamic               | -      | -      | -      | -      | 17     | -    | -    | -    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | Dynamic               | -      | -      | -      | -      | 0      | -    | -    | -    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | (PCIN+((A'')'*B'')')' | 25     | 18     | -      | -      | 44     | 2    | 2    | -    | -    | 1     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | Dynamic               | -      | -      | -      | -      | 0      | -    | -    | -    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | (PCIN+(A''*B'')')'    | 25     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | (PCIN>>17+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|cmpy_4_dsp48_mult                    | Dynamic               | -      | -      | -      | -      | 44     | -    | -    | -    | -    | 1     | 1    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (A'*B)'               | 4      | 15     | -      | -      | 19     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (C+A'*B)'             | 4      | 15     | 12     | -      | 19     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (C+A'*B)'             | 4      | 15     | 13     | -      | 19     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (C+A'*B)'             | 4      | 15     | 14     | -      | 19     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (C+A'*B)'             | 4      | 15     | 14     | -      | 19     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|acoustic_frontend_pipeline_make_pair | (C+A'*B)'             | 4      | 15     | 15     | -      | 19     | 1    | 0    | 0    | -    | -     | 0    | 1    | 
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   822|
+|2     |DSP48E1  |    45|
+|16    |LUT1     |   369|
+|17    |LUT2     |  2065|
+|18    |LUT3     |  3952|
+|19    |LUT4     |  1966|
+|20    |LUT5     |  1916|
+|21    |LUT6     |  4888|
+|22    |MUXCY    |  2560|
+|23    |MUXF7    |   128|
+|24    |MUXF8    |    34|
+|25    |RAMB18E1 |    13|
+|29    |RAMB36E1 |    15|
+|39    |SRL16E   |   763|
+|40    |SRLC32E  |   109|
+|41    |XORCY    |  2192|
+|42    |FDE      |   197|
+|43    |FDRE     | 14859|
+|44    |FDSE     |   175|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:17 ; elapsed = 00:05:44 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:24 ; elapsed = 00:05:19 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+Synthesis Optimization Complete : Time (s): cpu = 00:05:18 ; elapsed = 00:05:45 . Memory (MB): peak = 2786.293 ; gain = 1871.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.782 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6006 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/constraints/acoustic_frontend_pipeline_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/constraints/acoustic_frontend_pipeline_ooc.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 933 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 736 instances
+  FDE => FDRE: 197 instances
+
+Synth Design complete | Checksum: a8221ce9
+INFO: [Common 17-83] Releasing license: Synthesis
+503 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:39 ; elapsed = 00:06:10 . Memory (MB): peak = 2786.293 ; gain = 2113.816
+INFO: [Coretcl 2-1174] Renamed 1208 cell refs.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_ooc/frontend_ooc.gen/sources_1/ip/frontend_hw/frontend_hw.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2786.293 ; gain = 0.000
+INFO: [Vivado 12-3441] generate_netlist_ip - operation complete
+synth_ip: Time (s): cpu = 00:05:58 ; elapsed = 00:06:27 . Memory (MB): peak = 2786.293 ; gain = 2122.316
+# open_run frontend_hw_synth_1
+ERROR: [Common 17-162] Invalid option value specified for 'run'.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 13:23:33 2026...

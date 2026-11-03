@@ -1,0 +1,61 @@
+{
+  "protocolVersion": 2,
+  "kernels": [
+    {
+      "name": "analysis",
+      "top": "analysis_dma_safe",
+      "base": 1151533056,
+      "clockHz": 50000000,
+      "offsets": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "MEMORY_R_DATA": 16,
+        "A_OFFSET_DATA": 24,
+        "B_OFFSET_DATA": 32,
+        "OUT_OFFSET_DATA": 40,
+        "ARENA_WORDS_DATA": 48,
+        "N_DATA": 56,
+        "FRAMES_DATA": 64,
+        "OPERATION_DATA": 72,
+        "DF_DATA": 80,
+        "PARAMETER_R_DATA": 88,
+        "STATUS_DATA": 96,
+        "STATUS_CTRL": 100
+      },
+      "header": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\p18_analysis_extended\\hls\\impl\\ip\\drivers\\analysis_dma_safe_v1_0\\src\\xanalysis_dma_safe_hw.h",
+      "headerSHA256": "c8cd8249f59f431f3cdeecfb7cbd29153e3ec628bab6b47dba8ed9810f6516bb"
+    },
+    {
+      "name": "fft",
+      "top": "analysis_fft2048",
+      "base": 1151598592,
+      "clockHz": 50000000,
+      "offsets": {
+        "AP_CTRL": 0,
+        "GIE": 4,
+        "IER": 8,
+        "ISR": 12,
+        "MEMORY_R_DATA": 16,
+        "ARENA_WORDS_DATA": 24,
+        "INPUT_OFFSET_DATA": 32,
+        "OUTPUT_OFFSET_DATA": 40,
+        "STRIDE_DATA": 48,
+        "MODE_DATA": 56,
+        "STATUS_DATA": 64,
+        "STATUS_CTRL": 68
+      },
+      "header": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\p18_shared_fft\\hls\\impl\\ip\\drivers\\analysis_fft2048_v1_0\\src\\xanalysis_fft2048_hw.h",
+      "headerSHA256": "39ccbddd328db55be86aca804d2073a1300ab14d04bfa60fa7d60ca69945d978"
+    }
+  ],
+  "automaticDOA": false,
+  "actualHardwareCapabilityMask": 0,
+  "algorithmVersion": 0,
+  "wholeBoardAccepted": false,
+  "oldJobBridgeCompatibleWithoutChanges": false,
+  "bridgeRequirement": "CONTROL_MIN=0x44a30000,CONTROL_MAX=0x44a4ffff; read status from kernel+0x60/0x40, not DDR; DDR is unreachable from JOB",
+  "arenaUnits": "float32 words",
+  "pointers": "32bit physical DMA addresses, not process virtual pointers"
+}

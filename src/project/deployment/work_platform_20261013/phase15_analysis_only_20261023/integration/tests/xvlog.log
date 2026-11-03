@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/control/fft_event_features.sv" into library work
+INFO: [VRFC 10-311] analyzing module fft_event_features
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_fft_event_features.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_fft_event_features
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/analysis_scheduler.sv" into library work
+INFO: [VRFC 10-311] analyzing module analysis_scheduler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/stream_job_bridge.sv" into library work
+INFO: [VRFC 10-311] analyzing module stream_job_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_scheduler_syscall.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_scheduler_syscall
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_stream_job_bridge.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_stream_job_bridge

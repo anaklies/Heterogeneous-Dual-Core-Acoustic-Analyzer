@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Oct 23 08:17:23 2026
+# Process ID         : 11916
+# Current directory  : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/event_detector_sim/xsim_script.tcl}
+# Log file           : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event/xsim.log
+# Journal file       : C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event\xsim.jou
+# Running On         : chuan
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13980HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36107 MB
+# Available Virtual  : 19955 MB
+#-----------------------------------------------------------
+source xsim.dir/event_detector_sim/xsim_script.tcl
+# xsim {event_detector_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS event_power_detector checks=36 starts=3 sticky_fault=0f
+$finish called at time : 980 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event/tb_event_power_detector.sv" Line 87
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 23 08:17:24 2026...

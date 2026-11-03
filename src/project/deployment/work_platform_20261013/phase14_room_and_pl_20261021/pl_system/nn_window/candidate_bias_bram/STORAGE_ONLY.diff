@@ -1,0 +1,17 @@
+--- candidate_bias/srpdnn_bias.cpp
++++ candidate_bias_bram/srpdnn_bias.cpp
+@@ -107,6 +107,14 @@
+                      int input_fraction,FixedStats *stats,FixedStage stage,int activation)
+ {
+ #pragma HLS INLINE off
++// Each bias lane reads its own small distributed ROM bank.
++#pragma HLS ARRAY_PARTITION variable=W_GRU_BIAS_IH_L0 cyclic factor=12 dim=1
++#pragma HLS BIND_STORAGE variable=W_GRU_BIAS_IH_L0 type=rom_1p impl=lutram
++#pragma HLS ARRAY_PARTITION variable=W_GRU_BIAS_HH_L0 cyclic factor=12 dim=1
++#pragma HLS BIND_STORAGE variable=W_GRU_BIAS_HH_L0 type=rom_1p impl=lutram
++#pragma HLS ARRAY_PARTITION variable=W_PHASE_BIAS cyclic factor=12 dim=1
++#pragma HLS BIND_STORAGE variable=W_PHASE_BIAS type=rom_1p impl=lutram
++
+     int weight_fraction=0,bias_fraction=0;
+     switch(kind){
+         case 0:weight_fraction=W_POINT_WEIGHT_FRAC;bias_fraction=W_POINT_BIAS_FRAC;break;

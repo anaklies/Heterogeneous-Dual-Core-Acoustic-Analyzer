@@ -1,0 +1,73 @@
+Review this single RTL event recorder for concrete correctness bugs only. No tools. It switches two reserved DDR rings only after writer drain/legal config accepted, pins old bank until matching release id, marks gaps, drops new clips if no free bank. Return at most 500 words, no rewrite. Code follows:
+`timescale 1ns/1ps
+// Two reserved DDR rings: seal only after writer drains, then switch banks.
+// writer_cfg_accepted must certify a legal raw-writer configuration, never tie high.
+module event_recorder #(parameter PRE=96000,POST=144000,MAX_SAMPLES=384000)(
+ input wire clk,rst_n,enable,sample_valid,event_start,
+ input wire [63:0] event_sample,last_committed,
+ input wire [31:0] committed,next_offset,writer_drops,
+ input wire [31:0] bank0_base,bank1_base,bank_bytes,reserved_low,reserved_high,
+ output wire writer_enable,writer_cfg_valid,input wire writer_cfg_ready,writer_cfg_accepted,
+ output wire [31:0] writer_cfg_base,writer_cfg_bytes,
+ input wire release_valid,release_bank,input wire [31:0] release_id,
+ output reg descriptor_valid,input wire descriptor_ready,
+ output reg descriptor_bank,output reg [31:0] descriptor_id,descriptor_start_offset,descriptor_frames,
+ output reg [63:0] descriptor_first,descriptor_last,
+ output reg descriptor_incomplete,output reg [1:0] leased,
+ output reg [31:0] lost_events,handoff_drops,output reg fault
+);
+ localparam INIT=0,RUN=1,POSTROLL=2,SWITCH=3;
+ reg [1:0] state;reg current,target;
+ reg [63:0] wanted_first,deadline,max_end;
+ reg [31:0] drop_at_start,ids[0:1],counter;
+ reg gap;wire [31:0] target_base=target?bank1_base:bank0_base;
+ wire legal=bank_bytes>=4096&&(bank_bytes&(bank_bytes-1))==0&&bank_bytes/32>=MAX_SAMPLES&&
+ bank0_base[11:0]==0&&bank1_base[11:0]==0&&bank0_base>=reserved_low&&bank1_base>=reserved_low&&
+ {1'b0,bank0_base}+bank_bytes<={1'b0,reserved_high}&&{1'b0,bank1_base}+bank_bytes<={1'b0,reserved_high}&&
+ (bank0_base>=bank1_base+{1'b0,bank_bytes}||bank1_base>=bank0_base+{1'b0,bank_bytes});
+ assign writer_enable=enable&&!fault&&(state==RUN||state==POSTROLL);
+ assign writer_cfg_valid=enable&&!fault&&legal&&(state==INIT||state==SWITCH);
+ assign writer_cfg_base=target_base;assign writer_cfg_bytes=bank_bytes;
+ reg [63:0] requested;reg [31:0] frames;
+ initial if(PRE<0||POST<1||PRE+POST+1>MAX_SAMPLES)$fatal(1,"invalid clip duration");
+ always @(posedge clk)begin
+  if(!rst_n)begin state<=INIT;current<=0;target<=0;wanted_first<=0;deadline<=0;max_end<=0;drop_at_start<=0;gap<=0;leased<=0;counter<=0;ids[0]<=0;ids[1]<=0;descriptor_valid<=0;descriptor_bank<=0;descriptor_id<=0;descriptor_start_offset<=0;descriptor_frames<=0;descriptor_first<=0;descriptor_last<=0;descriptor_incomplete<=0;lost_events<=0;handoff_drops<=0;fault<=0;end
+  else begin
+   if(descriptor_valid&&descriptor_ready)descriptor_valid<=0;
+   if(release_valid&&leased[release_bank]&&ids[release_bank]==release_id)leased[release_bank]<=0;
+   if(enable&&!legal)fault<=1;
+   if((state==INIT||state==SWITCH)&&sample_valid&&enable)begin handoff_drops<=handoff_drops+1;gap<=1;end
+   if(writer_cfg_accepted&&writer_cfg_valid&&writer_cfg_ready)begin
+    if(state==SWITCH)begin
+     requested=last_committed>=wanted_first?last_committed-wanted_first+1:0;
+     frames=requested>committed?committed:requested;
+     if(frames>bank_bytes/32)frames=bank_bytes/32;
+     if(counter==32'hffffffff||descriptor_valid)begin fault<=1;end
+     else begin
+      descriptor_valid<=1;descriptor_bank<=current;descriptor_id<=counter;ids[current]<=counter;counter<=counter+1;
+      descriptor_frames<=frames;descriptor_start_offset<=(next_offset-frames*32)&(bank_bytes-1);
+      descriptor_last<=last_committed;descriptor_first<=frames?last_committed-frames+1:last_committed;
+      descriptor_incomplete<=gap||writer_drops!=drop_at_start||frames!=requested||frames==0;
+      leased[current]<=1;
+     end
+    end
+    current<=target;state<=RUN;gap<=0;
+   end
+   if(state==RUN&&enable&&event_start)begin
+    if(event_sample>64'hffffffffffffffff-MAX_SAMPLES)lost_events<=lost_events+1;
+    else begin wanted_first<=event_sample>=PRE?event_sample-PRE:0;deadline<=event_sample+POST;
+     max_end<=(event_sample>=PRE?event_sample-PRE:0)+MAX_SAMPLES-1;drop_at_start<=writer_drops;gap<=0;state<=POSTROLL;end
+   end
+   if(state==POSTROLL)begin
+    if(!enable)begin lost_events<=lost_events+1;state<=RUN;end
+    else if(event_start)begin
+     if(event_sample<=64'hffffffffffffffff-POST)deadline<=event_sample+POST>max_end?max_end:event_sample+POST;
+    end else if(last_committed>=deadline)begin
+     if(leased[!current]||descriptor_valid)begin lost_events<=lost_events+1;state<=RUN;end
+     else begin target<=!current;state<=SWITCH;end
+    end
+   end
+  end
+ end
+endmodule
+

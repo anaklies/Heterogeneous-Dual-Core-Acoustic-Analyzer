@@ -1,0 +1,443 @@
+{
+  "version": "phase14-noise/1",
+  "reusedRoomCases": 6,
+  "newIndependentRoomValidation": false,
+  "scope": "finite mixed-signal measurement and gain-ratio validation,not source separation or roomcertification",
+  "rows": [
+    {
+      "case": "Mroom0_0",
+      "inputSHA256": "bb9b9a29cfaa8c28020f93a57b2c25e431dea2e522f8996b4ddf7c4c6eab97e2",
+      "category": "dorm",
+      "kind": "speech",
+      "weightingLevelsDBFS": {
+        "A": [
+          -38.84952496438642,
+          -39.495052618681314,
+          -38.64717737676902,
+          -38.81386862577232,
+          -40.67412243747266,
+          -40.01994905856886
+        ],
+        "C": [
+          -37.293357691667836,
+          -37.93536242632133,
+          -37.198720993430186,
+          -37.67321066447296,
+          -39.40092960866306,
+          -38.83347193496652
+        ],
+        "Z": [
+          -37.25236406777716,
+          -37.88917414514067,
+          -37.157651162908145,
+          -37.62071183898983,
+          -39.32440623210598,
+          -38.762031243390595
+        ]
+      },
+      "relative10DBMaximumError": 8.881784197001252e-15,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 80.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 1000.0,
+        "minimumMarginDB": 0.9018402571519886,
+        "bandLevelsDBSPL": [
+          40.12357962370538,
+          49.42043825420812,
+          67.56705776673223,
+          69.07661295386626,
+          80.08487881686246,
+          79.09815974284801,
+          67.97637418748593,
+          60.19154305712305,
+          56.913029526390815
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.04928220000147121
+    },
+    {
+      "case": "Mroom0_1",
+      "inputSHA256": "1553e7c6e0bc3f760e1c2ab5be1607b663f0b3d5f204b539215bbf0a23f280f3",
+      "category": "dorm",
+      "kind": "broad",
+      "weightingLevelsDBFS": {
+        "A": [
+          -36.71163075750338,
+          -37.737185245954606,
+          -36.96863481618951,
+          -36.60284907297697,
+          -37.66360865193505,
+          -36.88421926316829
+        ],
+        "C": [
+          -37.991124357653696,
+          -39.00233099623041,
+          -38.22326613797806,
+          -37.915083008739835,
+          -39.007291044681125,
+          -38.18463399668256
+        ],
+        "Z": [
+          -36.75776420121292,
+          -37.78735651191529,
+          -37.018825610652726,
+          -36.69970753998818,
+          -37.80920224642231,
+          -36.98142461961849
+        ]
+      },
+      "relative10DBMaximumError": 1.687538997430238e-13,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 84.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 8000.0,
+        "minimumMarginDB": 0.7412447610389279,
+        "bandLevelsDBSPL": [
+          4.29716927423847,
+          28.801771654620225,
+          52.818584251320985,
+          65.91506622517535,
+          70.32979584461245,
+          70.475875701728,
+          76.18945778749523,
+          78.83197013201347,
+          77.75875523896107
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.04846640000323532
+    },
+    {
+      "case": "Mroom1_0",
+      "inputSHA256": "031c3c8d404ae7c9bf42da1156bffa5ea27324433a1f3061c608b4a65bf37fdb",
+      "category": "office",
+      "kind": "speech",
+      "weightingLevelsDBFS": {
+        "A": [
+          -37.761597192813745,
+          -39.33146252267971,
+          -36.63896101375796,
+          -39.90400717925869,
+          -40.82548835001675,
+          -37.694526019414496
+        ],
+        "C": [
+          -34.51683588412384,
+          -36.652854735214355,
+          -33.54372388461412,
+          -37.018779530883606,
+          -38.42607063645222,
+          -34.59775270144996
+        ],
+        "Z": [
+          -34.47111314539751,
+          -36.561751109240305,
+          -33.511932740522894,
+          -36.91486187722117,
+          -38.28050859798946,
+          -34.5502462086188
+        ]
+      },
+      "relative10DBMaximumError": 1.0658141036401503e-13,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 83.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 500.0,
+        "minimumMarginDB": 0.23309294371107114,
+        "bandLevelsDBSPL": [
+          2.949117190526181,
+          12.106052253724016,
+          62.88710327369458,
+          73.54431601357028,
+          85.36690705628892,
+          69.43518216176928,
+          67.77476226767516,
+          70.34160251594494,
+          69.04250519248092
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.05426820000138832
+    },
+    {
+      "case": "Mroom1_1",
+      "inputSHA256": "87f6bcebf06a1ed8c6a469ccb2da37b745a0c22f46185350d593c098640f4ed7",
+      "category": "office",
+      "kind": "broad",
+      "weightingLevelsDBFS": {
+        "A": [
+          -36.40586726379328,
+          -37.292487752772644,
+          -36.67395434382391,
+          -36.26714342423523,
+          -37.34429070421559,
+          -36.652578458913034
+        ],
+        "C": [
+          -37.64762758033558,
+          -38.546115999211054,
+          -37.93302064735694,
+          -37.55211533081548,
+          -38.63573303508651,
+          -37.95106451267459
+        ],
+        "Z": [
+          -36.46769882652655,
+          -37.366546396918,
+          -36.73380771289356,
+          -36.43145135981862,
+          -37.47307674454511,
+          -36.76025249498095
+        ]
+      },
+      "relative10DBMaximumError": 8.704148513061227e-14,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 84.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 8000.0,
+        "minimumMarginDB": 0.49278418220657727,
+        "bandLevelsDBSPL": [
+          9.102628072260117,
+          28.577475113751547,
+          51.225288905748585,
+          66.88695843779152,
+          71.14189092094591,
+          71.10499526643233,
+          76.75260003965923,
+          78.96911894272932,
+          78.00721581779342
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.0668463999973028
+    },
+    {
+      "case": "Mroom2_0",
+      "inputSHA256": "4b4da3c71f0c6ce8a9eb1cb60ac9a3ca60b4395b0075cd70794898b5f389a602",
+      "category": "classroom",
+      "kind": "speech",
+      "weightingLevelsDBFS": {
+        "A": [
+          -39.406872030153714,
+          -40.24733699161088,
+          -39.29036537087538,
+          -39.384341621158825,
+          -40.98642062592144,
+          -38.99793671997756
+        ],
+        "C": [
+          -36.78370453897083,
+          -38.048263480281705,
+          -36.60252663429172,
+          -37.86582918823936,
+          -39.72653477047747,
+          -37.28564368209667
+        ],
+        "Z": [
+          -36.71412348876895,
+          -37.95553058541204,
+          -36.53634127632847,
+          -37.75225466480724,
+          -39.562786746903015,
+          -37.19132537868972
+        ]
+      },
+      "relative10DBMaximumError": 1.865174681370263e-13,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 79.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 500.0,
+        "minimumMarginDB": 0.3519746890834341,
+        "bandLevelsDBSPL": [
+          -2.4997313644180394,
+          6.938408940883377,
+          71.17420615164737,
+          75.31820233345402,
+          81.34802531091657,
+          74.19537686116401,
+          71.97334543337904,
+          69.20412284077743,
+          66.9217064506235
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.06337050000001909
+    },
+    {
+      "case": "Mroom2_1",
+      "inputSHA256": "0bc9cb3b2f80549a8f06ef1059b8f8759e3bbf5be73aae5f6dd4562dac7af606",
+      "category": "classroom",
+      "kind": "broad",
+      "weightingLevelsDBFS": {
+        "A": [
+          -37.044253999858135,
+          -38.18435968826873,
+          -37.182673479954055,
+          -37.094532496115434,
+          -38.14357604973769,
+          -37.22012472146144
+        ],
+        "C": [
+          -38.34163628602246,
+          -39.442871823618006,
+          -38.45531540684042,
+          -38.44052251070399,
+          -39.458040793970326,
+          -38.53293283831671
+        ],
+        "Z": [
+          -37.14760111154355,
+          -38.2647164086405,
+          -37.27172732233226,
+          -37.241680553984686,
+          -38.28229853426089,
+          -37.35700234041204
+        ]
+      },
+      "relative10DBMaximumError": 1.4033219031261979e-13,
+      "finiteWeightingAndTimeResponses": true,
+      "nominalNR": {
+        "valid": true,
+        "rating": 83.0,
+        "family": "NR",
+        "estimated": true,
+        "criticalBandHz": 8000.0,
+        "minimumMarginDB": 0.21940410320678438,
+        "bandLevelsDBSPL": [
+          7.0153333620520755,
+          27.532901040100825,
+          50.26962748760171,
+          65.07823027289925,
+          69.92421473090997,
+          70.34190832298594,
+          76.3547567308354,
+          78.5250762182173,
+          77.28059589679322
+        ],
+        "reference": "ArupStrutt ISO R1996 coefficients; https://strutt.arup.com/help/Curves/NRCurve.htm",
+        "belowLowestCurve": false,
+        "instrumentCertified": false
+      },
+      "CPUSeconds": 0.05338080000365153
+    }
+  ],
+  "weightingResponses": {
+    "A": {
+      "frequencyHz": [
+        31.5,
+        63.0,
+        125.0,
+        250.0,
+        500.0,
+        1000.0,
+        2000.0,
+        4000.0,
+        8000.0,
+        16000.0
+      ],
+      "digitalMinusAnalogDB": [
+        -0.004372338200340664,
+        -0.004308286975795994,
+        -0.0041222130547744484,
+        -0.003576905454705681,
+        -0.00214068830178471,
+        -4.446474604231956e-05,
+        -0.0009366047922412246,
+        -0.03777667828883191,
+        -0.5443245345558787,
+        -6.434247296741366
+      ],
+      "maximumError31HzTo8kDB": 0.5443245345558787,
+      "errorAt16kDB": -6.434247296741366
+    },
+    "C": {
+      "frequencyHz": [
+        31.5,
+        63.0,
+        125.0,
+        250.0,
+        500.0,
+        1000.0,
+        2000.0,
+        4000.0,
+        8000.0,
+        16000.0
+      ],
+      "digitalMinusAnalogDB": [
+        0.00016481539254220579,
+        0.00016694907750058885,
+        0.0001676492160691545,
+        0.00016724558815813429,
+        0.00015753463576647503,
+        1.8581121172327586e-06,
+        -0.0024562261151629128,
+        -0.03984837386157225,
+        -0.5464118459779566,
+        -6.435662773504513
+      ],
+      "maximumError31HzTo8kDB": 0.5464118459779566,
+      "errorAt16kDB": -6.435662773504513
+    },
+    "Z": {
+      "frequencyHz": [
+        31.5,
+        63.0,
+        125.0,
+        250.0,
+        500.0,
+        1000.0,
+        2000.0,
+        4000.0,
+        8000.0,
+        16000.0
+      ],
+      "digitalMinusAnalogDB": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximumError31HzTo8kDB": 0.0,
+      "errorAt16kDB": 0.0
+    }
+  },
+  "builtinNR": true,
+  "builtinNCOrdinateTable": true,
+  "rawDBFSRatingRejected": true,
+  "nominalSensitivityUncalibrated": true,
+  "hardwareValidated": false,
+  "NCReference": "Crystal Instruments2018 traditional63Hz–8kHz NC15–70 step5",
+  "NCSyntheticValidation": "NC35 exactcurve->35; NC35+.1dB->40; uncalibratedrawFS rejected; see pytest"
+}

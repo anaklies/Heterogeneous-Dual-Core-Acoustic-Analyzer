@@ -1,0 +1,144 @@
+{
+  "status": "NATIVE_STAGE_TESTS_PASS_NOT_AUTONOMOUS_OR_REALTIME",
+  "checks": [
+    {
+      "name": "band0_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band1_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band2_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band3_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band4_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band5_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "band6_11SOS",
+      "values": 257,
+      "chunks": 696,
+      "maxAbs": 0.0,
+      "instructions": 208
+    },
+    {
+      "name": "exact_decimator_LS_coefficient0",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 3.4025383899294326e-10,
+      "instructions": 21
+    },
+    {
+      "name": "exact_decimator_LS_coefficient1",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 8.43413971621243e-07,
+      "instructions": 21
+    },
+    {
+      "name": "exact_decimator_LS_coefficient2",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 1.9418380577118644e-07,
+      "instructions": 21
+    },
+    {
+      "name": "exact_decimator_LS_coefficient3",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 1.205378028744375e-07,
+      "instructions": 21
+    },
+    {
+      "name": "exact_decimator_LS_coefficient4",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 6.679220718175394e-11,
+      "instructions": 21
+    },
+    {
+      "name": "exact_decimator_LS_coefficient5",
+      "values": 1,
+      "chunks": 6301,
+      "maxAbs": 7.095803632173325e-10,
+      "instructions": 21
+    },
+    {
+      "name": "short_record_invalid_False",
+      "values": 1,
+      "chunks": 1,
+      "instructions": 6
+    },
+    {
+      "name": "short_record_invalid_True",
+      "values": 1,
+      "chunks": 1,
+      "instructions": 6
+    },
+    {
+      "name": "full15sec_PL_capture_scan",
+      "values": 1440000,
+      "chunks": 112501,
+      "instructions": 13
+    },
+    {
+      "name": "clipped_capture_rejected",
+      "values": 1,
+      "chunks": 28126,
+      "instructions": 13
+    },
+    {
+      "name": "14_MTF_ratio_validation",
+      "values": 15,
+      "chunks": 6,
+      "instructions": 408
+    }
+  ],
+  "exact_frozen_definition": "9 SOS octave + square +2 SOS40Hz + scipy4801tap240decimator +trim60 +joint6LS",
+  "host_signal_DSP": false,
+  "host_configuration": "SOS and six adjoint regression weight pages; no measured data used in coefficient construction",
+  "input": "two normalized mono captured traces, reference and observation, staged in private DDR",
+  "stages": "perband/trace11SOS pass then six regression dot passes, finally14MTF validator and existing PL combiner",
+  "orchestration": "PS/PC uploads coefficient pages and submits completed jobs; not autonomous whole-chain PL yet",
+  "max_supported_seconds": 19.070666666666668,
+  "estimated_15sec_instructions": 2570400000,
+  "estimated_15sec_min_chunks": 40162500,
+  "limitations": [
+    "No15secondfull waveform Native test; stage tests only",
+    "Notlive; async P2 only; P0 maycontinue between bounded64instructionchunks",
+    "NoIEC certification or calibrated masking",
+    "PL clip/finite scan and metadata confirmation precede recipe; controller integration pending",
+    "Single selected microphone; no source separation",
+    "19s limit from4Mwordarena;60s requires future capture replay"
+  ],
+  "fpga": "Shared scalar arithmetic; no additional synthesized resource claim; massive DDR/config paging traffic"
+}

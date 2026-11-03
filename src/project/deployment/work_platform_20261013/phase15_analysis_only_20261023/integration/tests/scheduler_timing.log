@@ -1,0 +1,19 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 23 14:55:26 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/scheduler_timing/xsim_script.tcl
+# xsim {scheduler_timing} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+MEASURED_BUDGET_CONTROL_PASS windows=12 publications=6 FFTjobs=72 max_publication_cycles=4265800 max_processing_cycles=1267723 P1chunks=9 P2chunks=3 reported_slow_consumer_overwrites=11
+$finish called at time : 511896140 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_scheduler_timing.sv" Line 84
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 219.020 ; gain = 0.000
+exit
+INFO: xsimkernel Simulation Memory Usage: 11580 KB (Peak: 11580 KB), Simulation CPU Usage: 11624 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 23 14:55:39 2026...

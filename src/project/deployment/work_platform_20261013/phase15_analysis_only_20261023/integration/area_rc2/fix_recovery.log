@@ -1,0 +1,426 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 24 20:26:20 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/area_rc2/fix_rc1_recovery.tcl
+# set here [file dirname [file normalize [info script]]]
+# set root [file normalize $here/../../../../..]
+# set project $root/tmp/p28_recovery_fix/instrument_board
+# set out $root/deployment/releases/SixMic3D_PL_Analysis_RC1_RecoveryFix_20261024
+# file mkdir $out/hardware
+# open_project $project/instrument_board.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-12620-chuan/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.ipdefs/vendor_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.srcs/sources_1/bd/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.srcs/sources_1/bd/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+design_1_unused_buttons_0
+design_1_recovery_disabled_0
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 603.949 ; gain = 270.449
+# set rom [get_files -all *stream_fft2048_HANN2048_ROM_AUTO_1R.v]
+# if {[llength $rom]!=1} {error "Expected one original FFT ROM module"}
+# set dat [file normalize [file dirname [lindex $rom 0]]/stream_fft2048_HANN2048_ROM_AUTO_1R.dat]
+# if {![string match "[string tolower $project]/*" [string tolower $dat]]} {error "Data copy must remain inside private project"}
+# file copy -force $here/stream_fft2048_HANN2048_ROM_AUTO_1R.dat $dat
+# add_files $dat
+# archive_project -force $out/hardware/recoverable_project.zip
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan' for archiving project
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.ipdefs/vendor_ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+WARNING: [IP_Flow 19-12246] XCI file 'c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.srcs/sources_1/bd/vendor_bd/ip/design_1_axis_subset_converter_0_0/design_1_axis_subset_converter_0_0.xci' contents have changed since it was last written.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.srcs/sources_1/bd/vendor_bd/design_1.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_1_xlconcat_0_0
+design_1_xlconstant_0_0
+design_1_lcd_zero_0
+design_1_lcd_gpio_zero_0
+design_1_unused_buttons_0
+design_1_recovery_disabled_0
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/b16a/hdl/axi_vip_v1_1_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_local_params.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_reg_params.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_reg_init.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_apis.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_unused_ports.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_gp.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_acp.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_hp.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_aw_atc.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_b_atc.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_w_atc.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_atc.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_trace_buffer.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_24.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/434f/hdl/axis_infrastructure_v1_1_1.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/be12/hdl/axis_register_slice_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/5e96/hdl/axis_subset_converter_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/c219/hdl/v_tc_v6_2_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/fd54/hdl/v_tc_v6_1_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4705/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d1ca/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/mmcme2_drp.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/axi_dynclk_S00_AXI.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/axi_dynclk.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/ClockGen.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/SyncAsync.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/SyncAsyncReset.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/DVI_Constants.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/OutputSERDES.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/TMDS_Encoder.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/rgb2dvi.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh
+INFO: [IP_Flow 19-7005] Skipping external file c:/Users/sunxi/Desktop/sixmic3D/tmp/p28_recovery_fix/instrument_board/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv
+INFO: [Common 17-14] Message 'IP_Flow 19-7005' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.cache/ip 
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'assign' [c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.srcs/sources_1/imports/sixmic3D/tmp/p20_stream_fft/hls/impl/ip/hdl/verilog/stream_fft2048_hls_deadlock_detector.vh:4]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'always' [c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.srcs/sources_1/imports/sixmic3D/tmp/p20_stream_fft/hls/impl/ip/hdl/verilog/stream_fft2048_hls_deadlock_report_unit.vh:21]
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_detect_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_done_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'origin_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_in_vec_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'reported_proc'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_detect_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_done_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'origin_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'dl_in_vec_reg'
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'PROC_NUM' by 3 for port or parameter 'reported_proc'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk_compute' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk_compute' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk_audio' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk_audio' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RAW' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RAW' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'WIN' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'WIN' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'FFT' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'FFT' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'SCALAR' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'SCALAR' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'FEATURE' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'FEATURE' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'HOST' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'HOST' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq' of definition 'xilinx.com:signal:interrupt:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'irq' of definition 'xilinx.com:signal:interrupt:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk_compute': Added interface parameter 'ASSOCIATED_BUSIF' with value 'RAW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk_compute': Added interface parameter 'ASSOCIATED_RESET' with value 'rst_n'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk_compute': Added interface parameter 'FREQ_HZ' with value '50000000'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk_audio': Added interface parameter 'FREQ_HZ' with value '49162011'.
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'ADDR_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'READ_WRITE_MODE' with value 'WRITE_ONLY'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'MAX_BURST_LENGTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'RAW': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'ADDR_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'READ_WRITE_MODE' with value 'WRITE_ONLY'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'MAX_BURST_LENGTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'WIN': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'ADDR_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'MAX_BURST_LENGTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FFT': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'ADDR_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'MAX_BURST_LENGTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'SCALAR': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'ADDR_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'READ_WRITE_MODE' with value 'READ_ONLY'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'HAS_BURST' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'MAX_BURST_LENGTH' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'FEATURE': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'DATA_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'ADDR_WIDTH' with value '12'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'HAS_BURST' with value '0'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'MAX_BURST_LENGTH' with value '16'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'HOST': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+INFO: [IP_Flow 19-4728] Bus Interface 'irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_compute' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'clk_audio' has a fixed FREQ_HZ of '49162011'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk_audio' does not have any bus interfaces associated with it.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/b16a/hdl/axi_vip_v1_1_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_local_params.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_reg_params.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_reg_init.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_apis.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_unused_ports.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_gp.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_acp.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9a25/hdl/processing_system7_vip_v1_0_24_axi_hp.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_aw_atc.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_b_atc.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_w_atc.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_atc.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4b52/hdl/verilog/processing_system7_v5_5_trace_buffer.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_24.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/7e8c/hdl/axi_vdma_v6_3_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/434f/hdl/axis_infrastructure_v1_1_1.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/be12/hdl/axis_register_slice_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/5e96/hdl/axis_subset_converter_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/c219/hdl/v_tc_v6_2_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/fd54/hdl/v_tc_v6_1_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4705/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d1ca/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/mmcme2_drp.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/axi_dynclk_S00_AXI.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/8f77/src/axi_dynclk.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/ClockGen.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/SyncAsync.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/SyncAsyncReset.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/DVI_Constants.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/OutputSERDES.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/TMDS_Encoder.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/4399/src/rgb2dvi.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f084/hdl/axi_crossbar_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/simulation/fifo_generator_vlog_beh.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/42f3/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d654/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/fb46/hdl/axi_data_fifo_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0271/hdl/axi_gpio_v2_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/0848/hdl/sc_switchboard_v1_0_vl_rfs.sv' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_constants_noc.vh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/verilog/sc_util_v1_0_4_structs.svh' does not exist
+WARNING: [Coretcl 2-52] File 'c:/Users/sunxi/Desktop/sixmic3D/.Xil/Vivado-34052-chuan/PrjAr/_X_/instrument_board.gen/sources_1/vendor_bd/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv' does not exist
+INFO: [Common 17-14] Message 'Coretcl 2-52' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/sunxi/Desktop/sixmic3D/deployment/releases/SixMic3D_PL_Analysis_RC1_RecoveryFix_20261024/hardware/recoverable_project.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+archive_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:32 . Memory (MB): peak = 711.805 ; gain = 107.855
+# puts RC1_RECOVERY_DEPENDENCY_FIXED
+RC1_RECOVERY_DEPENDENCY_FIXED
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 24 20:27:04 2026...

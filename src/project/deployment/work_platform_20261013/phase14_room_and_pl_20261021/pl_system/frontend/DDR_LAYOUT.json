@@ -1,0 +1,162 @@
+{
+  "abi": 1,
+  "arenaMinimumBytes": 8388608,
+  "alignmentBytes": 4096,
+  "maximumBase": 1065353216,
+  "linuxReservationImplemented": false,
+  "upstreamSlotPoolImplemented": false,
+  "pcmRingGatherImplemented": false,
+  "regions": [
+    {
+      "name": "pcm_slot0",
+      "offset": 0,
+      "bytes": 282624,
+      "owner": "capture -> frontend; immutable until frontend completion/drain"
+    },
+    {
+      "name": "feature_slot0",
+      "offset": 1048576,
+      "bytes": 306180,
+      "owner": "frontend -> NN; release only after NN completion/drain"
+    },
+    {
+      "name": "vector_slot0",
+      "offset": 2097152,
+      "bytes": 7560,
+      "owner": "NN -> decoder; release only after decoder completion/drain"
+    },
+    {
+      "name": "nn_meta_slot0",
+      "offset": 2121728,
+      "bytes": 184,
+      "owner": "NN -> dispatcher"
+    },
+    {
+      "name": "nn_debug_slot0",
+      "offset": 2162688,
+      "bytes": 153152,
+      "owner": "NN phase/support/logits; optional diagnostic output"
+    },
+    {
+      "name": "doa_result_slot0",
+      "offset": 3407872,
+      "bytes": 128,
+      "owner": "decoder -> pose/mailbox"
+    },
+    {
+      "name": "pcm_slot1",
+      "offset": 327680,
+      "bytes": 282624,
+      "owner": "capture -> frontend; immutable until frontend completion/drain"
+    },
+    {
+      "name": "feature_slot1",
+      "offset": 1376256,
+      "bytes": 306180,
+      "owner": "frontend -> NN; release only after NN completion/drain"
+    },
+    {
+      "name": "vector_slot1",
+      "offset": 2105344,
+      "bytes": 7560,
+      "owner": "NN -> decoder; release only after decoder completion/drain"
+    },
+    {
+      "name": "nn_meta_slot1",
+      "offset": 2121984,
+      "bytes": 184,
+      "owner": "NN -> dispatcher"
+    },
+    {
+      "name": "nn_debug_slot1",
+      "offset": 2359296,
+      "bytes": 153152,
+      "owner": "NN phase/support/logits; optional diagnostic output"
+    },
+    {
+      "name": "doa_result_slot1",
+      "offset": 3411968,
+      "bytes": 128,
+      "owner": "decoder -> pose/mailbox"
+    },
+    {
+      "name": "pcm_slot2",
+      "offset": 655360,
+      "bytes": 282624,
+      "owner": "capture -> frontend; immutable until frontend completion/drain"
+    },
+    {
+      "name": "feature_slot2",
+      "offset": 1703936,
+      "bytes": 306180,
+      "owner": "frontend -> NN; release only after NN completion/drain"
+    },
+    {
+      "name": "vector_slot2",
+      "offset": 2113536,
+      "bytes": 7560,
+      "owner": "NN -> decoder; release only after decoder completion/drain"
+    },
+    {
+      "name": "nn_meta_slot2",
+      "offset": 2122240,
+      "bytes": 184,
+      "owner": "NN -> dispatcher"
+    },
+    {
+      "name": "nn_debug_slot2",
+      "offset": 2555904,
+      "bytes": 153152,
+      "owner": "NN phase/support/logits; optional diagnostic output"
+    },
+    {
+      "name": "doa_result_slot2",
+      "offset": 3416064,
+      "bytes": 128,
+      "owner": "decoder -> pose/mailbox"
+    },
+    {
+      "name": "stft_bank0",
+      "offset": 3145728,
+      "bytes": 81648,
+      "owner": "frontend only; swap after accepted completion"
+    },
+    {
+      "name": "stft_meta0",
+      "offset": 3309568,
+      "bytes": 64,
+      "owner": "frontend/dispatcher; commit is not an AXI fence"
+    },
+    {
+      "name": "stft_bank1",
+      "offset": 3227648,
+      "bytes": 81648,
+      "owner": "frontend only; swap after accepted completion"
+    },
+    {
+      "name": "stft_meta1",
+      "offset": 3309632,
+      "bytes": 64,
+      "owner": "frontend/dispatcher; commit is not an AXI fence"
+    },
+    {
+      "name": "magnitude_scratch",
+      "offset": 3313664,
+      "bytes": 40824,
+      "owner": "one frontend job only"
+    },
+    {
+      "name": "quantized_log_scratch",
+      "offset": 3358720,
+      "bytes": 20412,
+      "owner": "one frontend job only"
+    },
+    {
+      "name": "nominal_doa_templates",
+      "offset": 4194304,
+      "bytes": 2320920,
+      "owner": "read only after verified upload; nominal sound speed"
+    }
+  ],
+  "note": "Layout is a PL/PS integration contract, not an allocated Linux DMA region. frontend_lease owns only STFT banks."
+}

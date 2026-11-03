@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/pl/board/i2s_timing_gen.v" into library work
+INFO: [VRFC 10-311] analyzing module i2s_timing_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/pl/board/i2s_rx_6ch.v" into library work
+INFO: [VRFC 10-311] analyzing module i2s_rx_6ch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/sample_cdc.sv" into library work
+INFO: [VRFC 10-311] analyzing module sample_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/pcm_capture.sv" into library work
+INFO: [VRFC 10-311] analyzing module pcm_capture
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/window_pool.sv" into library work
+INFO: [VRFC 10-311] analyzing module window_pool
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/window_dma.sv" into library work
+INFO: [VRFC 10-311] analyzing module window_dma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_capture_window.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_capture_window
+WARNING: [VRFC 10-10080] select on function call violates IEEE 1800 syntax [C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_capture_window.sv:65]

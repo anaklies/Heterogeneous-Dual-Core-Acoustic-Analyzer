@@ -1,0 +1,594 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 07:47:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=doa_first_q' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=13.333ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(6)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cfg(7)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.507 seconds; current allocated memory: 163.355 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp' ... 
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.531 seconds; current allocated memory: 165.973 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 39,970 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,194 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,739 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,578 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 892 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 892 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 892 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 892 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 892 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 909 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 907 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 890 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 906 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 894 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 921 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 949 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::isfinite(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:563:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::fabs(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:242:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:51:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'phase_angle(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:13:0)
+
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'wave(float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:5:0)
+
+INFO: [HLS 214-178] Inlining function 'std::isfinite(float)' into 'doa_first_q' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:40:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'doa_first_q' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:40:0)
+
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'doa_first_q' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:40:0)
+
+INFO: [HLS 214-178] Inlining function 'std::sqrt(float)' into 'doa_first_q' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:40:0)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_78_6'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:78:22)
+
+INFO: [HLS 214-437] Disabling loop flattening for loop 'VITIS_LOOP_66_4'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:66:22)
+
+INFO: [HLS 214-449] Partitioning array 'GRID_ROM' dimension 2 due to constant index. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_rom.h:4:0)
+
+INFO: [HLS 214-449] Partitioning array 'PAIR_DELTA' dimension 2 due to constant index. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_rom.h:3:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZL8GRID_ROM': Complete partitioning on dimension 2. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_rom.h:4:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZL10PAIR_DELTA': Complete partitioning on dimension 2. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_rom.h:3:0)
+
+INFO: [HLS 214-115] Multiple burst writes of length 9 and bit width 32 in loop 'VITIS_LOOP_52_1'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:52:22) has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:52:22)
+
+INFO: [HLS 214-115] Multiple burst reads of length 1160460 and bit width 16 in loop 'VITIS_LOOP_66_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:66:22) has been inferred on bundle 'templates'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:66:22)
+
+INFO: [HLS 214-115] Multiple burst writes of length 9 and bit width 32 has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:99:1)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 10.631 seconds; current allocated memory: 169.777 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 169.777 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 176.898 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+INFO: [XFORM 203-602] Inlining function 'wave' into 'fine_score' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:28) automatically.
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 180.312 MB.
+
+INFO: [XFORM 203-602] Inlining function 'wave' into 'fine_score' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:28) automatically.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:65:11) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:84:70) in function 'doa_first_q'... converting 3 basic blocks.
+
+INFO: [XFORM 203-11] Balancing expressions in function 'doa_first_q' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:15:70)...3 expression(s) balanced.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 204.098 MB.
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.256 seconds; current allocated memory: 243.824 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'doa_first_q' ...
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'doa_first_q_Pipeline_VITIS_LOOP_59_3' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_59_3'.
+
+WARNING: [HLS 200-886] Cannot meet target clock period in 'fcmp' operation 1 bit ('tmp_11', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) (combination delay: 17.490 ns) to honor II constraint (II=1) in region 'loop 'VITIS_LOOP_59_3''.
+
+Resolution: For help on HLS 200-886 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+
+WARNING: [HLS 200-887] Cannot meet target clock period from 'load' operation 32 bit ('__x', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) on array 'observed_1' to 'and' operation 1 bit ('and_ln61', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) (combination delay: 21.061 ns) to honor II or Latency constraint in region 'VITIS_LOOP_59_3'.
+
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+
+WARNING: [HLS 200-887] Cannot meet target clock period from 'load' operation 32 bit ('__x', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) on array 'observed_1' to 'store' operation ('j_write_ln59', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:59) of variable 'add_ln59', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:59 11 bit on local variable 'j', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:59 (combination delay: 22.359 ns) to honor II or Latency constraint in region 'VITIS_LOOP_59_3'.
+
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 10, loop 'VITIS_LOOP_59_3'
+
+WARNING: [HLS 200-871] Estimated clock period (22.359 ns) exceeds the target (target clock period: 13.333 ns, clock uncertainty: 3.600 ns, effective delay budget: 9.733 ns).
+
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+
+WARNING: [HLS 200-1016] The critical path in module 'doa_first_q_Pipeline_VITIS_LOOP_59_3' consists of the following:
+
+	'load' operation 32 bit ('__x', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) on array 'observed_1' [17]  (2.771 ns)
+
+	'fcmp' operation 1 bit ('tmp_11', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) [27]  (17.490 ns)
+
+	'and' operation 1 bit ('and_ln61', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) [28]  (0.800 ns)
+
+	multiplexor before 'phi' operation 1 bit ('merge') [68]  (1.298 ns)
+
+	'br' operation ('br_ln61', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/doa/doa_first_q.cpp:61) [29]  (1.298 ns)
+
+
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.326 seconds; current allocated memory: 247.895 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.681 seconds; current allocated memory: 249.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'doa_first_q_Pipeline_VITIS_LOOP_69_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_69_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_69_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 249.559 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 249.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'phase_angle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 250.180 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 250.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'wave' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.078 seconds; current allocated memory: 251.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 251.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fine_score' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 253.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 254.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'doa_first_q' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.623 seconds; current allocated memory: 258.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 258.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doa_first_q_Pipeline_VITIS_LOOP_59_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'doa_first_q_Pipeline_VITIS_LOOP_59_3' pipeline 'VITIS_LOOP_59_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doa_first_q_Pipeline_VITIS_LOOP_59_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 260.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doa_first_q_Pipeline_VITIS_LOOP_69_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'doa_first_q_Pipeline_VITIS_LOOP_69_5' pipeline 'VITIS_LOOP_69_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'doa_first_q_Pipeline_VITIS_LOOP_69_5/m_axi_templates_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16s_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doa_first_q_Pipeline_VITIS_LOOP_69_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 263.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'phase_angle' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'phase_angle'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.367 seconds; current allocated memory: 264.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'wave' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'wave'.
+INFO: [HLS 200-2168] Implementing memory 'doa_first_q_wave_SINE_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 268.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fine_score' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fine_score'.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_fine_score_p_ZL10PAIR_DELTA_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_fine_score_p_ZL10PAIR_DELTA_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_fine_score_p_ZL10PAIR_DELTA_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-2168] Implementing memory 'doa_first_q_fine_score_SINE_ROM_AUTO_1R' using auto ROMs with 4 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.388 seconds; current allocated memory: 273.824 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'doa_first_q' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/observed' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/templates' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/results' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/vector' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/bank' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/bank_speed' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/threshold' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/active_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/quality_valid' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'doa_first_q/output_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'doa_first_q' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'vector', 'bank', 'bank_speed', 'threshold', 'active_r', 'quality_valid', 'output_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_64s_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'doa_first_q'.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_p_ZL8GRID_ROM_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_p_ZL8GRID_ROM_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'doa_first_q_p_ZL8GRID_ROM_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'doa_first_q_observed_1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'doa_first_q_observed_q_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.567 seconds; current allocated memory: 281.840 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.428 seconds; current allocated memory: 290.695 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.042 seconds; current allocated memory: 301.734 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for doa_first_q.
+INFO: [VLOG 209-307] Generating Verilog RTL for doa_first_q.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 44.72 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Thu Oct 22 07:48:26 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/misc
+
+INFO: Copied 40 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/verilog
+
+INFO: Copied 32 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/vhdl
+
+INFO: Copied 10 swdriver file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/drivers
+
+Generating 10 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/subcore_prj:
+
+impl/misc/doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+impl/misc/doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/verilog
+
+INFO: Generating doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip via file impl/misc/doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip via file impl/misc/doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_sitofp_64s_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_sitofp_64s_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_sitofp_64s_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_sitofp_64s_32_4_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_sitofp_64s_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+INFO: Generating doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: Done generating doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+
+INFO: Copied 10 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/doa_first_q_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip/doa_first_q_fcmp_32ns_32ns_1_1_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip/doa_first_q_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip/doa_first_q_fdiv_32ns_32ns_32_10_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip/doa_first_q_fmul_32ns_32ns_32_3_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/doa_first_q_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip/doa_first_q_fsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip/doa_first_q_sitofp_32ns_32_4_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_sitofp_64s_32_4_no_dsp_1_ip/doa_first_q_sitofp_64s_32_4_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/ip/doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip/doa_first_q_uitofp_32ns_32_4_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/hdl/vhdl/doa_first_q.vhd (doa_first_q)
+
+INFO: Add axi4lite interface s_axi_control
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst_n
+
+INFO: Add interrupt interface interrupt
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add axi4full interface m_axi_observed
+
+INFO: Add axi4full interface m_axi_templates
+
+INFO: Add axi4full interface m_axi_results
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_doa_q/hls/impl/ip/xilinx_com_hls_doa_first_q_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:49:01 2026...
+
+INFO: [HLS 200-802] Generated output file p15_doa_q/doa_first_q.zip
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 5 seconds. Total elapsed time: 67.976 seconds; peak allocated memory: 305.520 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 12s

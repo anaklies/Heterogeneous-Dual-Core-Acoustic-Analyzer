@@ -1,0 +1,178 @@
+{
+  "scope": "Native production scalar C, independent NumPy arithmetic/FFT syscall golden; NOT RTL/physical acceptance",
+  "cases": [
+    {
+      "service": "selected_harmonic_energy",
+      "values": 8,
+      "instructions": 79,
+      "chunks": 3,
+      "fft_modes": [],
+      "max_absolute_error": 5.9071895375240047e-08
+    },
+    {
+      "service": "selected_harmonic_energy",
+      "values": 8,
+      "instructions": 79,
+      "chunks": 2,
+      "fft_modes": [],
+      "max_absolute_error": 1.1892127638191141e-07
+    },
+    {
+      "service": "selected_sidebands",
+      "values": 6,
+      "instructions": 44,
+      "chunks": 2,
+      "fft_modes": [],
+      "max_absolute_error": 9.056423855291484e-08
+    },
+    {
+      "service": "sideband_silence",
+      "values": 6,
+      "instructions": 44,
+      "chunks": 2,
+      "fft_modes": [],
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "kurtosis_frame_1",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 27,
+      "fft_modes": [],
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "kurtosis_frame_2",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 27,
+      "fft_modes": [],
+      "max_absolute_error": 3.91169818758641e-10
+    },
+    {
+      "service": "kurtosis_frame_3",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 29,
+      "fft_modes": [],
+      "max_absolute_error": 1.0165108204063245e-06
+    },
+    {
+      "service": "kurtosis_frame_4",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 29,
+      "fft_modes": [],
+      "max_absolute_error": 8.554070194399799e-07
+    },
+    {
+      "service": "kurtosis_frame_5",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 29,
+      "fft_modes": [],
+      "max_absolute_error": 1.1159010560035654e-06
+    },
+    {
+      "service": "kurtosis_frame_6",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 29,
+      "fft_modes": [],
+      "max_absolute_error": 8.980357444343667e-07
+    },
+    {
+      "service": "kurtosis_frame_7",
+      "values": 257,
+      "instructions": 41,
+      "chunks": 29,
+      "fft_modes": [],
+      "max_absolute_error": 5.682668593465223e-07
+    },
+    {
+      "service": "periodicity_tone",
+      "values": 3,
+      "instructions": 54,
+      "chunks": 589,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 6.73887563529263e-08
+    },
+    {
+      "service": "periodicity_offbin",
+      "values": 3,
+      "instructions": 54,
+      "chunks": 589,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 9.39002404720668e-06
+    },
+    {
+      "service": "periodicity_noise",
+      "values": 3,
+      "instructions": 54,
+      "chunks": 589,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 5.122687829484107e-09
+    },
+    {
+      "service": "periodicity_silence",
+      "values": 3,
+      "instructions": 54,
+      "chunks": 589,
+      "fft_modes": [
+        2
+      ],
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "true_zoom_D2",
+      "values": 4096,
+      "instructions": 77,
+      "chunks": 24978,
+      "fft_modes": [
+        1
+      ],
+      "max_absolute_error": 4.846318501533321e-09,
+      "raw_samples": 4159,
+      "resolution_hz": 11.71875,
+      "private_output_bytes": 262144
+    },
+    {
+      "service": "true_zoom_D4",
+      "values": 4096,
+      "instructions": 77,
+      "chunks": 26066,
+      "fft_modes": [
+        1
+      ],
+      "max_absolute_error": 1.355083643220234e-05,
+      "raw_samples": 8253,
+      "resolution_hz": 5.859375,
+      "private_output_bytes": 262144
+    }
+  ],
+  "total_compared": 10031,
+  "implemented": [
+    "selected harmonic integrated energy and THD",
+    "selected carrier sideband integrated power",
+    "cumulative per-bin spectral kurtosis with validity",
+    "bounded circular periodicity estimate",
+    "true heterodyne FIR-decimation Zoom FFT of captured longer record"
+  ],
+  "unsupported": [
+    "Historical zero-padded linear autocorrelation fundamental estimator not ported exactly",
+    "Automatic order tracking without tachometer not claimed"
+  ],
+  "caller_contract": [
+    "Fresh frameId exactly once for kurtosis; reset output state on configuration or sample-rate change",
+    "All chunk calls for one service retain pinned source slot",
+    "User selected f0/carrier/spacing are configuration, not hidden target truth",
+    "Validity must be consumed; no absolute SPL or equipment diagnosis"
+  ],
+  "cost": "All <=1024 instruction programs with <=64 instructions/chunk; kurtosis O(bins) per frame and 4*bins+1 history words; periodicity one shared 2048 IFFT plus O(2048+lagrange) scalar operations; Zoom 65tap FIR only at decimated positions + oscillator + one2048FFT, about25000chunks and256KiB DDR output area (not BRAM)"
+}

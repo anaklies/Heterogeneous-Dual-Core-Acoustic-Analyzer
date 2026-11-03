@@ -1,0 +1,895 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 13:07:38 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend_tb.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(6)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/frontend_tb.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'tb.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/neural_features.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(7)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/hls/neural_features.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=acoustic_frontend_pipeline' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=13.333ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(8)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(9)
+
+INFO: [HLS 200-1465] Applying config ini 'syn.interface.m_axi_addr64=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/isolated.cfg(10)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 4.397 seconds; current allocated memory: 164.477 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp' ... 
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1563:25)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:2)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1565:12)
+
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+
+WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp
+
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+
+WARNING: [HLS 207-6591] unused parameter 'data_type' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:195:72)
+
+WARNING: [HLS 207-6591] unused parameter 'cp_len_enable' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:219:61)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:232:63)
+
+WARNING: [HLS 207-6591] unused parameter 'scaling_opt' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:409:66)
+
+WARNING: [HLS 207-6591] unused parameter 'has_ovflo' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:422:61)
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.375 seconds; current allocated memory: 171.707 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 20,847 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 2,463 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,773 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,616 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,129 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,106 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,106 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,108 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,108 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,131 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,123 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,119 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,133 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,121 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,252 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 1,306 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/report/csynth_design_size.rpt:2)
+
+WARNING: [HLS 214-273] In function 'hls::ip_fft::config_t<burst_fft512_params>::setDir(bool, unsigned int)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:309:24) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:23:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:310:0)
+
+WARNING: [HLS 214-273] In function 'ssdm_int<8, false>::ssdm_int(unsigned char)', INLINE (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:39) of a non dataflow function into a region with DATAFLOW (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:23:1) may break the canonical form (D:/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h:530:0)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::getDir(unsigned int)' into 'void hls::fft_syn<burst_fft512_params>(std::complex<ap_fixed<(((burst_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((burst_fft512_params::output_width) + (7)) / (8)) * (8), (((((burst_fft512_params::output_width) + (7)) / (8)) * (8)) - (burst_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<burst_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<burst_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1223:31)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::getSch(unsigned int)' into 'void hls::fft_syn<burst_fft512_params>(std::complex<ap_fixed<(((burst_fft512_params::input_width) + (7)) / (8)) * (8), 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<(((burst_fft512_params::output_width) + (7)) / (8)) * (8), (((((burst_fft512_params::output_width) + (7)) / (8)) * (8)) - (burst_fft512_params::input_width)) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> >*, hls::stream<hls::ip_fft::status_t<burst_fft512_params>, 0>&, hls::stream<hls::ip_fft::config_t<burst_fft512_params>, 0>&)' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1212:36)
+
+INFO: [HLS 214-131] Inlining function 'hls::ip_fft::config_t<burst_fft512_params>::setDir(bool, unsigned int)' into 'fft_fixed512(std::complex<ap_fixed<24, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<40, 17, (ap_q_mode)5, (ap_o_mode)3, 0> >*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:26:9)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'in' with compact=bit mode in 48-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:37:23)
+
+INFO: [HLS 214-241] Aggregating fifo (array-to-stream) variable 'out' with compact=bit mode in 80-bits (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:37:50)
+
+WARNING: [HLS 214-366] Duplicating function 'std::complex<float>::complex(float, float)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:51:27)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float)' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::complex(float, float) (.97)' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::real[abi:cxx11]() const' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'std::complex<float>::imag[abi:cxx11]() const' into 'fft1536_burst_vendor' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:30:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::data() const' into 'fp_struct<float>::to_float() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:322:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_float() const' into 'fp_struct<float>::to_ieee() const' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h:346:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::to_ieee() const' into 'float generic_copysign<float>(float, float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_copysign.h:10:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_copysign<float>(float, float)' into 'float generic_fabs<float>(float)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint/hls_fabs.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'float generic_fabs<float>(float)' into 'fabsf' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\c\fabsfloat.cpp:7:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::isfinite(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:563:0)
+
+INFO: [HLS 214-178] Inlining function 'fabsf' into 'std::fabs(float)' (D:/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\cmath:242:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'safe_magnitude(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:8:0)
+
+INFO: [HLS 214-178] Inlining function 'std::sqrt(float)' into 'safe_magnitude(float, float)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:8:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:51:0)
+
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'to_q11(float, unsigned int&)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:16:0)
+
+INFO: [HLS 214-178] Inlining function 'std::fabs(float)' into 'to_q11(float, unsigned int&)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:16:0)
+
+INFO: [HLS 214-178] Inlining function 'safe_magnitude(float, float)' into 'make_pair(float const*, short const*, short*, int, int, int, short)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:27:0)
+
+INFO: [HLS 214-178] Inlining function 'std::isfinite(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:53:0)
+
+INFO: [HLS 214-178] Inlining function 'safe_magnitude(float, float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:53:0)
+
+INFO: [HLS 214-178] Inlining function 'std::sqrt(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:53:0)
+
+INFO: [HLS 214-178] Inlining function 'std::log(float)' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:53:0)
+
+INFO: [HLS 214-449] Partitioning array 'acoustic_frontend_pipeline::mic' dimension 2 due to constant index. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:143:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZZ26acoustic_frontend_pipelineE3mic': Complete partitioning on dimension 2. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:143:0)
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'in'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+WARNING: [HLS 214-142] Implementing stream: may cause mismatch if read and write accesses are not in sequential order on port 'out'
+
+Resolution: For help on HLS 214-142 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-142.html
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33:22)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33:58)
+
+INFO: [HLS 214-115] Multiple burst writes of length 16 and bit width 32 in loop 'VITIS_LOOP_78_1'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:78:22) has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:78:22)
+
+INFO: [HLS 214-115] Multiple burst writes of length 9 and bit width 32 has been inferred on bundle 'results'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:83:20)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:85:43)
+
+INFO: [HLS 214-115] Multiple burst reads of length 30 and bit width 32 in loop 'VITIS_LOOP_96_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96:30) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96:30)
+
+INFO: [HLS 214-115] Multiple burst writes of length 30 and bit width 32 in loop 'VITIS_LOOP_96_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96:30) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96:30)
+
+INFO: [HLS 214-115] Multiple burst writes of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:118:47)
+
+INFO: [HLS 214-115] Multiple burst reads of length 2 and bit width 32 has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:130:17)
+
+INFO: [HLS 214-115] Multiple burst reads of length 10206 and bit width 32 in loop 'VITIS_LOOP_139_10'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:139:24) has been inferred on bundle 'cache'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:139:24)
+
+WARNING: [HLS 214-375] Impl=vivado_fft in __fpga_ip is deprecated. Consider using a different IP implementation. (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1180:2)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 14.519 seconds; current allocated memory: 176.504 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.013 seconds; current allocated memory: 176.504 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 184.672 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+WARNING: [SYNCHK 200-23] ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:43: variable-indexed range selection may cause suboptimal QoR.
+
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 189.176 MB.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'hls::fft<burst_fft512_params>' (D:/2025.2/Vitis/common/technology/autopilot\hls_fft.h:1561:26), detected/extracted 3 process function(s): 
+
+	 'hls::fft<burst_fft512_params>_Block_newFuncRoot_proc'
+
+	 'hls::fft_syn<burst_fft512_params>'
+
+	 'hls::fft<burst_fft512_params>_Block_newFuncRoot_proc.1'.
+
+INFO: [XFORM 203-712] Applying dataflow to function 'fft_fixed512' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:22:1), detected/extracted 1 process function(s): 
+
+	 'hls::fft<burst_fft512_params>'.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:15:34) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:24:1) in function 'to_q11'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:41:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:40:26) in function 'fft1536_burst_vendor'... converting 29 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:48:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/../../../hls/fft1536_burst_vendor.cpp:47:26) in function 'fft1536_burst_vendor'... converting 19 basic blocks.
+
+INFO: [XFORM 203-602] Inlining function 'to_q11' into 'make_pair' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:40) automatically.
+
+INFO: [XFORM 203-602] Inlining function 'to_q11' into 'acoustic_frontend_pipeline' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:141) automatically.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.464 seconds; current allocated memory: 214.992 MB.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_95_3'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:95:73) and 'VITIS_LOOP_96_4'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96:30) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_95_2'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:95:26) and 'VITIS_LOOP_95_3'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:95:73) in function 'acoustic_frontend_pipeline' into perfectly nested loops.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_95_3' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:95:73) in function 'acoustic_frontend_pipeline'.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_95_2' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:95:26) in function 'acoustic_frontend_pipeline'.
+
+WARNING: [HLS 200-765] Process fft_syn<burst_fft512_params> is made part of the output synchronization in its dataflow region, because it has an external FIFO output and no PIPO output
+
+Resolution: For help on HLS 200-765 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-765.html
+
+WARNING: [HLS 200-1450] Process fft_syn<burst_fft512_params> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+
+Resolution: For help on HLS 200-1450 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process fft_syn<burst_fft512_params> has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.544 seconds; current allocated memory: 319.309 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'acoustic_frontend_pipeline' ...
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<burst_fft512_params>_Block_newFuncRoot_proc' to 'fft_burst_fft512_params_Block_newFuncRoot_proc'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft_syn<burst_fft512_params>' to 'fft_syn_burst_fft512_params_s'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<burst_fft512_params>_Block_newFuncRoot_proc.1' to 'fft_burst_fft512_params_Block_newFuncRoot_proc_1'.
+
+WARNING: [SYN 201-103] Legalizing function name 'fft<burst_fft512_params>' to 'fft_burst_fft512_params_s'.
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_96_4'.
+
+WARNING: [HLS 200-448] Lower bound of II is 2 due to multiple bus write operation ('cache_addr_4_write_ln96', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96), bus write operation ('cache_addr_4_write_ln96', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:96) accessing 'cache' m_axi write
+
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 19, loop 'VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_96_4'
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.235 seconds; current allocated memory: 324.402 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.053 seconds; current allocated memory: 325.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_108_7'.
+WARNING: [HLS 200-887] Cannot meet target clock period from bus read operation ('v', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) on port 'audio' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) to 'add' operation 32 bit ('add_ln114', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:114) (combination delay: 11.6291 ns) to honor II or Latency constraint in region 'VITIS_LOOP_108_7'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from basic block for.body111 to bus request operation ('v_3_req', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) on port 'audio' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) (combination delay: 12.9271 ns) to honor II or Latency constraint in region 'VITIS_LOOP_108_7'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from bus read operation ('v', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) on port 'audio' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) to 'icmp' operation 1 bit ('icmp_ln114', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:114) (combination delay: 12.9351 ns) to honor II or Latency constraint in region 'VITIS_LOOP_108_7'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+WARNING: [HLS 200-887] Cannot meet target clock period from bus read operation ('v', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) on port 'audio' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) to 'store' operation ('address_write_ln107', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:107) of variable 'add_ln110', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:110 17 bit on local variable 'address', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:107 (combination delay: 14.2331 ns) to honor II or Latency constraint in region 'VITIS_LOOP_108_7'.
+Resolution: For help on HLS 200-887 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 9, Depth = 10, loop 'VITIS_LOOP_108_7'
+WARNING: [HLS 200-871] Estimated clock period (14.233 ns) exceeds the target (target clock period: 13.333 ns, clock uncertainty: 3.600 ns, effective delay budget: 9.733 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' consists of the following:
+	bus read operation ('v', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) on port 'audio' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:112) [33]  (9.733 ns)
+	'add' operation 32 bit ('add_ln114', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:114) [34]  (1.896 ns)
+	'icmp' operation 1 bit ('icmp_ln114', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:114) [36]  (1.306 ns)
+	'store' operation ('address_write_ln107', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:107) of variable 'add_ln110', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:110 17 bit on local variable 'address', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:107 [42]  (1.298 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.737 seconds; current allocated memory: 325.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 326.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_40_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 16, loop 'VITIS_LOOP_40_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 327.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 328.059 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_burst_fft512_params_Block_newFuncRoot_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 328.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 328.145 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_syn_burst_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Skip scheduling the IP block.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 328.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 328.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_burst_fft512_params_Block_newFuncRoot_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 328.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.636 seconds; current allocated memory: 328.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_burst_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+WARNING: [HLS 200-1018] Consider increasing the depth of FIFO status_data_V (from fft_syn_burst_fft512_params_U0 to fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0) to 6 to improve performance and/or avoid deadlocks.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 328.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.114 seconds; current allocated memory: 328.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_fixed512' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.273 seconds; current allocated memory: 328.887 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 328.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_47_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_47_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.328 seconds; current allocated memory: 329.602 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 329.906 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft1536_burst_vendor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 330.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.208 seconds; current allocated memory: 330.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_118_8'.
+WARNING: [HLS 200-448] Lower bound of II is 2 due to multiple bus write operation ('cache_addr_write_ln118', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:118) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:118), bus write operation ('cache_addr_write_ln118', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:118) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:118) accessing 'cache' m_axi write
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 9, loop 'VITIS_LOOP_118_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.831 seconds; current allocated memory: 331.199 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 331.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'make_pair_Pipeline_VITIS_LOOP_30_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_30_1'.
+WARNING: [HLS 200-448] Lower bound of II is 6 due to multiple bus read operation ('cache_addr_read', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33), bus read operation ('cache_addr_read_1', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33), bus read operation ('cache_addr_1_read', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33), bus read operation ('cache_addr_1_read_1', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:33), bus read operation ('cache_addr_2_read', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:38) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:38), bus read operation ('cache_addr_3_read', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:39) on port 'cache' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:39) accessing 'cache' m_axi read
+WARNING: [HLS 200-448] Lower bound of II is 6 due to multiple bus write operation ('features_addr_write_ln38', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:38) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:38), bus write operation ('features_addr_1_write_ln39', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:39) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:39), bus write operation ('features_addr_2_write_ln40', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:40) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:40), bus write operation ('features_addr_3_write_ln41', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:41) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:41), bus write operation ('features_addr_4_write_ln42', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:42) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:42), bus write operation ('features_addr_5_write_ln43', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:43) on port 'features' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:43) accessing 'features' m_axi write
+INFO: [HLS 200-1470] Pipelining result : Target II = 32, Final II = 32, Depth = 95, loop 'VITIS_LOOP_30_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.017 seconds; current allocated memory: 334.422 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 335.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'make_pair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 335.336 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 335.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'acoustic_frontend_pipeline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (15.531 ns) exceeds the target (target clock period: 13.333 ns, clock uncertainty: 3.600 ns, effective delay budget: 9.733 ns).
+Resolution: For help on HLS 200-871 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'acoustic_frontend_pipeline' consists of the following:
+	'call' operation 1 bit ('targetBlock', ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/frontend/candidate_pipeline/acoustic_frontend_isolated.cpp:105) to 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' [272]  (15.531 ns)
+
+Resolution: For help on HLS 200-1016 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.345 seconds; current allocated memory: 344.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.418 seconds; current allocated memory: 345.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9' pipeline 'VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_96_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_13ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_7ns_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_95_2_VITIS_LOOP_95_3_VITIS_LOOP_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.876 seconds; current allocated memory: 347.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7' pipeline 'VITIS_LOOP_108_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_108_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.353 seconds; current allocated memory: 350.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2' pipeline 'VITIS_LOOP_40_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2'.
+INFO: [RTMG 210-279] Implementing memory 'acoustic_frontend_pipeline_fft1536_burst_vendor_Pipeline_VITIS_LOOP_40_2_FFT1536_HANN_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.268 seconds; current allocated memory: 352.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_burst_fft512_params_Block_newFuncRoot_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_burst_fft512_params_Block_newFuncRoot_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.547 seconds; current allocated memory: 356.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_syn_burst_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_syn_burst_fft512_params_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 356.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_burst_fft512_params_Block_newFuncRoot_proc_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_burst_fft512_params_Block_newFuncRoot_proc_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 356.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_burst_fft512_params_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_burst_fft512_params_s'.
+INFO: [RTMG 210-285] Implementing FIFO 'config_ch_data_V_U(acoustic_frontend_pipeline_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'status_data_V_U(acoustic_frontend_pipeline_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_fft_syn_burst_fft512_params_U0_U(acoustic_frontend_pipeline_start_for_fft_syn_burst_fft512_params_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0_U(acoustic_frontend_pipeline_start_for_fft_burst_fft512_params_Block_newFuncRoot_proc_1_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.252 seconds; current allocated memory: 356.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_fixed512' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_fixed512'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.358 seconds; current allocated memory: 356.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3' pipeline 'VITIS_LOOP_47_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_40ns_6ns_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ctlz_40_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_burst_vendor_Pipeline_VITIS_LOOP_47_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 357.895 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft1536_burst_vendor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft1536_burst_vendor'.
+INFO: [RTMG 210-279] Implementing memory 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_COS_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'acoustic_frontend_pipeline_fft1536_burst_vendor_FFT1536_SIN_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'acoustic_frontend_pipeline_fft1536_burst_vendor_bank_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'in_U(acoustic_frontend_pipeline_fifo_w48_d512_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_U(acoustic_frontend_pipeline_fifo_w80_d512_A)' using Vivado Default RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.546 seconds; current allocated memory: 362.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8' pipeline 'VITIS_LOOP_118_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'acoustic_frontend_pipeline_Pipeline_VITIS_LOOP_118_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.692 seconds; current allocated memory: 364.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'make_pair_Pipeline_VITIS_LOOP_30_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'make_pair_Pipeline_VITIS_LOOP_30_1' pipeline 'VITIS_LOOP_30_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'make_pair_Pipeline_VITIS_LOOP_30_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.398 seconds; current allocated memory: 369.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'make_pair' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_12ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_12ns_14_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_16ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'make_pair'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.138 seconds; current allocated memory: 377.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'acoustic_frontend_pipeline' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/audio' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/cache' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/features' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/results' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/pcm' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/previous' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/previous_meta' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/current' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/scratch' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/qlogs' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/features_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/meta' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/start_sample' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/config_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/session' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'acoustic_frontend_pipeline/allow_reuse' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'acoustic_frontend_pipeline' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'pcm', 'previous', 'previous_meta', 'current', 'scratch', 'qlogs', 'features_r', 'meta', 'start_sample', 'config_r', 'session', 'allow_reuse' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_1_1_1' is changed to 'sparsemux_7_2_1_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'flog_32ns_32ns_32_9_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsqrt_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_1_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'acoustic_frontend_pipeline'.
+INFO: [RTMG 210-279] Implementing memory 'acoustic_frontend_pipeline_pair_a_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'acoustic_frontend_pipeline_pair_b_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-2168] Implementing memory 'acoustic_frontend_pipeline_mic_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'acoustic_frontend_pipeline_mic_1_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'acoustic_frontend_pipeline_mic_2_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-278] Implementing memory 'acoustic_frontend_pipeline_transformed_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.091 seconds; current allocated memory: 389.465 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.672 seconds; current allocated memory: 404.688 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 3.766 seconds; current allocated memory: 421.066 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for acoustic_frontend_pipeline.
+INFO: [VLOG 209-307] Generating Verilog RTL for acoustic_frontend_pipeline.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 64.39 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Thu Oct 22 13:08:44 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/misc
+
+INFO: Copied 68 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/verilog
+
+INFO: Copied 57 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/vhdl
+
+INFO: Copied 10 swdriver file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/drivers
+
+Generating 10 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/subcore_prj:
+
+impl/misc/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+impl/misc/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+
+Current project path is 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/subcore_prj'
+
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 555.910 ; gain = 223.355
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/verilog
+
+INFO: Generating acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip via file impl/misc/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'ovflo' from 'false' to '0' has been ignored for IP 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip'
+
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'number_of_stages_using_block_ram_for_data_and_phase_factors' from '0' to '1' has been ignored for IP 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip'
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip via file impl/misc/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+
+INFO: Generating acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip'...
+
+INFO: Done generating acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+
+INFO: Found 2 unique subcore IP: xilinx.com:ip:floating_point:7.1 xilinx.com:ip:xfft:9.1
+
+INFO: Copied 10 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip/acoustic_frontend_pipeline_faddfsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip/acoustic_frontend_pipeline_fcmp_32ns_32ns_1_2_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip/acoustic_frontend_pipeline_fdiv_32ns_32ns_32_10_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip/acoustic_frontend_pipeline_fft_syn_burst_fft512_params_s_core_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip/acoustic_frontend_pipeline_flog_32ns_32ns_32_9_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip/acoustic_frontend_pipeline_fmul_32ns_32ns_32_3_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip/acoustic_frontend_pipeline_fpext_32ns_64_2_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip/acoustic_frontend_pipeline_fsqrt_32ns_32ns_32_10_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip/acoustic_frontend_pipeline_fsub_32ns_32ns_32_4_full_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip/acoustic_frontend_pipeline_sitofp_32ns_32_4_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/hdl/vhdl/acoustic_frontend_pipeline.vhd (acoustic_frontend_pipeline)
+
+INFO: Add axi4lite interface s_axi_control
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst_n
+
+INFO: Add interrupt interface interrupt
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add axi4full interface m_axi_audio
+
+INFO: Add axi4full interface m_axi_cache
+
+INFO: Add axi4full interface m_axi_features
+
+INFO: Add axi4full interface m_axi_results
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/p16_frontend_isolated/hls/impl/ip/xilinx_com_hls_acoustic_frontend_pipeline_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 13:09:26 2026...
+
+INFO: [HLS 200-802] Generated output file p16_frontend_isolated/acoustic_frontend_pipeline.zip
+INFO: [HLS 200-112] Total CPU user time: 18 seconds. Total CPU system time: 10 seconds. Total elapsed time: 103.22 seconds; peak allocated memory: 425.047 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 48s

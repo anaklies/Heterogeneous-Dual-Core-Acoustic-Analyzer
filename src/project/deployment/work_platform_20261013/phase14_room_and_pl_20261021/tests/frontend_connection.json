@@ -1,0 +1,41 @@
+{
+  "status": "PASS_ONE_AFFECTED_CMODEL_CONNECTION",
+  "pcmSHA256": "9e9a6bc9eef73549965a57aaff291576bcd628a790bae01abf089121260206d0",
+  "computedTransforms": 72,
+  "reusedTransforms": 90,
+  "reusedComplexValues": 5670,
+  "reusedCacheBitExact": true,
+  "cFeatureReferenceBitExact": true,
+  "fftMaximumComponentErrorRawCounts": 35.4609375,
+  "featureMaximumDifferenceVsFloatingFrontendLSB": 4,
+  "directionChangeDegrees": 0.0,
+  "baseline": [
+    1.0,
+    0.7818356156349182,
+    0.836085319519043,
+    0.5429591536521912,
+    0.07845774292945862,
+    32.99995803833008,
+    4.49984073638916,
+    0.7716993093490601,
+    291.0
+  ],
+  "frontend": [
+    1.0,
+    0.7818575501441956,
+    0.836085319519043,
+    0.5429591536521912,
+    0.07845774292945862,
+    32.99995803833008,
+    4.49984073638916,
+    0.7717218399047852,
+    291.0
+  ],
+  "qualityFlags": [],
+  "qualityGuardPLImplemented": false,
+  "sourceTruthNotUsed": true,
+  "fullRTL": false,
+  "actualBoard": false,
+  "continuous10Hz": false,
+  "scope": "PCM -> cached fixed FFT -> features -> fixedNN -> first direction C models; not board wiring"
+}

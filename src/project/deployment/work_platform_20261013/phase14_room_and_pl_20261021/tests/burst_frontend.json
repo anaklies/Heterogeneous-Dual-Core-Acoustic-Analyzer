@@ -1,0 +1,37 @@
+{
+  "status": "PASS_ONE_CMODEL_AFFECTED_PCM_WINDOW",
+  "backend": "burst",
+  "case": "inherited_room0_speech",
+  "pcmSHA256": "60ead80b9aaabf4a75d9fb257d7b6fbd7cabe32f9d19fd7846a517db4aac750b",
+  "fftTransforms": 162,
+  "fftMaximumRawCountError": 35.2109375,
+  "featuresMaximumDifferenceLSB": 4,
+  "floatFrontendVsSavedInputMaximumLSB": 1,
+  "directionChangeDegrees": 0.0,
+  "baseline": [
+    1.0,
+    0.7532745003700256,
+    0.8129993677139282,
+    0.5799074172973633,
+    0.052335191518068314,
+    35.50011444091797,
+    2.999894142150879,
+    0.7438535094261169,
+    292.0
+  ],
+  "fixed": [
+    1.0,
+    0.7532819509506226,
+    0.8129993677139282,
+    0.5799074172973633,
+    0.052335191518068314,
+    35.50011444091797,
+    2.999894142150879,
+    0.743859589099884,
+    292.0
+  ],
+  "fullRTL": false,
+  "continuous10Hz": false,
+  "physicalBoard": false,
+  "warning": "One C-model regression only; low-energy phase changes need wider coverage before freeze."
+}

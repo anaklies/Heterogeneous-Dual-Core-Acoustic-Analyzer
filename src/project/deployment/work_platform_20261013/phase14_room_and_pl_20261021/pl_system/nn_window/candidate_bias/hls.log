@@ -1,0 +1,1410 @@
+
+****** v++ v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-08:29:27
+  **** Start of session at: Thu Oct 22 07:44:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2025.2 6295257
+
+INFO: [HLS 200-2005] Using work_dir C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias 
+
+INFO: [HLS 200-2006] Changing directory to C:/Users/sunxi/Desktop/sixmic3D/tmp
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/vitis-comp.json
+
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias'.
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-2174] Applying component config ini file ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg
+
+INFO: [HLS 200-1465] Applying config ini 'syn.file=C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp' to the project
+
+INFO: [HLS 200-1465] Applying config ini 'syn.top=nn_window' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(4)
+
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg484-2' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-2'
+
+INFO: [HLS 200-1465] Applying config ini 'clock=13.333ns' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(6)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.pipeline_loops=0' from ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/probe.cfg(7)
+
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/vitis-comp.json
+
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 4.079 seconds; current allocated memory: 165.191 MB.
+
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+
+INFO: [HLS 200-10] Analyzing design file '../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp' ... 
+
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.229 seconds; current allocated memory: 168.047 MB.
+
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+
+INFO: [HLS 200-1995] There were 3,328 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 4,461 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,873 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,367 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,194 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,489 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,057 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,057 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,069 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,138 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,133 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,067 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,436 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,308 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,258 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 200-1995] There were 3,420 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/report/csynth_design_size.rpt:2)
+
+INFO: [HLS 214-131] Inlining function 'finish_scalar(long long, int, int, unsigned int&, unsigned int&)' into 'convolution12(short const*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:243:51)
+
+INFO: [HLS 214-131] Inlining function 'finish_scalar(long long, int, int, unsigned int&, unsigned int&)' into 'depth12(short const*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:201:47)
+
+INFO: [HLS 214-131] Inlining function 'finish_scalar(long long, int, int, unsigned int&, unsigned int&)' into 'matrix12(short const*, short*, int, int, int, int, FixedStats*, FixedStage, int)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:163:49)
+
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_152_4' is marked as complete unroll implied by the pipeline pragma (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:152:31)
+
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_192_7' is marked as complete unroll implied by the pipeline pragma (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:192:31)
+
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_233_6' is marked as complete unroll implied by the pipeline pragma (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:233:35)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_124_2' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:124:27) in function 'matrix12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:108:0)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_152_4' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:152:31) in function 'matrix12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:108:0)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_185_5' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:185:27) in function 'depth12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:173:0)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_192_7' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:192:31) in function 'depth12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:173:0)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_224_4' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:224:31) in function 'convolution12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:210:0)
+
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_233_6' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:233:35) in function 'convolution12' completely with a factor of 12 (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:210:0)
+
+INFO: [HLS 214-178] Inlining function 'round_shift(long long, int)' into 'align(long long, int, int)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:19:0)
+
+INFO: [HLS 214-178] Inlining function 'round_shift(long long, int)' into 'interpolate(int const*, int)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:49:0)
+
+INFO: [HLS 214-178] Inlining function 'interpolate(int const*, int)' into 'convolution12(short const*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:210:0)
+
+INFO: [HLS 214-178] Inlining function 'interpolate(int const*, int)' into 'depth12(short const*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:173:0)
+
+INFO: [HLS 214-178] Inlining function 'align(long long, int, int)' into 'matrix12(short const*, short*, int, int, int, int, FixedStats*, FixedStage, int)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:108:0)
+
+INFO: [HLS 214-178] Inlining function 'interpolate(int const*, int)' into 'matrix12(short const*, short*, int, int, int, int, FixedStats*, FixedStage, int)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:108:0)
+
+INFO: [HLS 214-178] Inlining function 'interpolate(int const*, int)' into 'sigmoid(short, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:65:0)
+
+INFO: [HLS 214-178] Inlining function 'interpolate(int const*, int)' into 'tanh_q14(short, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:72:0)
+
+INFO: [HLS 214-178] Inlining function 'sat(long long, FixedStats*, FixedStage) (.10)' into 'pair_forward(short const*, short*, short*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+INFO: [HLS 214-178] Inlining function 'sigmoid(short, FixedStats*)' into 'pair_forward(short const*, short*, short*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+INFO: [HLS 214-178] Inlining function 'round_shift(long long, int)' into 'pair_forward(short const*, short*, short*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+INFO: [HLS 214-178] Inlining function 'tanh_q14(short, FixedStats*)' into 'pair_forward(short const*, short*, short*, short*, FixedStats*)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+INFO: [HLS 214-178] Inlining function 'align(long long, int, int)' into 'affine_output(long long, int, FixedStats*, FixedStage) (.18)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:31:0)
+
+INFO: [HLS 214-178] Inlining function 'sat(long long, FixedStats*, FixedStage) (.10)' into 'affine_output(long long, int, FixedStats*, FixedStage) (.18)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:31:0)
+
+INFO: [HLS 214-178] Inlining function 'align(long long, int, int)' into 'dense(short const*, short const*, short const*, int, int, int, int, int, FixedStats*, FixedStage)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:38:0)
+
+INFO: [HLS 214-178] Inlining function 'affine_output(long long, int, FixedStats*, FixedStage) (.18)' into 'dense(short const*, short const*, short const*, int, int, int, int, int, FixedStats*, FixedStage)' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:38:0)
+
+INFO: [HLS 214-178] Inlining function 'sigmoid(short, FixedStats*)' into 'nn_window' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:19:0)
+
+INFO: [HLS 214-178] Inlining function 'sat(long long, FixedStats*, FixedStage) (.10)' into 'nn_window' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:19:0)
+
+INFO: [HLS 214-178] Inlining function 'dense(short const*, short const*, short const*, int, int, int, int, int, FixedStats*, FixedStage)' into 'nn_window' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:19:0)
+
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'stats_saturation'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'stats_nonlinear_domain_clamp'. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:257:0)
+
+INFO: [HLS 214-248] Applying array_partition to 'accum': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:222:21)
+
+INFO: [HLS 214-248] Applying array_partition to 'bank': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:175:9)
+
+INFO: [HLS 214-248] Applying array_partition to 'accum': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:183:17)
+
+INFO: [HLS 214-248] Applying array_partition to 'accum': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:122:17)
+
+INFO: [HLS 214-248] Applying array_reshape to '_ZL13CONV_ELEMENTS': Complete reshaping on dimension 2. (C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/nn/hls_parallel/conv_elements.h:2:0)
+
+INFO: [HLS 214-421] Partitioning small array 'W_COUNT_BIAS' due to array size. (C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/nn/fixed/weights_fixed.h:2645:0)
+
+INFO: [HLS 214-421] Partitioning small array 'stats_object.nonlinear_domain_clamp' due to array size. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:36:16)
+
+INFO: [HLS 214-421] Partitioning small array 'number' due to array size. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:41:65)
+
+INFO: [HLS 214-421] Partitioning small array 'exponents' due to array size. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:93:19)
+
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=13 dim=1' for array 'W_DEPTH_WEIGHT' due to pipeline pragma (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:190:1)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZL14W_DEPTH_WEIGHT': Cyclic partitioning with factor 13 on dimension 1. (C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/nn/fixed/weights_fixed.h:102:0)
+
+INFO: [HLS 214-248] Applying array_partition to '_ZL12W_COUNT_BIAS': Complete partitioning on dimension 1. (C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/nn/fixed/weights_fixed.h:2645:0)
+
+INFO: [HLS 214-248] Applying array_partition to 'stats_object.nonlinear_domain_clamp': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:36:16)
+
+INFO: [HLS 214-248] Applying array_partition to 'number': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:41:65)
+
+INFO: [HLS 214-248] Applying array_partition to 'exponents': Complete partitioning on dimension 1. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:93:19)
+
+INFO: [HLS 214-115] Multiple burst reads of length 10206 and bit width 16 in loop 'VITIS_LOOP_216_1'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:216:23) has been inferred on bundle 'features'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:216:23)
+
+INFO: [HLS 214-115] Multiple burst writes of length 3402 and bit width 16 in loop 'VITIS_LOOP_47_2'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:47:26) has been inferred on bundle 'network'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:47:26)
+
+INFO: [HLS 214-115] Multiple burst writes of length 1701 and bit width 16 in loop 'VITIS_LOOP_51_3'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:51:26) has been inferred on bundle 'network'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:51:26)
+
+INFO: [HLS 214-115] Multiple burst writes of length 27 and bit width 16 in loop 'VITIS_LOOP_69_8'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:69:22) has been inferred on bundle 'network'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:69:22)
+
+INFO: [HLS 214-115] Multiple burst writes of length 4 and bit width 16 in loop 'VITIS_LOOP_73_9'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:73:22) has been inferred on bundle 'network'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:73:22)
+
+INFO: [HLS 214-115] Multiple burst reads of length 51030 and bit width 16 in loop 'VITIS_LOOP_87_12'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:87:23) has been inferred on bundle 'network'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:87:23)
+
+INFO: [HLS 214-115] Multiple burst writes of length 5 and bit width 64 has been inferred on bundle 'aggregate'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:101:24)
+
+INFO: [HLS 214-115] Multiple burst writes of length 15 and bit width 64 in loop 'VITIS_LOOP_101_18'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:101:24) has been inferred on bundle 'aggregate'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:101:24)
+
+INFO: [HLS 214-115] Multiple burst writes of length 3 and bit width 64 in loop 'VITIS_LOOP_102_19'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:102:24) has been inferred on bundle 'aggregate'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:102:24)
+
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 15.186 seconds; current allocated memory: 173.613 MB.
+
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 173.613 MB.
+
+INFO: [HLS 200-10] Starting code transformations ...
+
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.202 seconds; current allocated memory: 185.230 MB.
+
+INFO: [HLS 200-10] Checking synthesizability ...
+
+WARNING: [SYNCHK 200-18] ../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:86: unsafe type casting from type 'i64' to type 'float' on variable 'mass'.
+
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.239 seconds; current allocated memory: 189.332 MB.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:319:27) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:25:9) in function 'pair_forward'... converting 13 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:321:27) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:25:9) in function 'pair_forward'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:51:34) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:51:26) in function 'nn_window'... converting 7 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:61:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:60:22) in function 'nn_window'... converting 9 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:30:30) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:69:22) in function 'nn_window'... converting 6 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:30:30) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:73:22) in function 'nn_window'... converting 10 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:79:70) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:79:62) in function 'nn_window'... converting 9 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:163:67) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:165:13) in function 'matrix12'... converting 13 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:122:17) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:139:27) in function 'matrix12'... converting 89 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:167:35) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:120:23) in function 'matrix12'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:7:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/nn_window.cpp:14:1) in function 'exp_negative_q24'... converting 4 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:190:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:189:27) in function 'depth12'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:200:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:199:27) in function 'depth12'... converting 5 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:229:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:228:31) in function 'convolution12'... converting 3 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:241:1) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:240:31) in function 'convolution12'... converting 5 basic blocks.
+
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:18:22) to (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:20:5) in function 'align'... converting 6 basic blocks.
+
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.287 seconds; current allocated memory: 216.320 MB.
+
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'align' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:187:22) in function 'depth12' and propagating its result(s) since all actual argument(s) to the function are constants.
+
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'align' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:226:29) in function 'convolution12' and propagating its result(s) since all actual argument(s) to the function are constants.
+
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_178_1'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:178:23) and 'VITIS_LOOP_178_2'(../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:178:62) in function 'depth12' into perfectly nested loops.
+
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_178_1' (../deployment/work_platform_20261013/phase14_room_and_pl_20261021/pl_system/nn_window/candidate_bias/srpdnn_bias.cpp:178:23) in function 'depth12'.
+
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.407 seconds; current allocated memory: 544.023 MB.
+
+INFO: [HLS 200-10] Starting hardware synthesis ...
+
+INFO: [HLS 200-10] Synthesizing 'nn_window' ...
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_1' 
+
+INFO: [HLS 200-10] ----------------------------------------------------------------
+
+INFO: [SCHED 204-11] Starting scheduling ...
+
+INFO: [SCHED 204-11] Finished scheduling.
+
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 548.910 MB.
+
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 550.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 550.316 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 550.320 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Outline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 550.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.023 seconds; current allocated memory: 550.504 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution12_Pipeline_VITIS_LOOP_216_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_216_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_216_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 551.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 551.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution12_Pipeline_VITIS_LOOP_228_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=accum_179) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_178) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_177) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_176) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_175) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_174) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_173) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_172) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_171) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_170) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_169) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln232_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_228_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_228_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.909 seconds; current allocated memory: 553.305 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 553.426 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'align' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'align'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'align'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 553.469 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 553.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution12_Pipeline_VITIS_LOOP_240_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln243) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln54_7) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_240_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_240_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 554.109 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 554.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.072 seconds; current allocated memory: 554.785 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.446 seconds; current allocated memory: 555.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depth12_Pipeline_VITIS_LOOP_178_1_VITIS_LOOP_178_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln180) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_178_1_VITIS_LOOP_178_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_178_1_VITIS_LOOP_178_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 555.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 555.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depth12_Pipeline_VITIS_LOOP_189_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=accum_168) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_167) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_166) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_165) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_164) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_163) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_162) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_161) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_160) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_159) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum_158) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=accum) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln195_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln194) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_189_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_189_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 559.445 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 560.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depth12_Pipeline_VITIS_LOOP_199_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln201) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln54_6) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_199_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_199_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.563 seconds; current allocated memory: 560.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 561.020 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'depth12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 561.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 561.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_282_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_282_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_282_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 561.836 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 561.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_290_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_290_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_290_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 561.922 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 561.922 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_274_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_274_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_274_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 562.062 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 562.188 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_268_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln270) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_268_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_268_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 562.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 562.441 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix12_Pipeline_VITIS_LOOP_139_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln156) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_139_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_139_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.887 seconds; current allocated memory: 564.410 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.088 seconds; current allocated memory: 565.016 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix12_Pipeline_VITIS_LOOP_160_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln54_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln54_4) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_160_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_160_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 566.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 566.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.209 seconds; current allocated memory: 570.352 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.139 seconds; current allocated memory: 571.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_330_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_330_12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_330_12'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 571.707 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.027 seconds; current allocated memory: 571.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_313_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_313_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_313_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.167 seconds; current allocated memory: 571.734 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 571.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_325_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_325_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_325_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.037 seconds; current allocated memory: 571.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 571.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_308_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_308_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_308_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 571.863 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 571.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_335_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_335_13'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_335_13'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 572.184 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.022 seconds; current allocated memory: 572.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_303_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_303_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_303_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.807 seconds; current allocated memory: 572.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.028 seconds; current allocated memory: 572.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward_Pipeline_VITIS_LOOP_298_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln300) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_298_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_298_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 572.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.033 seconds; current allocated memory: 572.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pair_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln323) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln54_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.196 seconds; current allocated memory: 577.418 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 577.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Pipeline_VITIS_LOOP_47_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_47_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_47_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.553 seconds; current allocated memory: 577.691 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 577.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15_8) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 577.848 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 578.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Pipeline_VITIS_LOOP_55_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_55_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.052 seconds; current allocated memory: 578.523 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.024 seconds; current allocated memory: 578.523 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Pipeline_VITIS_LOOP_60_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_60_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_60_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 578.742 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 578.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_73_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sum) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.754 seconds; current allocated memory: 579.699 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.057 seconds; current allocated memory: 579.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_79_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln15) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 580.648 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.048 seconds; current allocated memory: 580.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_87_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sum_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 581.320 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 581.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_92_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 581.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 581.727 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_negative_q24' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.56 seconds; current allocated memory: 581.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 581.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window_Outline_VITIS_LOOP_94_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.051 seconds; current allocated memory: 582.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 582.250 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nn_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sum) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 585.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 586.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 587.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 588.723 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Outline_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Outline_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 589.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution12_Pipeline_VITIS_LOOP_216_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution12_Pipeline_VITIS_LOOP_216_1' pipeline 'VITIS_LOOP_216_1' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'convolution12_Pipeline_VITIS_LOOP_216_1/m_axi_features_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution12_Pipeline_VITIS_LOOP_216_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.195 seconds; current allocated memory: 590.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution12_Pipeline_VITIS_LOOP_228_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution12_Pipeline_VITIS_LOOP_228_5' pipeline 'VITIS_LOOP_228_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10s_5ns_6s_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_38s_38_4_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_6ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution12_Pipeline_VITIS_LOOP_228_5'.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_convolution12_Pipeline_VITIS_LOOP_228_5_CONV_ELEMENTS_26_ROM_1P_BRAM_1R' using block ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 592.527 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'align' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'align' pipeline 'align' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'align'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.422 seconds; current allocated memory: 596.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution12_Pipeline_VITIS_LOOP_240_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'convolution12_Pipeline_VITIS_LOOP_240_7' pipeline 'VITIS_LOOP_240_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15s_3ns_17s_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_9ns_5ns_5ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_2ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_38_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution12_Pipeline_VITIS_LOOP_240_7'.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_convolution12_Pipeline_VITIS_LOOP_240_7_GELU_Q10_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.405 seconds; current allocated memory: 598.332 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution12'.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_convolution12_cached_RAM_S2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.285 seconds; current allocated memory: 600.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depth12_Pipeline_VITIS_LOOP_178_1_VITIS_LOOP_178_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'depth12_Pipeline_VITIS_LOOP_178_1_VITIS_LOOP_178_2' pipeline 'VITIS_LOOP_178_1_VITIS_LOOP_178_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10ns_4ns_10ns_14_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depth12_Pipeline_VITIS_LOOP_178_1_VITIS_LOOP_178_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.228 seconds; current allocated memory: 602.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depth12_Pipeline_VITIS_LOOP_189_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'depth12_Pipeline_VITIS_LOOP_189_6' pipeline 'VITIS_LOOP_189_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_4ns_6ns_8ns_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_15s_33s_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_34s_34_4_1': 11 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6s_5ns_6s_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_8ns_13_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_4_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_4_16_1_1': 11 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depth12_Pipeline_VITIS_LOOP_189_6'.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_9_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_10_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_11_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_12_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_depth12_Pipeline_VITIS_LOOP_189_6_p_ZL14W_DEPTH_WEIGHT_8_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.477 seconds; current allocated memory: 607.121 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depth12_Pipeline_VITIS_LOOP_199_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'depth12_Pipeline_VITIS_LOOP_199_8' pipeline 'VITIS_LOOP_199_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15s_3ns_17s_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_5ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_2ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_34_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depth12_Pipeline_VITIS_LOOP_199_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.97 seconds; current allocated memory: 616.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'depth12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'depth12'.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_depth12_bank_RAM_S2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.326 seconds; current allocated memory: 618.363 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_282_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_282_4' pipeline 'VITIS_LOOP_282_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_282_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 620.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_290_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_290_5' pipeline 'VITIS_LOOP_290_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_290_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.133 seconds; current allocated memory: 621.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_274_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_274_3' pipeline 'VITIS_LOOP_274_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_274_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.317 seconds; current allocated memory: 623.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_268_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_268_2' pipeline 'VITIS_LOOP_268_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_5ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_268_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 623.500 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix12_Pipeline_VITIS_LOOP_139_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix12_Pipeline_VITIS_LOOP_139_3' pipeline 'VITIS_LOOP_139_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_40s_40_4_1': 12 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix12_Pipeline_VITIS_LOOP_139_3'.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_POINT_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_POINT_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_POINT_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_EMBED_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_EMBED_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_EMBED_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GI_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GI_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GI_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GH_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GH_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_GH_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_PHASE_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_PHASE_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_PHASE_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_SUPPORT_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_SUPPORT_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_139_3_T_SUPPORT_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.287 seconds; current allocated memory: 625.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix12_Pipeline_VITIS_LOOP_160_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix12_Pipeline_VITIS_LOOP_160_5' pipeline 'VITIS_LOOP_160_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15s_3ns_17s_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_3ns_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_15s_2ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_2ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_15_6_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_40_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix12_Pipeline_VITIS_LOOP_160_5'.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_Pipeline_VITIS_LOOP_160_5_TANH_Q14_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.56 seconds; current allocated memory: 631.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_10s_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_15_6_29_1_1': 11 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix12'.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_POINT_BIAS_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_EMBED_BIAS_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_GRU_BIAS_IH_L0_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_GRU_BIAS_HH_L0_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_PHASE_BIAS_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_matrix12_W_SUPPORT_BIAS_ROM_AUTO_1R' using auto ROMs with 11 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.585 seconds; current allocated memory: 637.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_330_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_330_12' pipeline 'VITIS_LOOP_330_12' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_330_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.142 seconds; current allocated memory: 648.441 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_313_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_313_9' pipeline 'VITIS_LOOP_313_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_313_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 649.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_325_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_325_11' pipeline 'VITIS_LOOP_325_11' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_325_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.131 seconds; current allocated memory: 650.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_308_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_308_8' pipeline 'VITIS_LOOP_308_8' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_308_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 651.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_335_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_335_13' pipeline 'VITIS_LOOP_335_13' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_335_13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 651.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_303_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_303_7' pipeline 'VITIS_LOOP_303_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_303_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 652.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward_Pipeline_VITIS_LOOP_298_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pair_forward_Pipeline_VITIS_LOOP_298_6' pipeline 'VITIS_LOOP_298_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_5ns_5ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward_Pipeline_VITIS_LOOP_298_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 653.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pair_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_9_3_16_1_1' is changed to 'sparsemux_9_3_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'am_submul_16s_16s_16ns_33_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_2ns_17ns_18_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_3ns_2ns_17_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_3ns_18s_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_16s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_2ns_18_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_11ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1_x': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_9ns_6ns_5_13_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pair_forward'.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_conv_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_depth_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_point_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_embedding_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_h_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_input_gate_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_forward_vector_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 655.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Pipeline_VITIS_LOOP_47_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'nn_window_Pipeline_VITIS_LOOP_47_2' pipeline 'VITIS_LOOP_47_2' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Pipeline_VITIS_LOOP_47_2/m_axi_network_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Pipeline_VITIS_LOOP_47_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.567 seconds; current allocated memory: 666.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_51_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_51_3/m_axi_network_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_2ns_17ns_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_3ns_2ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_51_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 667.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Pipeline_VITIS_LOOP_55_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'nn_window_Pipeline_VITIS_LOOP_55_4' pipeline 'VITIS_LOOP_55_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Pipeline_VITIS_LOOP_55_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.248 seconds; current allocated memory: 669.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Pipeline_VITIS_LOOP_60_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'nn_window_Pipeline_VITIS_LOOP_60_5' pipeline 'VITIS_LOOP_60_5' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_16_1_1' is changed to 'sparsemux_7_2_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_34ns_65_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Pipeline_VITIS_LOOP_60_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.575 seconds; current allocated memory: 671.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_73_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_73_9/m_axi_network_0_BREADY' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_36s_36_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_73_9'.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_nn_window_Outline_VITIS_LOOP_73_9_W_COUNT_WEIGHT_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 673.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_79_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_2ns_17ns_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_15ns_3ns_2ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32ns_48_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_48ns_50ns_96_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_79_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 676.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_87_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'nn_window_Outline_VITIS_LOOP_87_12/m_axi_network_0_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_16s_37s_37_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_64s_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_87_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.431 seconds; current allocated memory: 679.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_92_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_16_1_1' is changed to 'sparsemux_7_2_16_1_1_x0' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_92_16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 682.863 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_negative_q24' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_2ns_26_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_3ns_27_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_25_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_negative_q24'.
+INFO: [HLS 200-2168] Implementing memory 'nn_window_exp_negative_q24_EXP_NEG_Q24_ROM_AUTO_1R' using auto ROMs with 2 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 684.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window_Outline_VITIS_LOOP_94_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_9_2_16_1_1' is changed to 'sparsemux_9_2_16_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_2_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window_Outline_VITIS_LOOP_94_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 685.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nn_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/features' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/network' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/aggregate' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/phase' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/support' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/logits' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/vector' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/metadata' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nn_window/counters' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nn_window' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'phase', 'support', 'logits', 'vector', 'metadata', 'counters' and 'return' to AXI-Lite port control.
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_7_2_64_1_1' is changed to 'sparsemux_7_2_64_1_1_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_10_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_37s_37_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_16_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_64_1_1_x': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_64s_27ns_64_68_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitofp_64ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nn_window'.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_SIGMOID_Q15_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'nn_window_W_ACTIVITY_WEIGHT_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_stats_object_saturation_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_phase_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_pair_support_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_hidden_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_sum_hidden_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_sum_support_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'nn_window_activity_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.662 seconds; current allocated memory: 689.125 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 3.126 seconds; current allocated memory: 701.672 MB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.06 seconds; current allocated memory: 726.910 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for nn_window.
+INFO: [VLOG 209-307] Generating Verilog RTL for nn_window.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 102.74 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+
+****** Vivado v2025.2 (64-bit)
+
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+
+  **** Start of session at: Thu Oct 22 07:46:10 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source run_ippack.tcl -notrace
+
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/hls_data.json outdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip srcdir=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls ippack_options_dict= ippack_options_dict=
+
+INFO: Copied 1 ipmisc file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/misc
+
+INFO: Copied 202 verilog file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/verilog
+
+INFO: Copied 158 vhdl file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/vhdl
+
+INFO: Copied 10 swdriver file(s) to C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/drivers
+
+Generating 4 subcores in C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/subcore_prj:
+
+impl/misc/nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+impl/misc/nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+impl/misc/nn_window_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+impl/misc/nn_window_uitofp_64ns_32_4_no_dsp_1_ip.tcl
+
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 558.566 ; gain = 227.262
+
+INFO: Using COE_DIR=C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/verilog
+
+INFO: Generating nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+WARNING: [IP_Flow 19-4832] The IP name 'nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip'...
+
+INFO: Done generating nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip via file impl/misc/nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip.tcl
+
+INFO: Generating nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+
+INFO: Done generating nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip via file impl/misc/nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip.tcl
+
+INFO: Generating nn_window_sitofp_64s_32_4_no_dsp_1_ip via file impl/misc/nn_window_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'nn_window_sitofp_64s_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_window_sitofp_64s_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_window_sitofp_64s_32_4_no_dsp_1_ip'...
+
+INFO: Done generating nn_window_sitofp_64s_32_4_no_dsp_1_ip via file impl/misc/nn_window_sitofp_64s_32_4_no_dsp_1_ip.tcl
+
+INFO: Generating nn_window_uitofp_64ns_32_4_no_dsp_1_ip via file impl/misc/nn_window_uitofp_64ns_32_4_no_dsp_1_ip.tcl
+
+WARNING: [IP_Flow 19-4832] The IP name 'nn_window_uitofp_64ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'nn_window_uitofp_64ns_32_4_no_dsp_1_ip'...
+
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'nn_window_uitofp_64ns_32_4_no_dsp_1_ip'...
+
+INFO: Done generating nn_window_uitofp_64ns_32_4_no_dsp_1_ip via file impl/misc/nn_window_uitofp_64ns_32_4_no_dsp_1_ip.tcl
+
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+
+INFO: Copied 4 subcore files: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/ip/nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip/nn_window_fdiv_32ns_32ns_32_10_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/ip/nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip/nn_window_fmul_32ns_32ns_32_3_max_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/ip/nn_window_sitofp_64s_32_4_no_dsp_1_ip/nn_window_sitofp_64s_32_4_no_dsp_1_ip.xci C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/ip/nn_window_uitofp_64ns_32_4_no_dsp_1_ip/nn_window_uitofp_64ns_32_4_no_dsp_1_ip.xci
+
+INFO: Import ports from HDL: C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/hdl/vhdl/nn_window.vhd (nn_window)
+
+INFO: Add axi4lite interface s_axi_control
+
+INFO: Add clock interface ap_clk
+
+INFO: Add reset interface ap_rst_n
+
+INFO: Add interrupt interface interrupt
+
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+
+INFO: Add axi4full interface m_axi_features
+
+INFO: Add axi4full interface m_axi_network
+
+INFO: Add axi4full interface m_axi_aggregate
+
+INFO: Calling post_process_vitis to specialize IP
+
+INFO: Calling post_process_sysgen to specialize IP
+
+Generating sysgen info xml from json file
+
+INFO: Created IP C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/component.xml
+
+INFO: Created IP archive C:/Users/sunxi/Desktop/sixmic3D/tmp/p15_nnwindow_bias/hls/impl/ip/xilinx_com_hls_nn_window_1_0.zip
+
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 07:46:37 2026...
+
+INFO: [HLS 200-802] Generated output file p15_nnwindow_bias/nn_window.zip
+INFO: [HLS 200-112] Total CPU user time: 21 seconds. Total CPU system time: 13 seconds. Total elapsed time: 113.848 seconds; peak allocated memory: 732.453 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 58s

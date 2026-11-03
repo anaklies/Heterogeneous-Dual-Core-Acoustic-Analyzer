@@ -1,0 +1,476 @@
+{
+  "scope": "six small syntheticIR mechanism checks; not new physically modeled rooms or hardware validation",
+  "seed": 14211021,
+  "records": [
+    {
+      "id": "small_room_IR",
+      "nominalLateDecaySeconds": 0.25,
+      "earlyReflectionDelaySeconds": 0.012,
+      "earlyReferenceToNoiseDB": 45,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "T30",
+        "rt60Seconds": 0.2510119877584441,
+        "decayEstimateSeconds": 0.2510119877584441,
+        "lateReverberationValid": true,
+        "estimateScope": "late-reverberation extrapolation",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.24735341128116653,
+            "fitR2": 0.9993232487692152,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -242.567909976378,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.040916666666666664,
+            "points": 1965,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": true,
+            "estimateSeconds": 0.25122314489674535,
+            "fitR2": 0.9996758086910789,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "slopeDBPerSecond": -238.83149788870153,
+            "fitStartSeconds": 0.01925,
+            "fitEndSeconds": 0.10327083333333334,
+            "points": 4034,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T30": {
+            "valid": true,
+            "estimateSeconds": 0.2510119877584441,
+            "fitR2": 0.9998792757325787,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "slopeDBPerSecond": -239.03240851484628,
+            "fitStartSeconds": 0.01925,
+            "fitEndSeconds": 0.144375,
+            "points": 6007,
+            "reason": "relative IR estimate; not a certified spatial average"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 11.802905155397095,
+        "C80DB": 19.299747642086608,
+        "D50Percent": 93.80641605510341,
+        "centerTimeSeconds": 0.017081670748426998,
+        "energyEarly50": 12.560183641216392,
+        "energyEarly80": 13.23397710941045,
+        "energyTotal": 13.3894718180453,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.01752699999633478,
+      "inputSHA256Float64LE": "6a7bc9e59a2c4b7ece9b8db917dfe6e33369dd2c745ceee5f6b59cf6cce7c2fe"
+    },
+    {
+      "id": "small_room_IR",
+      "nominalLateDecaySeconds": 0.25,
+      "earlyReflectionDelaySeconds": 0.012,
+      "earlyReferenceToNoiseDB": 25,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "EDT",
+        "rt60Seconds": null,
+        "decayEstimateSeconds": 0.24728575684787718,
+        "lateReverberationValid": false,
+        "estimateScope": "early-decay only",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.24728575684787718,
+            "fitR2": 0.9993729757498321,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -242.6342736630408,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.0409375,
+            "points": 1966,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          },
+          "T30": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 9.611600778128878,
+        "C80DB": 12.790657752336225,
+        "D50Percent": 90.14244404074975,
+        "centerTimeSeconds": 0.04743189657027048,
+        "energyEarly50": 12.530846515955908,
+        "energyEarly80": 13.206577682509597,
+        "energyTotal": 13.901161266818123,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.017131300002802163,
+      "inputSHA256Float64LE": "addae0ab642af37bd5c7543b737435c49c755c2f9e089efc3a0415aa390b3901"
+    },
+    {
+      "id": "office_IR",
+      "nominalLateDecaySeconds": 0.4,
+      "earlyReflectionDelaySeconds": 0.024,
+      "earlyReferenceToNoiseDB": 45,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "T30",
+        "rt60Seconds": 0.39928156023330763,
+        "decayEstimateSeconds": 0.39928156023330763,
+        "lateReverberationValid": true,
+        "estimateScope": "late-reverberation extrapolation",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.38405726787263794,
+            "fitR2": 0.9994772698163461,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -156.22670111765038,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.0638125,
+            "points": 3064,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": true,
+            "estimateSeconds": 0.3970233879800679,
+            "fitR2": 0.999840027352074,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "slopeDBPerSecond": -151.1245982390645,
+            "fitStartSeconds": 0.03189583333333333,
+            "fitEndSeconds": 0.16379166666666667,
+            "points": 6332,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T30": {
+            "valid": true,
+            "estimateSeconds": 0.39928156023330763,
+            "fitR2": 0.9999171152368811,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "slopeDBPerSecond": -150.26989967916597,
+            "fitStartSeconds": 0.03189583333333333,
+            "fitEndSeconds": 0.2308125,
+            "points": 9549,
+            "reason": "relative IR estimate; not a certified spatial average"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 7.148433769815606,
+        "C80DB": 11.989399031705734,
+        "D50Percent": 83.83480394941205,
+        "centerTimeSeconds": 0.027754184907887166,
+        "energyEarly50": 18.766084382689126,
+        "energyEarly80": 21.052997851194206,
+        "energyTotal": 22.384598637593328,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.016610999999102205,
+      "inputSHA256Float64LE": "2dbb322959a532fe4322af5289debb2ed8860cdbded7c40b2b39e58329d978cf"
+    },
+    {
+      "id": "office_IR",
+      "nominalLateDecaySeconds": 0.4,
+      "earlyReflectionDelaySeconds": 0.024,
+      "earlyReferenceToNoiseDB": 25,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "EDT",
+        "rt60Seconds": null,
+        "decayEstimateSeconds": 0.38404680780832623,
+        "lateReverberationValid": false,
+        "estimateScope": "early-decay only",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.38404680780832623,
+            "fitR2": 0.99948040788688,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -156.2309561753873,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.06385416666666667,
+            "points": 3066,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          },
+          "T30": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 6.30659949391447,
+        "C80DB": 9.998127061701789,
+        "D50Percent": 81.03288236299436,
+        "centerTimeSeconds": 0.05455722160046295,
+        "energyEarly50": 18.655425322624044,
+        "energyEarly80": 20.928309656739906,
+        "energyTotal": 23.0220433713012,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.016700100000889506,
+      "inputSHA256Float64LE": "418694cae81cb193c6f309b0a3f2f458436d2d72a32286381e04a0c6dbffda12"
+    },
+    {
+      "id": "classroom_IR",
+      "nominalLateDecaySeconds": 0.6,
+      "earlyReflectionDelaySeconds": 0.041,
+      "earlyReferenceToNoiseDB": 45,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "T30",
+        "rt60Seconds": 0.5999767010221249,
+        "decayEstimateSeconds": 0.5999767010221249,
+        "lateReverberationValid": true,
+        "estimateScope": "late-reverberation extrapolation",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.6096467767390016,
+            "fitR2": 0.999682287733298,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -98.4176449204567,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.10010416666666666,
+            "points": 4806,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": true,
+            "estimateSeconds": 0.6104319289927821,
+            "fitR2": 0.9999242386437078,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "slopeDBPerSecond": -98.29105777445245,
+            "fitStartSeconds": 0.04925,
+            "fitEndSeconds": 0.25133333333333335,
+            "points": 9701,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T30": {
+            "valid": true,
+            "estimateSeconds": 0.5999767010221249,
+            "fitR2": 0.9997574193410688,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "slopeDBPerSecond": -100.0038833137746,
+            "fitStartSeconds": 0.04925,
+            "fitEndSeconds": 0.3474583333333333,
+            "points": 14315,
+            "reason": "relative IR estimate; not a certified spatial average"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 3.5022536187047457,
+        "C80DB": 7.34023773760922,
+        "D50Percent": 69.1346892769568,
+        "centerTimeSeconds": 0.04250919821807835,
+        "energyEarly50": 21.267749455455192,
+        "energyEarly80": 25.97129425300484,
+        "energyTotal": 30.762775790103852,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.017799399996874854,
+      "inputSHA256Float64LE": "ae68a83e91fdbc362b7da4aaf6c20084ec115763f71c4ca48076c2240fcf7c0e"
+    },
+    {
+      "id": "classroom_IR",
+      "nominalLateDecaySeconds": 0.6,
+      "earlyReflectionDelaySeconds": 0.041,
+      "earlyReferenceToNoiseDB": 25,
+      "rt": {
+        "valid": true,
+        "preferredMethod": "EDT",
+        "rt60Seconds": null,
+        "decayEstimateSeconds": 0.6058686223941454,
+        "lateReverberationValid": false,
+        "estimateScope": "early-decay only",
+        "fits": {
+          "EDT": {
+            "valid": true,
+            "estimateSeconds": 0.6058686223941454,
+            "fitR2": 0.9996678751450682,
+            "method": "EDT",
+            "fitRangeDB": [
+              0,
+              -10
+            ],
+            "slopeDBPerSecond": -99.03137046923555,
+            "fitStartSeconds": 0.0,
+            "fitEndSeconds": 0.09954166666666667,
+            "points": 4779,
+            "reason": "relative IR estimate; not a certified spatial average"
+          },
+          "T20": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T20",
+            "fitRangeDB": [
+              -5,
+              -25
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          },
+          "T30": {
+            "valid": false,
+            "estimateSeconds": null,
+            "fitR2": null,
+            "method": "T30",
+            "fitRangeDB": [
+              -5,
+              -35
+            ],
+            "reason": "insufficient estimated decay-to-background margin"
+          }
+        },
+        "algorithmVersion": "room-ir-relative/1",
+        "sourceType": "room_impulse_response",
+        "certifiedMeasurement": false
+      },
+      "clarity": {
+        "valid": true,
+        "C50DB": 3.1697476750493365,
+        "C80DB": 6.681764351684406,
+        "D50Percent": 67.47748514360701,
+        "centerTimeSeconds": 0.06367382672017609,
+        "energyEarly50": 21.249960501917535,
+        "energyEarly80": 25.925772525210654,
+        "energyTotal": 31.491927206079062,
+        "infiniteClarity50": false,
+        "infiniteClarity80": false,
+        "onsetSample": 0,
+        "relativeGainInvariant": true,
+        "limitation": "noise subtraction and truncation can bias energy ratios; valid measured IR required"
+      },
+      "decayCandidateCount": 5,
+      "CPUSeconds": 0.016790100002253894,
+      "inputSHA256Float64LE": "b0149dd761b9e6f5f8c2bcaeabc013622f027cf0df9bc2d8d5408ce29c1bf9f7"
+    }
+  ],
+  "sourceSHA256": "6d26b053848de2555400fa6feaf47607d0ba9753e62467e41167d02ddd2b2951",
+  "testAndReproductionSHA256": "df7769958df83bc5edd452090b70bc267d0bc7dab00b65162c7cfb3a8899d667"
+}

@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-10-23T00:15:45.669493+00:00",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "http_status": 200,
+  "response_id": "c8dae599-1781-4a0e-b4b2-18e85fcf046f",
+  "returned_model": "deepseek-flash",
+  "status": "incomplete",
+  "usage": {
+    "input_tokens": 2227,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 3000,
+    "output_tokens_details": {
+      "reasoning_tokens": 3000
+    },
+    "total_tokens": 5227
+  },
+  "task_sha256": "acc9aecfee2ffeb9b07aef4e82e4645ee72a8803949838f016c6119502822e5e",
+  "text": "",
+  "execution": "Independent API worker; no terminal or filesystem tools"
+}

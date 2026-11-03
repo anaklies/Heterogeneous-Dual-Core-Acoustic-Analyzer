@@ -1,0 +1,94 @@
+{
+  "verification": "Native scalar C versus independent NumPy, not HLS/RTL or board timing",
+  "cases": [
+    {
+      "service": "copy_first",
+      "compared": 1025,
+      "chunks": 81,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "copy_cross_slot",
+      "compared": 1025,
+      "chunks": 81,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "peak_hold_first",
+      "compared": 1025,
+      "chunks": 113,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "peak_hold_cross_slot",
+      "compared": 1025,
+      "chunks": 113,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "ema_first",
+      "compared": 1025,
+      "chunks": 145,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "ema_cross_slot",
+      "compared": 1025,
+      "chunks": 145,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "smoothing",
+      "compared": 1025,
+      "chunks": 193,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "octave_1",
+      "compared": 10,
+      "chunks": 92,
+      "max_absolute_error": 8.506365702487528e-06
+    },
+    {
+      "service": "octave_3",
+      "compared": 28,
+      "chunks": 74,
+      "max_absolute_error": 9.330688044428825e-07
+    },
+    {
+      "service": "shape",
+      "compared": 4,
+      "chunks": 241,
+      "max_absolute_error": 0.0013591943898063619
+    },
+    {
+      "service": "flux_initial",
+      "compared": 3,
+      "chunks": 209,
+      "max_absolute_error": 1.9073486328125e-05
+    },
+    {
+      "service": "flux_cross_slot",
+      "compared": 3,
+      "chunks": 209,
+      "max_absolute_error": 1.1444091796875e-05
+    },
+    {
+      "service": "shape_silence",
+      "compared": 3,
+      "chunks": 241,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "shape_single_tone",
+      "compared": 3,
+      "chunks": 241,
+      "max_absolute_error": 0.0
+    },
+    {
+      "service": "generation_mismatch_rejected",
+      "status": 3
+    }
+  ],
+  "total_compared": 7229
+}

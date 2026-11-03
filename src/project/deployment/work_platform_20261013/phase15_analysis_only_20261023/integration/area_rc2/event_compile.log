@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/area_rc2/fft_event_features.sv" into library work
+INFO: [VRFC 10-311] analyzing module fft_event_features
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/event/event_power_detector.sv" into library work
+INFO: [VRFC 10-311] analyzing module event_power_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/control/event_recorder.sv" into library work
+INFO: [VRFC 10-311] analyzing module event_recorder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/control/runtime_control.sv" into library work
+INFO: [VRFC 10-311] analyzing module runtime_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/control/raw_cursor.sv" into library work
+INFO: [VRFC 10-311] analyzing module raw_cursor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase13_pl_port_20261021/rtl/control/pcm_axi_ring_writer.sv" into library work
+INFO: [VRFC 10-311] analyzing module pcm_axi_ring_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/area_rc2/tb_event_chain.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_event_chain

@@ -1,0 +1,20 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_event_chain -s rc2_event_chain 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'fft_slot_words' remains unconnected for this instance [C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/area_rc2/tb_event_chain.sv:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.raw_cursor
+Compiling module work.pcm_axi_ring_writer_default
+Compiling module work.fft_event_features
+Compiling module work.event_power_detector
+Compiling module work.event_recorder(PRE=4,POST=6,MAX_...
+Compiling module work.runtime_control(CFG_WORDS=32,PRO...
+Compiling module work.tb_event_chain
+Built simulation snapshot rc2_event_chain

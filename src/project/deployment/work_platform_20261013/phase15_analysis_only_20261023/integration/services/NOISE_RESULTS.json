@@ -1,0 +1,276 @@
+{
+  "evidence": "PL scalar Native C interpreter versus NumPy/SciPy and frozen formula reference; no RTL/hardware timing",
+  "cases": [
+    {
+      "name": "A",
+      "values": 3,
+      "chunks": 129,
+      "max_abs_error": 3.917533923925021e-06
+    },
+    {
+      "name": "C",
+      "values": 3,
+      "chunks": 129,
+      "max_abs_error": 2.439656547892355e-06
+    },
+    {
+      "name": "Z",
+      "values": 3,
+      "chunks": 129,
+      "max_abs_error": 4.576614216489361e-07
+    },
+    {
+      "name": "silent_weighting",
+      "values": 3,
+      "chunks": 129,
+      "max_abs_error": 1.52587890625e-05
+    },
+    {
+      "name": "FAST",
+      "values": 4,
+      "chunks": 353,
+      "max_abs_error": 4.056949258313125e-06
+    },
+    {
+      "name": "FAST_resume",
+      "values": 3,
+      "chunks": 353,
+      "max_abs_error": 4.877062821151412e-06
+    },
+    {
+      "name": "FAST_counter_bound",
+      "values": 1,
+      "chunks": 1,
+      "max_abs_error": 0
+    },
+    {
+      "name": "SLOW",
+      "values": 4,
+      "chunks": 353,
+      "max_abs_error": 8.574424938956327e-07
+    },
+    {
+      "name": "SLOW_resume",
+      "values": 3,
+      "chunks": 353,
+      "max_abs_error": 4.877062821151412e-06
+    },
+    {
+      "name": "SLOW_counter_bound",
+      "values": 1,
+      "chunks": 1,
+      "max_abs_error": 0
+    },
+    {
+      "name": "rolling_level_statistics",
+      "values": 6,
+      "chunks": 14,
+      "max_abs_error": 3.977026999280042e-06
+    },
+    {
+      "name": "rolling_level_statistics",
+      "values": 6,
+      "chunks": 14,
+      "max_abs_error": 3.7260461454025062e-06
+    },
+    {
+      "name": "rolling_level_statistics",
+      "values": 6,
+      "chunks": 14,
+      "max_abs_error": 1.3176421518323878e-06
+    },
+    {
+      "name": "relative_insulation_False",
+      "values": 18,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "relative_insulation_True",
+      "values": 18,
+      "chunks": 2,
+      "max_abs_error": 7.120809097926895e-08
+    },
+    {
+      "name": "insufficient_band_power",
+      "values": 4,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "mtf_combine",
+      "values": 3,
+      "chunks": 5,
+      "max_abs_error": 3.8678149572035636e-10
+    },
+    {
+      "name": "mtf_combine",
+      "values": 3,
+      "chunks": 5,
+      "max_abs_error": 2.9415540891974956e-08
+    },
+    {
+      "name": "mtf_combine",
+      "values": 3,
+      "chunks": 5,
+      "max_abs_error": 5.9082683634414934e-08
+    },
+    {
+      "name": "bad_mtf_rejected",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "bad_mtf_rejected",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "unconfirmed_stipa",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_nominal",
+      "values": 3,
+      "chunks": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_nominal",
+      "values": 3,
+      "chunks": 28,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_nominal",
+      "values": 3,
+      "chunks": 55,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_calibrated",
+      "values": 3,
+      "chunks": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_calibrated",
+      "values": 3,
+      "chunks": 28,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_calibrated",
+      "values": 3,
+      "chunks": 55,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NR_above_table",
+      "values": 3,
+      "chunks": 54,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_None",
+      "values": 3,
+      "chunks": 1,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_nominal",
+      "values": 3,
+      "chunks": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_nominal",
+      "values": 3,
+      "chunks": 5,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_nominal",
+      "values": 3,
+      "chunks": 7,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_calibrated",
+      "values": 3,
+      "chunks": 2,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_calibrated",
+      "values": 3,
+      "chunks": 5,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_calibrated",
+      "values": 3,
+      "chunks": 7,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "NC_above_table",
+      "values": 3,
+      "chunks": 6,
+      "max_abs_error": 0.0
+    }
+  ],
+  "total_values": 164,
+  "unsupported": [
+    "NC/NR valid rating requires explicit calibrated/nominal SPL reference and resolved octave band input",
+    "L10/L50/L90 uses 16 uniform observations only, not arbitrarily long history",
+    "full STIPA acquisition, octave filters, envelope extraction and modulation regression not implemented; only final MTF combiner",
+    "spectral A/C not equivalent to IEC time-domain filters; FAST/SLOW here Z only",
+    "relative insulation needs PL band producer, two captures and matching operator metadata; not Rw/DnT",
+    "time-response descriptor must consume each hop once; gap reset and session sample count cap required"
+  ],
+  "stipa_frontend_cost": {
+    "frozen_bandpass_sos": 63,
+    "frozen_intensity_lowpass_sos": 14,
+    "total_sos_per_sample": 77,
+    "minimum_multiply_per_second_one_capture": 18480000,
+    "reference_plus_observation_minimum_multiply": 36960000,
+    "shared_scalar_minimum_instructions_per_second_one_capture": 33264000,
+    "scalar_clock_hz": 50000000,
+    "conclusion": "Even ignoring loads/stores/checkpoints, >=33.264M scalar arithmetic instructions/s for one capture. Shared multi-cycle floating operations plus DDR state exceed credible real-time budget. No live full-STIPA claim; only final combiner tested. Captured/offline all-PL frontend needs separate sequencing and numerical regression; not implemented in this bounded addendum."
+  }
+}

@@ -1,0 +1,40 @@
+SPACE /M_AXI_MAILBOX
+  /M_AXI_MAILBOX/Reg  0x00010000
+SPACE /S_AXI_ACOUSTIC
+  /S_AXI_ACOUSTIC/SEG_processing_system7_0_HP1_DDR_LOWOCM 0x00000000 0x40000000
+SPACE /S_AXI_JOB
+  /S_AXI_JOB/SEG_analysis_Reg 0x44A30000 0x00010000
+  /S_AXI_JOB/SEG_fft_Reg 0x44A40000 0x00010000
+SPACE /analysis/Data_m_axi_memory
+  /analysis/Data_m_axi_memory/SEG_processing_system7_0_HP1_DDR_LOWOCM 0x00000000 0x40000000
+SPACE /analysis/s_axi_control
+  /analysis/s_axi_control/Reg  0x00010000
+SPACE /axi_dynclk_0/s00_axi
+  /axi_dynclk_0/s00_axi/reg0  0x00000020
+SPACE /axi_gpio_btn/S_AXI
+  /axi_gpio_btn/S_AXI/Reg  0x00001000
+SPACE /axi_gpio_led/S_AXI
+  /axi_gpio_led/S_AXI/Reg  0x00001000
+SPACE /axi_vdma_0/Data_MM2S
+  /axi_vdma_0/Data_MM2S/SEG_processing_system7_0_HP0_DDR_LOWOCM 0x00000000 0x40000000
+SPACE /axi_vdma_0/S_AXI_LITE
+  /axi_vdma_0/S_AXI_LITE/Reg  0x00000100
+SPACE /fft/Data_m_axi_memory
+  /fft/Data_m_axi_memory/SEG_processing_system7_0_HP1_DDR_LOWOCM 0x00000000 0x40000000
+SPACE /fft/s_axi_control
+  /fft/s_axi_control/Reg  0x00010000
+SPACE /processing_system7_0/Data
+  /processing_system7_0/Data/SEG_M_AXI_MAILBOX_Reg 0x43C20000 0x00010000
+  /processing_system7_0/Data/SEG_analysis_Reg 0x44A30000 0x00010000
+  /processing_system7_0/Data/SEG_axi_dynclk_0_reg0 0x43C00000 0x00010000
+  /processing_system7_0/Data/SEG_axi_gpio_0_Reg 0x41200000 0x00010000
+  /processing_system7_0/Data/SEG_axi_gpio_1_Reg 0x41210000 0x00010000
+  /processing_system7_0/Data/SEG_axi_vdma_0_Reg 0x43000000 0x00010000
+  /processing_system7_0/Data/SEG_fft_Reg 0x44A40000 0x00010000
+  /processing_system7_0/Data/SEG_v_tc_0_Reg 0x43C10000 0x00010000
+SPACE /processing_system7_0/S_AXI_HP0
+  /processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM  0x40000000
+SPACE /processing_system7_0/S_AXI_HP1
+  /processing_system7_0/S_AXI_HP1/HP1_DDR_LOWOCM  0x40000000
+SPACE /v_tc_0/ctrl
+  /v_tc_0/ctrl/Reg  0x00010000

@@ -1,0 +1,75 @@
+{
+  "verification": "Native shared PL scalar C versus independent NumPy definitions, no RTL or hardware throughput claim",
+  "cases": [
+    {
+      "name": "random_independent_four_snapshots",
+      "frames": 4,
+      "bins": 1025,
+      "compared": 45104,
+      "maximum_chunks_per_frame": 1635,
+      "max_phase_error_rad": 3.569136374892423e-06
+    },
+    {
+      "name": "unity_coherence_positive_phase",
+      "frames": 3,
+      "bins": 1025,
+      "compared": 33828,
+      "maximum_chunks_per_frame": 1618,
+      "max_phase_error_rad": 1.8200097331444454e-06
+    },
+    {
+      "name": "unity_coherence_negative_phase",
+      "frames": 3,
+      "bins": 256,
+      "compared": 8451,
+      "maximum_chunks_per_frame": 413,
+      "max_phase_error_rad": 1.5419009500305947e-06
+    },
+    {
+      "name": "weak_unity_coherence",
+      "frames": 2,
+      "bins": 1025,
+      "compared": 22552,
+      "maximum_chunks_per_frame": 1618,
+      "max_phase_error_rad": 0
+    },
+    {
+      "name": "silence_two_frames",
+      "frames": 2,
+      "bins": 1025,
+      "compared": 22552,
+      "maximum_chunks_per_frame": 1010,
+      "max_phase_error_rad": 0
+    },
+    {
+      "name": "quadrant_and_endpoint_normalization",
+      "frames": 2,
+      "bins": 1025,
+      "compared": 22552,
+      "maximum_chunks_per_frame": 1630,
+      "max_phase_error_rad": 8.742278012618954e-08
+    },
+    {
+      "name": "scipy_csd_welch_three_time_blocks",
+      "frames": 3,
+      "bins": 1025,
+      "compared": 33828,
+      "maximum_chunks_per_frame": 1634,
+      "max_phase_error_rad": 1.94132060293839e-06
+    }
+  ],
+  "total_compared": 188867,
+  "limitations": [
+    "Caller must reject duplicate frameId before dispatch; snapshot pin alone does not establish freshness.",
+    "Caller must select sufficiently independent windows for statistical coherence. Count >=2 alone is necessary, not sufficient.",
+    "Partial/error results invalid until complete fence; reset history on session/pair/config changes.",
+    "No absolute SPL; raw 2048 Hann FFT assumes window energy 768; normalization must match selected FFT mode.",
+    "Selected pair only; does not claim all 15 simultaneous pairs or 10 Hz full spectral service."
+  ],
+  "costs": {
+    "full_bins_output_history_bytes": 45104,
+    "bytecode_bytes": 1936,
+    "max_vm_steps_per_bin_upper_bound": 140,
+    "private_allocation_bytes": 98304
+  }
+}

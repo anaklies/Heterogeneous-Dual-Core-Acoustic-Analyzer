@@ -1,0 +1,52 @@
+{
+  "status": "BIT_EXACT_C_AND_HLS_RESOURCE_IMPROVEMENT",
+  "baseline": {
+    "LUT": 32721,
+    "FF": 18411,
+    "DSP": 85,
+    "BRAM18K": 234,
+    "bestCycles": 4072037,
+    "worstCycles": 45091668,
+    "intervalMin": 4072038,
+    "intervalMax": 45091669,
+    "estimatedClockNs": 9.733
+  },
+  "candidate": {
+    "LUT": 21735,
+    "FF": 15227,
+    "DSP": 85,
+    "BRAM18K": 234,
+    "bestCycles": 4003997,
+    "worstCycles": 44683428,
+    "intervalMin": 4003998,
+    "intervalMax": 44683429,
+    "estimatedClockNs": 9.733
+  },
+  "delta": {
+    "LUT": -10986,
+    "FF": -3184,
+    "DSP": 0,
+    "BRAM18K": 0,
+    "bestCycles": -68040,
+    "worstCycles": -408240,
+    "intervalMin": -68040,
+    "intervalMax": -408240,
+    "estimatedClockNs": 0.0
+  },
+  "fixedBiasShifts": [
+    9,
+    8,
+    9,
+    13,
+    13,
+    13
+  ],
+  "matrixLUTBefore": 13206,
+  "matrixLUTAfter": 2964,
+  "wholeBoard": false,
+  "rtlCosim": false,
+  "routedTiming": false,
+  "continuous10HzProven": false,
+  "ipArchive": "tmp/p15_nnwindow_bias/hls/impl/ip/xilinx_com_hls_nn_window_1_0.zip",
+  "limitation": "kind/input_fraction invariant is required. BRAM usage unchanged and worst HLS bound remains ~596ms at75MHz. One existing fullwindow exact test does not replace future integration verification."
+}

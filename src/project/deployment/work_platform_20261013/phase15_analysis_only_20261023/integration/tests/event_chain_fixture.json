@@ -1,0 +1,15 @@
+{
+  "sourcePCM": "pcm_window.hex",
+  "sourceSpectrum": "stream_golden.txt",
+  "spectrumEvidence": "existing six-channel HLS C simulation and one-channel production FFT RTL; no new full-FFT per-frame simulation",
+  "lowGain": 1,
+  "highGain": 8,
+  "powerGain": 64,
+  "exactBinaryGain": true,
+  "simulationTiming": "accelerated/pausable PCM playback; NOT a realtime-rate proof",
+  "shortenedRetentionSamples": {
+    "pre": 4,
+    "post": 6,
+    "max": 64
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\pl_system\\analysis_dma\\memory_ports.h",
+      "bytes": 3033,
+      "sha256": "83b65ae969185fa56093d3205e794960d9f01c288f2f01903a20216ead709f8b"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\pl_system\\analysis_dma\\analysis_dma.cpp",
+      "bytes": 10567,
+      "sha256": "a818c932dba8f227e28813557a71bcffba01b01328ffe00ed36e3b5e7d8e31c1"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\pl_system\\hls_job_bridge.sv",
+      "bytes": 9136,
+      "sha256": "04d02bfa3671e6e2f16978601b2bf251263edc8a6e81f1239fae6d52929ef7ed"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\sixmic_lcd_gif_20261012.cpp",
+      "bytes": 10657,
+      "sha256": "c53cefa0c97be02345e4cc87d012c48eb3d3fad85ed3c2d9cff1e97df0c9010c"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\69f52e3f64c2e7sT.gif",
+      "bytes": 1644224,
+      "sha256": "78d9d4229eaaada53c6194f6cfce88714b1aa41d795a9d9552757c19b2fc9978"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\p18_shared_fft\\hls\\impl\\ip\\xilinx_com_hls_analysis_fft2048_1_0.zip",
+      "bytes": 260313,
+      "sha256": "e4507cb0b64040e43b06d643df29aa28c8af7c4f1f22d2807b0814e1e7927b7c"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\p18_analysis_extended\\hls\\impl\\ip\\xilinx_com_hls_analysis_dma_safe_1_0.zip",
+      "bytes": 717007,
+      "sha256": "36ad491646444e4557daaa9adc6d82862da42c0dcc9ba31266fd6cba837b0bfb"
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\tmp\\p19_compact_data\\compact_analysis_synth.dcp",
+      "bytes": 22622739,
+      "sha256": "3fd1d1e60a892f46062e97c7fe8d0075614a3d7456143c47e6050c8a5fa4fe39"
+    }
+  ],
+  "historical190and620Rehashed": false,
+  "oldStartupModified": false
+}

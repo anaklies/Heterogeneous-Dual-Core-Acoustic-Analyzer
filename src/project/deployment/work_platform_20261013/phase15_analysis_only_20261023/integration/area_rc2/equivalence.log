@@ -1,0 +1,25 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct 24 19:44:24 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/feature_eq/xsim_script.tcl
+# xsim {feature_eq} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+FEATURE_EQ_CASE 0 old=30754 new=84578 reads=6150 valid=1
+FEATURE_EQ_CASE 1 old=30754 new=84578 reads=6150 valid=1
+FEATURE_EQ_CASE 2 old=30754 new=84578 reads=6150 valid=0
+FEATURE_EQ_CASE 3 old=30754 new=84578 reads=6150 valid=0
+FEATURE_EQ_CASE 4 old=30754 new=84578 reads=6150 valid=0
+FEATURE_EQ_CASE 5 old=598 new=1650 reads=120 valid=0
+FEATURE_EQ_CASE 6 old=601 new=1651 reads=120 valid=0
+FEATURE_EQ_CASE 7 old=30864 new=84688 reads=6150 valid=0
+FEATURE_EQ_PASS cases=8 exact_all_outputs max_cycles=84688
+$finish called at time : 5109380 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/area_rc2/tb_features_equivalence.sv" Line 107
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 24 19:44:27 2026...

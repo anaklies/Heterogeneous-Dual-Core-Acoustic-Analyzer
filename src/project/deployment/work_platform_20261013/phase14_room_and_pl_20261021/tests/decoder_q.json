@@ -1,0 +1,40 @@
+{
+  "status": "PASS_AFFECTED_C_MODEL",
+  "rows": [
+    {
+      "id": "saved_window",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 1.7881393432617188e-07
+    },
+    {
+      "id": "fixed_fft_window",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 0.0,
+      "coarseScoreChange": 1.7881393432617188e-07
+    },
+    {
+      "id": "coarse_point_0",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 5.364418029785156e-07,
+      "coarseScoreChange": 5.364418029785156e-07
+    },
+    {
+      "id": "coarse_point_292",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 1.7881393432617188e-07,
+      "coarseScoreChange": 1.7881393432617188e-07
+    },
+    {
+      "id": "coarse_point_613",
+      "directionChangeDegrees": 0.0,
+      "finalScoreChange": 4.76837158203125e-07,
+      "coarseScoreChange": 4.76837158203125e-07
+    }
+  ],
+  "format": "signed32Q20 vector x signed16Q14 bank -> signed64 accumulator",
+  "mathematicalAbsoluteScoreQuantizationBound": 9.5367431640625e-07,
+  "coarsePointCount": 614,
+  "componentsPerPoint": 1890,
+  "fullRTL": false
+}

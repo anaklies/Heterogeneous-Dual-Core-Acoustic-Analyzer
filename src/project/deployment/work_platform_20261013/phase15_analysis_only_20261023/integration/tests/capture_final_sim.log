@@ -1,0 +1,17 @@
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Oct 23 14:13:10 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/capture_final_sim/xsim_script.tcl
+# xsim {capture_final_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+REAL_I2S_CDC_PLANAR_DMA_PASS checks=12288 bursts=768 samples=2098
+$finish called at time : 43714280 ns : File "C:/Users/sunxi/Desktop/sixmic3D/deployment/work_platform_20261013/phase15_analysis_only_20261023/integration/tests/tb_capture_window.sv" Line 72
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 23 14:13:12 2026...

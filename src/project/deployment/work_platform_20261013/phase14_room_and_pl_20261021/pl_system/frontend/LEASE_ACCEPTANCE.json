@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": 58,
+  "scope": "frontend cache lease RTL only",
+  "sourceSHA256": "15a2a42a3f877aa2c72f673a2c43b62b58c37c5ad18ba808b4606b64259803f6",
+  "testSHA256": "66246cf055c39f88424bf7bfae06eb66206c5b7eee3648192f4a0d81e28f5448",
+  "rawLog": "deployment\\work_platform_20261013\\phase14_room_and_pl_20261021\\pl_system\\frontend\\cache\\lease\\simulate.log",
+  "globalSlotPoolImplemented": false,
+  "AXIControllerBridgeImplemented": false,
+  "busQuiescentMonitorImplemented": false,
+  "actualBoard": false
+}
