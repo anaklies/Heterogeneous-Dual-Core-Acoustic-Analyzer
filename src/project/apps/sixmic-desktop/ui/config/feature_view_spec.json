@@ -1,0 +1,8459 @@
+{
+ "version": 1,
+ "interfaceVersion": "echo-features-1",
+ "networkProtocol": {
+  "name": "sixmic-analysis",
+  "version": 1
+ },
+ "generatedFrom": {
+  "csv": "deployment/echo_feature_closure_20261025/51_FEATURE_CALLS.csv",
+  "csvSha256": "4fb672c6516fc584b71dee9ffe36cd88ac02d8b32ad3d7b5d30ed0529f92cf06",
+  "registry": "deployment/echo_feature_closure_20261025/registry/INTERFACE_REGISTRY.json",
+  "registrySha256": "6b5790d2dbc0762dff84f9ba2a7eea615c000ff60def645e6042408ae215c938"
+ },
+ "deviceDefault": {
+  "sampleRateHz": 48009.775390625,
+  "fftSize": 2048,
+  "channels": 6,
+  "catalogPageSize": 8,
+  "catalogMaxPageSize": 16,
+  "maxResultWordsPerPage": 1024,
+  "maxJobSlots": 8
+ },
+ "pages": {
+  "time": {
+   "labelZh": "时域与电平",
+   "labelEn": "Time & Levels",
+   "groups": [
+    {
+     "id": "acquisition",
+     "labelZh": "采集、电平与输入质量",
+     "labelEn": "Acquisition, levels & input quality",
+     "features": [
+      "io_pcm",
+      "levels_core",
+      "levels_extended",
+      "data_continuity",
+      "signal_quality"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有总览/时域/设备记录：六通道波形、电平、连续性和新鲜度",
+   "categoryHintEn": "Overview / Time / Device records: six-channel waveform, levels, continuity and freshness"
+  },
+  "spectrum": {
+   "labelZh": "频谱与时频",
+   "labelEn": "Spectrum & Time-Frequency",
+   "groups": [
+    {
+     "id": "spectrum_compare",
+     "labelZh": "频谱及比较",
+     "labelEn": "Spectrum & comparison",
+     "features": [
+      "fft",
+      "psd",
+      "stft",
+      "spectrum_average",
+      "peak_hold",
+      "smoothing",
+      "zoom_fft",
+      "spectrum_freeze",
+      "relative_limit"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有频谱/时频：折线、热力图、3D瀑布、冻结A/B和限值叠加",
+   "categoryHintEn": "Spectrum / time-frequency: lines, heatmap, 3D waterfall, freeze A/B and limit overlay"
+  },
+  "bands": {
+   "labelZh": "频带与噪声",
+   "labelEn": "Bands & Noise",
+   "groups": [
+    {
+     "id": "bands_stats",
+     "labelZh": "频带、计权与统计",
+     "labelEn": "Bands, weighting & statistics",
+     "features": [
+      "octave",
+      "third_octave",
+      "frequency_time_weighting",
+      "level_statistics",
+      "noise_rating"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有频带/噪声：紧凑渐变柱图、统计趋势和参考曲线",
+   "categoryHintEn": "Bands / noise: compact gradient bars, statistics trends and reference curves"
+  },
+  "periodic": {
+   "labelZh": "周期与调制",
+   "labelEn": "Periodic & Modulation",
+   "groups": [
+    {
+     "id": "periodic",
+     "labelZh": "周期、调制及频率特征",
+     "labelEn": "Periodic, modulation & frequency features",
+     "features": [
+      "frequency_tracking",
+      "frequency_drift",
+      "centroid",
+      "flatness",
+      "spectral_kurtosis",
+      "cepstrum",
+      "fundamental",
+      "harmonic_ratio",
+      "sidebands",
+      "envelope_hilbert",
+      "envelope_spectrum",
+      "modulation_spectrum"
+     ]
+    }
+   ],
+   "categoryHintZh": "频谱辅助工具/高级工具对应子组：频率趋势、倒谱、谐波、包络与调制谱",
+   "categoryHintEn": "Spectrum helpers / advanced sub-group: frequency trends, cepstrum, harmonics, envelope and modulation spectra"
+  },
+  "multichannel": {
+   "labelZh": "多通道关联",
+   "labelEn": "Multichannel Correlation",
+   "groups": [
+    {
+     "id": "multichannel",
+     "labelZh": "多通道与相关",
+     "labelEn": "Multichannel & correlation",
+     "features": [
+      "csd",
+      "coherence_phase",
+      "autocorrelation",
+      "cross_correlation",
+      "gcc_phat"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有多通道页：CSD、相干性、相位及相关/时延图",
+   "categoryHintEn": "Multichannel: CSD, coherence, phase and correlation/delay plots"
+  },
+  "events": {
+   "labelZh": "异常事件",
+   "labelEn": "Events",
+   "groups": [
+    {
+     "id": "events",
+     "labelZh": "变化与事件监测",
+     "labelEn": "Change & event monitoring",
+     "features": [
+      "energy_change",
+      "band_tracking",
+      "spectral_flux",
+      "event_trigger"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有事件/监测：趋势、事件时间轴、设备事件列表与采集记录",
+   "categoryHintEn": "Events/monitoring: trends, event timeline, device event list and capture records"
+  },
+  "room": {
+   "labelZh": "房间指标",
+   "labelEn": "Room Metrics",
+   "groups": [
+    {
+     "id": "room",
+     "labelZh": "房间及相对测量",
+     "labelEn": "Room & relative measurement",
+     "features": [
+      "room_decay",
+      "room_clarity",
+      "spectral_decay",
+      "relative_insulation",
+      "stipa_experimental"
+     ]
+    }
+   ],
+   "categoryHintZh": "现有高级工具/房间子组：衰减、清晰度、分频衰减、相对隔声、实验STIPA",
+   "categoryHintEn": "Advanced tools / room sub-group: decay, clarity, band decay, relative insulation, experimental STIPA"
+  }
+ },
+ "features": {
+  "io_pcm": {
+   "featureId": "io_pcm",
+   "name": "六通道WAV/PCM",
+   "shortZh": "PCM采集",
+   "shortEn": "PCM Capture",
+   "nameEn": "Six-channel WAV/PCM",
+   "page": "time",
+   "group": "acquisition",
+   "icon": "audio-waveform",
+   "chart": "waveform",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "samples",
+      "default": 2048,
+      "required": false,
+      "unit": "",
+      "description": "2048 uses immutable P0 snapshot; larger captures a verified contiguous record",
+      "type": "int",
+      "min": 2048,
+      "max": 1000000,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "采样点数",
+      "labelEn": "Samples"
+     },
+     {
+      "key": "channels",
+      "default": 6,
+      "required": false,
+      "unit": "",
+      "description": "For long capture; channel selects mono input when channels=1",
+      "enum": [
+       1,
+       6
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道数",
+      "labelEn": "Channels"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0,
+     "samples": 2048,
+     "channels": 6
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "samples": {
+     "default": 2048,
+     "range": [
+      2048,
+      1000000
+     ],
+     "type": "uint32",
+     "description": "2048 uses immutable P0 snapshot; larger captures a verified contiguous record"
+    },
+    "channels": {
+     "default": 6,
+     "enum": [
+      1,
+      6
+     ],
+     "description": "For long capture; channel selects mono input when channels=1"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "samples",
+     "channels",
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "waveform",
+    "encoding": "pcm24",
+    "fullWords": "samples*channels",
+    "displayDecimation": "peak-envelope",
+    "maxDisplayPoints": 4096,
+    "units": "signed24 counts"
+   },
+   "specialFlow": null,
+   "units": "digital signed24 counts",
+   "validity": "No silent overwrite or gap; finite device capture only",
+   "limitations": [],
+   "schemaKind": "waveform",
+   "producer": "integration/instrument_top.sv",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "levels_core": {
+   "featureId": "levels_core",
+   "name": "RMS/Peak/dBFS/波峰因数/削顶",
+   "shortZh": "电平核心",
+   "shortEn": "Levels",
+   "nameEn": "RMS/Peak/dBFS/Crest/Clipping",
+   "page": "time",
+   "group": "acquisition",
+   "icon": "activity",
+   "chart": "level-bars",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "channel-fields",
+    "channels": 6,
+    "stride": 8,
+    "fields": [
+     "rms_FS",
+     "peak_FS",
+     "peakToPeak_FS",
+     "mean_FS",
+     "rms_dBFS",
+     "crest",
+     "clipCount",
+     "nonzeroValid"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "FS, dBFS, ratio, count",
+   "validity": "Same immutable PL frame; silence nonzeroValid0 suppresses dBFS",
+   "limitations": [],
+   "schemaKind": "scalars",
+   "producer": "integration/shared_backend/stream_fft.cpp",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "levels_extended": {
+   "featureId": "levels_extended",
+   "name": "Peak-to-Peak及扩展电平",
+   "shortZh": "扩展电平",
+   "shortEn": "Ext. Levels",
+   "nameEn": "Peak-to-peak and extended levels",
+   "page": "time",
+   "group": "acquisition",
+   "icon": "activity",
+   "chart": "level-bars",
+   "tier": "P1",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "channel-fields",
+    "channels": 6,
+    "stride": 8,
+    "fields": [
+     "rms_FS",
+     "peak_FS",
+     "peakToPeak_FS",
+     "mean_FS",
+     "rms_dBFS",
+     "crest",
+     "clipCount",
+     "nonzeroValid"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "FS, dBFS, ratio, count",
+   "validity": "Same immutable PL frame; silence nonzeroValid0 suppresses dBFS",
+   "limitations": [],
+   "schemaKind": "scalars",
+   "producer": "integration/shared_backend/stream_fft.cpp",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "data_continuity": {
+   "featureId": "data_continuity",
+   "name": "采样连续性与异常输入",
+   "shortZh": "采样连续性",
+   "shortEn": "Continuity",
+   "nameEn": "Sample continuity and input anomalies",
+   "page": "time",
+   "group": "acquisition",
+   "icon": "link-2",
+   "chart": "scalars",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "snapshot",
+    "words": 32,
+    "dataFaultMask": 1023,
+    "fields": [
+     {
+      "key": "source_frame_id",
+      "word": 2,
+      "type": "uint32"
+     },
+     {
+      "key": "config",
+      "word": 3,
+      "type": "uint32"
+     },
+     {
+      "key": "session",
+      "word": 4,
+      "type": "uint32"
+     },
+     {
+      "key": "slot",
+      "word": 5,
+      "type": "uint32"
+     },
+     {
+      "key": "sample_index",
+      "words": [
+       8,
+       9
+      ],
+      "type": "u64dec"
+     },
+     {
+      "key": "faults",
+      "word": 10,
+      "type": "uint32"
+     },
+     {
+      "key": "missed",
+      "word": 12,
+      "type": "uint32"
+     },
+     {
+      "key": "dropped",
+      "word": 13,
+      "type": "uint32"
+     },
+     {
+      "key": "lost_events",
+      "word": 29,
+      "type": "uint32"
+     },
+     {
+      "key": "handoff_drops",
+      "word": 30,
+      "type": "uint32"
+     },
+     {
+      "key": "sample_rate_hz",
+      "word": 31,
+      "type": "float32"
+     }
+    ],
+    "derived": [
+     {
+      "key": "continuity_ok",
+      "expr": "faults & 1023 == 0",
+      "type": "bool"
+     }
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "frame/sample counts; status bit fields",
+   "validity": "P0 status/frame/source validity required; fresh sequence and matching capture identity",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "integration/instrument_top.sv",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "signal_quality": {
+   "featureId": "signal_quality",
+   "name": "输入信号状态检查",
+   "shortZh": "输入质量",
+   "shortEn": "Input Quality",
+   "nameEn": "Input signal status check",
+   "page": "time",
+   "group": "acquisition",
+   "icon": "shield-check",
+   "chart": "scalars",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "snapshot",
+    "words": 32,
+    "dataFaultMask": 1023,
+    "fields": [
+     {
+      "key": "source_frame_id",
+      "word": 2,
+      "type": "uint32"
+     },
+     {
+      "key": "config",
+      "word": 3,
+      "type": "uint32"
+     },
+     {
+      "key": "session",
+      "word": 4,
+      "type": "uint32"
+     },
+     {
+      "key": "slot",
+      "word": 5,
+      "type": "uint32"
+     },
+     {
+      "key": "sample_index",
+      "words": [
+       8,
+       9
+      ],
+      "type": "u64dec"
+     },
+     {
+      "key": "faults",
+      "word": 10,
+      "type": "uint32"
+     },
+     {
+      "key": "missed",
+      "word": 12,
+      "type": "uint32"
+     },
+     {
+      "key": "dropped",
+      "word": 13,
+      "type": "uint32"
+     },
+     {
+      "key": "sample_rate_hz",
+      "word": 31,
+      "type": "float32"
+     }
+    ],
+    "derived": [
+     {
+      "key": "capture_valid",
+      "expr": "faults & 1023 == 0",
+      "type": "bool"
+     },
+     {
+      "key": "fresh",
+      "expr": "frame != previousFrame",
+      "type": "bool",
+      "note": "display comparison of successive frames"
+     }
+    ],
+    "requiresZeroWords": false,
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "valid/fresh Boolean; frame/sample counts",
+   "validity": "P0 status/frame/source validity required; fresh sequence and matching capture identity",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "integration/instrument_top.sv",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "fft": {
+   "featureId": "fft",
+   "name": "FFT幅度谱",
+   "shortZh": "FFT幅度谱",
+   "shortEn": "FFT",
+   "nameEn": "FFT amplitude / power spectrum",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "bin_power_FS2",
+    "wireNote": "P0 snapshot triplet lane 2 (bin_power_FS2) per gateway P0 capture contract"
+   },
+   "specialFlow": null,
+   "units": "amplitude FS; PSD FS squared/Hz; binPower FS squared",
+   "validity": "P0 status/frame/source validity required; fresh sequence and matching capture identity",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "integration/shared_backend/stream_fft.cpp",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "psd": {
+   "featureId": "psd",
+   "name": "Welch PSD",
+   "shortZh": "Welch PSD",
+   "shortEn": "PSD",
+   "nameEn": "Welch power spectral density",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P0",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "count-then-series",
+    "countIndex": 0,
+    "offset": 1,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "mean_PSD_FS2_per_Hz",
+    "countType": "uint32"
+   },
+   "specialFlow": null,
+   "units": "FS squared/Hz",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "analysis_statistics.welch",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "stft": {
+   "featureId": "stft",
+   "name": "STFT与瀑布数据",
+   "shortZh": "STFT时频",
+   "shortEn": "STFT",
+   "nameEn": "STFT spectrogram / waterfall",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "layers",
+   "chart": "stft",
+   "tier": "P0",
+   "mode": "p0",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "frames": 8,
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "frames",
+      "default": 8,
+      "required": false,
+      "unit": "",
+      "description": "Actual retained PL PSD frames, with sample-index axis",
+      "type": "int",
+      "min": 1,
+      "max": 16,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "帧数",
+      "labelEn": "Frames"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0,
+     "frames": 8
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "frames": {
+     "default": 8,
+     "range": [
+      1,
+      16
+     ],
+     "type": "uint32",
+     "description": "Actual retained PL PSD frames, with sample-index axis"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "frames",
+     "channel"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "stft",
+    "bins": 1025,
+    "fftSize": 2048,
+    "sampleRateHzFrom": "schema.axes.sampleRateHz",
+    "frameIndicesFrom": "schema.axes.frameFirstSampleIndices",
+    "framesParam": "frames",
+    "order": "frame-major",
+    "field": "PSD",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "amplitude FS; PSD FS squared/Hz; binPower FS squared; time seconds",
+   "validity": "P0 status/frame/source validity required; fresh sequence and matching capture identity",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "integration/shared_backend/stream_fft.cpp",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "spectrum_average": {
+   "featureId": "spectrum_average",
+   "name": "谱功率平均",
+   "shortZh": "谱平均",
+   "shortEn": "Avg Spectrum",
+   "nameEn": "Spectrum power average (EMA)",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P0",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "kind",
+      "default": "ema",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "kind",
+      "labelEn": "kind"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "alpha",
+      "default": 0.2,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "平滑系数",
+      "labelEn": "Alpha"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "kind": {
+     "default": "ema",
+     "required": false
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "alpha": {
+     "default": 0.2,
+     "required": false,
+     "range": "0 < alpha <= 1"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "EMA_bin_power_FS2"
+   },
+   "specialFlow": null,
+   "units": "FS squared per bin",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.vector",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "peak_hold": {
+   "featureId": "peak_hold",
+   "name": "谱峰值保持",
+   "shortZh": "峰值保持",
+   "shortEn": "Peak Hold",
+   "nameEn": "Spectrum peak hold",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "kind",
+      "default": "peak_hold",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "kind",
+      "labelEn": "kind"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "alpha",
+      "default": 0.2,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "平滑系数",
+      "labelEn": "Alpha"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "kind": {
+     "default": "peak_hold",
+     "required": false
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "alpha": {
+     "default": 0.2,
+     "required": false,
+     "range": "0 < alpha <= 1"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "max_bin_power_FS2"
+   },
+   "specialFlow": null,
+   "units": "FS squared per bin",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.vector",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "smoothing": {
+   "featureId": "smoothing",
+   "name": "谱平滑",
+   "shortZh": "谱平滑",
+   "shortEn": "Smoothing",
+   "nameEn": "PL spectrum smoothing",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "smoothed_bin_power_FS2"
+   },
+   "specialFlow": null,
+   "units": "FS squared per bin",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.smoothing",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "zoom_fft": {
+   "featureId": "zoom_fft",
+   "name": "Zoom FFT",
+   "shortZh": "Zoom FFT",
+   "shortEn": "Zoom FFT",
+   "nameEn": "Heterodyne FIR zoom FFT",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "zoom-in",
+   "chart": "zoom-spectrum",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {},
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "fs",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "center_hz",
+      "default": 12002.44384765625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "中心频率",
+      "labelEn": "Center"
+     },
+     {
+      "key": "decimation",
+      "default": 2,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "抽取倍数",
+      "labelEn": "Decimation"
+     },
+     {
+      "key": "taps",
+      "default": 65,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "滤波阶数",
+      "labelEn": "Taps"
+     }
+    ],
+    "startDefaults": {}
+   },
+   "paramSpec": {
+    "fs": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "center_hz": {
+     "default": 12002.44384765625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "decimation": {
+     "default": 2,
+     "required": false
+    },
+    "taps": {
+     "default": 65,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "zoom",
+    "pairs": 2048,
+    "wordCount": 4096,
+    "amplitudeWordOffset": 0,
+    "psdWordOffset": 1,
+    "stride": 2,
+    "frequencyAxis": "unshifted center + fftfreq(2048, decimation/fs); display fftshift only",
+    "passbandFraction": 0.3,
+    "layout": "two-sided complex amplitude / PSD pairs",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "amplitude FS; PSD FS squared/Hz; frequency Hz",
+   "validity": "record immutability; all samples finite; only central |f-center|<=0.30*fs/D recommended passband",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "extra_spectral.zoom_spectrum",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "contiguous capture"
+    },
+    {
+     "kind": "device",
+     "text": "PCM24 normalization must execute on PL"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "spectrum_freeze": {
+   "featureId": "spectrum_freeze",
+   "name": "频谱冻结和A/B",
+   "shortZh": "频谱冻结A/B",
+   "shortEn": "Freeze A/B",
+   "nameEn": "Spectrum freeze and A/B delta",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "git-compare",
+   "chart": "ab-spectrum",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "reference_compare",
+    "referenceParams": {
+     "action": "reference"
+    },
+    "compareParams": {
+     "action": "compare"
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "threshold",
+      "default": 0.01,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "threshold",
+      "labelEn": "threshold"
+     },
+     {
+      "key": "action",
+      "default": "compare",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "reference",
+       "compare"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "动作",
+      "labelEn": "Action"
+     },
+     {
+      "key": "referenceJobId",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考任务",
+      "labelEn": "Reference job"
+     }
+    ],
+    "startDefaults": {
+     "action": "compare"
+    }
+   },
+   "paramSpec": {
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "threshold": {
+     "default": 0.01,
+     "required": false
+    },
+    "action": {
+     "enum": [
+      "reference",
+      "compare"
+     ],
+     "default": "compare"
+    },
+    "referenceJobId": {
+     "required": "compare",
+     "type": "string"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "action",
+     "referenceJobId"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "ab-compare",
+    "count": 1025,
+    "deltaOffset": 0,
+    "middleOffset": 1025,
+    "flagsOffset": 2050,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "reference_compare",
+    "referenceAction": "reference",
+    "compareAction": "compare",
+    "referenceParam": "referenceJobId",
+    "requiresSavedReference": true,
+    "note": "capture/freeze reference first; compare only on matching channel/grid/gain/source identity"
+   },
+   "units": "FS squared/bin",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "analysis_statistics.compare",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "capture/freeze reference B"
+    },
+    {
+     "kind": "device",
+     "text": "matching channel/grid/gain/source metadata"
+    },
+    {
+     "kind": "reference",
+     "text": "先 action=reference 冻结参考并保存 referenceJobId"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": false,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "relative_limit": {
+   "featureId": "relative_limit",
+   "name": "相对限值检测",
+   "shortZh": "相对限值",
+   "shortEn": "Rel. Limit",
+   "nameEn": "Relative limit detection vs reference",
+   "page": "spectrum",
+   "group": "spectrum_compare",
+   "icon": "octagon-alert",
+   "chart": "statistics",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "reference_compare",
+    "referenceParams": {
+     "action": "reference"
+    },
+    "compareParams": {
+     "action": "compare"
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "threshold",
+      "default": 6,
+      "required": false,
+      "unit": "dB",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "threshold",
+      "labelEn": "threshold"
+     },
+     {
+      "key": "action",
+      "default": "compare",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "reference",
+       "compare"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "动作",
+      "labelEn": "Action"
+     },
+     {
+      "key": "referenceJobId",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考任务",
+      "labelEn": "Reference job"
+     }
+    ],
+    "startDefaults": {
+     "action": "compare"
+    }
+   },
+   "paramSpec": {
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "threshold": {
+     "default": 6,
+     "required": false
+    },
+    "action": {
+     "enum": [
+      "reference",
+      "compare"
+     ],
+     "default": "compare"
+    },
+    "referenceJobId": {
+     "required": "compare",
+     "type": "string"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "action",
+     "referenceJobId"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "ab-compare",
+    "count": 1025,
+    "deltaOffset": 0,
+    "middleOffset": 1025,
+    "flagsOffset": 2050,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "reference_compare",
+    "referenceAction": "reference",
+    "compareAction": "compare",
+    "referenceParam": "referenceJobId",
+    "requiresSavedReference": true,
+    "note": "reference must be a completed PL power capture; threshold flags are absolute-change flags, not dB SPL limits"
+   },
+   "units": "FS squared/bin",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "analysis_statistics.compare",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "capture/freeze reference B"
+    },
+    {
+     "kind": "device",
+     "text": "matching channel/grid/gain/source metadata"
+    },
+    {
+     "kind": "reference",
+     "text": "先 action=reference 冻结参考并保存 referenceJobId"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": false,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "octave": {
+   "featureId": "octave",
+   "name": "1/1倍频程",
+   "shortZh": "1/1倍频程",
+   "shortEn": "1/1 Octave",
+   "nameEn": "1/1 octave band energy",
+   "page": "bands",
+   "group": "bands_stats",
+   "icon": "chart-bar",
+   "chart": "bands",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "fraction",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       1,
+       3
+      ],
+      "type": "enum",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "fraction",
+      "labelEn": "fraction"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "low",
+      "default": 31.25,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "低截止",
+      "labelEn": "Low"
+     },
+     {
+      "key": "high",
+      "default": 16000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "高截止",
+      "labelEn": "High"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "fraction": {
+     "default": 1,
+     "required": false,
+     "enum": [
+      1,
+      3
+     ]
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "low": {
+     "default": 31.25,
+     "required": false,
+     "unit": "Hz"
+    },
+    "high": {
+     "default": 16000,
+     "required": false,
+     "unit": "Hz"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "bands",
+    "centersFrom": "schema.axes.bandHz",
+    "encoding": "float32",
+    "xAxis": "centerFrequencyHz"
+   },
+   "specialFlow": null,
+   "units": "FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.band_sums",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "third_octave": {
+   "featureId": "third_octave",
+   "name": "1/3倍频程",
+   "shortZh": "1/3倍频程",
+   "shortEn": "1/3 Octave",
+   "nameEn": "1/3 octave band energy",
+   "page": "bands",
+   "group": "bands_stats",
+   "icon": "chart-bar",
+   "chart": "bands",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "fraction",
+      "default": 3,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       1,
+       3
+      ],
+      "type": "enum",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "fraction",
+      "labelEn": "fraction"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "low",
+      "default": 31.25,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "低截止",
+      "labelEn": "Low"
+     },
+     {
+      "key": "high",
+      "default": 16000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "高截止",
+      "labelEn": "High"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "fraction": {
+     "default": 3,
+     "required": false,
+     "enum": [
+      1,
+      3
+     ]
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "low": {
+     "default": 31.25,
+     "required": false,
+     "unit": "Hz"
+    },
+    "high": {
+     "default": 16000,
+     "required": false,
+     "unit": "Hz"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "bands",
+    "centersFrom": "schema.axes.bandHz",
+    "encoding": "float32",
+    "xAxis": "centerFrequencyHz"
+   },
+   "specialFlow": null,
+   "units": "FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.band_sums",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "frequency_time_weighting": {
+   "featureId": "frequency_time_weighting",
+   "name": "A/C/Z与FAST/SLOW",
+   "shortZh": "频率/时间计权",
+   "shortEn": "Weighting",
+   "nameEn": "A/C/Z weighting and Z FAST/SLOW/LeqFS",
+   "page": "bands",
+   "group": "bands_stats",
+   "icon": "sliders-horizontal",
+   "chart": "weighting",
+   "tier": "P1",
+   "mode": "p2",
+   "launch": {
+    "kind": "dual_variant",
+    "runs": [
+     {
+      "id": "A",
+      "params": {
+       "weighting": "A",
+       "timeResponse": false
+      }
+     },
+     {
+      "id": "C",
+      "params": {
+       "weighting": "C",
+       "timeResponse": false
+      }
+     },
+     {
+      "id": "Z",
+      "params": {
+       "weighting": "Z",
+       "timeResponse": false
+      }
+     },
+     {
+      "id": "time",
+      "params": {
+       "timeResponse": true
+      }
+     }
+    ],
+    "note": "两次独立PL运行：A/C/Z相对频率计权 与 独立Z/未计权FAST/SLOW/LeqFS，图表分开标注，绝不合并为A计权时间响应",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "weighting",
+      "default": "A",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "A",
+       "C",
+       "Z"
+      ],
+      "type": "enum",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频率计权",
+      "labelEn": "Weighting"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "timeResponse",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "false=A/C/Z spectral relative level; true=captured exact unweighted FAST/SLOW/LeqFS",
+      "type": "bool",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "时间计权响应",
+      "labelEn": "Time response"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0,
+     "timeResponse": false
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "weighting": {
+     "default": "A",
+     "required": false,
+     "enum": [
+      "A",
+      "C",
+      "Z"
+     ]
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "timeResponse": {
+     "default": false,
+     "type": "bool",
+     "description": "false=A/C/Z spectral relative level; true=captured exact unweighted FAST/SLOW/LeqFS"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "timeResponse"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "weighting",
+    "words": 1028,
+    "spectralFields": [
+     "weighted_power_FS2",
+     "weighted_dBFS",
+     "valid"
+    ],
+    "recordedFields": [
+     "FAST_power_FS2",
+     "FAST_dBFS",
+     "SLOW_power_FS2",
+     "SLOW_dBFS",
+     "LeqFS",
+     "samples_uint32",
+     "valid",
+     "FAST_settled",
+     "SLOW_settled"
+    ],
+    "recordedWords": 48032,
+    "recordedWorkspace": true,
+    "recordedInputOffset": 32,
+    "layoutSource": "noise_services.weighted_level 与 recorded_time_response；host APL spectral_A_relative_level + captured_exact_FAST_SLOW_LeqFS",
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "time_weighting",
+    "weightingParam": "weighting",
+    "timeResponseParam": "timeResponse",
+    "note": "default is A/C/Z relative frequency weighting; timeResponse=true is independent Z/FAST/SLOW/LeqFS, never combined A-weighted FAST/SLOW"
+   },
+   "units": "FS2,dBFS,valid",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "noise_services.weighted_level",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "level_statistics": {
+   "featureId": "level_statistics",
+   "name": "LeqFS及L10/L50/L90",
+   "shortZh": "电平统计",
+   "shortEn": "Level Stats",
+   "nameEn": "LeqFS and L10/L50/L90 statistics",
+   "page": "bands",
+   "group": "bands_stats",
+   "icon": "chart-column",
+   "chart": "statistics",
+   "tier": "P1",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "level-statistics",
+    "words": 40,
+    "observations": 16,
+    "fields": [
+     "L10DBFS",
+     "L50DBFS",
+     "L90DBFS",
+     "LeqFS",
+     "valid",
+     "count"
+    ],
+    "layoutSource": "noise_services.level_statistics；L10/L50/L90/Leq@0-3, valid@4, count@5, rolling history@8:24（新→旧）, scratch@24:40",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "L10/L50/L90/Leq dBFS; valid Boolean; observation count",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "noise_services.level_statistics",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "noise_rating": {
+   "featureId": "noise_rating",
+   "name": "NC/NR估计",
+   "shortZh": "NC/NR估计",
+   "shortEn": "NC/NR",
+   "nameEn": "NC/NR estimate with explicit reference",
+   "page": "bands",
+   "group": "bands_stats",
+   "icon": "chart-bar",
+   "chart": "noise-rating",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "dual_variant",
+    "runs": [
+     {
+      "id": "NR",
+      "params": {
+       "family": "NR",
+       "channel": 0,
+       "referenceConfirmed": true,
+       "referenceOffsetDb": 0,
+       "calibrationSource": "软件名义数字参考（非声学校准）"
+      }
+     },
+     {
+      "id": "NC",
+      "params": {
+       "family": "NC",
+       "channel": 0,
+       "referenceConfirmed": true,
+       "referenceOffsetDb": 0,
+       "calibrationSource": "软件名义数字参考（非声学校准）"
+      }
+     }
+    ],
+    "confirmation": "referenceConfirmed",
+    "note": "显式名义数字参考，不是声学校准；仅显示NC/NR估计",
+    "policy": "fixed-hidden",
+    "userEditable": false
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "family",
+      "default": "NR",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "NR",
+       "NC"
+      ],
+      "type": "enum",
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "族",
+      "labelEn": "Family"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "referenceConfirmed",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考确认",
+      "labelEn": "Reference confirmed"
+     },
+     {
+      "key": "referenceOffsetDb",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "min": -200,
+      "max": 200,
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考偏移",
+      "labelEn": "Reference offset"
+     },
+     {
+      "key": "calibrationSource",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "Explicit nominal reference explanation; no certified SPL claim",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "校准来源",
+      "labelEn": "Calibration source"
+     }
+    ],
+    "startDefaults": {
+     "family": "NR",
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "family": {
+     "default": "NR",
+     "required": false,
+     "enum": [
+      "NR",
+      "NC"
+     ]
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "referenceConfirmed": {
+     "required": true,
+     "requiredValue": true
+    },
+    "referenceOffsetDb": {
+     "required": true,
+     "range": [
+      -200,
+      200
+     ],
+     "type": "float32"
+    },
+    "calibrationSource": {
+     "required": true,
+     "type": "nonempty string",
+     "description": "Explicit nominal reference explanation; no certified SPL claim"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "referenceConfirmed",
+     "referenceOffsetDb",
+     "calibrationSource"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY",
+    "runtimeMutablePolicy": "serialize only confirmed1 and finite explicit referenceOffsetDb into private output30/31 after validating nonempty calibrationSource; family/channel must match compiled variant"
+   },
+   "decode": {
+    "recipe": "noise-rating",
+    "layoutSource": "noise_services.noise_curve；rating/valid/estimated@0-2, octave input levels@32, 曲线表@64, 评分列表在曲线表之后（NR@973 / NC@160）；0偏移只是名义参考，不是声学校准",
+    "note": "NC/NR 参考族曲线仅在生产者提供表格时绘制；PC 不生成标准曲线",
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "noise_rating",
+    "requiredParams": [
+     "referenceConfirmed",
+     "referenceOffsetDb",
+     "calibrationSource"
+    ],
+    "note": "explicit nominal reference is not acoustic calibration; show NC/NR estimate only"
+   },
+   "units": "NC/NR curve number; validity/estimated Boolean; explicit reference input dBFS/dBSPL",
+   "validity": "PS must require referenceConfirmed=true, finite referenceOffsetDb and nonempty calibrationSource; PL gates output30==1; source snapshot must be fresh/valid",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "producers.noise_rating",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "referenceConfirmed=true"
+    },
+    {
+     "kind": "device",
+     "text": "explicit finite referenceOffsetDb"
+    },
+    {
+     "kind": "device",
+     "text": "nonempty calibrationSource"
+    },
+    {
+     "kind": "device",
+     "text": "fresh valid immutable source snapshot"
+    },
+    {
+     "kind": "manual",
+     "text": "显式参考确认、有限 referenceOffsetDb、非空校准来源"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "frequency_tracking": {
+   "featureId": "frequency_tracking",
+   "name": "主峰频率跟随",
+   "shortZh": "主峰跟踪",
+   "shortEn": "Peak Track",
+   "nameEn": "Dominant peak frequency tracking",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "activity",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1024,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "floor",
+      "default": 1e-20,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "下限",
+      "labelEn": "Floor"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1024,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "floor": {
+     "default": 1e-20,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "centroid_hz",
+     "flatness",
+     "peak_bin_power",
+     "peak_hz"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "centroid/peak Hz; flatness dimensionless; peak power FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.shape",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "frequency_drift": {
+   "featureId": "frequency_drift",
+   "name": "频率漂移",
+   "shortZh": "频率漂移",
+   "shortEn": "Drift",
+   "nameEn": "Peak frequency drift",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "activity",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1024,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1024,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "peak_hz",
+     "delta_hz",
+     "drift_hz_per_second",
+     "drift_valid",
+     "history_hz",
+     "initialized",
+     "frame_uint"
+    ],
+    "uint32Fields": [
+     "frame_uint"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "Hz; Hz/second; valid/initialized Boolean; frame uint32",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "frequency_drift.frequency_drift",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "centroid": {
+   "featureId": "centroid",
+   "name": "谱质心",
+   "shortZh": "谱质心",
+   "shortEn": "Centroid",
+   "nameEn": "Spectral centroid",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "crosshair",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1024,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "floor",
+      "default": 1e-20,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "下限",
+      "labelEn": "Floor"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1024,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "floor": {
+     "default": 1e-20,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "centroid_hz",
+     "flatness",
+     "peak_bin_power",
+     "peak_hz"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "centroid/peak Hz; flatness dimensionless; peak power FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.shape",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "flatness": {
+   "featureId": "flatness",
+   "name": "谱平坦度",
+   "shortZh": "谱平坦度",
+   "shortEn": "Flatness",
+   "nameEn": "Spectral flatness",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-line",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1024,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "floor",
+      "default": 1e-20,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "下限",
+      "labelEn": "Floor"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1024,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "floor": {
+     "default": 1e-20,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "centroid_hz",
+     "flatness",
+     "peak_bin_power",
+     "peak_hz"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "centroid/peak Hz; flatness dimensionless; peak power FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.shape",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "spectral_kurtosis": {
+   "featureId": "spectral_kurtosis",
+   "name": "谱峭度有限原型",
+   "shortZh": "谱峭度",
+   "shortEn": "Kurtosis",
+   "nameEn": "Cumulative spectral kurtosis",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "first",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "kurtosis",
+    "words": 4101,
+    "bins": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "fieldCount": 4,
+    "validityTail": 1,
+    "layoutSource": "extra_spectral.spectral_kurtosis；M@0，每频点 sum/sum²/K/valid 交错 @1+4i..4+4i",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "dimensionless",
+   "validity": "per bin valid flag: M>=3 and sum(P)>=1e-20; reset before M loses float32 integer precision",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "extra_spectral.spectral_kurtosis",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "cepstrum": {
+   "featureId": "cepstrum",
+   "name": "实倒谱",
+   "shortZh": "倒谱",
+   "shortEn": "Cepstrum",
+   "nameEn": "Real cepstrum",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "wave-sine",
+   "chart": "lag-series",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "lag-series",
+    "offset": 0,
+    "count": 2048,
+    "lagBase": 1024,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "quefrencySeconds",
+    "encoding": "float32",
+    "field": "real_cepstrum_log_FS"
+   },
+   "specialFlow": null,
+   "units": "log FS",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "p2_chains.cepstrum",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "fundamental": {
+   "featureId": "fundamental",
+   "name": "基频/周期估计",
+   "shortZh": "基频",
+   "shortEn": "Fundamental",
+   "nameEn": "Autocorrelation fundamental estimate",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "wave-sine",
+   "chart": "lag-series",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "low",
+      "default": 100,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "低截止",
+      "labelEn": "Low"
+     },
+     {
+      "key": "high",
+      "default": 2000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "高截止",
+      "labelEn": "High"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "low": {
+     "default": 100,
+     "required": false,
+     "unit": "Hz"
+    },
+    "high": {
+     "default": 2000,
+     "required": false,
+     "unit": "Hz"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "lag-series+tail",
+    "offset": 0,
+    "count": 2048,
+    "lagBase": 1024,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "lagSeconds",
+    "tailFields": [
+     "fundamental_hz",
+     "period_strength",
+     "valid"
+    ],
+    "tailOffset": 2048,
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "FS squared sum",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "linear_periodic.fundamental",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "harmonic_ratio": {
+   "featureId": "harmonic_ratio",
+   "name": "谐波与有限带宽THD",
+   "shortZh": "谐波/THD",
+   "shortEn": "Harmonics",
+   "nameEn": "Harmonic band powers and THD",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-column",
+   "chart": "harmonic-bars",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "fs",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "f0",
+      "default": 1000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "基频",
+      "labelEn": "f0"
+     },
+     {
+      "key": "orders",
+      "default": 8,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 16,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "阶次数",
+      "labelEn": "Orders"
+     },
+     {
+      "key": "half_width",
+      "default": null,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "string",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "半带宽",
+      "labelEn": "Half width"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "fs": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "f0": {
+     "default": 1000,
+     "required": false,
+     "unit": "Hz"
+    },
+    "orders": {
+     "default": 8,
+     "required": false,
+     "range": [
+      1,
+      16
+     ]
+    },
+    "half_width": {
+     "default": null,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "harmonic-bars",
+    "harmonicCount": 8,
+    "thdIndex": 8,
+    "validIndex": 9,
+    "binRangesFrom": "actualProducerLayout.bin_ranges",
+    "f0From": "actualProducerLayout.f0_hz",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "harmonic band powers FS squared; THD dimensionless ratio; valid Boolean",
+   "validity": "THD requires measurable fundamental; floor-stabilized value at silence is not valid THD",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "extra_spectral.harmonic_energy",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "sidebands": {
+   "featureId": "sidebands",
+   "name": "指定载频边带",
+   "shortZh": "边带",
+   "shortEn": "Sidebands",
+   "nameEn": "Carrier sidebands",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-column",
+   "chart": "harmonic-bars",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "fs",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "carrier",
+      "default": 6000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "载频",
+      "labelEn": "Carrier"
+     },
+     {
+      "key": "spacing",
+      "default": 1000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "边带间隔",
+      "labelEn": "Spacing"
+     },
+     {
+      "key": "half_width",
+      "default": 100,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "半带宽",
+      "labelEn": "Half width"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "fs": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "carrier": {
+     "default": 6000,
+     "required": false,
+     "unit": "Hz"
+    },
+    "spacing": {
+     "default": 1000,
+     "required": false,
+     "unit": "Hz"
+    },
+    "half_width": {
+     "default": 100,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "field-bars",
+    "fields": [
+     "lower_FS2",
+     "carrier_FS2",
+     "upper_FS2",
+     "lower_carrier_ratio",
+     "upper_carrier_ratio",
+     "valid"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "band powers FS squared; carrier ratios dimensionless; valid Boolean",
+   "validity": "ratios valid only when carrier power > 1e-20",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "extra_spectral.sidebands",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "envelope_hilbert": {
+   "featureId": "envelope_hilbert",
+   "name": "Hilbert包络",
+   "shortZh": "Hilbert包络",
+   "shortEn": "Envelope",
+   "nameEn": "Hilbert analytic envelope",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "audio-lines",
+   "chart": "waveform",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "spectrum",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "spectrum",
+      "labelEn": "spectrum"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "spectrum": {
+     "default": false,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "waveform",
+    "encoding": "float32",
+    "count": 2048,
+    "countFrom": "words",
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "timeSeconds",
+    "displayDecimation": "peak-envelope",
+    "maxDisplayPoints": 4096
+   },
+   "specialFlow": null,
+   "units": "FS",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "p2_chains.envelope",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "envelope_spectrum": {
+   "featureId": "envelope_spectrum",
+   "name": "包络谱",
+   "shortZh": "包络谱",
+   "shortEn": "Env. Spectrum",
+   "nameEn": "Envelope spectrum",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "spectrum",
+      "default": true,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "spectrum",
+      "labelEn": "spectrum"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "spectrum": {
+     "default": true,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "envelope_FFT_magnitude"
+   },
+   "specialFlow": null,
+   "units": "raw FFT magnitude",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "p2_chains.envelope",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "modulation_spectrum": {
+   "featureId": "modulation_spectrum",
+   "name": "调制谱",
+   "shortZh": "调制谱",
+   "shortEn": "Mod Spectrum",
+   "nameEn": "Modulation spectrum",
+   "page": "periodic",
+   "group": "periodic",
+   "icon": "chart-line",
+   "chart": "spectrum",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "spectrum",
+      "default": true,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "spectrum",
+      "labelEn": "spectrum"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "spectrum": {
+     "default": true,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "series",
+    "offset": 0,
+    "count": 1025,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "frequencyHz",
+    "encoding": "float32",
+    "field": "envelope_FFT_magnitude"
+   },
+   "specialFlow": null,
+   "units": "raw FFT magnitude",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "p2_chains.envelope",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "csd": {
+   "featureId": "csd",
+   "name": "CSD/CSM",
+   "shortZh": "CSD/CSM",
+   "shortEn": "CSD",
+   "nameEn": "Cross spectral density / matrix",
+   "page": "multichannel",
+   "group": "multichannel",
+   "icon": "git-compare",
+   "chart": "pair-spectra",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel_i": 0,
+     "channel_j": 1
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel_i",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "参考通道",
+      "labelEn": "Channel i"
+     },
+     {
+      "key": "channel_j",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "对比通道",
+      "labelEn": "Channel j"
+     },
+     {
+      "key": "first",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "window_energy",
+      "default": 768,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "窗能量",
+      "labelEn": "Window energy"
+     },
+     {
+      "key": "floor",
+      "default": 1e-30,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "下限",
+      "labelEn": "Floor"
+     }
+    ],
+    "startDefaults": {
+     "channel_i": 0,
+     "channel_j": 1
+    }
+   },
+   "paramSpec": {
+    "channel_i": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "channel_j": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "window_energy": {
+     "default": 768,
+     "required": false
+    },
+    "floor": {
+     "default": 1e-30,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "pair-bins",
+    "countIndex": 0,
+    "bins": 1025,
+    "stride": 11,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "fields": [
+     "sum_xx",
+     "sum_yy",
+     "sum_real",
+     "sum_imag",
+     "Sxx",
+     "Syy",
+     "CSD_real",
+     "CSD_imag",
+     "coherence",
+     "phase_rad",
+     "valid"
+    ],
+    "conventionFrom": "actualProducerLayout.convention",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "PSD/CSD FS squared per Hz; phase radians; coherence dimensionless",
+   "validity": "count >=2 AND nonzero powers; caller must guarantee distinct independent frame IDs",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "cross_spectral_services.cross_spectra",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "coherence_phase": {
+   "featureId": "coherence_phase",
+   "name": "相干性与相位差",
+   "shortZh": "相干与相位",
+   "shortEn": "Coherence",
+   "nameEn": "Coherence and phase difference",
+   "page": "multichannel",
+   "group": "multichannel",
+   "icon": "git-compare",
+   "chart": "coherence-phase",
+   "tier": "P1",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel_i": 0,
+     "channel_j": 1
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel_i",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "参考通道",
+      "labelEn": "Channel i"
+     },
+     {
+      "key": "channel_j",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "对比通道",
+      "labelEn": "Channel j"
+     },
+     {
+      "key": "first",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 1024,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "首频点",
+      "labelEn": "First bin"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     },
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "window_energy",
+      "default": 768,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "窗能量",
+      "labelEn": "Window energy"
+     },
+     {
+      "key": "floor",
+      "default": 1e-30,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "下限",
+      "labelEn": "Floor"
+     }
+    ],
+    "startDefaults": {
+     "channel_i": 0,
+     "channel_j": 1
+    }
+   },
+   "paramSpec": {
+    "channel_i": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "channel_j": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "first": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      1024
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    },
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "window_energy": {
+     "default": 768,
+     "required": false
+    },
+    "floor": {
+     "default": 1e-30,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "pair-bins",
+    "countIndex": 0,
+    "bins": 1025,
+    "stride": 11,
+    "firstBin": 0,
+    "fftSize": 2048,
+    "sampleRateHz": 48009.775390625,
+    "fields": [
+     "sum_xx",
+     "sum_yy",
+     "sum_real",
+     "sum_imag",
+     "Sxx",
+     "Syy",
+     "CSD_real",
+     "CSD_imag",
+     "coherence",
+     "phase_rad",
+     "valid"
+    ],
+    "conventionFrom": "actualProducerLayout.convention",
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "PSD/CSD FS squared per Hz; phase radians; coherence dimensionless",
+   "validity": "count >=2 AND nonzero powers; caller must guarantee distinct independent frame IDs",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "cross_spectral_services.cross_spectra",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "autocorrelation": {
+   "featureId": "autocorrelation",
+   "name": "自相关",
+   "shortZh": "自相关",
+   "shortEn": "Autocorr",
+   "nameEn": "Auto-correlation",
+   "page": "multichannel",
+   "group": "multichannel",
+   "icon": "wave-sine",
+   "chart": "lag-series",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "other",
+      "default": null,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "对比通道",
+      "labelEn": "Other channel"
+     },
+     {
+      "key": "phat",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "phat",
+      "labelEn": "phat"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "other": {
+     "default": null,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "phat": {
+     "default": false,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "lag-series",
+    "offset": 0,
+    "count": 2048,
+    "lagBase": 1024,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "lagSeconds",
+    "encoding": "float32",
+    "field": "linear_correlation_FS2_sum"
+   },
+   "specialFlow": null,
+   "units": "FS squared sum",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "linear_periodic.linear_correlation",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "cross_correlation": {
+   "featureId": "cross_correlation",
+   "name": "互相关",
+   "shortZh": "互相关",
+   "shortEn": "Cross-corr",
+   "nameEn": "Cross-correlation",
+   "page": "multichannel",
+   "group": "multichannel",
+   "icon": "git-compare",
+   "chart": "lag-series",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0,
+     "other": 1
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "other",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "对比通道",
+      "labelEn": "Other channel"
+     },
+     {
+      "key": "phat",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "phat",
+      "labelEn": "phat"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0,
+     "other": 1
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "other": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "phat": {
+     "default": false,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "lag-series",
+    "offset": 0,
+    "count": 2048,
+    "lagBase": 1024,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "lagSeconds",
+    "encoding": "float32",
+    "field": "linear_correlation_FS2_sum"
+   },
+   "specialFlow": null,
+   "units": "FS squared sum",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "linear_periodic.linear_correlation",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "gcc_phat": {
+   "featureId": "gcc_phat",
+   "name": "GCC-PHAT时延观察",
+   "shortZh": "GCC-PHAT",
+   "shortEn": "GCC-PHAT",
+   "nameEn": "GCC-PHAT delay observation",
+   "page": "multichannel",
+   "group": "multichannel",
+   "icon": "crosshair",
+   "chart": "lag-series",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0,
+     "other": 1
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "other",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "对比通道",
+      "labelEn": "Other channel"
+     },
+     {
+      "key": "phat",
+      "default": true,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "phat",
+      "labelEn": "phat"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0,
+     "other": 1
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "other": {
+     "default": 1,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "phat": {
+     "default": true,
+     "required": false
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "lag-series",
+    "offset": 0,
+    "count": 2048,
+    "lagBase": 1024,
+    "sampleRateHz": 48009.775390625,
+    "xAxis": "lagSeconds",
+    "encoding": "float32",
+    "field": "relative_PHAT_correlation"
+   },
+   "specialFlow": null,
+   "units": "relative PHAT",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "linear_periodic.linear_correlation",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "energy_change": {
+   "featureId": "energy_change",
+   "name": "短时能量变化",
+   "shortZh": "能量变化",
+   "shortEn": "Energy Change",
+   "nameEn": "Short-time energy change",
+   "page": "events",
+   "group": "events",
+   "icon": "activity",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "power_FS2",
+     "previous_power_FS2",
+     "delta_FS2",
+     "delta_valid",
+     "history_power_FS2",
+     "initialized"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "FS squared; validity dimensionless",
+   "validity": "first frame delta_valid=0; subsequent distinct frames only; reset on source/channel/config change",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "producers.energy_change",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "band_tracking": {
+   "featureId": "band_tracking",
+   "name": "频带能量跟踪",
+   "shortZh": "频带跟踪",
+   "shortEn": "Band Track",
+   "nameEn": "Selected band energy tracking",
+   "page": "events",
+   "group": "events",
+   "icon": "chart-column",
+   "chart": "scalars",
+   "tier": "P1",
+   "mode": "p2",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "low",
+      "default": 100,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "低截止",
+      "labelEn": "Low"
+     },
+     {
+      "key": "high",
+      "default": 1000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "高截止",
+      "labelEn": "High"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "low": {
+     "default": 100,
+     "required": false,
+     "unit": "Hz"
+    },
+    "high": {
+     "default": 1000,
+     "required": false,
+     "unit": "Hz"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars",
+    "fields": [
+     "power_FS2",
+     "previous_power_FS2",
+     "delta_FS2",
+     "delta_valid",
+     "history_power_FS2",
+     "initialized"
+    ],
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "FS squared; validity dimensionless",
+   "validity": "first frame delta_valid=0; subsequent distinct frames only; reset on source/channel/config change",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "producers.band_tracking",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "spectral_flux": {
+   "featureId": "spectral_flux",
+   "name": "谱结构变化",
+   "shortZh": "谱通量",
+   "shortEn": "Spectral Flux",
+   "nameEn": "Spectral structure change",
+   "page": "events",
+   "group": "events",
+   "icon": "activity",
+   "chart": "spectrum",
+   "tier": "P2",
+   "mode": "p1",
+   "launch": {
+    "kind": "single",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     },
+     {
+      "key": "count",
+      "default": 1025,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 1,
+      "max": 1025,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "频点数",
+      "labelEn": "Bins"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "required": false,
+     "range": [
+      0,
+      5
+     ]
+    },
+    "count": {
+     "default": 1025,
+     "required": false,
+     "range": [
+      1,
+      1025
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "scalars+history",
+    "fields": [
+     "positive_flux",
+     "absolute_delta_sum",
+     "rms_delta"
+    ],
+    "historyOffset": 3,
+    "historyCount": 1025,
+    "encoding": "float32"
+   },
+   "specialFlow": null,
+   "units": "positive/L1 flux FS squared; RMS delta FS squared; private history FS squared",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "programs.difference",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": true,
+    "producerManaged": true,
+    "autoStart": true
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": true,
+    "cursorDefault": true,
+    "legendDefault": true,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "event_trigger": {
+   "featureId": "event_trigger",
+   "name": "声音变化事件服务",
+   "shortZh": "事件监测",
+   "shortEn": "Event Monitor",
+   "nameEn": "Sound change event monitoring",
+   "page": "events",
+   "group": "events",
+   "icon": "bell-ring",
+   "chart": "events",
+   "tier": "P1",
+   "mode": "events",
+   "launch": {
+    "kind": "monitor",
+    "params": {
+     "channel": 0
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "channel",
+      "default": 0,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 0,
+      "max": 5,
+      "mutability": "variant",
+      "disabledReason": "已预编译全部通道/通道对/族组合",
+      "labelZh": "通道",
+      "labelEn": "Channel"
+     }
+    ],
+    "startDefaults": {
+     "channel": 0
+    }
+   },
+   "paramSpec": {
+    "channel": {
+     "default": 0,
+     "range": [
+      0,
+      5
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "events",
+    "note": "continuous monitoring; records come from event.list/get/download/ack + 48121 event files, not feature.result",
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "event_monitor",
+    "note": "continuous monitoring job; stop page/close and wait canceled; events via event.list/get/download/ack"
+   },
+   "units": "status bit fields; raw PCM24 digital counts; capture/frame identities uint32",
+   "validity": "P0 status/frame/source validity required; fresh sequence and matching capture identity",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "integration/instrument_top.sv",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": false,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "room_decay": {
+   "featureId": "room_decay",
+   "name": "EDT/T20/T30",
+   "shortZh": "房间衰减",
+   "shortEn": "Room Decay",
+   "nameEn": "EDT/T20/T30 room decay",
+   "page": "room",
+   "group": "room",
+   "icon": "activity",
+   "chart": "room-decay",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "room_stimulus",
+    "confirmation": "stimulus",
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "samples",
+      "default": 24000,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 32,
+      "max": 60000,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样点数",
+      "labelEn": "Samples"
+     },
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "stimulus",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "clap",
+       "impulse"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "激励方式",
+      "labelEn": "Stimulus"
+     }
+    ],
+    "startDefaults": {}
+   },
+   "paramSpec": {
+    "samples": {
+     "default": 24000,
+     "required": false,
+     "range": [
+      32,
+      60000
+     ]
+    },
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "stimulus": {
+     "required": true,
+     "enum": [
+      "clap",
+      "impulse"
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "stimulus"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "room",
+    "summaryWords": 32,
+    "irOffset": 32,
+    "decayOffset": 24032,
+    "samples": 24000,
+    "sampleRateHz": 48009.775390625,
+    "fieldMap": {
+     "energy": 0,
+     "early50": 1,
+     "early80": 2,
+     "D50_percent": 3,
+     "tail_nonstationary": 4,
+     "C50_db": 5,
+     "C50_valid": 6,
+     "C80_db": 7,
+     "C80_valid": 8,
+     "EDT": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "T20": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ],
+     "T30": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "room_stimulus",
+    "stimulusParam": "stimulus",
+    "stimulusEnum": [
+     "clap",
+     "impulse"
+    ],
+    "confirm": true,
+    "note": "user-declared excitation; approximate onset trim on PL, not a certified RIR/RT60 measurement"
+   },
+   "units": "EDT/T20/T30 seconds; R2 dimensionless; validity Boolean; decay dB; time seconds",
+   "validity": "explicit onset-trimmed IR only; stationary terminal tail rejects fits/clarity",
+   "limitations": [
+    "approximate impulsive room response only",
+    "no deconvolution or calibrated/certified RIR",
+    "arbitrary speech rejected by caller stimulus gate",
+    "threshold crossing is an approximate onset, not automatic impulse identification",
+    "noise/capture clipping can bias peak/onset; main decay validity still applies"
+   ],
+   "schemaKind": "tensor",
+   "producer": "room_services.room_ir",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "external excitation/IR capture"
+    },
+    {
+     "kind": "device",
+     "text": "explicit onset trim provenance; arbitrary live PCM rejected"
+    },
+    {
+     "kind": "manual",
+     "text": "用户明确选择拍手/脉冲激励并启动采集"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "room_clarity": {
+   "featureId": "room_clarity",
+   "name": "C50/C80/D50",
+   "shortZh": "清晰度",
+   "shortEn": "Clarity",
+   "nameEn": "C50/C80/D50 clarity",
+   "page": "room",
+   "group": "room",
+   "icon": "chart-line",
+   "chart": "room-clarity",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "room_stimulus",
+    "confirmation": "stimulus",
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "samples",
+      "default": 24000,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 32,
+      "max": 60000,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样点数",
+      "labelEn": "Samples"
+     },
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "stimulus",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "clap",
+       "impulse"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "激励方式",
+      "labelEn": "Stimulus"
+     }
+    ],
+    "startDefaults": {}
+   },
+   "paramSpec": {
+    "samples": {
+     "default": 24000,
+     "required": false,
+     "range": [
+      32,
+      60000
+     ]
+    },
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "stimulus": {
+     "required": true,
+     "enum": [
+      "clap",
+      "impulse"
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "stimulus"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "room",
+    "summaryWords": 32,
+    "irOffset": 32,
+    "decayOffset": 24032,
+    "samples": 24000,
+    "sampleRateHz": 48009.775390625,
+    "fieldMap": {
+     "energy": 0,
+     "early50": 1,
+     "early80": 2,
+     "D50_percent": 3,
+     "tail_nonstationary": 4,
+     "C50_db": 5,
+     "C50_valid": 6,
+     "C80_db": 7,
+     "C80_valid": 8,
+     "EDT": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "T20": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ],
+     "T30": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "room_stimulus",
+    "stimulusParam": "stimulus",
+    "stimulusEnum": [
+     "clap",
+     "impulse"
+    ],
+    "confirm": true,
+    "note": "user-declared excitation; approximate onset trim on PL"
+   },
+   "units": "C50/C80 dB; D50 percent; energies FS squared sum; validity Boolean",
+   "validity": "explicit onset-trimmed IR only; stationary terminal tail rejects fits/clarity",
+   "limitations": [
+    "approximate impulsive room response only",
+    "no deconvolution or calibrated/certified RIR",
+    "arbitrary speech rejected by caller stimulus gate",
+    "threshold crossing is an approximate onset, not automatic impulse identification",
+    "noise/capture clipping can bias peak/onset; main decay validity still applies"
+   ],
+   "schemaKind": "tensor",
+   "producer": "room_services.room_ir",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "external excitation/IR capture"
+    },
+    {
+     "kind": "device",
+     "text": "explicit onset trim provenance; arbitrary live PCM rejected"
+    },
+    {
+     "kind": "manual",
+     "text": "用户明确选择拍手/脉冲激励并启动采集"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "spectral_decay": {
+   "featureId": "spectral_decay",
+   "name": "分频衰减数据",
+   "shortZh": "分频衰减",
+   "shortEn": "Band Decay",
+   "nameEn": "Filtered per-band decay",
+   "page": "room",
+   "group": "room",
+   "icon": "layers",
+   "chart": "spectral-decay",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "room_stimulus",
+    "confirmation": "stimulus",
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "samples",
+      "default": 24000,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 32,
+      "max": 60000,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样点数",
+      "labelEn": "Samples"
+     },
+     {
+      "key": "sample_rate",
+      "default": 48009.775390625,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "float",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样率",
+      "labelEn": "Sample rate"
+     },
+     {
+      "key": "center",
+      "default": 1000,
+      "required": false,
+      "unit": "Hz",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "center",
+      "labelEn": "center"
+     },
+     {
+      "key": "fraction",
+      "default": 1,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       1,
+       3
+      ],
+      "type": "enum",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "fraction",
+      "labelEn": "fraction"
+     },
+     {
+      "key": "stimulus",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "clap",
+       "impulse"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "激励方式",
+      "labelEn": "Stimulus"
+     }
+    ],
+    "startDefaults": {}
+   },
+   "paramSpec": {
+    "samples": {
+     "default": 24000,
+     "required": false,
+     "range": [
+      32,
+      60000
+     ]
+    },
+    "sample_rate": {
+     "default": 48009.775390625,
+     "required": false,
+     "unit": "Hz"
+    },
+    "center": {
+     "default": 1000,
+     "required": false,
+     "unit": "Hz"
+    },
+    "fraction": {
+     "default": 1,
+     "required": false,
+     "enum": [
+      1,
+      3
+     ]
+    },
+    "stimulus": {
+     "required": true,
+     "enum": [
+      "clap",
+      "impulse"
+     ]
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "stimulus"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "room",
+    "summaryWords": 32,
+    "irOffset": 32,
+    "decayOffset": 24032,
+    "samples": 24000,
+    "sampleRateHz": 48009.775390625,
+    "centerHzFrom": "actualProducerLayout.center_hz",
+    "fractionFrom": "actualProducerLayout.fraction",
+    "fieldMap": {
+     "energy": 0,
+     "early50": 1,
+     "early80": 2,
+     "D50_percent": 3,
+     "tail_nonstationary": 4,
+     "C50_db": 5,
+     "C50_valid": 6,
+     "C80_db": 7,
+     "C80_valid": 8,
+     "EDT": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "T20": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+     ],
+     "T30": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+     ]
+    },
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "room_stimulus",
+    "stimulusParam": "stimulus",
+    "stimulusEnum": [
+     "clap",
+     "impulse"
+    ],
+    "confirm": true,
+    "note": "user-declared excitation; filtered decay, not certified"
+   },
+   "units": "filtered EDT/T20/T30 seconds; decay dB; time seconds",
+   "validity": "explicit onset-trimmed IR only; stationary terminal tail rejects fits/clarity",
+   "limitations": [
+    "approximate impulsive room response only",
+    "no deconvolution or calibrated/certified RIR",
+    "arbitrary speech rejected by caller stimulus gate",
+    "threshold crossing is an approximate onset, not automatic impulse identification",
+    "noise/capture clipping can bias peak/onset; main decay validity still applies"
+   ],
+   "schemaKind": "tensor",
+   "producer": "room_band_decay.band_decay",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "external excitation/IR capture"
+    },
+    {
+     "kind": "device",
+     "text": "explicit onset trim provenance; arbitrary live PCM rejected"
+    },
+    {
+     "kind": "manual",
+     "text": "用户明确选择拍手/脉冲激励并启动采集"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": true,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "relative_insulation": {
+   "featureId": "relative_insulation",
+   "name": "相对隔声",
+   "shortZh": "相对隔声",
+   "shortEn": "Rel. Insulation",
+   "nameEn": "Relative insulation difference",
+   "page": "room",
+   "group": "room",
+   "icon": "building",
+   "chart": "insulation-bars",
+   "tier": "P2",
+   "mode": "p2",
+   "launch": {
+    "kind": "reference_measure",
+    "referenceParams": {
+     "action": "reference"
+    },
+    "measureParams": {
+     "action": "measure",
+     "confirmed": true
+    },
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false,
+    "confirmation": ""
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "bands",
+      "default": 9,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "bands",
+      "labelEn": "bands"
+     },
+     {
+      "key": "metadata_matched",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "metadata_matched",
+      "labelEn": "metadata_matched"
+     },
+     {
+      "key": "action",
+      "default": "measure",
+      "required": false,
+      "unit": "",
+      "description": "",
+      "enum": [
+       "reference",
+       "measure"
+      ],
+      "type": "enum",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "动作",
+      "labelEn": "Action"
+     },
+     {
+      "key": "referenceJobId",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考任务",
+      "labelEn": "Reference job"
+     },
+     {
+      "key": "confirmed",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "Same excitation and measurement chain declared by user",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "测量链确认",
+      "labelEn": "Chain confirmed"
+     }
+    ],
+    "startDefaults": {
+     "action": "measure"
+    }
+   },
+   "paramSpec": {
+    "bands": {
+     "default": 9,
+     "required": false
+    },
+    "metadata_matched": {
+     "default": false,
+     "required": false
+    },
+    "action": {
+     "enum": [
+      "reference",
+      "measure"
+     ],
+     "default": "measure"
+    },
+    "referenceJobId": {
+     "required": "measure",
+     "type": "string"
+    },
+    "confirmed": {
+     "required": "measure",
+     "requiredValue": true,
+     "description": "Same excitation and measurement chain declared by user"
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "action",
+     "referenceJobId",
+     "confirmed"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "insulation",
+    "words": 36,
+    "inputOffset": 18,
+    "layoutSource": "noise_services.relative_band_difference + gateway prepare_inputs；diff dB@0:9, valid@9:18, A@18:27, B@27:36（9倍频程）",
+    "note": "两次倍频程能量采集 A/B；仅相对 dB 差异，不标 Rw/DnT",
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "reference_measure",
+    "referenceAction": "reference",
+    "measureAction": "measure",
+    "referenceParam": "referenceJobId",
+    "confirmParam": "confirmed",
+    "note": "same excitation/gain/measurement chain required; relative difference only, never labelled Rw"
+   },
+   "units": "relative level difference dB; validity Boolean; no Rw claim",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "tensor",
+   "producer": "noise_services.relative_band_difference",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "matching measurement chain/gain/grid metadata"
+    },
+    {
+     "kind": "device",
+     "text": "metadata_matched=true only after validation"
+    },
+    {
+     "kind": "reference",
+     "text": "先 action=reference，再 measure 并 confirmed=true"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  },
+  "stipa_experimental": {
+   "featureId": "stipa_experimental",
+   "name": "实验STIPA",
+   "shortZh": "实验STIPA",
+   "shortEn": "STIPA (exp.)",
+   "nameEn": "Experimental STIPA (not certified)",
+   "page": "room",
+   "group": "room",
+   "icon": "chart-spline",
+   "chart": "stipa",
+   "tier": "P2",
+   "mode": "staged",
+   "launch": {
+    "kind": "staged_stipa",
+    "referenceParams": {
+     "samples": 720000,
+     "channels": 1,
+     "channel": 0
+    },
+    "stipaParams": {
+     "testSignalConfirmed": true
+    },
+    "confirmation": "testSignalConfirmed",
+    "note": "",
+    "policy": "fixed-hidden",
+    "userEditable": false
+   },
+   "params": {
+    "fields": [
+     {
+      "key": "samples",
+      "default": 720000,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "int",
+      "min": 720000,
+      "max": 784320,
+      "mutability": "compiled",
+      "disabledReason": "非默认值需按接口文档重新编译PL计划",
+      "labelZh": "采样点数",
+      "labelEn": "Samples"
+     },
+     {
+      "key": "confirmed",
+      "default": false,
+      "required": false,
+      "unit": "",
+      "description": "",
+      "type": "bool",
+      "mutability": "control",
+      "disabledReason": "",
+      "labelZh": "测量链确认",
+      "labelEn": "Chain confirmed"
+     },
+     {
+      "key": "referenceJobId",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "Completed io_pcm mono720000 capture of declared active reference",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "参考任务",
+      "labelEn": "Reference job"
+     },
+     {
+      "key": "testSignalConfirmed",
+      "default": null,
+      "required": true,
+      "unit": "",
+      "description": "",
+      "type": "string",
+      "mutability": "runtime",
+      "disabledReason": "",
+      "labelZh": "测试信号确认",
+      "labelEn": "Test signal confirmed"
+     }
+    ],
+    "startDefaults": {
+     "confirmed": false
+    }
+   },
+   "paramSpec": {
+    "samples": {
+     "default": 720000,
+     "range": [
+      720000,
+      784320
+     ]
+    },
+    "confirmed": {
+     "default": false,
+     "requires": "verified reference+received acquisition"
+    },
+    "referenceJobId": {
+     "required": true,
+     "type": "string",
+     "description": "Completed io_pcm mono720000 capture of declared active reference"
+    },
+    "testSignalConfirmed": {
+     "required": true,
+     "requiredValue": true
+    }
+   },
+   "parameterPolicy": {
+    "precompiledValuesOnly": true,
+    "runtimeMutableParams": [
+     "referenceJobId",
+     "testSignalConfirmed"
+    ],
+    "nondefault": "reject unless separately compiled with compile_feature(featureId, params); no silently ignored values",
+    "compileCommand": "python registry/build_plans.py --feature FEATURE --params JSON --output OUTPUT_DIRECTORY"
+   },
+   "decode": {
+    "recipe": "stages",
+    "fields": [
+     "experimental_index",
+     "valid",
+     "certified_zero",
+     "reason_code",
+     "failed_band_hz",
+     "failed_modulation_hz",
+     "reference_depth",
+     "measured_depth",
+     "transfer_ratio"
+    ],
+    "stagesTotal": 101,
+    "staged": true,
+    "encoding": "float32"
+   },
+   "specialFlow": {
+    "type": "staged_stipa",
+    "referenceFeature": "io_pcm",
+    "referenceParams": {
+     "samples": 720000,
+     "channels": 1,
+     "channel": 0
+    },
+    "confirmParam": "testSignalConfirmed",
+    "stagesTotal": 101,
+    "note": "experimental, not certified STIPA; requires known active reference capture and all 101 stages valid"
+   },
+   "units": "index0..1; arithmetic validity Boolean; certified always0",
+   "validity": "requires fresh PL DONE and valid captured source; acquisition requirements must be enforced",
+   "limitations": [],
+   "schemaKind": "stages",
+   "producer": "stipa_graph.graph + stipa_graph.install_graph_stage",
+   "devicePath": {
+    "softwareState": "IMPLEMENTED_DEVICE_PATH",
+    "hardwareState": "NOT_TESTED",
+    "implementedDevicePath": true,
+    "hardwareAccepted": false,
+    "numericVerified": false,
+    "knownGap": null
+   },
+   "runtime": {
+    "featureApiVersion": "echo-features-1",
+    "controlPort": 48120,
+    "requiresFeatureApi": true,
+    "exclusive": true,
+    "continuous": false,
+    "producerManaged": true,
+    "autoStart": false
+   },
+   "prerequisites": [
+    {
+     "kind": "device",
+     "text": "15s minimum nominal48kHz; n720000 default"
+    },
+    {
+     "kind": "device",
+     "text": "confirmed active reference signal; arbitrary speech rejected"
+    },
+    {
+     "kind": "device",
+     "text": "all101 ordered stages done"
+    },
+    {
+     "kind": "device",
+     "text": "same captured workspace retained; P1 off throughout graph"
+    },
+    {
+     "kind": "reference",
+     "text": "先完成 io_pcm 720000点单通道已知参考采集"
+    },
+    {
+     "kind": "deviceSoftware",
+     "text": "需要设备软件升级到 echo-features-1 (featureApi)"
+    }
+   ],
+   "display": {
+    "logXDefault": false,
+    "cursorDefault": false,
+    "legendDefault": false,
+    "exportFormats": [
+     "png",
+     "json-raw",
+     "csv"
+    ],
+    "channelColors": [
+     "#57C8FF",
+     "#FFC86B",
+     "#CB9CFF",
+     "#44DBC0",
+     "#A5D970",
+     "#FF8295"
+    ],
+    "bandRamp": [
+     "#6A5ACD",
+     "#4E6BD6",
+     "#3E8FC9",
+     "#37AFAF",
+     "#44DBC0",
+     "#A9D96C",
+     "#FFC86B"
+    ]
+   }
+  }
+ },
+ "notes": [
+  "hardwareState=NOT_TESTED is preserved verbatim: device-path implementation never implies board or acoustic acceptance.",
+  "decode recipes only describe wire layout/required display metadata; no PC DSP is performed. layoutStatus=pending-layout-resolution must show raw words plus a reason until the producer field map is confirmed from device sources.",
+  "chart kinds map to QML components; tooltips/units come from this file, not hardcoded QML.",
+  "feature.result is fetched over TCP 48120; no new binary message ids are invented.",
+  "devicePath.knownGap records verified device-package gaps: the PC keeps the real request wiring, shows the device-side reason, and never substitutes a PC result.",
+  "2026-10-31: spatial interfaces (spatial_interface/directed_das/full_das/band_das/spatial_grid/spatial_peaks) removed from PC catalog and device registry; remaining entries retain their prior hand-applied hotfixes."
+ ]
+}

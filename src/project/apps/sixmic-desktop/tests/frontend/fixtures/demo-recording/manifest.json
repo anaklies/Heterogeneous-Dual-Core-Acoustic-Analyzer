@@ -1,0 +1,95 @@
+{
+  "format": "smc-recording-v1",
+  "recordingId": "demo-fixture-recording",
+  "deviceId": "sixmic-demo-fixture",
+  "connectionEpoch": "3",
+  "sessionId": "demo-session",
+  "sourceKind": "test-fixture",
+  "startedMonotonicNs": "54762265000000",
+  "stoppedMonotonicNs": "54763421000000",
+  "channels": 6,
+  "sampleFormat": "int24-le-signextended-in-int32",
+  "units": "digital full scale (24-bit PCM codes)",
+  "realSampleRateHz": 48009.775390625,
+  "integerRateHz": 48010,
+  "rateRoundingErrorHz": 0.224609375,
+  "records": "192039",
+  "firstSampleIndex": "9007199254740993",
+  "lastSampleIndex": "9007199254933061",
+  "segments": [
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0000.rec32",
+      "bytes": 1051200,
+      "sha256": "5f6d5b6bf93fee9017813da966865e722cc47f63ff53804e522da4bdd042d4c4",
+      "firstRecord": 9007199254740993,
+      "lastRecord": 9007199254773842,
+      "recordCount": 32850
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0001.rec32",
+      "bytes": 1051200,
+      "sha256": "1d4c78c911ff90157e64a808e6120b74c721c0eba2048567e94c7f30c1964f5d",
+      "firstRecord": 9007199254773843,
+      "lastRecord": 9007199254806692,
+      "recordCount": 32850
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0002.rec32",
+      "bytes": 1051808,
+      "sha256": "b33e6a2a796003a11009ccecaff5cdade4ef4b17dfad252832bc5902ef860195",
+      "firstRecord": 9007199254806693,
+      "lastRecord": 9007199254839591,
+      "recordCount": 32869
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0003.rec32",
+      "bytes": 1051200,
+      "sha256": "efba4d54fa46390310aba3f707c160e8255bcf32bf493527129e24648dc1fab1",
+      "firstRecord": 9007199254839592,
+      "lastRecord": 9007199254872441,
+      "recordCount": 32850
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0004.rec32",
+      "bytes": 1051200,
+      "sha256": "d42e6aabec8a7b13bc918d02bb04aa1ce13d8debc7ab24ac763d659c2760ce1f",
+      "firstRecord": 9007199254872442,
+      "lastRecord": 9007199254905291,
+      "recordCount": 32850
+    },
+    {
+      "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\segment-0005.rec32",
+      "bytes": 888640,
+      "sha256": "e60a2ca10f1e76f45dae38ed3cc965de011f5b4b97a6459b1ce1508c8dbf127b",
+      "firstRecord": 9007199254905292,
+      "lastRecord": 9007199254933061,
+      "recordCount": 27770
+    }
+  ],
+  "wav": {
+    "path": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\apps\\sixmic-desktop\\tests\\frontend\\fixtures\\demo-recording\\audio-6ch-24bit.wav",
+    "sha256": "17db62d20d3b5d816c704683c36693536c29a12ff25591a73026a27ff16b5ab8",
+    "integerRateHz": 48010,
+    "realSampleRateHz": 48009.775390625,
+    "rateRoundingErrorHz": 0.224609375,
+    "channelCount": 6,
+    "bitsPerSample": 24,
+    "frames": 192039,
+    "note": "capture-order concatenation; gaps listed in manifest.gaps, never resampled"
+  },
+  "gaps": [
+    {
+      "reason": "queue_overflow",
+      "firstMissingSampleIndex": "9007199254837012",
+      "lastMissingSampleIndex": "9007199254837041",
+      "droppedRecords": "30"
+    }
+  ],
+  "flags": {},
+  "algorithmVersions": {
+    "resultProtocol": 3,
+    "servicePrograms": {}
+  },
+  "notes": [],
+  "sha256": "a5561cbd3be052f4542d8373f0a02fd1bf98b26861095b532fe1260eb1b5a27d"
+}
