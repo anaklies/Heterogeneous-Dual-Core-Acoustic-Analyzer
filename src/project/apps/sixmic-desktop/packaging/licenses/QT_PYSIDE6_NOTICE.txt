@@ -1,0 +1,53 @@
+Qt 6 / PySide6 LGPLv3 notice for SixMic3D
+=======================================
+
+SixMic3D is built with Qt for Python (PySide6) and dynamically links the Qt 6
+runtime. Qt and PySide6 are used under the GNU Lesser General Public License,
+version 3 (LGPLv3); GPLv3 is included because LGPLv3 incorporates it by
+reference. Commercial Qt licensing is an alternative that this project does not
+currently use.
+
+Upstream projects and source availability
+  * Qt 6 framework:      https://www.qt.io/  /  https://download.qt.io/official_releases/qt/
+  * Qt source code:      https://download.qt.io/official_releases/qt/ (source archives)
+                          https://code.qt.io/cgit/qt/  (Git)
+  * PySide6 (Qt for Python): https://pyside.org/  /  https://code.qt.io/cgit/pyside/pyside-setup.git/
+  * PySide6 wheel used in the build: PySide6 6.12.0 from PyPI (pyside6,
+    pyside6_essentials, pyside6_addons, pyside6_webengine, pyside6_pdf,
+    shiboken6). Wheel metadata license: LGPL-3.0-only OR GPL-2.0-only OR
+    GPL-3.0-only.
+
+LGPLv3 obligations met by this packaging approach
+  * Dynamic linking only. Qt DLLs stay separate files under
+    SixMic3D\_internal\PySide6\Qt\bin\ (plus Qt plugins under
+    SixMic3D\_internal\PySide6\Qt\plugins\ and QML modules under
+    SixMic3D\_internal\PySide6\Qt\qml\). Nothing is statically linked.
+  * The Qt/PySide6 libraries are unmodified. SixMic3D's own code is separate.
+  * A user may replace the bundled Qt DLLs with compatible ones without
+    rebuilding SixMic3D (dynamic linking / relinking requirement).
+  * Full LGPLv3 and GPLv3 texts are installed in the licenses/ directory.
+  * This notice and the license texts are installed with the product and can be
+    redistributed with it.
+
+Installed-but-not-bundled caveat
+  The build virtual environment also contains PySide6_Addons, PySide6_WebEngine
+  and PySide6_Pdf wheels because the PySide6 meta-package installs them. The
+  PyInstaller specs only bundle modules that SixMic3D actually imports
+  (QtCore/QtGui/QtQml/QtQuick/QtNetwork plus the QML modules scanned from the
+  application's QML sources). The authoritative bundled-Qt file list is the
+  machine-readable bundle evidence at build time:
+  apps/sixmic-desktop/packaging/build-logs/<timestamp>/bundle_evidence.json
+  (qtDllCount + per-file SHA256). The BackendCheck diagnostic bundle is
+  intentionally Qt-free (it does not import the Qt adapter).
+
+Source code offer
+  LGPLv3 does not require a written offer for the library itself, but the
+  project must make the exact Qt/PySide6 versions and source locations
+  discoverable. The versions are pinned in
+  apps/sixmic-desktop/packaging/requirements-lock.txt
+  and repeated in this installer's build metadata. Project maintainers should
+  keep a source archive/hash record for the Qt version actually shipped.
+
+No static linking: SixMic3D deliberately does not use a statically linked Qt to
+produce a single-file executable (that would trigger different LGPLv3
+obligations around relinking).

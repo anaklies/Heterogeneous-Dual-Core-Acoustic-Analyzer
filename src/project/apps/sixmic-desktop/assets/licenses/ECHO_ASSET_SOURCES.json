@@ -1,0 +1,76 @@
+[
+  {
+    "asset": "patterns/room-instrument.svg",
+    "source": "https://raw.githubusercontent.com/catchspider2002/svelte-svg-patterns/master/src/routes/_index.js",
+    "pattern": "squares-and-squares-1",
+    "license": "MIT",
+    "changes": "stroke color, stroke width; static SVG tile"
+  },
+  {
+    "asset": "icons/audio-waveform.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/wave-sine.svg",
+    "license": "MIT",
+    "sha256": "6ba787e7fdaa706e91a800e753f69b735261fcd017f90fbf1b8cbcc82de1ec48"
+  },
+  {
+    "asset": "icons/chart-line.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/chart-line.svg",
+    "license": "MIT",
+    "sha256": "91ae4d96cfc8926df2c715438bd539da2703dc158828336c227ce23e62ca7cb4"
+  },
+  {
+    "asset": "icons/chart-bar.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/chart-bar.svg",
+    "license": "MIT",
+    "sha256": "ca1d3717da5007a46a2cf7521f9df558fd6e159874696dd400626809ead41162"
+  },
+  {
+    "asset": "icons/bell-ringing.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/bell-ringing.svg",
+    "license": "MIT",
+    "sha256": "c8ec7f932ea390c2cc18cda43393c8a38c7e9c3287aff9239cea678a17f66967"
+  },
+  {
+    "asset": "icons/compass.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/compass.svg",
+    "license": "MIT",
+    "sha256": "7f1b14b0e5c4dddf2cbbc429a0c2b297bf040cbdb4d8841062919d00ba95fc1a"
+  },
+  {
+    "asset": "icons/settings.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/settings.svg",
+    "license": "MIT",
+    "sha256": "ef9cf42d822c00b4fad5bc5eeceddd4e1ec3774bb7ddd09891d0fba274bc3e95"
+  },
+  {
+    "asset": "icons/folder-open.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/folder-open.svg",
+    "license": "MIT",
+    "sha256": "eed6d7ccbb5452986fa4f1083cc8d1afdee8f49a68af5c875f0689cdf5fb93a4"
+  },
+  {
+    "asset": "icons/download.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/download.svg",
+    "license": "MIT",
+    "sha256": "c13f6f9cf87deee99e331622169efd59cd764b376994540347e50d6bb5e2e0ef"
+  },
+  {
+    "asset": "icons/sliders-horizontal.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/adjustments-horizontal.svg",
+    "license": "MIT",
+    "sha256": "51c876babc598cf69ad1146f0fb621919a975758df0cc7abf45052006358a353"
+  },
+  {
+    "asset": "icons/activity.svg",
+    "source": "https://raw.githubusercontent.com/tabler/tabler-icons/main/icons/outline/activity.svg",
+    "license": "MIT",
+    "sha256": "2279e7a64688d1e730e42a7b277792350fbfade1fd3b992ad3971737e88ccde8"
+  },
+  {
+    "asset": "patterns/pattern-craft-blue-radial.svg",
+    "source": "https://github.com/megh-bari/pattern-craft/blob/main/src/data/patterns.ts",
+    "pattern": "blue-radial-glow",
+    "license": "MIT",
+    "changes": "CSS radial gradient converted to static SVG, scaled to Qt viewport"
+  }
+]

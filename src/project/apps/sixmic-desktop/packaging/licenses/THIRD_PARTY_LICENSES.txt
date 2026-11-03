@@ -1,0 +1,69 @@
+SixMic3D third-party license overview
+===================================
+
+Product:      SixMic3D (Windows x64 desktop application)
+Version:      0.1.0 - backend-stage build (no final GUI acceptance claimed yet)
+Generated:    2026-10-24 (packaging pipeline, apps/sixmic-desktop/packaging/licenses)
+Scope:        applies to SixMic3D.exe (Qt Quick/QML desktop bundle) and
+              BackendCheck/SixMic3D-BackendCheck.exe (headless diagnostic bundle).
+
+This file is a summary. The full license texts are the .txt files next to it in
+the installed licenses/ directory. Nothing here is legal advice; project owners
+must review licensing before a public release.
+
+
+1. Qt 6.12.0 runtime (QtCore, QtGui, QtQml, QtQuick, QtNetwork and their
+   plugins/QML modules) and PySide6 6.12.0 + shiboken6 6.12.0 bindings
+   -----------------------------------------------------------------------
+   License: LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only (PySide6 metadata;
+            Qt modules are LGPLv3 / GPLv3 / commercial dual-licensed).
+   SixMic3D uses the LGPLv3 option.
+   Dynamic linking only: Qt/PySide6 DLLs and plugins ship as separate files in
+   the _internal/ directory and are not statically linked or modified.
+   Full texts: LICENSE-LGPL-3.0.txt and LICENSE-GPL-3.0.txt (GPLv3 is included
+   because LGPLv3 incorporates GPLv3 by reference).
+   Details and LGPL obligations: QT_PYSIDE6_NOTICE.txt
+
+2. Python 3.12.10 runtime (python312.dll and Python standard library modules)
+   -----------------------------------------------------------------------
+   License: Python Software Foundation License Version 2 (PSF-2.0).
+   Full text: PYTHON_LICENSE.txt
+
+3. PyInstaller 6.22.3 (build tool; the PyInstaller bootloader code is included
+   in the generated exe)
+   -----------------------------------------------------------------------
+   License: GPL-2.0-or-later WITH a special exception that permits distributing
+            bundled applications under terms of the application author's choice.
+   Full text as shipped by the PyInstaller project: PYINSTALLER_LICENSE.txt
+
+4. Build/test-only tools (NOT installed with the product)
+   -----------------------------------------------------
+   pytest 9.1.1 and its dependencies (MIT/BSD/Apache-2.0), pyinstaller-hooks-contrib,
+   setuptools, pip, altgraph, pefile, pywin32-ctypes are used only in the build
+   virtual environment. They are not shipped in the installer (the packaging
+   build scans the bundles for forbidden/dev payloads and fails on violations).
+
+5. Inno Setup 6 (installer compiler; NOT shipped)
+   -----------------------------------------------------
+   Used only to build SixMic3D-Setup-x64.exe. Inno Setup is not distributed
+   inside the installer. Its license does not cover the bundled product.
+
+6. sixmic-analysis v1 protocol contract data (PROTOCOL.md, schema/, golden/,
+   errors/, features/, device/, dto/)
+   -----------------------------------------------------
+   Project materials generated inside this repository. They are copied next to
+   the executables as application data. No separate open-source license has been
+   declared for these files yet; see SIXMIC_PROTOCOL_NOTICE.txt. This notice is
+   not a license grant.
+
+7. Deliberately NOT bundled
+   -----------------------------------------------------
+   No NVIDIA CUDA/Torch/training data or model weights, no MATLAB artifacts, no
+   research caches, no Vivado projects, no keys/secrets, no old PC prototype,
+   no .venv, no test fixtures required only by development. The packaging
+   bundle_evidence.py tool fails a build if forbidden payloads are detected.
+
+Bundled Qt/PySide6 DLL inventory is recorded at build time in
+packaging/build-logs/<timestamp>/bundle_evidence.json (file list + SHA256).
+Because the main-agent GUI is not merged yet, the exact Qt module subset for the
+final SixMic3D.exe must be regenerated from that bundle evidence at release.

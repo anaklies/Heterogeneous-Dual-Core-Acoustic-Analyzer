@@ -1,0 +1,5 @@
+﻿Tabler Icons (outline) — MIT License
+Source: https://github.com/tabler/tabler-icons (package @tabler/icons 3.31.0)
+Files in this folder named device-desktop, wave-sine, chart-line, chart-bar, git-compare,
+tools, bell-ringing, folder, settings, activity, info-circle are Tabler outline icons.
+License: MIT (see https://github.com/tabler/tabler-icons/blob/master/LICENSE)

@@ -1,0 +1,47 @@
+sixmic-analysis v1 protocol data notice
+========================================
+
+Shipped files (the WHOLE frozen interface bundle, 35 regular files):
+  PROTOCOL.md (includes ERRATUM-1 and binary/control error scope note),
+  README.md,
+  schema/control.schema.json, schema/dto.schema.json, schema/status.schema.json,
+  schema/stream-schema.schema.json,
+  golden/** (frozen wire samples + GOLDEN_MANIFEST.json),
+  errors/ERROR_CATALOG.json (control + binary-scope codes with scope fields),
+  features/FEATURE_CATALOG.json + features/FEATURE_CATALOG.md,
+  device/MMIO_PROTOCOL3.md, dto/DTO.md,
+  c/sixmic_analysis_wire.h (shared C99 wire constants/CRC/BYE decoder helper),
+  tools/generate_golden.py + tools/generate_feature_catalog.py (deterministic
+  stdlib-only generators, shipped for byte-level reproducibility of the frozen
+  golden samples).
+
+These files are project materials of the SixMic3D repository
+(C:/Users/sunxi/Desktop/sixmic3D/interfaces/pc_backend_v1). They are shipped as
+read-only application data next to the executables so that the frozen program
+can validate protocol behaviour without a development checkout, and so that
+support/diagnostics match the exact contract version.
+
+Status: no separate open-source license has been declared for these files yet.
+They are NOT covered by the LGPL/PySide6/Qt licenses. This notice is not a
+license grant. The project owner must decide and record the distribution terms
+for interfaces/pc_backend_v1 before a public product release; until then the
+files are redistributed only as part of the SixMic3D build they belong to.
+
+Versioning: protocol name sixmic-analysis, protocol version 1. Hardware MMIO is
+a separate, different interface (protocol 3) and the two version numbers must
+never be conflated. The binary layouts, message type numbers and golden hashes
+are frozen by the files themselves.
+
+Frozen bundle evidence (final refresh 2026-10-24 15:36:41 Asia/Taipei):
+  files:            35
+  bytes:            233,520
+  manifest SHA256:  546290940e40b8e63023afc9fc9fff25f245389e74bfd1c57f2276ceaf10750d
+  protocolSha256:   0ad93f4a7d3d93ea6614956a2001b717a536a1f7a506b28fd78d544d16a880a2
+                    (Lead-agreed marker algorithm, see packaging/tools/freeze_marker.py)
+  backendSha256:    e84469e2faa5b145262b7c8dd7e4da6b2cf57d9f18fbc34949f8dd0f33fbd58c
+                    (unchanged: no backend *.py change since the exe was built)
+The installed copies are byte-identical to interfaces/pc_backend_v1 at refresh
+time; see:
+  packaging/build-logs/20261024-153641-protocol-refresh/protocol_manifest.json
+  packaging/build-logs/20261024-153641-protocol-refresh/protocol_manifest_internal.json
+(both copies: exe-adjacent protocol/ and _internal/protocol/).

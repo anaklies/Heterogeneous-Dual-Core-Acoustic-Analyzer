@@ -1,0 +1,54 @@
+{
+  "schema": "sixmic3d.inno-vendor/1",
+  "purpose": "Build-time Inno Setup 6 compiler for SixMic3D installer; not shipped in product",
+  "generatedAtLocal": "2026-10-24T14:26:37.311Z",
+  "environmentProblem": "Official innosetup-6.7.3.exe install fails here (per-user rollback, HKCU uninstall key RegCreateKeyEx code 5, exit 4); winget install fails; innoextract 1.9 cannot parse 6.7 format. No admin available; no approval bypass allowed.",
+  "compiler": {
+    "name": "Inno Setup",
+    "version": "6.0.5 (u)",
+    "isccExe": "vendor/InnoSetup6/ISCC.exe",
+    "isccSha256": "fb1eae60165f94b8604eaf2181e67a55c7f61547e3647cdbd5e30df99368338f",
+    "iscCmplrDllSha256": "b8965622bac7dab4f72ece94ee23f81869433a12fe3569aa470238d11456ec95",
+    "extractedFiles": 85,
+    "extractedBytes": 11143167,
+    "extractedTreeInventorySha256": "4a5cdeb46cf97a7fff0ce48d7650dc2a14860269b1c2c83823d82a856cf01be6",
+    "versionEvidence": "ISCC compile output: 'Compiler engine version: Inno Setup 6.0.5 (u)' (see build-logs installers); ISPP probe verifies #if Ver >= EncodeVer(6,3,0) is false",
+    "inventoryAlgorithm": "sha256 over sorted '<fileSha256>  <posix-relpath>' LF-joined (same as bundle_evidence.py inventorySha256)",
+    "inventoryFile": "vendor/InnoSetup6.INVENTORY.sha256"
+  },
+  "source": {
+    "asset": "innosetup-6.0.5.exe",
+    "url": "https://github.com/jrsoftware/issrc/releases/download/is-6_0_5/innosetup-6.0.5.exe",
+    "bytes": 4218712,
+    "sha256": "ae6823b523df87e9441789e51845434e4e0e70aac0b88afe80f94f20f4b98acb",
+    "githubApiDigest": "sha256:ae6823b523df87e9441789e51845434e4e0e70aac0b88afe80f94f20f4b98acb",
+    "authenticode": {
+      "status": "Valid",
+      "signerSubject": "E=mlaan@jrsoftware.org, CN=Open Source Developer, Martijn Laan, O=Open Source Developer, L=Aalsmeer, S=Noord-Holland, C=NL",
+      "issuer": "CN=Certum Code Signing CA SHA2, OU=Certum Certification Authority, O=Unizeto Technologies S.A., C=PL",
+      "notAfter": "2021-02-16T22:11:36Z",
+      "timestamped": true
+    }
+  },
+  "extraction": {
+    "tool": "innoextract",
+    "toolVersion": "1.9",
+    "toolZip": "innoextract-1.9-windows.zip",
+    "toolZipUrl": "https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9-windows.zip",
+    "toolZipSha256": "6989342c9b026a00a72a38f23b62a8e6a22cc5de69805cf47d68ac2fec993065",
+    "toolExeSha256": "946bd06d8b3722a791fea4d84f496139eef6faef61640924cb72f5f1998a68e1",
+    "command": "innoextract --extract --output-dir packaging/vendor/InnoSetup6 innosetup-6.0.5.exe",
+    "exitCode": 0,
+    "outputHead": "Extracting \"Inno Setup\" - setup data version 6.0.0 (unicode)",
+    "supportedRange": "Inno Setup 1.2.10 to 6.0.5 (innoextract 1.9 --version)"
+  },
+  "issAdaptation": {
+    "issue": "Inno Setup 6.3+ x64compatible architecture identifier is not understood by 6.0.5",
+    "solution": "ISPP version detection in installer/SixMic3D.iss: #if Ver >= EncodeVer(6,3,0) -> x64compatible, else x64",
+    "probeEvidence": "compile probe with 6.0.5 hit the Ver < 6.3 branch (ISPP_VER_DETECTED_LT_63)"
+  },
+  "license": {
+    "file": "vendor/InnoSetup6/license.txt",
+    "note": "Inno Setup License: use/alter/redistribute permitted with copyright notice retained; build-time tool only, excluded from product bundles"
+  }
+}

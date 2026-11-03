@@ -1,0 +1,3 @@
+Noto Sans CJK SC (Medium) - SIL Open Font License 1.1
+Source: https://github.com/googlefonts/noto-cjk
+License text: https://openfontlicense.org/open-font-license-official-text/
