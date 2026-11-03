@@ -1,0 +1,1 @@
+{"protocol":"sixmic-analysis","version":1,"requestId":"golden-0001","sessionId":null,"op":"hello","args":{"clientName":"BackendCheck","clientVersion":"0.1.0","maxBinaryPayloadBytes":1048576}}
