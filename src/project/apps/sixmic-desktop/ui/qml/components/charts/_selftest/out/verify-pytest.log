@@ -1,0 +1,1744 @@
+﻿python.exe : file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaterfallChart.qml:25
+: TypeError: Cannot read property 'plotBg' of null
+所在位置 行:1 字符: 163
++ ... offscreen'; & ".venv/Scripts/python.exe" -m pytest tests/frontend/tes ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (file:///C:/User...plotBg' of null:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaterfallChart.qml:25: TypeError: 
+Cannot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:6: TypeError: Cannot read
+ property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/Icon.qml:17: TypeError: Cannot call metho
+d 'iconSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:8: TypeError: Cannot read 
+property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:6: TypeError: Cannot read 
+property 'pageTitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:7: TypeError: Cannot read 
+property 'pageSubtitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:34: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:35: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:33: TypeError: Cannot re
+ad property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:22: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:23: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:21: TypeError: Cannot re
+ad property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:9: TypeError: Cannot rea
+d property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:22: TypeError: Cannot read
+ property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:23: TypeError: Cannot read
+ property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:21: TypeError: Cannot read
+ property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:6: TypeError: Cannot read
+ property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/Icon.qml:17: TypeError: Cannot call metho
+d 'iconSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:8: TypeError: Cannot read 
+property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:6: TypeError: Cannot read 
+property 'pageTitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:7: TypeError: Cannot read 
+property 'pageSubtitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:34: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:35: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:33: TypeError: Cannot re
+ad property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:22: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:23: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:21: TypeError: Cannot re
+ad property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:9: TypeError: Cannot rea
+d property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:22: TypeError: Cannot read
+ property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:23: TypeError: Cannot read
+ property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:21: TypeError: Cannot read
+ property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:6: TypeError: Cannot read
+ property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/Icon.qml:17: TypeError: Cannot call metho
+d 'iconSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:8: TypeError: Cannot read 
+property 'dataSource' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:7: TypeError: Cannot read
+ property 'dataSourceLabel' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:6: TypeError: Cannot read 
+property 'pageTitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:7: TypeError: Cannot read 
+property 'pageSubtitle' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:34: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:35: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:33: TypeError: Cannot re
+ad property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:22: TypeError: Cannot re
+ad property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:23: TypeError: Cannot re
+ad property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:21: TypeError: Cannot re
+ad property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SectionTitle.qml:9: TypeError: Cannot rea
+d property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:66: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:67: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:65: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:56: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:57: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:55: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:45: TypeError: Cannot read p
+roperty 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:46: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:44: TypeError: Cannot read p
+roperty 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:34: TypeError: Cannot read p
+roperty 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:24: TypeError: Cannot read p
+roperty 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:25: TypeError: Cannot read p
+roperty 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/StatTile.qml:23: TypeError: Cannot read p
+roperty 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:24: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:41: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:42: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:40: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:32: TypeError: Cannot rea
+d property 'textDisabled' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:10: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/SourceBadge.qml:16: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:22: TypeError: Cannot read
+ property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:23: TypeError: Cannot read
+ property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/PageHeader.qml:21: TypeError: Cannot read
+ property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:22: TypeError: Cannot rea
+d property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:23: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:19: TypeError: Cannot rea
+d property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:29: TypeError: Cannot rea
+d property 'border' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:26: TypeError: Cannot rea
+d property 'radiusControl' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:27: TypeError: Cannot rea
+d property 'panelAlt' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/ChoiceChips.qml:33: TypeError: Cannot rea
+d property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:185: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:186: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:184: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ScalarReadout.qml:35: TypeError: C
+annot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:151: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:152: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:150: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:138: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:139: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:137: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:129: TypeError: Can
+not read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:130: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:128: TypeError: Can
+not read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:118: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:119: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:117: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:36: TypeError: Cann
+ot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Value is undefined and could not be converted to an object
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaterfallChart.qml:25: TypeError: 
+Cannot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/HeatmapChart.qml:43: TypeError: Ca
+nnot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/HeatmapChart.qml:40: TypeError: Ca
+nnot read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PolarChart.qml:43: TypeError: Cann
+ot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PolarChart.qml:40: TypeError: Cann
+ot read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ReadoutStrip.qml:24: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ReadoutStrip.qml:24: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:76: TypeError: Cannot
+ read property 'accent' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:83: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:84: TypeError: Cannot
+ read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:82: TypeError: Cannot
+ read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:74: TypeError: Cannot
+ read property 'panelBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:20: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:90: TypeError: Cannot
+ read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:93: TypeError: Cannot
+ read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/BarChart.qml:96: TypeError: Cannot
+ read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:66: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:67: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:65: TypeError: Cann
+ot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:54: TypeError: Cann
+ot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:55: TypeError: Cann
+ot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/PanelChart.qml:53: TypeError: Cann
+ot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:52: TypeError:
+ Cannot read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:132: TypeError
+: Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:133: TypeError
+: Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:131: TypeError
+: Cannot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:122: TypeError
+: Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:123: TypeError
+: Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:121: TypeError
+: Cannot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:43: TypeError: Canno
+t read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:46: TypeError: Canno
+t read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LineChart.qml:49: TypeError: Canno
+t read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:88: TypeError:
+ Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:89: TypeError:
+ Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:87: TypeError:
+ Cannot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:78: TypeError:
+ Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:79: TypeError:
+ Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/AbSpectrumChart.qml:77: TypeError:
+ Cannot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:185: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:186: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:184: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ScalarReadout.qml:35: TypeError: C
+annot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:151: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:152: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:150: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:138: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:139: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:137: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:129: TypeError: Can
+not read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:130: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:128: TypeError: Can
+not read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:118: TypeError: Can
+not read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:119: TypeError: Can
+not read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:117: TypeError: Can
+not read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/StipaChart.qml:36: TypeError: Cann
+ot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/EventTimeline.qml:44: TypeError: C
+annot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LevelMeter.qml:32: TypeError: Cann
+ot read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LevelMeter.qml:35: TypeError: Cann
+ot read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/LevelMeter.qml:38: TypeError: Cann
+ot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaveformChart.qml:54: TypeError: C
+annot read property 'channelColors' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaveformChart.qml:57: TypeError: C
+annot read property 'fontMono' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/WaveformChart.qml:60: TypeError: C
+annot read property 'plotBg' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:27: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:21: TypeError: Ca
+nnot read property 'warn' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:47: TypeError: Ca
+nnot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartToolbar.qml:251: TypeError: C
+annot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:42: TypeError:
+ Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:43: TypeError:
+ Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:41: TypeError:
+ Cannot read property 'textSecondary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ScalarReadout.qml:35: TypeError: C
+annot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:24: TypeError:
+ Cannot read property 'fontFamily' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:25: TypeError:
+ Cannot read property 'fontScale' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/CapabilityPanel.qml:23: TypeError:
+ Cannot read property 'textPrimary' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:22: TypeError:
+ Cannot read property 'bg' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:31: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:33: TypeError:
+ Cannot read property 'fs' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:32: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:41: TypeError:
+ Cannot read property 'dim' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:44: TypeError:
+ Cannot read property 'fsSmall' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:43: TypeError:
+ Cannot read property 'font' of undefined
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/ChartEmptyState.qml:14: TypeError:
+ Cannot read property 'plotTextDim' of null
+file:///C:/Users/sunxi/Desktop/sixmic3D/apps/sixmic-desktop/ui/qml/components/charts/SourceBanner.qml:25: TypeError: Ca
+nnot read property 'textSecondary' of null
+.............................                                            [100%]
+29 passed in 12.21s

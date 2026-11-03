@@ -1,0 +1,11 @@
+{
+  "features": 51,
+  "binaryPlans": 427,
+  "staticInstructions": 42848,
+  "stipaWeightFiles": 42,
+  "stipaWeightBytes": 120960000,
+  "protectedP0AndP1Writes": 0,
+  "allBranchesInBounds": true,
+  "noDspExecuted": true,
+  "hardwareAccepted": false
+}
