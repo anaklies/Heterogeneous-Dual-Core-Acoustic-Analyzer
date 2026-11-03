@@ -1,0 +1,13 @@
+{
+  "featureId": "spectral_decay",
+  "name": "分频衰减数据",
+  "input": "inputs/11_broadband_room_decay_RT0p4s.wav",
+  "reference": {
+    "envelopeRT60_s": 0.4,
+    "filter": "4th order Butterworth octave band, causal SOS",
+    "perBandReferenceCSV": "reference/band_decay_summary.csv",
+    "perBandCurvesCSV": "reference/band_decay_curves.csv",
+    "filteredBandRTNeedsItsOwnFit": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

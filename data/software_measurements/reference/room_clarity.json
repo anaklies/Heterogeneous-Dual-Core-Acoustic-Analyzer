@@ -1,0 +1,11 @@
+{
+  "featureId": "room_clarity",
+  "name": "C50/C80/D50",
+  "input": "inputs/06_ideal_RT60_0p4s.wav",
+  "reference": {
+    "C50_dB": 6.6496271346841365,
+    "C80_dB": 11.716952162168855,
+    "D50_percent": 82.21720589961083
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

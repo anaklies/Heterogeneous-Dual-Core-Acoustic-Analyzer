@@ -1,0 +1,12 @@
+{
+  "featureId": "io_pcm",
+  "name": "六通道WAV/PCM",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "sampleRateHz": 48000,
+    "channels": 6,
+    "samplesPerChannel": 24000,
+    "storage": "signed PCM32 WAV; exact normalized samples in NPZ"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

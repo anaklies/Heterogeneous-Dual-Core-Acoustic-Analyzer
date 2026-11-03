@@ -1,0 +1,14 @@
+{
+  "featureId": "cross_correlation",
+  "name": "互相关",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "channelPair": [
+      0,
+      1
+    ],
+    "channel1DelaySamples": 2,
+    "signDependsOnConjugateConvention": "native convention X*conj(Y): peak lag -2"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

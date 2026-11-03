@@ -1,0 +1,14 @@
+{
+  "featureId": "harmonic_ratio",
+  "name": "谐波与有限带宽THD",
+  "input": "inputs/05_250Hz_with_harmonics.wav",
+  "reference": {
+    "fundamentalAmplitude": 0.2,
+    "harmonicAmplitudes": [
+      0.02,
+      0.01
+    ],
+    "THD_ratio": 0.11180339887498948
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

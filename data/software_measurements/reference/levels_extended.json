@@ -1,0 +1,18 @@
+{
+  "featureId": "levels_extended",
+  "name": "Peak-to-Peak及扩展电平",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "peakToPeak_FS": 0.4,
+    "dc_FS": 1.728247174999827e-17,
+    "RMS_per_channel": [
+      0.14142135623731206,
+      0.1385929291125681,
+      0.13576450198782017,
+      0.13293607486307257,
+      0.13010764773832867,
+      0.12727922061357702
+    ]
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

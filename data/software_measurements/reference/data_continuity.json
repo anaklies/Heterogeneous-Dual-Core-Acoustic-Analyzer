@@ -1,0 +1,15 @@
+{
+  "featureId": "data_continuity",
+  "name": "采样连续性与异常输入",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "frames": [
+      100,
+      101,
+      103
+    ],
+    "detectedMissingFrames": 1,
+    "syntheticTransportFixture": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

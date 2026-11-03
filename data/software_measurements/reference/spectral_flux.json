@@ -1,0 +1,10 @@
+{
+  "featureId": "spectral_flux",
+  "name": "谱结构变化",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "equalConsecutiveSpectraPositiveFlux": 0,
+    "A_to_4A_positiveFlux": 0.08999999998902622
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

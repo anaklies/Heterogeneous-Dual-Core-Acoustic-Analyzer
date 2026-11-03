@@ -1,0 +1,13 @@
+{
+  "featureId": "levels_core",
+  "name": "RMS/Peak/dBFS/波峰因数/削顶",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "channel0_RMS_FS": 0.14142135623730953,
+    "peak_FS": 0.2,
+    "RMS_dBFS": -16.989700043360187,
+    "crestFactor": 1.4142135623730951,
+    "clippedSamples": 0
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

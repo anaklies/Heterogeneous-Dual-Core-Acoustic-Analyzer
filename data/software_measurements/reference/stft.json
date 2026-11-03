@@ -1,0 +1,12 @@
+{
+  "featureId": "stft",
+  "name": "STFT与瀑布数据",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "frequencyGridStepHz": 23.4375,
+    "hopSamples": 1024,
+    "frames": 22,
+    "referenceNPZ": "reference/stft_reference.npz"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

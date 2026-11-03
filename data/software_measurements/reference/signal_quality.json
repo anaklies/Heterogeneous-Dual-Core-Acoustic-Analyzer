@@ -1,0 +1,14 @@
+{
+  "featureId": "signal_quality",
+  "name": "输入有效性与新鲜度（无自动方向）",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "finite": true,
+    "clipped": false,
+    "allSixChannelsNonzero": true,
+    "staleFixtureAgeMs": 2500,
+    "maxAgeMs": 1000,
+    "staleMustBeRejected": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

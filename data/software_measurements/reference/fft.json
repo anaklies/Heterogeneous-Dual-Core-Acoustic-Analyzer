@@ -1,0 +1,11 @@
+{
+  "featureId": "fft",
+  "name": "FFT幅度谱",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "targetHz": 1000,
+    "resolutionHz": 23.4375,
+    "referenceCSV": "reference/fft_1000Hz.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

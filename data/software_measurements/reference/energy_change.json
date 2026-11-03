@@ -1,0 +1,12 @@
+{
+  "featureId": "energy_change",
+  "name": "短时能量变化",
+  "input": "inputs/07_background_then_3kHz_event.wav",
+  "reference": {
+    "backgroundSigma_FS": 0.002,
+    "burstStartSeconds": 1.1,
+    "burstEndSeconds": 1.2,
+    "burstFrequencyHz": 3000
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

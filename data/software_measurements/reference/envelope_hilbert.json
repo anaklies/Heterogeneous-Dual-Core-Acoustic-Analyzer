@@ -1,0 +1,11 @@
+{
+  "featureId": "envelope_hilbert",
+  "name": "Hilbert包络",
+  "input": "inputs/04_100Hz_AM_6000Hz_carrier.wav",
+  "reference": {
+    "envelopeFormula": "0.15*(1+0.5*sin(2*pi*100*t))",
+    "min": 0.075,
+    "max": 0.225
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

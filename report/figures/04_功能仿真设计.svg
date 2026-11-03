@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650"><rect width="1500" height="650" fill="white"/>
+<text x="45" y="54.550000000000004" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" fill="#21354b">功能仿真与独立数值参考</text>
+<text x="45" y="97.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#62758a">复用已归档输入和结果，不重复长RTL仿真；测试对象分层</text>
+<rect x="60" y="170" width="290" height="115" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="103.5" y="220.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">确定性测试输入</text>
+<text x="77.0" y="251.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">单频 / 双音 / 噪声 / 衰减</text>
+<rect x="465" y="125" width="390" height="100" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="573.0" y="167.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">项目软件内核</text>
+<text x="549.75" y="199.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">生产标量ISA解释执行</text>
+<rect x="465" y="320" width="390" height="100" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="573.0" y="362.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">独立数学参考</text>
+<text x="533.0" y="394.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">NumPy / SciPy / 理论值</text>
+<rect x="1030" y="220" width="380" height="135" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="1118.5" y="264.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">配对检查与归档</text>
+<text x="1082.0" y="296.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">输出、参考、误差、有效性</text>
+<text x="1118.5" y="327.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">输入种子与SHA256</text>
+<polyline points="350,205 405,205 405,175 465,175" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="465,175 453.0,180.0 453.0,170.0" fill="#54718c"/>
+<polyline points="350,245 405,245 405,370 465,370" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="465,370 453.0,375.0 453.0,365.0" fill="#54718c"/>
+<polyline points="855,175 940,175 940,255 1030,255" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1030,255 1018.0,260.0 1018.0,250.0" fill="#54718c"/>
+<polyline points="855,370 940,370 940,320 1030,320" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1030,320 1018.0,325.0 1018.0,315.0" fill="#54718c"/>
+<text x="65" y="523.25" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#21354b">已有证据：45项输入参考索引 / 6组软件数值对照 / 92个内核案例 / 独立板上配对性能记录</text>
+<text x="65" y="572.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#21354b">控制流程、软件数值、RTL与板上性能分别记录，不把其中一类结果替代另一类。</text>
+</svg>

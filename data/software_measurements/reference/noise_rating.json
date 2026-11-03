@@ -1,0 +1,11 @@
+{
+  "featureId": "noise_rating",
+  "name": "NC/NR估计",
+  "input": "inputs/03_seeded_white_noise.wav",
+  "reference": {
+    "referenceJSON": "reference/NC_NR_explicit_nominal_reference.json",
+    "NC_expected": 45.0,
+    "NR_expected": 50.0
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

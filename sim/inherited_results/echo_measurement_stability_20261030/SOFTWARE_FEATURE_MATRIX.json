@@ -1,0 +1,465 @@
+{
+  "softwareOnly": true,
+  "featureCount": 51,
+  "rows": [
+    {
+      "featureId": "io_pcm",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "waveform",
+      "warnings": []
+    },
+    {
+      "featureId": "levels_core",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "level-bars",
+      "warnings": []
+    },
+    {
+      "featureId": "levels_extended",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "level-bars",
+      "warnings": []
+    },
+    {
+      "featureId": "data_continuity",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "signal_quality",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "fft",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "psd",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "stft",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "stft",
+      "warnings": []
+    },
+    {
+      "featureId": "spectrum_average",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "peak_hold",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "smoothing",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "zoom_fft",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "zoom-spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "spectrum_freeze",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "ab-spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "relative_limit",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "statistics",
+      "warnings": []
+    },
+    {
+      "featureId": "octave",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "bands",
+      "warnings": []
+    },
+    {
+      "featureId": "third_octave",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "bands",
+      "warnings": []
+    },
+    {
+      "featureId": "frequency_time_weighting",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "weighting",
+      "warnings": []
+    },
+    {
+      "featureId": "level_statistics",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "statistics",
+      "warnings": []
+    },
+    {
+      "featureId": "noise_rating",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "noise-rating",
+      "warnings": []
+    },
+    {
+      "featureId": "frequency_tracking",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "frequency_drift",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "centroid",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "flatness",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "spectral_kurtosis",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "cepstrum",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "lag-series",
+      "warnings": []
+    },
+    {
+      "featureId": "fundamental",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "lag-series",
+      "warnings": []
+    },
+    {
+      "featureId": "harmonic_ratio",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "harmonic-bars",
+      "warnings": []
+    },
+    {
+      "featureId": "sidebands",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "harmonic-bars",
+      "warnings": []
+    },
+    {
+      "featureId": "envelope_hilbert",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "waveform",
+      "warnings": []
+    },
+    {
+      "featureId": "envelope_spectrum",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "modulation_spectrum",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "csd",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "pair-spectra",
+      "warnings": []
+    },
+    {
+      "featureId": "coherence_phase",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "coherence-phase",
+      "warnings": []
+    },
+    {
+      "featureId": "autocorrelation",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "lag-series",
+      "warnings": []
+    },
+    {
+      "featureId": "cross_correlation",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "lag-series",
+      "warnings": []
+    },
+    {
+      "featureId": "gcc_phat",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "lag-series",
+      "warnings": []
+    },
+    {
+      "featureId": "spatial_interface",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "capability",
+      "warnings": []
+    },
+    {
+      "featureId": "directed_das",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "beam-spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "full_das",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "das-map",
+      "warnings": []
+    },
+    {
+      "featureId": "band_das",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "beam-spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "spatial_grid",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "das-map",
+      "warnings": []
+    },
+    {
+      "featureId": "spatial_peaks",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "bands",
+      "warnings": []
+    },
+    {
+      "featureId": "energy_change",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "band_tracking",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "scalars",
+      "warnings": []
+    },
+    {
+      "featureId": "spectral_flux",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectrum",
+      "warnings": []
+    },
+    {
+      "featureId": "event_trigger",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "events",
+      "warnings": []
+    },
+    {
+      "featureId": "room_decay",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "room-decay",
+      "warnings": []
+    },
+    {
+      "featureId": "room_clarity",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "room-clarity",
+      "warnings": []
+    },
+    {
+      "featureId": "spectral_decay",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "spectral-decay",
+      "warnings": []
+    },
+    {
+      "featureId": "relative_insulation",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "insulation-bars",
+      "warnings": []
+    },
+    {
+      "featureId": "stipa_experimental",
+      "input": "historical schema + zero/invalid-word fixture",
+      "hardwareAccepted": false,
+      "decoded": true,
+      "widgetLoaded": true,
+      "chartKind": "stipa",
+      "warnings": []
+    }
+  ]
+}

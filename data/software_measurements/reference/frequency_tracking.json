@@ -1,0 +1,10 @@
+{
+  "featureId": "frequency_tracking",
+  "name": "主峰频率跟随",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "trueFrequencyHz": 1000,
+    "nearestFFTBinHz": 1007.8125
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

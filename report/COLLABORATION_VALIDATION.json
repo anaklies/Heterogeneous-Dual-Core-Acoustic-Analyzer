@@ -1,0 +1,17 @@
+{
+  "pages": 7,
+  "designCases": 6,
+  "format": [
+    "design problem",
+    "reconstructed design prompt",
+    "model proposal summary",
+    "engineering checks",
+    "corrections",
+    "final decision",
+    "evidence"
+  ],
+  "renderEngine": "Microsoft Word and pypdfium2",
+  "allPagesVisuallyReviewed": true,
+  "rawTranscriptRemovedFromSubmission": true,
+  "noNewAlgorithmOrBoardTests": true
+}

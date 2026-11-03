@@ -1,0 +1,11 @@
+{
+  "featureId": "spectral_kurtosis",
+  "name": "谱峭度有限原型",
+  "input": "inputs/03_seeded_white_noise.wav",
+  "reference": {
+    "snapshots": 8,
+    "referenceCSV": "reference/spectral_kurtosis.csv",
+    "formula": "(M+1)/(M-1)*(M*S2/S1^2-1)-1"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

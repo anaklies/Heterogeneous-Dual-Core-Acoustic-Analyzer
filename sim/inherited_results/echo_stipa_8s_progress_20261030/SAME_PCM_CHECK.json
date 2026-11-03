@@ -1,0 +1,1402 @@
+{
+  "generatedAt": "2026-10-30T19:54:30+0800",
+  "engine": "room_native.dll scalar_native",
+  "enginePath": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\echo_measurement_flow_fix_20261028\\room_native.dll",
+  "engineSHA256": "741e601a86aeed610c8d65475f3fbd47d381038d96f8de5d4e1aadd96c58ea53",
+  "samplesPerTrace": 384000,
+  "decimationsPerTrace": 1600,
+  "stages": 15,
+  "arbitraryScale": false,
+  "synthetic": {
+    "source": {
+      "kind": "synthetic",
+      "carriersHz": [
+        500.0,
+        1000.0,
+        2000.0
+      ],
+      "modulationPairsHz": {
+        "500.0": [
+          0.63,
+          3.15
+        ],
+        "1000.0": [
+          2.0,
+          10.0
+        ],
+        "2000.0": [
+          1.25,
+          6.25
+        ]
+      },
+      "peakFS": 0.42898616546582685
+    },
+    "stageSubmissions": [
+      9001,
+      7501,
+      41963,
+      147,
+      41963,
+      147,
+      41963,
+      147,
+      41963,
+      147,
+      41963,
+      147,
+      41963,
+      147,
+      1
+    ],
+    "bands": [
+      {
+        "bandIndex": 2,
+        "bandHz": 500.0,
+        "filterPower": [
+          {
+            "trace": 0,
+            "power": 0.006682058330625296,
+            "bits": 1004205355
+          },
+          {
+            "trace": 1,
+            "power": 0.006682058330625296,
+            "bits": 1004205355
+          }
+        ],
+        "coefficients": [
+          {
+            "trace": 0,
+            "coeff": [
+              0.006680966820567846,
+              -1.5060597434057854e-05,
+              0.00564648536965251,
+              -8.560073911212385e-05,
+              0.00554030854254961,
+              -0.0007630812469869852
+            ],
+            "bits": [
+              1004203011,
+              3078401222,
+              1001981479,
+              3098772620,
+              1001753466,
+              3125283204
+            ]
+          },
+          {
+            "trace": 1,
+            "coeff": [
+              0.006680966820567846,
+              -1.5060597434057854e-05,
+              0.00564648536965251,
+              -8.560073911212385e-05,
+              0.00554030854254961,
+              -0.0007630812469869852
+            ],
+            "bits": [
+              1004203011,
+              3078401222,
+              1001981479,
+              3098772620,
+              1001753466,
+              3125283204
+            ]
+          }
+        ],
+        "depths": [
+          {
+            "j": 0,
+            "modulationHz": 0.63,
+            "rawModulationHz": 0.63,
+            "referenceDepth": 0.8452570320738326,
+            "measuredDepth": 0.8452570320738326,
+            "ratio": 1.0
+          },
+          {
+            "j": 1,
+            "modulationHz": 3.15,
+            "rawModulationHz": 3.15,
+            "referenceDepth": 0.8370962461548703,
+            "measuredDepth": 0.8370962461548703,
+            "ratio": 1.0
+          }
+        ]
+      },
+      {
+        "bandIndex": 3,
+        "bandHz": 1000.0,
+        "filterPower": [
+          {
+            "trace": 0,
+            "power": 0.006915940437465906,
+            "bits": 1004707613
+          },
+          {
+            "trace": 1,
+            "power": 0.006915940437465906,
+            "bits": 1004707613
+          }
+        ],
+        "coefficients": [
+          {
+            "trace": 0,
+            "coeff": [
+              0.006907308474183083,
+              -3.7242311918816995e-06,
+              0.00557284289970994,
+              -0.0004370391834527254,
+              0.005141329951584339,
+              -0.0021849749609827995
+            ],
+            "bits": [
+              1004689076,
+              3061444046,
+              1001823333,
+              3118801512,
+              1000896666,
+              3138335180
+            ]
+          },
+          {
+            "trace": 1,
+            "coeff": [
+              0.006907308474183083,
+              -3.7242311918816995e-06,
+              0.00557284289970994,
+              -0.0004370391834527254,
+              0.005141329951584339,
+              -0.0021849749609827995
+            ],
+            "bits": [
+              1004689076,
+              3061444046,
+              1001823333,
+              3118801512,
+              1000896666,
+              3138335180
+            ]
+          }
+        ],
+        "depths": [
+          {
+            "j": 0,
+            "modulationHz": 2.0,
+            "rawModulationHz": 2.0,
+            "referenceDepth": 0.8092810129059497,
+            "measuredDepth": 0.8092810129059497,
+            "ratio": 1.0
+          },
+          {
+            "j": 1,
+            "modulationHz": 10.0,
+            "rawModulationHz": 10.0,
+            "referenceDepth": 0.8087603794319296,
+            "measuredDepth": 0.8087603794319296,
+            "ratio": 1.0
+          }
+        ]
+      },
+      {
+        "bandIndex": 4,
+        "bandHz": 2000.0,
+        "filterPower": [
+          {
+            "trace": 0,
+            "power": 0.006637025624513626,
+            "bits": 1004108648
+          },
+          {
+            "trace": 1,
+            "power": 0.006637025624513626,
+            "bits": 1004108648
+          }
+        ],
+        "coefficients": [
+          {
+            "trace": 0,
+            "coeff": [
+              0.006626328453421593,
+              8.855560736265033e-06,
+              0.005581717938184738,
+              -0.00026408903067931533,
+              0.005445051472634077,
+              -0.0013095211470499635
+            ],
+            "bits": [
+              1004085676,
+              924095064,
+              1001842392,
+              3112858990,
+              1001548903,
+              3131810877
+            ]
+          },
+          {
+            "trace": 1,
+            "coeff": [
+              0.006626328453421593,
+              8.855560736265033e-06,
+              0.005581717938184738,
+              -0.00026408903067931533,
+              0.005445051472634077,
+              -0.0013095211470499635
+            ],
+            "bits": [
+              1004085676,
+              924095064,
+              1001842392,
+              3112858990,
+              1001548903,
+              3131810877
+            ]
+          }
+        ],
+        "depths": [
+          {
+            "j": 0,
+            "modulationHz": 1.25,
+            "rawModulationHz": 1.25,
+            "referenceDepth": 0.8432968476970034,
+            "measuredDepth": 0.8432968476970034,
+            "ratio": 1.0
+          },
+          {
+            "j": 1,
+            "modulationHz": 6.25,
+            "rawModulationHz": 6.25,
+            "referenceDepth": 0.8451597873281835,
+            "measuredDepth": 0.8451597873281835,
+            "ratio": 1.0
+          }
+        ]
+      }
+    ],
+    "final": {
+      "experimental_index": 1.0,
+      "valid": 1.0,
+      "certified_zero": 0.0,
+      "reason_code": 0.0,
+      "failed_band_hz": 0.0,
+      "failed_modulation_hz": 0.0,
+      "reference_depth": 0.0,
+      "measured_depth": 0.0,
+      "transfer_ratio": 0.0,
+      "bits": [
+        1065353216,
+        1065353216,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "realPcm": [
+    {
+      "source": {
+        "kind": "real_field_capture",
+        "source": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\echo_event_wav_time_fix_20261029\\live\\events\\录音\\2026-10-29_19-17-12.000_六通道.wav",
+        "channel": 0,
+        "note": "actual board event recording; resampled to 48k when needed and extended to 8s; A/B consistency record only",
+        "sourceSampleRate": 48010,
+        "framesUsed": 384000,
+        "peakFS": 0.2298203834609453,
+        "normalizedToPeakFS": 0.9
+      },
+      "stageSubmissions": [
+        9001,
+        7501,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        1
+      ],
+      "bands": [
+        {
+          "bandIndex": 2,
+          "bandHz": 500.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 9.765785762283485e-07,
+              "bits": 897782524
+            },
+            {
+              "trace": 1,
+              "power": 9.765785762283485e-07,
+              "bits": 897782524
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                9.496891948401753e-07,
+                2.9057968475854068e-08,
+                5.469184216622125e-08,
+                -4.5346587285166606e-07,
+                -2.1515059245302837e-07,
+                8.763623604579607e-09
+              ],
+              "bits": [
+                897510949,
+                855218982,
+                862643793,
+                3035853792,
+                3026650149,
+                840339155
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                9.496891948401753e-07,
+                2.9057968475854068e-08,
+                5.469184216622125e-08,
+                -4.5346587285166606e-07,
+                -2.1515059245302837e-07,
+                8.763623604579607e-09
+              ],
+              "bits": [
+                897510949,
+                855218982,
+                862643793,
+                3035853792,
+                3026650149,
+                840339155
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 0.63,
+              "rawModulationHz": 0.63,
+              "referenceDepth": 0.4809490499091388,
+              "measuredDepth": 0.4809490499091388,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 3.15,
+              "rawModulationHz": 3.15,
+              "referenceDepth": 0.2267362857707927,
+              "measuredDepth": 0.2267362857707927,
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "bandIndex": 3,
+          "bandHz": 1000.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 1.8447944967192598e-06,
+              "bits": 905419432
+            },
+            {
+              "trace": 1,
+              "power": 1.8447944967192598e-06,
+              "bits": 905419432
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                1.8460160617905785e-06,
+                4.3805581384503967e-08,
+                5.668815106218972e-07,
+                -3.41114656521313e-07,
+                4.454803672615526e-07,
+                1.1838859137469626e-07
+              ],
+              "bits": [
+                905430177,
+                859579583,
+                890776525,
+                3031900785,
+                888089179,
+                872299729
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                1.8460160617905785e-06,
+                4.3805581384503967e-08,
+                5.668815106218972e-07,
+                -3.41114656521313e-07,
+                4.454803672615526e-07,
+                1.1838859137469626e-07
+              ],
+              "bits": [
+                905430177,
+                859579583,
+                890776525,
+                3031900785,
+                888089179,
+                872299729
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 2.0,
+              "rawModulationHz": 2.0,
+              "referenceDepth": 0.3583931264922822,
+              "measuredDepth": 0.3583931264922822,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 10.0,
+              "rawModulationHz": 10.0,
+              "referenceDepth": 0.24969619204279267,
+              "measuredDepth": 0.24969619204279267,
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "bandIndex": 4,
+          "bandHz": 2000.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 3.6539490793074947e-06,
+              "bits": 913651294
+            },
+            {
+              "trace": 1,
+              "power": 3.6539490793074947e-06,
+              "bits": 913651294
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                3.6840501707047224e-06,
+                9.819725477200336e-08,
+                6.146179885035963e-07,
+                1.4313924339148798e-06,
+                2.938269894059431e-08,
+                -2.9601574169646483e-07
+              ],
+              "bits": [
+                913783680,
+                869458051,
+                891616314,
+                901783109,
+                855401789,
+                3030314008
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                3.6840501707047224e-06,
+                9.819725477200336e-08,
+                6.146179885035963e-07,
+                1.4313924339148798e-06,
+                2.938269894059431e-08,
+                -2.9601574169646483e-07
+              ],
+              "bits": [
+                913783680,
+                869458051,
+                891616314,
+                901783109,
+                855401789,
+                3030314008
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 1.25,
+              "rawModulationHz": 1.25,
+              "referenceDepth": 0.42284101025786924,
+              "measuredDepth": 0.42284101025786924,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 6.25,
+              "rawModulationHz": 6.25,
+              "referenceDepth": 0.08074549086930391,
+              "measuredDepth": 0.08074549086930391,
+              "ratio": 1.0
+            }
+          ]
+        }
+      ],
+      "final": {
+        "experimental_index": 0.0,
+        "valid": 0.0,
+        "certified_zero": 0.0,
+        "reason_code": 3.0,
+        "failed_band_hz": 2000.0,
+        "failed_modulation_hz": 6.25,
+        "reference_depth": 0.08074549585580826,
+        "measured_depth": 0.08074549585580826,
+        "transfer_ratio": 1.0,
+        "bits": [
+          0,
+          0,
+          0,
+          1077936128,
+          1157234688,
+          1086849024,
+          1034247653,
+          1034247653,
+          1065353216
+        ]
+      }
+    },
+    {
+      "source": {
+        "kind": "real_device_capture_8s",
+        "source": "C:\\Users\\sunxi\\Desktop\\sixmic3D\\deployment\\work_platform_20261013\\phase12n_event_capture_20261021\\examples\\input.wav",
+        "channel": 0,
+        "note": "exact 8s 6-channel device capture example, channel0 used for both A and B",
+        "sourceSampleRate": 48000,
+        "framesUsed": 384000,
+        "peakFS": 0.03616738319396973,
+        "normalizedToPeakFS": 0.9
+      },
+      "stageSubmissions": [
+        9001,
+        7501,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        41963,
+        147,
+        1
+      ],
+      "bands": [
+        {
+          "bandIndex": 2,
+          "bandHz": 500.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 1.3005577784497291e-05,
+              "bits": 928658056
+            },
+            {
+              "trace": 1,
+              "power": 1.3005577784497291e-05,
+              "bits": 928658056
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                1.1465946954558603e-05,
+                -4.61039098809124e-06,
+                -1.6603873518761247e-05,
+                -1.9754268578253686e-05,
+                3.977320830017561e-06,
+                2.1848061805940233e-05
+              ],
+              "bits": [
+                926965214,
+                3063591669,
+                3079358604,
+                3081090552,
+                914715885,
+                934757979
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                1.1465946954558603e-05,
+                -4.61039098809124e-06,
+                -1.6603873518761247e-05,
+                -1.9754268578253686e-05,
+                3.977320830017561e-06,
+                2.1848061805940233e-05
+              ],
+              "bits": [
+                926965214,
+                3063591669,
+                3079358604,
+                3081090552,
+                914715885,
+                934757979
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 0.63,
+              "rawModulationHz": 0.63,
+              "referenceDepth": 2.2506140056818658,
+              "measuredDepth": 2.2506140056818658,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 3.15,
+              "rawModulationHz": 3.15,
+              "referenceDepth": 1.9367903938133102,
+              "measuredDepth": 1.9367903938133102,
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "bandIndex": 3,
+          "bandHz": 1000.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 2.9146694942028262e-05,
+              "bits": 938770445
+            },
+            {
+              "trace": 1,
+              "power": 2.9146694942028262e-05,
+              "bits": 938770445
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                2.8588792702066712e-05,
+                -9.727128599479329e-06,
+                3.746488073375076e-05,
+                4.00913595512975e-05,
+                1.390943396017974e-07,
+                7.570027946712798e-07
+              ],
+              "bits": [
+                938463735,
+                3072537011,
+                941433756,
+                942155717,
+                873814518,
+                894121174
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                2.8588792702066712e-05,
+                -9.727128599479329e-06,
+                3.746488073375076e-05,
+                4.00913595512975e-05,
+                1.390943396017974e-07,
+                7.570027946712798e-07
+              ],
+              "bits": [
+                938463735,
+                3072537011,
+                941433756,
+                942155717,
+                873814518,
+                894121174
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 2.0,
+              "rawModulationHz": 2.0,
+              "referenceDepth": 1.9193528906548984,
+              "measuredDepth": 1.9193528906548984,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 10.0,
+              "rawModulationHz": 10.0,
+              "referenceDepth": 0.02692228270125807,
+              "measuredDepth": 0.02692228270125807,
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "bandIndex": 4,
+          "bandHz": 2000.0,
+          "filterPower": [
+            {
+              "trace": 0,
+              "power": 5.7235425629187375e-05,
+              "bits": 946868242
+            },
+            {
+              "trace": 1,
+              "power": 5.7235425629187375e-05,
+              "bits": 946868242
+            }
+          ],
+          "coefficients": [
+            {
+              "trace": 0,
+              "coeff": [
+                5.789511124021374e-05,
+                -2.0240073354216293e-05,
+                0.00010986473353113979,
+                4.095186523045413e-05,
+                -1.322319803875871e-05,
+                5.0214963266626e-05
+              ],
+              "bits": [
+                947049575,
+                3081357626,
+                954623790,
+                942392251,
+                3076380980,
+                944938472
+              ]
+            },
+            {
+              "trace": 1,
+              "coeff": [
+                5.789511124021374e-05,
+                -2.0240073354216293e-05,
+                0.00010986473353113979,
+                4.095186523045413e-05,
+                -1.322319803875871e-05,
+                5.0214963266626e-05
+              ],
+              "bits": [
+                947049575,
+                3081357626,
+                954623790,
+                942392251,
+                3076380980,
+                944938472
+              ]
+            }
+          ],
+          "depths": [
+            {
+              "j": 0,
+              "modulationHz": 1.25,
+              "rawModulationHz": 1.25,
+              "referenceDepth": 2.025195941236154,
+              "measuredDepth": 2.025195941236154,
+              "ratio": 1.0
+            },
+            {
+              "j": 1,
+              "modulationHz": 6.25,
+              "rawModulationHz": 6.25,
+              "referenceDepth": 0.8969121439657771,
+              "measuredDepth": 0.8969121439657771,
+              "ratio": 1.0
+            }
+          ]
+        }
+      ],
+      "final": {
+        "experimental_index": 0.0,
+        "valid": 0.0,
+        "certified_zero": 0.0,
+        "reason_code": 3.0,
+        "failed_band_hz": 1000.0,
+        "failed_modulation_hz": 10.0,
+        "reference_depth": 0.026922283694148064,
+        "measured_depth": 0.026922283694148064,
+        "transfer_ratio": 1.0,
+        "bits": [
+          0,
+          0,
+          0,
+          1077936128,
+          1148846080,
+          1092616192,
+          1021086751,
+          1021086751,
+          1065353216
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check": "synthetic/filter_power_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "synthetic/filter_power_positive",
+      "pass": true,
+      "detail": {
+        "powers": [
+          [
+            0.006682058331,
+            0.006682058331
+          ],
+          [
+            0.006915940437,
+            0.006915940437
+          ],
+          [
+            0.006637025625,
+            0.006637025625
+          ]
+        ]
+      }
+    },
+    {
+      "check": "synthetic/joint_coefficients_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "synthetic/joint_coefficients_finite",
+      "pass": true,
+      "detail": {
+        "coefficients": [
+          [
+            0.006680966820567846,
+            -1.5060597434057854e-05,
+            0.00564648536965251,
+            -8.560073911212385e-05,
+            0.00554030854254961,
+            -0.0007630812469869852
+          ],
+          [
+            0.006907308474183083,
+            -3.7242311918816995e-06,
+            0.00557284289970994,
+            -0.0004370391834527254,
+            0.005141329951584339,
+            -0.0021849749609827995
+          ],
+          [
+            0.006626328453421593,
+            8.855560736265033e-06,
+            0.005581717938184738,
+            -0.00026408903067931533,
+            0.005445051472634077,
+            -0.0013095211470499635
+          ]
+        ]
+      }
+    },
+    {
+      "check": "synthetic/six_ratios_equal_1",
+      "pass": true,
+      "detail": {
+        "ratios": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "synthetic/certified_zero_is_0",
+      "pass": true,
+      "detail": {
+        "certified_zero": 0.0
+      }
+    },
+    {
+      "check": "synthetic/valid_index_when_normal",
+      "pass": true,
+      "detail": {
+        "index": 1.0,
+        "valid": 1.0
+      }
+    },
+    {
+      "check": "synthetic/reason_fields_zero_when_normal",
+      "pass": true,
+      "detail": {
+        "reason_code": 0.0,
+        "failed_band_hz": 0.0,
+        "failed_modulation_hz": 0.0,
+        "reference_depth": 0.0,
+        "measured_depth": 0.0,
+        "transfer_ratio": 0.0
+      }
+    },
+    {
+      "check": "synthetic/all_reference_depths_pass_gate",
+      "pass": true,
+      "detail": {
+        "referenceDepths": [
+          0.845257032,
+          0.837096246,
+          0.809281013,
+          0.808760379,
+          0.843296848,
+          0.845159787
+        ]
+      }
+    },
+    {
+      "check": "synthetic/reason_in_contract",
+      "pass": true,
+      "detail": {
+        "reason_code": 0.0
+      }
+    },
+    {
+      "check": "synthetic/failed_band_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_band_hz": 0.0
+      }
+    },
+    {
+      "check": "synthetic/failed_modulation_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_modulation_hz": 0.0
+      }
+    },
+    {
+      "check": "synthetic/15_stages_reached_DONE",
+      "pass": true,
+      "detail": {
+        "stageSubmissions": [
+          9001,
+          7501,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          1
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/filter_power_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/filter_power_positive",
+      "pass": true,
+      "detail": {
+        "powers": [
+          [
+            9.76579e-07,
+            9.76579e-07
+          ],
+          [
+            1.844794e-06,
+            1.844794e-06
+          ],
+          [
+            3.653949e-06,
+            3.653949e-06
+          ]
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/joint_coefficients_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/joint_coefficients_finite",
+      "pass": true,
+      "detail": {
+        "coefficients": [
+          [
+            9.496891948401753e-07,
+            2.9057968475854068e-08,
+            5.469184216622125e-08,
+            -4.5346587285166606e-07,
+            -2.1515059245302837e-07,
+            8.763623604579607e-09
+          ],
+          [
+            1.8460160617905785e-06,
+            4.3805581384503967e-08,
+            5.668815106218972e-07,
+            -3.41114656521313e-07,
+            4.454803672615526e-07,
+            1.1838859137469626e-07
+          ],
+          [
+            3.6840501707047224e-06,
+            9.819725477200336e-08,
+            6.146179885035963e-07,
+            1.4313924339148798e-06,
+            2.938269894059431e-08,
+            -2.9601574169646483e-07
+          ]
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/six_ratios_equal_1",
+      "pass": true,
+      "detail": {
+        "ratios": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "real_field_capture/certified_zero_is_0",
+      "pass": true,
+      "detail": {
+        "certified_zero": 0.0
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_no_fake_index",
+      "pass": true,
+      "detail": {
+        "index": 0.0,
+        "valid": 0.0
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_failed_band",
+      "pass": true,
+      "detail": {
+        "failed_band_hz": 2000.0,
+        "expectedBandHz": 2000.0
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_failed_modulation",
+      "pass": true,
+      "detail": {
+        "failed_modulation_hz": 6.25,
+        "expectedModHz": 6.25,
+        "rawModHz": 6.25
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_reference_depth",
+      "pass": true,
+      "detail": {
+        "reference_depth": 0.08074549585580826,
+        "expected": 0.08074549086930391
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_measured_depth",
+      "pass": true,
+      "detail": {
+        "measured_depth": 0.08074549585580826,
+        "expected": 0.08074549086930391
+      }
+    },
+    {
+      "check": "real_field_capture/reason3_ratio_is_1",
+      "pass": true,
+      "detail": {
+        "transfer_ratio": 1.0
+      }
+    },
+    {
+      "check": "real_field_capture/reason_in_contract",
+      "pass": true,
+      "detail": {
+        "reason_code": 3.0
+      }
+    },
+    {
+      "check": "real_field_capture/failed_band_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_band_hz": 2000.0
+      }
+    },
+    {
+      "check": "real_field_capture/failed_modulation_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_modulation_hz": 6.25
+      }
+    },
+    {
+      "check": "real_field_capture/15_stages_reached_DONE",
+      "pass": true,
+      "detail": {
+        "stageSubmissions": [
+          9001,
+          7501,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          1
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/filter_power_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/filter_power_positive",
+      "pass": true,
+      "detail": {
+        "powers": [
+          [
+            1.3005578e-05,
+            1.3005578e-05
+          ],
+          [
+            2.9146695e-05,
+            2.9146695e-05
+          ],
+          [
+            5.7235426e-05,
+            5.7235426e-05
+          ]
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/joint_coefficients_bitwise_equal",
+      "pass": true,
+      "detail": {
+        "perBand": [
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/joint_coefficients_finite",
+      "pass": true,
+      "detail": {
+        "coefficients": [
+          [
+            1.1465946954558603e-05,
+            -4.61039098809124e-06,
+            -1.6603873518761247e-05,
+            -1.9754268578253686e-05,
+            3.977320830017561e-06,
+            2.1848061805940233e-05
+          ],
+          [
+            2.8588792702066712e-05,
+            -9.727128599479329e-06,
+            3.746488073375076e-05,
+            4.00913595512975e-05,
+            1.390943396017974e-07,
+            7.570027946712798e-07
+          ],
+          [
+            5.789511124021374e-05,
+            -2.0240073354216293e-05,
+            0.00010986473353113979,
+            4.095186523045413e-05,
+            -1.322319803875871e-05,
+            5.0214963266626e-05
+          ]
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/six_ratios_equal_1",
+      "pass": true,
+      "detail": {
+        "ratios": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "real_device_capture_8s/certified_zero_is_0",
+      "pass": true,
+      "detail": {
+        "certified_zero": 0.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_no_fake_index",
+      "pass": true,
+      "detail": {
+        "index": 0.0,
+        "valid": 0.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_failed_band",
+      "pass": true,
+      "detail": {
+        "failed_band_hz": 1000.0,
+        "expectedBandHz": 1000.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_failed_modulation",
+      "pass": true,
+      "detail": {
+        "failed_modulation_hz": 10.0,
+        "expectedModHz": 10.0,
+        "rawModHz": 10.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_reference_depth",
+      "pass": true,
+      "detail": {
+        "reference_depth": 0.026922283694148064,
+        "expected": 0.02692228270125807
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_measured_depth",
+      "pass": true,
+      "detail": {
+        "measured_depth": 0.026922283694148064,
+        "expected": 0.02692228270125807
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason3_ratio_is_1",
+      "pass": true,
+      "detail": {
+        "transfer_ratio": 1.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/reason_in_contract",
+      "pass": true,
+      "detail": {
+        "reason_code": 3.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/failed_band_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_band_hz": 1000.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/failed_modulation_in_contract",
+      "pass": true,
+      "detail": {
+        "failed_modulation_hz": 10.0
+      }
+    },
+    {
+      "check": "real_device_capture_8s/15_stages_reached_DONE",
+      "pass": true,
+      "detail": {
+        "stageSubmissions": [
+          9001,
+          7501,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          41963,
+          147,
+          1
+        ]
+      }
+    }
+  ],
+  "plSubmissions": 807489,
+  "elapsedSeconds": 6.636,
+  "allPass": true
+}

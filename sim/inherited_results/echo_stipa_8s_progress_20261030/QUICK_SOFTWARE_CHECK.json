@@ -1,0 +1,798 @@
+{
+  "generatedAt": "2026-10-30T19:54:31+0800",
+  "stipaQuickSamples": 384000,
+  "resultFields": [
+    "experimental_index",
+    "valid",
+    "certified_zero",
+    "reason_code",
+    "failed_band_hz",
+    "failed_modulation_hz",
+    "reference_depth",
+    "measured_depth",
+    "transfer_ratio"
+  ],
+  "checks": [
+    {
+      "check": "registry/interface_registry_present",
+      "pass": true
+    },
+    {
+      "check": "registry/15_stage_plans",
+      "pass": true,
+      "detail": {
+        "planJsonCount": 16,
+        "expected": 16
+      }
+    },
+    {
+      "check": "registry/15_patch_files",
+      "pass": true,
+      "detail": {
+        "smpCount": 15
+      }
+    },
+    {
+      "check": "registry/3_weight_files",
+      "pass": true,
+      "detail": {
+        "weights": [
+          "plans/stipa_quick_band2.f32le",
+          "plans/stipa_quick_band3.f32le",
+          "plans/stipa_quick_band4.f32le"
+        ]
+      }
+    },
+    {
+      "check": "registry/file_inventory",
+      "pass": true,
+      "detail": {
+        "fileCount": 35
+      }
+    },
+    {
+      "check": "plan/graph_stage_count_15",
+      "pass": true
+    },
+    {
+      "check": "plan/graph_samples_384000",
+      "pass": true,
+      "detail": {
+        "samples": 384000
+      }
+    },
+    {
+      "check": "plan/graph_final_fields_9",
+      "pass": true,
+      "detail": {
+        "fields": [
+          "experimental_index",
+          "valid",
+          "certified_zero",
+          "reason_code",
+          "failed_band_hz",
+          "failed_modulation_hz",
+          "reference_depth",
+          "measured_depth",
+          "transfer_ratio"
+        ]
+      }
+    },
+    {
+      "check": "plan/graph_final_word_count_9",
+      "pass": true,
+      "detail": {
+        "finalOutputWordCount": 9,
+        "outputWordCount": 9
+      }
+    },
+    {
+      "check": "plan/graph_initial_clear_covers_workspace",
+      "pass": true,
+      "detail": {
+        "wordOffset": 1048576,
+        "wordCount": 1544448
+      }
+    },
+    {
+      "check": "plan/final_stage_defines_quick_index",
+      "pass": true
+    },
+    {
+      "check": "plan/final_stage_output_word_count_9",
+      "pass": true,
+      "detail": {
+        "outputWordCount": 9
+      }
+    },
+    {
+      "check": "plan/all_15_stage_load_and_hash",
+      "pass": true,
+      "detail": {
+        "graphSHA256": "4b44646a6ebfba25dbabbb18aeec9e735eb46a4a263cc840c2c9ae885d16f390",
+        "registrySHA256": "301636354dc1902426fe57e4dbd1a0a95809323d0ad2eff46cd71cad51a5bead",
+        "stagePatchHashes": [
+          {
+            "stage": 0,
+            "patchFile": "plans/stipa_quick_stage_000.smp",
+            "patchSHA256": "ef3b29a9729a11d228691328d9ecd9a4eb39af6d8185ea2d009e37110fa968ec"
+          },
+          {
+            "stage": 1,
+            "patchFile": "plans/stipa_quick_stage_001.smp",
+            "patchSHA256": "dd1b5c0e6423670d89d421ffc5872f1a415078bb92df2136e638971e1d39790f"
+          },
+          {
+            "stage": 2,
+            "patchFile": "plans/stipa_quick_stage_002.smp",
+            "patchSHA256": "29a95296e64262d1e7b70e41a8fc93654b14e8e370dbe8d45faae55643426a78"
+          },
+          {
+            "stage": 3,
+            "patchFile": "plans/stipa_quick_stage_003.smp",
+            "patchSHA256": "b895fef6714ac6b44e3e035b0c47d528dcceb24400a6e47b95983a125af6dfc8"
+          },
+          {
+            "stage": 4,
+            "patchFile": "plans/stipa_quick_stage_004.smp",
+            "patchSHA256": "2b5323c869d8079096b1f9af267139218d2f4da384ebfbb69d1ef4acbc99fe89"
+          },
+          {
+            "stage": 5,
+            "patchFile": "plans/stipa_quick_stage_005.smp",
+            "patchSHA256": "e5994dd39eb4f8c0e989f51cb0ad50d8a54e91458aa04195cfb9347bfcbce7ce"
+          },
+          {
+            "stage": 6,
+            "patchFile": "plans/stipa_quick_stage_006.smp",
+            "patchSHA256": "3a5f41cabaed6836a9a961b7e626966e483825ec4841fb68d83c42116ff1671f"
+          },
+          {
+            "stage": 7,
+            "patchFile": "plans/stipa_quick_stage_007.smp",
+            "patchSHA256": "1dbc84a6037283b2b6e273fecd65a7b2b8dd878818e9f8b8045f63228330665a"
+          },
+          {
+            "stage": 8,
+            "patchFile": "plans/stipa_quick_stage_008.smp",
+            "patchSHA256": "3d58cdd557dec1700914ca64556a7e727c2b45141e996a03ab7cd260ad0427c4"
+          },
+          {
+            "stage": 9,
+            "patchFile": "plans/stipa_quick_stage_009.smp",
+            "patchSHA256": "a536905a7f140770c1d74a11556e517890435ba692a6c52e38a639a404dcdbcf"
+          },
+          {
+            "stage": 10,
+            "patchFile": "plans/stipa_quick_stage_010.smp",
+            "patchSHA256": "1edddd53513051c1649335a4ba797adc2b6c019c6ee6513c55f1b39e96ffe84f"
+          },
+          {
+            "stage": 11,
+            "patchFile": "plans/stipa_quick_stage_011.smp",
+            "patchSHA256": "8f3700e66503ca692e26b41b810745032b3bc9a5a54f06fa5da32a55df0261b3"
+          },
+          {
+            "stage": 12,
+            "patchFile": "plans/stipa_quick_stage_012.smp",
+            "patchSHA256": "cfd1cab373a83e73f65576d453ab42d9d5418d5d13c635249bc7d274ba378ace"
+          },
+          {
+            "stage": 13,
+            "patchFile": "plans/stipa_quick_stage_013.smp",
+            "patchSHA256": "a0c2cda8f8ba2d059515d9eea00e05a3ac26287af77d1b062403572cb80125bd"
+          },
+          {
+            "stage": 14,
+            "patchFile": "plans/stipa_quick_stage_014.smp",
+            "patchSHA256": "0b848b8e6ca5404aa3dcf5e4d491fb67a6e5d4c46089472c496ed1e0752fed12"
+          }
+        ]
+      }
+    },
+    {
+      "check": "plan/15_patch_load_scheduled_descriptor_and_code",
+      "pass": true
+    },
+    {
+      "check": "plan/patch_only_final_stage_executes_from_scheduled_descriptor",
+      "pass": true,
+      "detail": {
+        "result": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "submissions": 1
+      }
+    },
+    {
+      "check": "weights/3_pages_match_host_config_and_hash",
+      "pass": true,
+      "detail": [
+        {
+          "bandHz": 500,
+          "bytes": 38400,
+          "words": 9600,
+          "sha256": "886a83224766b90fc9bbd2b726d258e3031100290b8387729da0b7b9e01da86a",
+          "equalsHostConfig": true
+        },
+        {
+          "bandHz": 1000,
+          "bytes": 38400,
+          "words": 9600,
+          "sha256": "1c7b6d0b585ed54257d0938cbcdab5505661f1258e031b687023d554bf8182f1",
+          "equalsHostConfig": true
+        },
+        {
+          "bandHz": 2000,
+          "bytes": 38400,
+          "words": 9600,
+          "sha256": "f676136ccff4ae4b2890ed487c346459b8bbfb5b0451ff010b2b26a0bf0c77f0",
+          "equalsHostConfig": true
+        }
+      ]
+    },
+    {
+      "check": "interface/stipa_quick_contract",
+      "pass": true,
+      "detail": {
+        "completeParamsSamples": 384000,
+        "quickModeSamples": 384000,
+        "outputWordCount": 9,
+        "outputFields": [
+          "experimental_index",
+          "valid",
+          "certified_zero",
+          "reason_code",
+          "failed_band_hz",
+          "failed_modulation_hz",
+          "reference_depth",
+          "measured_depth",
+          "transfer_ratio"
+        ]
+      }
+    },
+    {
+      "check": "interface/other_features_unchanged",
+      "pass": true,
+      "detail": {
+        "featureCount": 50
+      }
+    },
+    {
+      "check": "interface/only_stipa_entry_fields_changed",
+      "pass": true,
+      "detail": {
+        "changedTopLevelKeys": [
+          "output",
+          "quickMode",
+          "schema",
+          "variants"
+        ]
+      }
+    },
+    {
+      "check": "unit/joint_fit_coefficients",
+      "pass": true,
+      "detail": [
+        {
+          "bandHz": 500,
+          "maxAbsoluteError": 1.4901161138336505e-09,
+          "coefficients": [
+            0.10000000149011612,
+            0.0009999999310821295,
+            0.03999999910593033,
+            0.009999999776482582,
+            0.019999999552965164,
+            0.009999999776482582
+          ]
+        },
+        {
+          "bandHz": 1000,
+          "maxAbsoluteError": 1.4901161138336505e-09,
+          "coefficients": [
+            0.10000000149011612,
+            0.0009999999310821295,
+            0.03999999910593033,
+            0.009999999776482582,
+            0.019999999552965164,
+            0.009999999776482582
+          ]
+        },
+        {
+          "bandHz": 2000,
+          "maxAbsoluteError": 1.4901161138336505e-09,
+          "coefficients": [
+            0.10000000149011612,
+            0.0009999999310821295,
+            0.03999999910593033,
+            0.009999999776482582,
+            0.019999999552965164,
+            0.010000000707805157
+          ]
+        }
+      ]
+    },
+    {
+      "check": "unit/quick_index_and_frozen_fields",
+      "pass": true,
+      "detail": [
+        {
+          "inputMTF": 1.0,
+          "index": 1.0,
+          "expectedIndex": 1.0,
+          "result": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pass": true
+        },
+        {
+          "inputMTF": 0.5,
+          "index": 0.5,
+          "expectedIndex": 0.5,
+          "result": [
+            0.5,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pass": true
+        },
+        {
+          "inputMTF": 0.25,
+          "index": 0.3409595787525177,
+          "expectedIndex": 0.34095958176011254,
+          "result": [
+            0.3409595787525177,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pass": true
+        },
+        {
+          "inputMTF": 0.75,
+          "index": 0.6590404510498047,
+          "expectedIndex": 0.6590404182398876,
+          "result": [
+            0.6590404510498047,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "check": "unit/success_reason_fields_zero",
+      "pass": true,
+      "detail": {
+        "result": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason1_capture_invalid",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason2_energy_band",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          2000.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason2_fit_band",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          1000.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason3_reference_depth",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          500.0,
+          0.6299999952316284,
+          0.05000000074505806,
+          0.05000000074505806,
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason3_band1000_modulation_10hz",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          1000.0,
+          10.0,
+          0.004999999888241291,
+          0.5,
+          100.0
+        ]
+      }
+    },
+    {
+      "check": "failure/reason4_ratio_1.5",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          500.0,
+          0.6299999952316284,
+          0.5,
+          0.75,
+          1.5
+        ]
+      }
+    },
+    {
+      "check": "failure/ratio_1.3_boundary_valid",
+      "pass": true,
+      "detail": {
+        "result": [
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "check": "failure/ratio_above_1.3_rejected",
+      "pass": true,
+      "detail": {
+        "result": [
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          500.0,
+          0.6299999952316284,
+          0.5,
+          0.6500999927520752,
+          1.3001999855041504
+        ]
+      }
+    },
+    {
+      "check": "samePcm/result_json_present",
+      "pass": true
+    },
+    {
+      "check": "samePcm/all_checks_pass",
+      "pass": true,
+      "detail": {
+        "checks": 45,
+        "plSubmissions": 807489
+      }
+    },
+    {
+      "check": "samePcm/synthetic_index_valid_reason",
+      "pass": true,
+      "detail": {
+        "final": {
+          "experimental_index": 1.0,
+          "valid": 1.0,
+          "certified_zero": 0.0,
+          "reason_code": 0.0,
+          "failed_band_hz": 0.0,
+          "failed_modulation_hz": 0.0,
+          "reference_depth": 0.0,
+          "measured_depth": 0.0,
+          "transfer_ratio": 0.0
+        }
+      }
+    },
+    {
+      "check": "samePcm/synthetic_six_ratios_1",
+      "pass": true,
+      "detail": {
+        "ratios": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "check": "samePcm/real_pcm_runs_present",
+      "pass": true,
+      "detail": [
+        {
+          "kind": "real_field_capture",
+          "reason_code": 3.0,
+          "failed_band_hz": 2000.0,
+          "failed_modulation_hz": 6.25,
+          "valid": 0.0,
+          "index": 0.0
+        },
+        {
+          "kind": "real_device_capture_8s",
+          "reason_code": 3.0,
+          "failed_band_hz": 1000.0,
+          "failed_modulation_hz": 10.0,
+          "valid": 0.0,
+          "index": 0.0
+        }
+      ]
+    },
+    {
+      "check": "samePcm/all_real_filter_and_fit_bitwise_equal",
+      "pass": true
+    }
+  ],
+  "passed": 36,
+  "total": 36,
+  "samePcmSummary": {
+    "allPass": true,
+    "plSubmissions": 807489,
+    "syntheticFinal": {
+      "experimental_index": 1.0,
+      "valid": 1.0,
+      "certified_zero": 0.0,
+      "reason_code": 0.0,
+      "failed_band_hz": 0.0,
+      "failed_modulation_hz": 0.0,
+      "reference_depth": 0.0,
+      "measured_depth": 0.0,
+      "transfer_ratio": 0.0
+    },
+    "real": [
+      {
+        "kind": "real_field_capture",
+        "final": {
+          "experimental_index": 0.0,
+          "valid": 0.0,
+          "certified_zero": 0.0,
+          "reason_code": 3.0,
+          "failed_band_hz": 2000.0,
+          "failed_modulation_hz": 6.25,
+          "reference_depth": 0.08074549585580826,
+          "measured_depth": 0.08074549585580826,
+          "transfer_ratio": 1.0
+        },
+        "bands": [
+          {
+            "bandHz": 500.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 0.63,
+                "rawModulationHz": 0.63,
+                "referenceDepth": 0.4809490499091388,
+                "measuredDepth": 0.4809490499091388,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 3.15,
+                "rawModulationHz": 3.15,
+                "referenceDepth": 0.2267362857707927,
+                "measuredDepth": 0.2267362857707927,
+                "ratio": 1.0
+              }
+            ]
+          },
+          {
+            "bandHz": 1000.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 2.0,
+                "rawModulationHz": 2.0,
+                "referenceDepth": 0.3583931264922822,
+                "measuredDepth": 0.3583931264922822,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 10.0,
+                "rawModulationHz": 10.0,
+                "referenceDepth": 0.24969619204279267,
+                "measuredDepth": 0.24969619204279267,
+                "ratio": 1.0
+              }
+            ]
+          },
+          {
+            "bandHz": 2000.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 1.25,
+                "rawModulationHz": 1.25,
+                "referenceDepth": 0.42284101025786924,
+                "measuredDepth": 0.42284101025786924,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 6.25,
+                "rawModulationHz": 6.25,
+                "referenceDepth": 0.08074549086930391,
+                "measuredDepth": 0.08074549086930391,
+                "ratio": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "real_device_capture_8s",
+        "final": {
+          "experimental_index": 0.0,
+          "valid": 0.0,
+          "certified_zero": 0.0,
+          "reason_code": 3.0,
+          "failed_band_hz": 1000.0,
+          "failed_modulation_hz": 10.0,
+          "reference_depth": 0.026922283694148064,
+          "measured_depth": 0.026922283694148064,
+          "transfer_ratio": 1.0
+        },
+        "bands": [
+          {
+            "bandHz": 500.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 0.63,
+                "rawModulationHz": 0.63,
+                "referenceDepth": 2.2506140056818658,
+                "measuredDepth": 2.2506140056818658,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 3.15,
+                "rawModulationHz": 3.15,
+                "referenceDepth": 1.9367903938133102,
+                "measuredDepth": 1.9367903938133102,
+                "ratio": 1.0
+              }
+            ]
+          },
+          {
+            "bandHz": 1000.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 2.0,
+                "rawModulationHz": 2.0,
+                "referenceDepth": 1.9193528906548984,
+                "measuredDepth": 1.9193528906548984,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 10.0,
+                "rawModulationHz": 10.0,
+                "referenceDepth": 0.02692228270125807,
+                "measuredDepth": 0.02692228270125807,
+                "ratio": 1.0
+              }
+            ]
+          },
+          {
+            "bandHz": 2000.0,
+            "depths": [
+              {
+                "j": 0,
+                "modulationHz": 1.25,
+                "rawModulationHz": 1.25,
+                "referenceDepth": 2.025195941236154,
+                "measuredDepth": 2.025195941236154,
+                "ratio": 1.0
+              },
+              {
+                "j": 1,
+                "modulationHz": 6.25,
+                "rawModulationHz": 6.25,
+                "referenceDepth": 0.8969121439657771,
+                "measuredDepth": 0.8969121439657771,
+                "ratio": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "allPass": true
+}

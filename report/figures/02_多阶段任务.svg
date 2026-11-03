@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720"><rect width="1500" height="720" fill="white"/>
+<text x="45" y="54.550000000000004" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" fill="#21354b">多阶段任务与可恢复微程序执行</text>
+<text x="45" y="97.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#62758a">PS逐阶段装载与推进，PL按预算分片执行；阶段数不等于微指令分片数</text>
+<rect x="60" y="155" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="93.5" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">准备采集与参考</text>
+<text x="74.0" y="237.96" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#21354b">检查样本数、参考及参数</text>
+<rect x="410" y="155" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="443.5" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">初始化执行计划</text>
+<text x="436.25" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">stage=0；stages=N</text>
+<rect x="760" y="155" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="808.0" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">装载当前阶段</text>
+<text x="780.0" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">微程序、描述符、权重</text>
+<rect x="1110" y="155" width="270" height="118" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="1169.5" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PL分片执行</text>
+<text x="1124.5" y="237.96" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#21354b">≤512条/次；保存上下文</text>
+<polyline points="330,214 410,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="410,214 398.0,219.0 398.0,209.0" fill="#54718c"/>
+<polyline points="680,214 760,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="760,214 748.0,219.0 748.0,209.0" fill="#54718c"/>
+<polyline points="1030,214 1110,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1110,214 1098.0,219.0 1098.0,209.0" fill="#54718c"/>
+<polygon points="1250.0,410 1390,484.0 1250.0,558 1110,484.0" fill="#fff2d9" stroke="#c39d51" stroke-width="1.5"/>
+<text x="1182.5" y="495.61" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#21354b">阶段完成？</text>
+<polyline points="1250,273 1250,410" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1250,410 1245.0,398.0 1255.0,398.0" fill="#54718c"/>
+<polygon points="895.0,410 1030,484.0 895.0,558 760,484.0" fill="#fff2d9" stroke="#c39d51" stroke-width="1.5"/>
+<text x="827.5" y="495.61" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#21354b">还有阶段？</text>
+<polyline points="1110,484 1030,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1030,484 1042.0,479.0 1042.0,489.0" fill="#54718c"/>
+<text x="1052" y="465.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">是</text>
+<polyline points="1390,484 1450,484 1450,615 1250,615 1250,558" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1250,558 1255.0,570.0 1245.0,570.0" fill="#54718c"/>
+<text x="1280" y="601.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">否：继续等待</text>
+<polyline points="895,410 895,273" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="895,273 900.0,285.0 890.0,285.0" fill="#54718c"/>
+<text x="910" y="343.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">是：stage++</text>
+<rect x="410" y="425" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="458.0" y="476.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">读取最终结果</text>
+<text x="430.0" y="508.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">读取输出及有效性字段</text>
+<polyline points="760,484 680,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="680,484 692.0,479.0 692.0,489.0" fill="#54718c"/>
+<text x="702" y="466.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">否</text>
+<rect x="60" y="425" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="93.5" y="476.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">恢复配置与结束</text>
+<text x="84.75" y="508.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">finish / 释放独占任务</text>
+<polyline points="410,484 330,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="330,484 342.0,479.0 342.0,489.0" fill="#54718c"/>
+<text x="65" y="666.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#21354b">进度：completedStages / totalStages；错误、超时或取消均转入配置恢复路径。</text>
+</svg>

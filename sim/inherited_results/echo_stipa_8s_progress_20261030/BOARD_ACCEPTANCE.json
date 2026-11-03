@@ -1,0 +1,332 @@
+{
+  "status": "PASS",
+  "host": "192.168.77.2",
+  "errors": [],
+  "featureCount": 51,
+  "stipaRegistryView": {
+    "mode": "staged",
+    "params": {
+      "samples": {
+        "default": 720000,
+        "range": [
+          720000,
+          784320
+        ]
+      },
+      "confirmed": {
+        "default": false,
+        "requires": "verified reference+received acquisition"
+      },
+      "referenceJobId": {
+        "required": true,
+        "type": "string",
+        "description": "Completed io_pcm mono720000 capture of declared active reference"
+      },
+      "testSignalConfirmed": {
+        "required": true,
+        "requiredValue": true
+      },
+      "measurementMode": {
+        "default": "complete",
+        "enum": [
+          "complete",
+          "quick"
+        ]
+      }
+    },
+    "output": null,
+    "quickMode": null,
+    "schemaFields": [
+      "experimental_index",
+      "valid",
+      "certified_zero",
+      "reason_code",
+      "failed_band_hz",
+      "failed_modulation_hz",
+      "reference_depth",
+      "measured_depth",
+      "transfer_ratio"
+    ],
+    "variants": null
+  },
+  "reference": {
+    "jobId": "feature-7",
+    "state": "completed",
+    "capturedSamples": 384000,
+    "requiredSamples": 384000,
+    "progressSeen": [
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 0,
+        "capturedSamples": 367643,
+        "requiredSamples": 384000,
+        "t": 8.08
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 0,
+        "capturedSamples": 380787,
+        "requiredSamples": 384000,
+        "t": 8.36
+      },
+      {
+        "phase": "restoring",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 0,
+        "capturedSamples": 384000,
+        "requiredSamples": 384000,
+        "t": 8.64
+      }
+    ]
+  },
+  "staged": {
+    "jobId": "feature-8",
+    "state": "completed",
+    "progressKeys": [
+      "capturedSamples",
+      "completedStages",
+      "currentStageIndex",
+      "excitationDetected",
+      "executedInstructions",
+      "expectedBackgroundFrames",
+      "learningConfirmed",
+      "observedBackgroundFrames",
+      "phase",
+      "requiredSamples",
+      "totalStages"
+    ],
+    "progressFinal": {
+      "completedStages": 15,
+      "currentStageIndex": 15,
+      "totalStages": 15,
+      "phase": "restoring"
+    },
+    "progressSamples": [
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 605,
+        "requiredSamples": 384000,
+        "t": 8.69
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 13861,
+        "requiredSamples": 384000,
+        "t": 8.95
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 27055,
+        "requiredSamples": 384000,
+        "t": 9.23
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 40156,
+        "requiredSamples": 384000,
+        "t": 9.51
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 53482,
+        "requiredSamples": 384000,
+        "t": 9.78
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 66828,
+        "requiredSamples": 384000,
+        "t": 10.06
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 80167,
+        "requiredSamples": 384000,
+        "t": 10.34
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 93497,
+        "requiredSamples": 384000,
+        "t": 10.62
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 106836,
+        "requiredSamples": 384000,
+        "t": 10.89
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 119936,
+        "requiredSamples": 384000,
+        "t": 11.17
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 133069,
+        "requiredSamples": 384000,
+        "t": 11.44
+      },
+      {
+        "phase": "capturing",
+        "completedStages": 0,
+        "currentStageIndex": 0,
+        "totalStages": 15,
+        "capturedSamples": 146205,
+        "requiredSamples": 384000,
+        "t": 11.72
+      }
+    ],
+    "totalStages": 15
+  },
+  "result": {
+    "totalWords": 9,
+    "schemaFields": [
+      "experimental_index",
+      "valid",
+      "certified_zero",
+      "reason_code",
+      "failed_band_hz",
+      "failed_modulation_hz",
+      "reference_depth",
+      "measured_depth",
+      "transfer_ratio"
+    ],
+    "words": 9,
+    "values": [
+      0.0,
+      0.0,
+      0.0,
+      3.0,
+      1000.0,
+      10.0,
+      0.10580985248088837,
+      0.18250465393066406,
+      1.7248361110687256
+    ],
+    "fields": [
+      "experimental_index",
+      "valid",
+      "certified_zero",
+      "reason_code",
+      "failed_band_hz",
+      "failed_modulation_hz",
+      "reference_depth",
+      "measured_depth",
+      "transfer_ratio"
+    ]
+  },
+  "pcDecode": {
+    "indexValid": false,
+    "resultValid": false,
+    "invalidReason": "参考信号不稳定：1000 Hz 频带、10 Hz 调制分量校验失败，请重新录制参考。",
+    "stage": {
+      "completed": 15,
+      "total": 15,
+      "current": 15,
+      "label": "STIPA 阶段"
+    },
+    "scalarRows": [
+      {
+        "label": "experimental_index",
+        "value": null,
+        "unit": "",
+        "valid": false
+      },
+      {
+        "label": "valid",
+        "value": 0,
+        "unit": "bool",
+        "valid": true
+      },
+      {
+        "label": "certified_zero",
+        "value": 0,
+        "unit": "bool",
+        "valid": true
+      },
+      {
+        "label": "原因码",
+        "value": 3,
+        "unit": "",
+        "valid": true
+      },
+      {
+        "label": "失败频带",
+        "value": 1000.0,
+        "unit": "Hz",
+        "valid": true
+      },
+      {
+        "label": "失败调制频率",
+        "value": 10.0,
+        "unit": "Hz",
+        "valid": true
+      },
+      {
+        "label": "参考调制度",
+        "value": 0.106,
+        "unit": "",
+        "valid": true
+      },
+      {
+        "label": "测试调制度",
+        "value": 0.183,
+        "unit": "",
+        "valid": true
+      },
+      {
+        "label": "传输比",
+        "value": 1.725,
+        "unit": "",
+        "valid": true
+      }
+    ]
+  },
+  "timings": {
+    "referenceCaptureSeconds": 8.26,
+    "stagedReadSeconds": 417.91,
+    "totalSecondsBeforeResultFetch": 426.75
+  },
+  "hardwareAccepted": false,
+  "note": "Silent/ambient capture only: proves 8 s capture, 15-stage PL microprogram, 9-word reason result and progress protocol; NOT an acoustic STIPA acceptance."
+}

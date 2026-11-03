@@ -1,0 +1,13 @@
+{
+  "featureId": "room_decay",
+  "name": "EDT/T20/T30",
+  "input": "inputs/06_ideal_RT60_0p4s.wav",
+  "reference": {
+    "RT60_true_s": 0.4,
+    "EDT": 0.3999999999999988,
+    "T20": 0.399999999999979,
+    "T30": 0.3999999999998868,
+    "referenceCSV": "reference/room_decay.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

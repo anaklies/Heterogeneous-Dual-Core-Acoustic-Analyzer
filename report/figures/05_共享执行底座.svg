@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="850" viewBox="0 0 1500 850"><rect width="1500" height="850" fill="white"/>
+<text x="45" y="54.550000000000004" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" fill="#21354b">共享执行底座与资源复用</text>
+<text x="45" y="97.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#62758a">将功能映射为执行计划，而不是为每项功能复制一套计算模块</text>
+<rect x="50" y="140" width="320" height="125" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="123.0" y="195.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">六路同步采集</text>
+<text x="110.5" y="226.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">I²S → FIFO → 窗口</text>
+<rect x="510" y="140" width="420" height="125" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="647.5" y="195.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">实时调度器</text>
+<text x="585.75" y="226.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">P0优先 / P1周期 / P2按需</text>
+<rect x="1070" y="140" width="360" height="125" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="1159.25" y="195.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PS任务与配置</text>
+<text x="1145.5" y="226.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">描述符 / 版本 / 取消</text>
+<polyline points="370,203 510,203" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="510,203 498.0,208.0 498.0,198.0" fill="#54718c"/>
+<polyline points="1070,203 930,203" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="930,203 942.0,198.0 942.0,208.0" fill="#54718c"/>
+<rect x="180" y="370" width="465" height="130" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="283.2421875" y="427.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">共享FFT/IFFT核 ×1</text>
+<text x="262.5" y="459.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">通道复用；变换 / 频谱基础量</text>
+<rect x="855" y="370" width="465" height="130" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="976.25" y="427.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">可编程标量核 ×1</text>
+<text x="932.0" y="459.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">32浮点＋32整数；80字上下文</text>
+<polyline points="650,265 650,315 412,315 412,370" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="412,370 407.0,358.0 417.0,358.0" fill="#54718c"/>
+<polyline points="790,265 790,315 1087,315 1087,370" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1087,370 1082.0,358.0 1092.0,358.0" fill="#54718c"/>
+<text x="692.5" y="436.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">经调度协同</text>
+<rect x="180" y="620" width="1140" height="100" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="644.25" y="662.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">DDR共享数据区</text>
+<text x="434.5" y="694.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">PCM环 / 不可变窗口 / 程序与权重 / 上下文 / 结果与事件片段</text>
+<polyline points="402,500 402,620" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="402,620 397.0,608.0 407.0,608.0" fill="#54718c"/>
+<polyline points="422,620 422,500" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="422,500 427.0,512.0 417.0,512.0" fill="#54718c"/>
+<polyline points="1077,500 1077,620" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1077,620 1072.0,608.0 1082.0,608.0" fill="#54718c"/>
+<polyline points="1097,620 1097,500" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1097,500 1102.0,512.0 1092.0,512.0" fill="#54718c"/>
+<text x="65" y="788.25" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#21354b">结果按 session / config / generation / sourceFrame 校验，完成标记最后发布。</text>
+</svg>

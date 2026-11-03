@@ -1,0 +1,9 @@
+{
+  "featureId": "flatness",
+  "name": "谱平坦度",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "powerSpectralFlatness": 5.285959223336421e-14
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

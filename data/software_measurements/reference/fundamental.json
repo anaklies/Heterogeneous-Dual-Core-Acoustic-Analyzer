@@ -1,0 +1,9 @@
+{
+  "featureId": "fundamental",
+  "name": "基频/周期估计",
+  "input": "inputs/05_250Hz_with_harmonics.wav",
+  "reference": {
+    "fundamentalHz": 250
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

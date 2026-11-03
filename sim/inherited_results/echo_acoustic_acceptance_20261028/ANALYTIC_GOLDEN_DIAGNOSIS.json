@@ -1,0 +1,13 @@
+{
+  "generation": 3080257,
+  "sourceFrame": 162808,
+  "resultFrame": 162808,
+  "p0ComplexNrmse": 5.159937558882979e-07,
+  "p2AnalyticNrmse": 8.128479403017133e-07,
+  "envelopeNrmse": 5.731145939728547e-07,
+  "negativeFrequencyEnergyRatio": 1.7044219111381792e-14,
+  "absZvsStoredEnvelope": 6.174755706744861e-10,
+  "envelopeBin100HzAmplitude": 0.11794727125059305,
+  "largestBinAboveFirstLobe": 18,
+  "largestFrequencyAboveFirstLobeHz": 421.96091651916504
+}

@@ -1,0 +1,11 @@
+{
+  "featureId": "centroid",
+  "name": "谱质心",
+  "input": "inputs/02_equal_amplitude_1000_1500Hz.wav",
+  "reference": {
+    "trueEqualPowerCentroidHz": 1250,
+    "HannComputedCentroidHz": 1250.0000000093553,
+    "referenceCSV": "reference/dual_tone_spectrum.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

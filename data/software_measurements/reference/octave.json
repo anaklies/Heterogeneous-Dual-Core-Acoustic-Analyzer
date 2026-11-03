@@ -1,0 +1,9 @@
+{
+  "featureId": "octave",
+  "name": "1/1倍频程",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "referenceCSV": "reference/octave.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

@@ -1,0 +1,14 @@
+{
+  "featureId": "sidebands",
+  "name": "指定载频边带",
+  "input": "inputs/04_100Hz_AM_6000Hz_carrier.wav",
+  "reference": {
+    "carrierHz": 6000,
+    "sidebandHz": [
+      5900,
+      6100
+    ],
+    "eachSidebandToCarrierPowerRatio": 0.0625
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

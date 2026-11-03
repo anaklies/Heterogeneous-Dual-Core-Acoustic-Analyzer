@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720"><rect width="1500" height="720" fill="white"/>
+<text x="45" y="54.550000000000004" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" fill="#21354b">一次功能调用与结果闭环</text>
+<text x="45" y="97.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#62758a">PC组织请求，PS管理任务，PL执行计算；以下以一次分析任务为例</text>
+<rect x="60" y="155" width="270" height="118" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="117.75" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PC发起功能</text>
+<text x="77.7578125" y="237.96" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#21354b">run(featureId, params)</text>
+<rect x="410" y="155" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="454.25" y="191.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PS校验与分配</text>
+<text x="478.75" y="222.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">feature.start</text>
+<text x="493.75" y="253.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">返回jobId</text>
+<rect x="760" y="155" width="270" height="118" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="819.5" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PL执行分析</text>
+<text x="796.0" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">统一调度 → 共享核</text>
+<polygon points="1250.0,145 1390,214.0 1250.0,283 1110,214.0" fill="#fff2d9" stroke="#c39d51" stroke-width="1.5"/>
+<text x="1182.5" y="225.61" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#21354b">任务完成？</text>
+<rect x="1110" y="425" width="270" height="118" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="1168.75" y="476.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PS返回结果</text>
+<text x="1137.7578125" y="508.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">feature.result / 分页</text>
+<rect x="760" y="425" width="270" height="118" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="817.75" y="476.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PC核对身份</text>
+<text x="780.0" y="508.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">会话、配置、帧与版本</text>
+<rect x="410" y="425" width="270" height="118" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="429.0" y="461.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">解码与有效性检查</text>
+<text x="489.75390625" y="492.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">_on_result</text>
+<text x="468.75390625" y="523.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">decode_result</text>
+<rect x="60" y="425" width="270" height="118" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="93.5" y="476.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">显示并保留结果</text>
+<text x="103.0" y="508.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">图表、状态与导出</text>
+<polyline points="330,214 410,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="410,214 398.0,219.0 398.0,209.0" fill="#54718c"/>
+<polyline points="680,214 760,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="760,214 748.0,219.0 748.0,209.0" fill="#54718c"/>
+<polyline points="1030,214 1110,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1110,214 1098.0,219.0 1098.0,209.0" fill="#54718c"/>
+<polyline points="1250,283 1250,425" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1250,425 1245.0,413.0 1255.0,413.0" fill="#54718c"/>
+<text x="1268" y="356.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">是</text>
+<polyline points="1390,214 1450,214 1450,120 1250,120 1250,145" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1250,145 1245.0,133.0 1255.0,133.0" fill="#54718c"/>
+<text x="1255" y="112.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">否：稍后查询</text>
+<polyline points="1110,484 1030,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1030,484 1042.0,479.0 1042.0,489.0" fill="#54718c"/>
+<polyline points="760,484 680,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="680,484 692.0,479.0 692.0,489.0" fill="#54718c"/>
+<polyline points="410,484 330,484" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="330,484 342.0,479.0 342.0,489.0" fill="#54718c"/>
+<text x="65" y="623.25" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#7c4e32">请求不合法：直接返回原因。执行异常或取消：停止任务、恢复配置、释放占用。</text>
+<text x="65" y="672.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#21354b">主要变量：featureId · params · controlToken · jobId · configuration · words · valid / error</text>
+</svg>

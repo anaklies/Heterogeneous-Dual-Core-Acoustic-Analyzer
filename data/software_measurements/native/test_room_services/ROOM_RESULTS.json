@@ -1,0 +1,111 @@
+{
+  "status": "NATIVE_PASS",
+  "cases": [
+    {
+      "case": "exponential_rt_0p25",
+      "samples": 24000,
+      "fs": 48000,
+      "chunks": 17223,
+      "program_instructions": 350,
+      "seconds": 0.05069480000020121,
+      "fits_valid": [
+        true,
+        true,
+        true
+      ],
+      "max_errors": {
+        "energy": 0.0007399941162020696,
+        "decay_db": 2.095593890771852e-05
+      }
+    },
+    {
+      "case": "gain_scaled_decay",
+      "samples": 24000,
+      "fs": 48000,
+      "chunks": 18261,
+      "program_instructions": 350,
+      "seconds": 0.05086889999984123,
+      "fits_valid": [
+        true,
+        true,
+        true
+      ],
+      "max_errors": {
+        "energy": 1.926512030632488e-09,
+        "decay_db": 1.1430962231884223e-05
+      }
+    },
+    {
+      "case": "nondefault_rate",
+      "samples": 12000,
+      "fs": 24000,
+      "chunks": 8873,
+      "program_instructions": 350,
+      "seconds": 0.0257541000000856,
+      "fits_valid": [
+        true,
+        true,
+        true
+      ],
+      "max_errors": {
+        "energy": 3.3380878221578314e-05,
+        "decay_db": 1.492276834369477e-05
+      }
+    },
+    {
+      "case": "silence",
+      "samples": 4800,
+      "fs": 48000,
+      "chunks": 602,
+      "program_instructions": 350,
+      "seconds": 0.0016768000004958594,
+      "fits_valid": [
+        false,
+        false,
+        false
+      ],
+      "max_errors": {}
+    },
+    {
+      "case": "stationary_tail_insufficient_decay",
+      "samples": 4800,
+      "fs": 48000,
+      "chunks": 4432,
+      "program_instructions": 350,
+      "seconds": 0.012503199999628123,
+      "fits_valid": [
+        false,
+        false,
+        false
+      ],
+      "max_errors": {
+        "energy": 0.008199691772517781,
+        "decay_db": 0.00027208858055849383
+      }
+    },
+    {
+      "case": "impulse_near_step",
+      "samples": 4800,
+      "fs": 48000,
+      "chunks": 2928,
+      "program_instructions": 350,
+      "seconds": 0.009245300000657153,
+      "fits_valid": [
+        false,
+        false,
+        false
+      ],
+      "max_errors": {
+        "energy": 0.0,
+        "decay_db": 0.0
+      }
+    }
+  ],
+  "implementation": "Production scalar C; opcode24 decrement; <=64 instructions/command",
+  "scope": "unfiltered onset-trimmed explicit IR; no automatic RIR acquisition or multiband room service",
+  "limitations": [
+    "stationary terminal tail rejected, no Lundeby/noise correction",
+    "no RTL/HLS throughput or board acceptance claimed",
+    "not certified room measurements"
+  ]
+}

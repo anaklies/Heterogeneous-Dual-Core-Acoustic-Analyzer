@@ -1,0 +1,11 @@
+{
+  "featureId": "autocorrelation",
+  "name": "自相关",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "periodSamples": 48,
+    "periodSeconds": 0.001,
+    "finiteWindowEnvelopeAffectsLagAmplitude": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

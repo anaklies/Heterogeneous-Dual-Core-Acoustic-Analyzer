@@ -1,0 +1,19 @@
+{
+  "featureId": "event_trigger",
+  "name": "声音变化事件服务",
+  "input": "inputs/07_background_then_3kHz_event.wav",
+  "reference": {
+    "learningIntervalSeconds": [
+      0,
+      1
+    ],
+    "expectedPhysicalChangeSeconds": [
+      1.1,
+      1.2
+    ],
+    "clipBeforeSeconds": 0.2,
+    "clipAfterSeconds": 0.3,
+    "workflowFixtureOnly": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

@@ -1,0 +1,13 @@
+{
+  "featureId": "band_tracking",
+  "name": "频带能量跟踪",
+  "input": "inputs/07_background_then_3kHz_event.wav",
+  "reference": {
+    "selectedBandHz": [
+      2500,
+      3500
+    ],
+    "burstStartSeconds": 1.1
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

@@ -1,0 +1,42 @@
+{
+  "softwareOnly": true,
+  "results": [
+    {
+      "feature": "relative_limit",
+      "stateChanges": 12,
+      "geometryStable": true,
+      "internalPlotsStable": true,
+      "geometry": [
+        0.0,
+        80.0,
+        1240.0,
+        678.0
+      ]
+    },
+    {
+      "feature": "frequency_time_weighting",
+      "stateChanges": 12,
+      "geometryStable": true,
+      "internalPlotsStable": true,
+      "geometry": [
+        0.0,
+        80.0,
+        1240.0,
+        678.0
+      ]
+    },
+    {
+      "feature": "room_decay",
+      "stateChanges": 12,
+      "geometryStable": true,
+      "internalPlotsStable": true,
+      "geometry": [
+        0.0,
+        198.0,
+        1240.0,
+        560.0
+      ]
+    }
+  ],
+  "qmlWarnings": []
+}

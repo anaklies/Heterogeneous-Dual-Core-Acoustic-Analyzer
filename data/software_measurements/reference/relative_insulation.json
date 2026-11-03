@@ -1,0 +1,11 @@
+{
+  "featureId": "relative_insulation",
+  "name": "相对隔声",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "referenceA_power": 0.02,
+    "measurementB_power": 0.005,
+    "relativeDifference_dB": 6.020599913279624
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

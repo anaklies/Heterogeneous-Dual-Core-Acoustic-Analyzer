@@ -1,0 +1,17 @@
+{
+  "featureId": "zoom_fft",
+  "name": "Zoom FFT",
+  "input": "inputs/02_equal_amplitude_1000_1500Hz.wav",
+  "reference": {
+    "bandHz": [
+      800,
+      1700
+    ],
+    "expectedPeaksHz": [
+      1000,
+      1500
+    ],
+    "nativeZoomEvidence": "native/test_extra_spectral"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

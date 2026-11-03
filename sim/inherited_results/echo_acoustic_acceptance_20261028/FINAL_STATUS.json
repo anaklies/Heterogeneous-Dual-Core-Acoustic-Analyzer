@@ -1,0 +1,20 @@
+{
+  "catalogCount": 51,
+  "newRealAudioUniqueCompleted": 44,
+  "inheritedPaths": [
+    "event_trigger",
+    "full_das",
+    "room_clarity",
+    "spatial_grid",
+    "spatial_peaks",
+    "spectral_decay"
+  ],
+  "open": [
+    "stipa_experimental final 101-stage measurement not accepted"
+  ],
+  "all51Accepted": false,
+  "portsChanged": false,
+  "rtlOrBitstreamChanged": false,
+  "pcExeSha256": "5f13a8be9725f22a83424b8005157c7516aa91b2beeca9a3edbb03beb91c06d6",
+  "sdImageSha256": "a60d75745cf1774ea4581648b45797be2e535f3b18b91dad2991680160460b19"
+}

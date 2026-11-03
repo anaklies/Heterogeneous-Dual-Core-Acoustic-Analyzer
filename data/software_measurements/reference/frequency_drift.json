@@ -1,0 +1,12 @@
+{
+  "featureId": "frequency_drift",
+  "name": "频率漂移",
+  "input": "inputs/09_linear_1000_to_1030Hz_drift.wav",
+  "reference": {
+    "instantaneousFrequencyHz": "1000+10*t",
+    "durationSeconds": 3,
+    "slopeHzPerSecond": 10,
+    "framewiseFFTTrackingIncludesBinQuantization": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

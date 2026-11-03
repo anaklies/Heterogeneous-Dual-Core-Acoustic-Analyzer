@@ -1,0 +1,10 @@
+{
+  "featureId": "csd",
+  "name": "CSD/CSM",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "convention": "conj(X)*Y",
+    "referenceCSV": "reference/csd_coherence.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

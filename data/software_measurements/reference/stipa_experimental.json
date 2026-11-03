@@ -1,0 +1,15 @@
+{
+  "featureId": "stipa_experimental",
+  "name": "实验STIPA",
+  "input": "inputs/08_quick_STIPA_same_A_B_8s_each.wav",
+  "reference": {
+    "samePCM_A_B": true,
+    "quickStages": 15,
+    "secondsPerCapture": 8,
+    "expectedIndex": 1,
+    "expectedValid": 1,
+    "referenceDepthGate": 0.15,
+    "reuseEvidence": "inherited/STIPA_SAME_PCM_CHECK.json"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

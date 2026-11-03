@@ -1,0 +1,13 @@
+{
+  "featureId": "gcc_phat",
+  "name": "GCC-PHAT时延观察",
+  "input": "inputs/10_broadband_pair_delay_7_samples.wav",
+  "reference": {
+    "channel1DelaySamples": 7,
+    "nativeConvention_X_conjY_peakLagSamples": -7,
+    "delayMagnitudeSeconds": 0.00014583333333333335,
+    "reference": "native/test_p2_chains",
+    "pureToneDelayAmbiguous": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

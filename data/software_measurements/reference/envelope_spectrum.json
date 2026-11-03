@@ -1,0 +1,10 @@
+{
+  "featureId": "envelope_spectrum",
+  "name": "包络谱",
+  "input": "inputs/04_100Hz_AM_6000Hz_carrier.wav",
+  "reference": {
+    "modulationPeakHz": 100,
+    "rawPeakTrackingIncludesDC": true
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

@@ -1,0 +1,16 @@
+{
+  "featureId": "frequency_time_weighting",
+  "name": "A/C/Z与FAST/SLOW",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "spectralWeighting_dBFS": {
+      "A": -16.990142109194114,
+      "C": -16.989714160479256,
+      "Z": -16.989700043889727
+    },
+    "FAST_tau_s": 0.125,
+    "SLOW_tau_s": 1,
+    "singleFrameTimeResponse": "state must continue across unique frames"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

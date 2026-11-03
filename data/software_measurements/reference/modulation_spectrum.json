@@ -1,0 +1,9 @@
+{
+  "featureId": "modulation_spectrum",
+  "name": "调制谱",
+  "input": "inputs/04_100Hz_AM_6000Hz_carrier.wav",
+  "reference": {
+    "modulationPeakHz": 100
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

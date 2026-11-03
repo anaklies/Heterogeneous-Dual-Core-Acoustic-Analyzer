@@ -1,0 +1,10 @@
+{
+  "featureId": "psd",
+  "name": "Welch PSD",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "integratedPower_FS2": 0.019999999999803203,
+    "referenceCSV": "reference/welch_1000Hz.csv"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

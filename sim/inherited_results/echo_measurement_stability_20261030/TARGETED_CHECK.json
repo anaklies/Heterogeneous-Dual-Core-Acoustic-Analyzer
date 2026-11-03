@@ -1,0 +1,42 @@
+[
+  {
+    "selectedOnly": "frequency_time_weighting",
+    "index": 0
+  },
+  {
+    "selectedOnly": "frequency_time_weighting",
+    "index": 1
+  },
+  {
+    "selectedOnly": "frequency_time_weighting",
+    "index": 2
+  },
+  {
+    "selectedOnly": "frequency_time_weighting",
+    "index": 3
+  },
+  {
+    "selectedOnly": "noise_rating",
+    "index": 0
+  },
+  {
+    "selectedOnly": "noise_rating",
+    "index": 1
+  },
+  {
+    "quickReferenceButtonSamples": 144000
+  },
+  {
+    "limitDbAndFlagsCorrect": true,
+    "noiseFloorNoFalseFlag": true,
+    "freezePowerAndDeltaAxesSeparate": true
+  },
+  {
+    "sameNominalUnit": "NC",
+    "displayLevel": 43.01
+  },
+  {
+    "sameNominalUnit": "NR",
+    "displayLevel": 43.01
+  }
+]

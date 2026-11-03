@@ -1,0 +1,11 @@
+{
+  "featureId": "cepstrum",
+  "name": "实倒谱",
+  "input": "inputs/05_250Hz_with_harmonics.wav",
+  "reference": {
+    "expectedPeriodSeconds": 0.004,
+    "sampleRateHz": 48000,
+    "referenceDefinition": "real(ifft(log(max(abs(FFT(x)),1e-10))))"
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

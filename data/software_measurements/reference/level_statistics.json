@@ -1,0 +1,30 @@
+{
+  "featureId": "level_statistics",
+  "name": "LeqFS及L10/L50/L90",
+  "input": "inputs/01_1000Hz_six_channel.wav",
+  "reference": {
+    "inputLevels_dBFS": [
+      -50.0,
+      -48.0,
+      -46.0,
+      -44.0,
+      -42.0,
+      -40.0,
+      -38.0,
+      -36.0,
+      -34.0,
+      -32.0,
+      -30.0,
+      -28.0,
+      -26.0,
+      -24.0,
+      -22.0,
+      -20.0
+    ],
+    "L10_dBFS": -23.0,
+    "L50_dBFS": -35.0,
+    "L90_dBFS": -47.0,
+    "Leq_dBFS": -27.714706570969547
+  },
+  "provenance": "deterministic synthetic input + offline formula/SciPy golden; not a board measurement"
+}

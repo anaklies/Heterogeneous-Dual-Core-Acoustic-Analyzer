@@ -1,0 +1,700 @@
+{
+  "status": "PASS",
+  "checks": 111,
+  "rows": [
+    {
+      "check": "quick.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "quick.stages",
+      "pass": true,
+      "detail": 15
+    },
+    {
+      "check": "quick.outputWordCount",
+      "pass": true,
+      "detail": 9
+    },
+    {
+      "check": "quick.finalFields",
+      "pass": true,
+      "detail": [
+        "experimental_index",
+        "valid",
+        "certified_zero",
+        "reason_code",
+        "failed_band_hz",
+        "failed_modulation_hz",
+        "reference_depth",
+        "measured_depth",
+        "transfer_ratio"
+      ]
+    },
+    {
+      "check": "stage0.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage0.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_000.smp"
+    },
+    {
+      "check": "stage0.plan",
+      "pass": true,
+      "detail": {
+        "kind": "convert_raw_PCM24",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage1.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage1.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_001.smp"
+    },
+    {
+      "check": "stage1.plan",
+      "pass": true,
+      "detail": {
+        "kind": "validate_captures",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage2.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage2.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_002.smp"
+    },
+    {
+      "check": "stage2.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage3.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage3.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_003.smp"
+    },
+    {
+      "check": "stage3.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band2.f32le"
+    },
+    {
+      "check": "stage3.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage4.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage4.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_004.smp"
+    },
+    {
+      "check": "stage4.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage5.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage5.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_005.smp"
+    },
+    {
+      "check": "stage5.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band2.f32le"
+    },
+    {
+      "check": "stage5.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage6.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage6.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_006.smp"
+    },
+    {
+      "check": "stage6.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage7.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage7.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_007.smp"
+    },
+    {
+      "check": "stage7.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band3.f32le"
+    },
+    {
+      "check": "stage7.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage8.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage8.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_008.smp"
+    },
+    {
+      "check": "stage8.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage9.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage9.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_009.smp"
+    },
+    {
+      "check": "stage9.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band3.f32le"
+    },
+    {
+      "check": "stage9.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage10.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage10.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_010.smp"
+    },
+    {
+      "check": "stage10.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage11.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage11.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_011.smp"
+    },
+    {
+      "check": "stage11.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band4.f32le"
+    },
+    {
+      "check": "stage11.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage12.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage12.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_012.smp"
+    },
+    {
+      "check": "stage12.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_filter",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage13.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage13.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_013.smp"
+    },
+    {
+      "check": "stage13.weightSha",
+      "pass": true,
+      "detail": "stipa_quick_band4.f32le"
+    },
+    {
+      "check": "stage13.plan",
+      "pass": true,
+      "detail": {
+        "kind": "joint_fit",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "stage14.samples",
+      "pass": true,
+      "detail": 384000
+    },
+    {
+      "check": "stage14.patchSha",
+      "pass": true,
+      "detail": "plans/stipa_quick_stage_014.smp"
+    },
+    {
+      "check": "stage14.plan",
+      "pass": true,
+      "detail": {
+        "kind": "quick_index",
+        "words": 4,
+        "scheduledDescriptor": 525312
+      }
+    },
+    {
+      "check": "registry.quickVariantSamples",
+      "pass": true,
+      "detail": {
+        "samples": 384000,
+        "measurementMode": "quick"
+      }
+    },
+    {
+      "check": "registry.quickModeSamples",
+      "pass": true,
+      "detail": {
+        "samples": 384000,
+        "stages": 15,
+        "bandsHz": [
+          500,
+          1000,
+          2000
+        ],
+        "indexLabel": "rapid modulation-transfer estimate"
+      }
+    },
+    {
+      "check": "registry.outputFields",
+      "pass": true,
+      "detail": [
+        "experimental_index",
+        "valid",
+        "certified_zero",
+        "reason_code",
+        "failed_band_hz",
+        "failed_modulation_hz",
+        "reference_depth",
+        "measured_depth",
+        "transfer_ratio"
+      ]
+    },
+    {
+      "check": "registry.schemaFields",
+      "pass": true,
+      "detail": [
+        "experimental_index",
+        "valid",
+        "certified_zero",
+        "reason_code",
+        "failed_band_hz",
+        "failed_modulation_hz",
+        "reference_depth",
+        "measured_depth",
+        "transfer_ratio"
+      ]
+    },
+    {
+      "check": "registry.producerLayoutFields",
+      "pass": true,
+      "detail": {
+        "offset": 1056768,
+        "fields": [
+          "experimental_index",
+          "valid",
+          "certified_zero",
+          "reason_code",
+          "failed_band_hz",
+          "failed_modulation_hz",
+          "reference_depth",
+          "measured_depth",
+          "transfer_ratio"
+        ]
+      }
+    },
+    {
+      "check": "registry.otherFeatures",
+      "pass": true,
+      "detail": 51
+    },
+    {
+      "check": "gateway.elf",
+      "pass": true,
+      "detail": "7f454c4601"
+    },
+    {
+      "check": "gateway.currentStageIndex",
+      "pass": true,
+      "detail": "string present"
+    },
+    {
+      "check": "gateway.outputWordCount",
+      "pass": true,
+      "detail": "string present"
+    },
+    {
+      "check": "image.sha",
+      "pass": true,
+      "detail": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902"
+    },
+    {
+      "check": "image.nonRamdiskUnchanged",
+      "pass": true,
+      "detail": [
+        "fdt-system-top.dtb",
+        "kernel-1"
+      ]
+    },
+    {
+      "check": "image.registry.INTERFACE_REGISTRY.json",
+      "pass": true,
+      "detail": "opt/echo/registry/INTERFACE_REGISTRY.json"
+    },
+    {
+      "check": "image.registry.stipa_quick.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_band2.f32le",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_band2.f32le"
+    },
+    {
+      "check": "image.registry.stipa_quick_band3.f32le",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_band3.f32le"
+    },
+    {
+      "check": "image.registry.stipa_quick_band4.f32le",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_band4.f32le"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_000.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_000.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_000.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_000.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_001.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_001.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_001.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_001.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_002.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_002.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_002.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_002.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_003.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_003.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_003.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_003.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_004.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_004.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_004.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_004.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_005.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_005.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_005.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_005.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_006.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_006.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_006.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_006.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_007.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_007.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_007.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_007.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_008.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_008.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_008.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_008.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_009.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_009.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_009.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_009.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_010.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_010.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_010.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_010.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_011.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_011.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_011.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_011.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_012.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_012.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_012.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_012.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_013.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_013.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_013.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_013.smp"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_014.json",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_014.json"
+    },
+    {
+      "check": "image.registry.stipa_quick_stage_014.smp",
+      "pass": true,
+      "detail": "opt/echo/registry/plans/stipa_quick_stage_014.smp"
+    },
+    {
+      "check": "image.gateway",
+      "pass": true,
+      "detail": "echo-gateway"
+    },
+    {
+      "check": "image.untouchedEntries",
+      "pass": true,
+      "detail": 1873
+    },
+    {
+      "check": "release.imageSha",
+      "pass": true,
+      "detail": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902"
+    },
+    {
+      "check": "release.gatewaySha",
+      "pass": true,
+      "detail": "b982cecea0e9da4bf3a73dc7855d2ba41be7d22322f7a0221d8e0b07ef928920"
+    },
+    {
+      "check": "release.registrySha",
+      "pass": true,
+      "detail": "301636354dc1902426fe57e4dbd1a0a95809323d0ad2eff46cd71cad51a5bead"
+    },
+    {
+      "check": "release.quickSamples",
+      "pass": true,
+      "detail": {
+        "stages": 15,
+        "samples": 384000,
+        "secondsNominal": 8,
+        "bandsHz": [
+          500,
+          1000,
+          2000
+        ],
+        "scope": "rapid modulation-transfer estimate",
+        "centeredAnalysisSeconds": 7.4
+      }
+    },
+    {
+      "check": "release.resultFields",
+      "pass": true,
+      "detail": [
+        "experimental_index",
+        "valid",
+        "certified_zero",
+        "reason_code",
+        "failed_band_hz",
+        "failed_modulation_hz",
+        "reference_depth",
+        "measured_depth",
+        "transfer_ratio"
+      ]
+    },
+    {
+      "check": "deploy.expected.30163635",
+      "pass": true,
+      "detail": "301636354dc1902426fe57e4dbd1a0a95809323d0ad2eff46cd71cad51a5bead"
+    },
+    {
+      "check": "deploy.expected.b982cece",
+      "pass": true,
+      "detail": "b982cecea0e9da4bf3a73dc7855d2ba41be7d22322f7a0221d8e0b07ef928920"
+    },
+    {
+      "check": "deploy.expected.cba07779",
+      "pass": true,
+      "detail": "cba07779ad32643380a96462569dabb4f4f4b2ec62bc9476a8dd4caa1fbc4902"
+    }
+  ]
+}

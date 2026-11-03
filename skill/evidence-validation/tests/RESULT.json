@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "equal",
+    "tolerance",
+    "value mismatch",
+    "shape mismatch",
+    "nonfinite",
+    "integer precision",
+    "boolean rejected",
+    "hex exact",
+    "valid manifest",
+    "hash mismatch",
+    "path escape",
+    "duplicate path"
+  ],
+  "count": 12,
+  "scope": "only reusable validation tool; no DUT runs"
+}

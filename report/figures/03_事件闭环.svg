@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760"><rect width="1500" height="760" fill="white"/>
+<text x="45" y="54.550000000000004" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" fill="#21354b">背景学习与异常事件留证闭环</text>
+<text x="45" y="97.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#62758a">变化检测在PL完成，PS持久化片段，PC下载并导出；录音缓存持续采集</text>
+<rect x="60" y="155" width="270" height="118" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="108.0" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">用户开启监测</text>
+<text x="77.75" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">PS下发使能与学习参数</text>
+<rect x="410" y="155" width="270" height="118" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="469.5" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PL学习背景</text>
+<text x="464.0" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">功率 / 频带基线</text>
+<rect x="760" y="155" width="270" height="118" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="808.0" y="206.97" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">持续比较特征</text>
+<text x="791.5" y="238.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">能量升降及频带变化</text>
+<polygon points="1250.0,145 1390,214.0 1250.0,283 1110,214.0" fill="#fff2d9" stroke="#c39d51" stroke-width="1.5"/>
+<text x="1155.5" y="225.61" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#21354b">满足变化条件？</text>
+<polyline points="330,214 410,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="410,214 398.0,219.0 398.0,209.0" fill="#54718c"/>
+<polyline points="680,214 760,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="760,214 748.0,219.0 748.0,209.0" fill="#54718c"/>
+<polyline points="1030,214 1110,214" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1110,214 1098.0,219.0 1098.0,209.0" fill="#54718c"/>
+<polyline points="1390,214 1450,214 1450,120 895,120 895,155" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="895,155 890.0,143.0 900.0,143.0" fill="#54718c"/>
+<text x="1100" y="111.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">否：继续监测</text>
+<rect x="1110" y="430" width="270" height="142" rx="10" fill="#eeeafb" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="1140.5" y="478.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PL保留事件片段</text>
+<text x="1187.5" y="509.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">前录＋后录</text>
+<text x="1164.5" y="540.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">发布片段描述符</text>
+<rect x="760" y="430" width="270" height="142" rx="10" fill="#e5f3ef" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="789.75" y="478.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PS持久化与上报</text>
+<text x="816.0" y="509.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">SMC1 / 元数据</text>
+<text x="814.5" y="540.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">成功后释放片段</text>
+<rect x="410" y="430" width="270" height="142" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="424.25" y="478.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">PC读取事件并下载</text>
+<text x="430.25390625" y="509.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">event.list / download</text>
+<text x="431.00390625" y="540.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">stream.open / 48121</text>
+<rect x="60" y="430" width="270" height="142" rx="10" fill="#e8f0fd" stroke="#a8bbce" stroke-width="1.5"/>
+<text x="93.5" y="478.47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="29" font-weight="700" fill="#21354b">校验与文件导出</text>
+<text x="78.25390625" y="509.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#21354b">CRC32 / SHA256 / ack</text>
+<text x="75.51953125" y="540.89" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#21354b">事件目录＋WAV＋数据</text>
+<polyline points="1250,283 1250,430" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1250,430 1245.0,418.0 1255.0,418.0" fill="#54718c"/>
+<text x="1270" y="361.39" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54718c">是</text>
+<polyline points="1110,501 1030,501" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1030,501 1042.0,496.0 1042.0,506.0" fill="#54718c"/>
+<polyline points="760,501 680,501" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="680,501 692.0,496.0 692.0,506.0" fill="#54718c"/>
+<polyline points="410,501 330,501" fill="none" stroke="#54718c" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="330,501 342.0,496.0 342.0,506.0" fill="#54718c"/>
+<text x="65" y="646.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#21354b">背景检测读取有效特征帧；原始PCM由独立环形/事件缓存保留，不经过PC重算检测。</text>
+<text x="65" y="697.32" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#21354b">监测与文件传输解耦；下载完成只结束一次传输，用户停止才退出监测。</text>
+</svg>

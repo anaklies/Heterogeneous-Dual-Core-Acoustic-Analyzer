@@ -1,0 +1,69 @@
+{
+  "scope": "same complete routed design used for delivered bitstream and XSA",
+  "LUT": 40137,
+  "LUTpercent": 75.45,
+  "FF": 42117,
+  "Slice": 13114,
+  "SlicePercent": 98.6,
+  "DSP": 88,
+  "BRAM36Equivalent": 57.5,
+  "controlSets": 1118,
+  "WNSns": 0.149,
+  "TNSns": 0.0,
+  "WHSns": 0.036,
+  "THSns": 0.0,
+  "placeRoute": true,
+  "CDCendpoints": 955,
+  "CDCsafe": 955,
+  "CDCunsafe": 0,
+  "CDCunknown": 0,
+  "DRCerrors": 0,
+  "externalInputDelayMissing": 8,
+  "externalOutputDelayMissing": 8,
+  "externalElectricalTimingClosed": false,
+  "methodologyWarningsRetained": true,
+  "hierarchyNonOverlapping": [
+    {
+      "name": "FFT and wrappers",
+      "LUT": 8419,
+      "FF": 9481,
+      "DSP": 31,
+      "BRAM36eq": 19
+    },
+    {
+      "name": "shared scalar core",
+      "LUT": 9941,
+      "FF": 8230,
+      "DSP": 27,
+      "BRAM36eq": 6
+    },
+    {
+      "name": "capture scheduler event pipeline",
+      "LUT": 11566,
+      "FF": 7190,
+      "DSP": 24,
+      "BRAM36eq": 28
+    },
+    {
+      "name": "other instrument control sensors recorder",
+      "LUT": 4017,
+      "FF": 7338,
+      "DSP": 6,
+      "BRAM36eq": 0.5
+    },
+    {
+      "name": "instrument DDR interconnect",
+      "LUT": 2110,
+      "FF": 2552,
+      "DSP": 0,
+      "BRAM36eq": 0
+    },
+    {
+      "name": "other board display and interconnect",
+      "LUT": 4084,
+      "FF": 7326,
+      "DSP": 0,
+      "BRAM36eq": 4
+    }
+  ]
+}
